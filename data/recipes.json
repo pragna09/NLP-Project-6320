@@ -1,0 +1,3226 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Hollandaise Sauce",
+      "category": "sauce_emulsions",
+      "ingredients": [
+        {
+          "item": "egg yolks",
+          "amount": 3,
+          "unit": "large",
+          "notes": "room temperature"
+        },
+        {
+          "item": "lemon juice",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "item": "butter",
+          "amount": 0.5,
+          "unit": "cup",
+          "notes": "melted and hot (190-220°F)"
+        },
+        {
+          "item": "water",
+          "amount": 1,
+          "unit": "tsp",
+          "notes": "warm"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Combine egg yolks, lemon juice, salt, and water in the bottom of a narrow jar."
+        },
+        {
+          "step": 2,
+          "action": "Place an immersion blender at the bottom and turn it on high.",
+          "critical_point": "Blending creates the mechanical shear needed for emulsification."
+        },
+        {
+          "step": 3,
+          "action": "With the blender running, slowly pour in the hot butter in a thin, steady stream.",
+          "duration": "30-60 seconds",
+          "critical_point": "Butter must be 190-220°F to partially cook the yolks and stabilize the emulsion. At 175°F the butter is insufficiently hot and the sauce will be thin."
+        },
+        {
+          "step": 4,
+          "action": "Continue blending until sauce is thick, creamy, and coats a spoon.",
+          "critical_point": "Final yolk temperature must reach 149°F (65°C) for food safety and emulsion stability."
+        }
+      ],
+      "temperatures": {
+        "butter": "190-220°F",
+        "finished_sauce": "149°F",
+        "holding": "120-145°F"
+      },
+      "common_problems": [
+        "sauce is thin",
+        "sauce is broken"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pan-Seared Ribeye Steak",
+      "category": "protein_cookery",
+      "ingredients": [
+        {
+          "item": "ribeye or strip steak",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "1.5 inches thick, ~1.5lb"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "vegetable oil",
+          "amount": 1,
+          "unit": "tbsp",
+          "notes": "high smoke point"
+        },
+        {
+          "item": "unsalted butter",
+          "amount": 2,
+          "unit": "tbsp",
+          "notes": "for basting"
+        },
+        {
+          "item": "garlic cloves",
+          "amount": 2,
+          "unit": "piece",
+          "notes": "smashed"
+        },
+        {
+          "item": "fresh thyme",
+          "amount": 2,
+          "unit": "sprigs"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Pat steak bone-dry with paper towels on all sides.",
+          "critical_point": "Surface moisture causes steam, which caps surface temperature at 212°F and blocks the Maillard reaction threshold of 285°F."
+        },
+        {
+          "step": 2,
+          "action": "Season heavily with salt and let rest for 45 minutes at room temperature or dry-brine uncovered in the fridge for 24 hours."
+        },
+        {
+          "step": 3,
+          "action": "Heat oil in a cast iron skillet over high heat until smoking.",
+          "critical_point": "Pan must reach ~450°F to ensure rapid searing and crust development."
+        },
+        {
+          "step": 4,
+          "action": "Add steak; flip every 30 seconds to ensure even internal cooking.",
+          "duration": "6-8 minutes total"
+        },
+        {
+          "step": 5,
+          "action": "Add butter, garlic, and herbs; baste continuously for final 1-2 minutes."
+        },
+        {
+          "step": 6,
+          "action": "Rest on a wire rack for 5 minutes before slicing.",
+          "critical_point": "Resting allows muscle fibers to relax and redistribute juices evenly."
+        }
+      ],
+      "temperatures": {
+        "pan": "450°F+",
+        "internal_rare": "125°F",
+        "internal_medium_rare": "130°F",
+        "internal_medium": "140°F"
+      },
+      "common_problems": [
+        "no crust",
+        "gray meat",
+        "uneven cooking"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Chocolate Ganache",
+      "category": "sauce_emulsions",
+      "ingredients": [
+        {
+          "item": "bittersweet chocolate",
+          "amount": 8,
+          "unit": "oz",
+          "notes": "chopped into 1/4 inch pieces"
+        },
+        {
+          "item": "heavy cream",
+          "amount": 1,
+          "unit": "cup",
+          "notes": "minimum 36% fat"
+        },
+        {
+          "item": "light corn syrup",
+          "amount": 1,
+          "unit": "tbsp",
+          "notes": "optional stabilizer"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Place chopped chocolate in a medium heat-proof bowl."
+        },
+        {
+          "step": 2,
+          "action": "Heat cream in a small saucepan over medium until it reaches a bare simmer.",
+          "critical_point": "Do not let cream reach a rolling boil — excessive heat (above 200°F) breaks the dairy emulsion and can scorch the chocolate."
+        },
+        {
+          "step": 3,
+          "action": "Pour hot cream over chocolate; let sit undisturbed for 5 minutes.",
+          "critical_point": "Allowing the heat to transfer gently prevents the cocoa fat from separating."
+        },
+        {
+          "step": 4,
+          "action": "Whisk gently in small circles from the center outward until glossy.",
+          "critical_point": "Whisking from center outward builds a stable emulsion progressively before incorporating the full volume."
+        }
+      ],
+      "temperatures": {
+        "cream_simmer": "190-200°F"
+      },
+      "common_problems": [
+        "grainy texture",
+        "oily separation"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hard-Boiled Eggs",
+      "category": "protein_cookery",
+      "ingredients": [
+        {
+          "item": "eggs",
+          "amount": 6,
+          "unit": "large",
+          "notes": "straight from fridge"
+        },
+        {
+          "item": "water",
+          "amount": 2,
+          "unit": "quarts"
+        },
+        {
+          "item": "ice",
+          "amount": 2,
+          "unit": "cups",
+          "notes": "for ice bath"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Bring a large pot of water to a rolling boil."
+        },
+        {
+          "step": 2,
+          "action": "Lower eggs gently into the boiling water using a slotted spoon.",
+          "critical_point": "Hot-start method causes instant thermal shock — the egg white denatures and contracts rapidly, pulling away from the shell membrane for easier peeling."
+        },
+        {
+          "step": 3,
+          "action": "Lower heat to a gentle simmer and cook for exactly 11 minutes.",
+          "duration": "11 minutes",
+          "critical_point": "11 minutes gives a fully set yolk without overcooking. Beyond 12 minutes increases sulfur ring risk."
+        },
+        {
+          "step": 4,
+          "action": "Drain eggs and immediately submerge in an ice water bath for at least 5 minutes.",
+          "critical_point": "Rapid cooling stops carry-over cooking and prevents hydrogen sulfide gas from forming the green sulfur ring at the yolk-white boundary."
+        }
+      ],
+      "temperatures": {
+        "boil": "212°F",
+        "ice_bath": "32-40°F"
+      },
+      "common_problems": [
+        "hard to peel",
+        "green sulfur ring",
+        "rubbery whites"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Blanched Basil Pesto",
+      "category": "sauce_emulsions",
+      "ingredients": [
+        {
+          "item": "fresh basil leaves",
+          "amount": 2,
+          "unit": "cups",
+          "notes": "packed, stems removed"
+        },
+        {
+          "item": "extra virgin olive oil",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "pine nuts",
+          "amount": 3,
+          "unit": "tbsp",
+          "notes": "toasted"
+        },
+        {
+          "item": "parmesan cheese",
+          "amount": 0.5,
+          "unit": "cup",
+          "notes": "finely grated"
+        },
+        {
+          "item": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Bring a pot of water to a boil and prepare an ice bath in a large bowl."
+        },
+        {
+          "step": 2,
+          "action": "Blanch basil leaves for exactly 15 seconds.",
+          "critical_point": "Heat deactivates polyphenol oxidase (PPO) browning enzymes through denaturation. More than 15 seconds will cause chlorophyll to break down, losing green color."
+        },
+        {
+          "step": 3,
+          "action": "Immediately transfer to ice bath; soak for 1 minute then squeeze completely dry.",
+          "critical_point": "Residual water will break the oil-based emulsion and produce watery pesto."
+        },
+        {
+          "step": 4,
+          "action": "Pulse basil with nuts, garlic, and cheese in a food processor until roughly combined."
+        },
+        {
+          "step": 5,
+          "action": "With processor running, drizzle in olive oil slowly until smooth.",
+          "critical_point": "Slow oil addition ensures even emulsification with the cheese and nut proteins."
+        }
+      ],
+      "temperatures": {
+        "blanch": "212°F",
+        "ice_shock": "32-40°F"
+      },
+      "common_problems": [
+        "pesto turns brown/gray",
+        "watery pesto"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Chocolate Chip Cookies",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "unsalted butter",
+          "amount": 1,
+          "unit": "cup",
+          "notes": "room temperature, exactly 65°F"
+        },
+        {
+          "item": "granulated sugar",
+          "amount": 0.75,
+          "unit": "cup"
+        },
+        {
+          "item": "brown sugar",
+          "amount": 0.75,
+          "unit": "cup",
+          "notes": "packed"
+        },
+        {
+          "item": "eggs",
+          "amount": 2,
+          "unit": "large"
+        },
+        {
+          "item": "vanilla extract",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "all-purpose flour",
+          "amount": 2.25,
+          "unit": "cups"
+        },
+        {
+          "item": "baking soda",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "chocolate chips",
+          "amount": 2,
+          "unit": "cups"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Cream butter and sugars together using a stand mixer on medium speed.",
+          "duration": "3-5 minutes",
+          "critical_point": "Butter must be exactly 65°F — above 70°F it cannot trap air pockets during creaming, causing spreading."
+        },
+        {
+          "step": 2,
+          "action": "Beat in eggs one at a time, then add vanilla."
+        },
+        {
+          "step": 3,
+          "action": "Whisk flour, baking soda, and salt in a separate bowl; fold into wet ingredients.",
+          "critical_point": "Stop mixing as soon as flour streaks disappear — over-mixing develops gluten, making cookies tough."
+        },
+        {
+          "step": 4,
+          "action": "Fold in chocolate chips by hand."
+        },
+        {
+          "step": 5,
+          "action": "Chill dough in the refrigerator for at least 2 hours, preferably overnight.",
+          "critical_point": "Chilling solidifies fat so it melts slowly in the oven, controlling spread. Overnight chilling also develops deeper flavor through Maillard-related browning reactions."
+        },
+        {
+          "step": 6,
+          "action": "Bake at 375°F for 10-12 minutes until edges are golden but center looks underdone.",
+          "critical_point": "Remove while center looks underdone — carry-over heat finishes baking on the pan."
+        }
+      ],
+      "temperatures": {
+        "butter": "65°F",
+        "oven": "375°F",
+        "chill": "40°F"
+      },
+      "common_problems": [
+        "cookies spread too much",
+        "greasy cookies",
+        "cookies too hard"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Scrambled Eggs",
+      "category": "protein_cookery",
+      "ingredients": [
+        {
+          "item": "eggs",
+          "amount": 3,
+          "unit": "large"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "unsalted butter",
+          "amount": 1,
+          "unit": "tbsp",
+          "notes": "cold, cut into small pieces"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Whisk eggs with salt and let sit for 15 minutes before cooking.",
+          "critical_point": "Pre-salting modifies myosin protein structure, improving water retention for a tender, moist curd — it does not dissolve myosin."
+        },
+        {
+          "step": 2,
+          "action": "Melt butter in a non-stick pan over medium-low heat until foaming subsides."
+        },
+        {
+          "step": 3,
+          "action": "Add eggs and stir constantly with a rubber spatula, pushing from edges to center.",
+          "critical_point": "Constant motion prevents large protein aggregates from forming, producing small, creamy curds."
+        },
+        {
+          "step": 4,
+          "action": "Remove from heat while eggs still look slightly wet and glossy.",
+          "critical_point": "Carry-over heat finishes cooking off the burner. Overcooking past this point causes syneresis — proteins contract too tightly, squeezing out water."
+        }
+      ],
+      "temperatures": {
+        "pan_heat": "medium-low (~275°F surface)"
+      },
+      "common_problems": [
+        "rubbery texture",
+        "weeping water",
+        "dry crumbly curds"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Macaroni and Cheese",
+      "category": "starch_emulsions",
+      "ingredients": [
+        {
+          "item": "elbow macaroni",
+          "amount": 6,
+          "unit": "oz"
+        },
+        {
+          "item": "evaporated milk",
+          "amount": 6,
+          "unit": "oz",
+          "notes": "not sweetened condensed milk"
+        },
+        {
+          "item": "extra-sharp cheddar cheese",
+          "amount": 6,
+          "unit": "oz",
+          "notes": "freshly grated — not pre-shredded"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "dry mustard",
+          "amount": 0.5,
+          "unit": "tsp",
+          "notes": "optional flavor enhancer"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Place pasta in a small saucepan and add just enough cold water to cover by 1 inch.",
+          "critical_point": "Starting with minimal cold water concentrates pasta starch, which acts as a natural emulsifying thickener."
+        },
+        {
+          "step": 2,
+          "action": "Bring to a boil over high heat, stirring constantly until water is nearly fully absorbed.",
+          "critical_point": "Constant stirring releases amylopectin starch into the water, creating a glossy, thick base sauce. Do not drain — the starchy water is essential."
+        },
+        {
+          "step": 3,
+          "action": "Remove from direct heat; add evaporated milk and stir to combine.",
+          "critical_point": "Adding evaporated milk off direct heat prevents curdling. Its concentrated protein micelles act as buffers preventing cheese fat from separating."
+        },
+        {
+          "step": 4,
+          "action": "Add cheese in three additions, stirring until fully melted between each.",
+          "critical_point": "Adding cheese in stages prevents temperature shock that causes proteins to tighten and fat to squeeze out, creating a grainy, greasy sauce.",
+          "visual_cue": "Sauce should be glossy and cling to noodles without pooling at the bottom."
+        }
+      ],
+      "temperatures": {
+        "boil": "212°F",
+        "simmer": "180-190°F",
+        "cheese_melt": "150-160°F max"
+      },
+      "common_problems": [
+        "sauce is grainy",
+        "oily/greasy sauce",
+        "pasta overcooked",
+        "too much residual water"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Ultra-Smashed Burger",
+      "category": "protein_cookery",
+      "ingredients": [
+        {
+          "item": "ground beef",
+          "amount": 4,
+          "unit": "oz",
+          "notes": "80/20 fat ratio, kept cold"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "tsp",
+          "notes": "for exterior only"
+        },
+        {
+          "item": "burger bun",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "toasted"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Form cold beef into a loose, unworked ball without pressing or squeezing.",
+          "critical_point": "Over-working meat melts fat and breaks down structure, causing burgers to fall apart. Internal salt dissolves myosin proteins creating a dense, springy sausage-like texture — never season interior."
+        },
+        {
+          "step": 2,
+          "action": "Heat cast iron skillet until smoking hot, at least 500°F.",
+          "critical_point": "Maximum heat ensures the Maillard reaction begins immediately on contact for maximum crust."
+        },
+        {
+          "step": 3,
+          "action": "Place ball on pan and smash flat immediately with a heavy spatula.",
+          "critical_point": "Smashing maximizes surface contact with the pan, creating maximum Maillard browning across the entire patty face."
+        },
+        {
+          "step": 4,
+          "action": "Season the top side heavily with salt immediately after smashing."
+        },
+        {
+          "step": 5,
+          "action": "Cook until edges are brown and crispy (about 90 seconds); flip once only.",
+          "critical_point": "Flip only when a visible crust has fully formed — flipping too early tears the crust and causes the patty to fall apart."
+        }
+      ],
+      "temperatures": {
+        "pan": "500°F+"
+      },
+      "common_problems": [
+        "falling apart on flip",
+        "tough or springy meat",
+        "no crust"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Spaghetti Aglio e Olio",
+      "category": "starch_cookery",
+      "ingredients": [
+        {
+          "item": "spaghetti",
+          "amount": 12,
+          "unit": "oz"
+        },
+        {
+          "item": "garlic cloves",
+          "amount": 6,
+          "unit": "piece",
+          "notes": "sliced paper-thin"
+        },
+        {
+          "item": "extra virgin olive oil",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "red pepper flakes",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "fresh parsley",
+          "amount": 0.25,
+          "unit": "cup",
+          "notes": "finely chopped"
+        },
+        {
+          "item": "parmesan cheese",
+          "amount": 0.25,
+          "unit": "cup",
+          "notes": "finely grated"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Place sliced garlic and olive oil together in a cold skillet.",
+          "critical_point": "Starting in cold oil allows flavor compounds to infuse slowly as temperature rises — hot oil immediately burns the exterior before interior aromatics can escape."
+        },
+        {
+          "step": 2,
+          "action": "Turn heat to medium-low; cook stirring occasionally until garlic turns pale straw gold.",
+          "duration": "8-10 minutes",
+          "critical_point": "Stop at pale straw gold — dark brown garlic has undergone pyrolysis of its sugars, producing bitter, acrid compounds. Oil max temperature should not exceed 300°F."
+        },
+        {
+          "step": 3,
+          "action": "Add a splash of starchy pasta water to stop garlic from cooking further.",
+          "critical_point": "Pasta water starch emulsifies with the oil, creating a light sauce that coats noodles."
+        },
+        {
+          "step": 4,
+          "action": "Toss in cooked spaghetti and parsley; finish with parmesan."
+        }
+      ],
+      "temperatures": {
+        "oil_max": "300°F"
+      },
+      "common_problems": [
+        "bitter garlic",
+        "burnt black spots",
+        "greasy noodles"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Immersion Blender Mayo",
+      "category": "sauce_emulsions",
+      "ingredients": [
+        {
+          "item": "egg yolk",
+          "amount": 1,
+          "unit": "large"
+        },
+        {
+          "item": "dijon mustard",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "lemon juice or white wine vinegar",
+          "amount": 1,
+          "unit": "tsp",
+          "notes": "essential for emulsion stability and food safety"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "pinch"
+        },
+        {
+          "item": "vegetable oil",
+          "amount": 1,
+          "unit": "cup"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Place yolk, mustard, lemon juice, and salt in the bottom of a tall narrow jar; pour oil on top.",
+          "critical_point": "All ingredients must be at room temperature — cold ingredients prevent lecithin from functioning as an effective emulsifier."
+        },
+        {
+          "step": 2,
+          "action": "Insert immersion blender to the very bottom of the jar before turning on.",
+          "critical_point": "Blender at the base creates a 'seed' emulsion from the yolk and a small amount of oil first — this stable base then absorbs the remaining oil above."
+        },
+        {
+          "step": 3,
+          "action": "Turn on high; hold still at the base for 10 seconds until white and thick.",
+          "critical_point": "Do not move the blender until the base emulsion is fully formed — moving too early floods the yolk with more oil than the lecithin can coat."
+        },
+        {
+          "step": 4,
+          "action": "Slowly lift blender upward through the oil until fully incorporated."
+        }
+      ],
+      "temperatures": {
+        "ingredients": "room temperature (65-70°F)"
+      },
+      "common_problems": [
+        "mayo won't emulsify",
+        "sauce is thin",
+        "sauce splits"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Pan-Roasted Chicken Breast",
+      "category": "protein_cookery",
+      "ingredients": [
+        {
+          "item": "chicken breast",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "bone-in, skin-on, ~10-12oz"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "tsp",
+          "notes": "for dry brine, applied 1 hour before"
+        },
+        {
+          "item": "vegetable oil",
+          "amount": 2,
+          "unit": "tbsp",
+          "notes": "high smoke point"
+        },
+        {
+          "item": "unsalted butter",
+          "amount": 1,
+          "unit": "tbsp",
+          "notes": "for basting"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Dry brine chicken breast with salt 1 hour before cooking; pat dry before searing.",
+          "critical_point": "Salt modifies muscle protein structure, improving water retention during cooking. Patting dry ensures skin will crisp."
+        },
+        {
+          "step": 2,
+          "action": "Sear skin-side down in a hot oven-safe pan over medium-high heat for 5-6 minutes.",
+          "critical_point": "Rendering skin fat creates the Maillard crust. Do not move the chicken — let the crust form completely before releasing naturally from the pan."
+        },
+        {
+          "step": 3,
+          "action": "Transfer pan to 400°F oven; roast until internal temperature reaches 150°F.",
+          "duration": "12-16 minutes",
+          "critical_point": "Pulling at 150°F (not 165°F) is safe ONLY with a full 10-minute rest — carry-over cooking raises internal temperature to the USDA-safe 165°F (74°C) during resting."
+        },
+        {
+          "step": 4,
+          "action": "Tent loosely with foil and rest for 10 minutes before slicing.",
+          "critical_point": "Resting allows muscle fibers to relax and reabsorb juices. Cutting too early releases pressurized liquid onto the cutting board."
+        }
+      ],
+      "temperatures": {
+        "oven": "400°F",
+        "internal_pull": "150°F",
+        "internal_after_rest": "165°F"
+      },
+      "common_problems": [
+        "dry chicken",
+        "soggy skin",
+        "uneven cooking"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Vegetable Stir-Fry",
+      "category": "protein_cookery",
+      "ingredients": [
+        {
+          "item": "broccoli florets",
+          "amount": 2,
+          "unit": "cups",
+          "notes": "completely bone-dry"
+        },
+        {
+          "item": "snap peas",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "bell pepper",
+          "amount": 1,
+          "unit": "piece",
+          "notes": "thinly sliced"
+        },
+        {
+          "item": "peanut oil",
+          "amount": 2,
+          "unit": "tbsp",
+          "notes": "high smoke point"
+        },
+        {
+          "item": "soy sauce",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "sesame oil",
+          "amount": 1,
+          "unit": "tsp",
+          "notes": "finishing oil only"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Ensure all vegetables are completely dry before cooking.",
+          "critical_point": "Surface moisture causes immediate steaming on contact with hot wok, dropping pan temperature and producing soggy vegetables."
+        },
+        {
+          "step": 2,
+          "action": "Heat wok over highest possible heat until smoking.",
+          "critical_point": "Wok must reach ~500°F to create Wok Hei — the complex smoky, charred flavor compounds that form only at extreme temperatures."
+        },
+        {
+          "step": 3,
+          "action": "Add oil; cook vegetables in small batches without crowding.",
+          "critical_point": "Crowding drops pan temperature below evaporation threshold, causing vegetables to steam in their own released water rather than sear."
+        },
+        {
+          "step": 4,
+          "action": "Toss constantly using a scooping motion.",
+          "critical_point": "Continuous tossing exposes all surfaces evenly to the hottest part of the wok."
+        },
+        {
+          "step": 5,
+          "action": "Add soy sauce only in final 30 seconds; finish with sesame oil off heat.",
+          "critical_point": "Adding sauce too early floods the pan with liquid, steaming instead of searing the remaining vegetables."
+        }
+      ],
+      "temperatures": {
+        "wok": "500°F+"
+      },
+      "common_problems": [
+        "soggy vegetables",
+        "bland flavor",
+        "uneven cooking"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Whipped Cream",
+      "category": "sauce_emulsions",
+      "ingredients": [
+        {
+          "item": "heavy cream",
+          "amount": 1,
+          "unit": "cup",
+          "notes": "minimum 36% fat, ice-cold"
+        },
+        {
+          "item": "powdered sugar",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "vanilla extract",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Place mixing bowl and whisk attachment in freezer for 10 minutes before whipping.",
+          "critical_point": "Cold equipment keeps fat globules firm — warm fat globules cannot bond properly into a stable foam structure."
+        },
+        {
+          "step": 2,
+          "action": "Pour cold cream into chilled bowl; add powdered sugar and vanilla.",
+          "critical_point": "Cream must be below 40°F — fat globules bond into a stable foam only when cold."
+        },
+        {
+          "step": 3,
+          "action": "Whisk on medium speed until soft peaks form.",
+          "critical_point": "Medium speed (not high) creates smaller, more uniformly sized air bubbles for a more stable foam."
+        },
+        {
+          "step": 4,
+          "action": "Stop immediately when peaks just hold their shape.",
+          "critical_point": "Over-whipping breaks fat globule membranes, fusing them into solid clumps — the foam collapses irreversibly into butter."
+        }
+      ],
+      "temperatures": {
+        "cream": "38-40°F"
+      },
+      "common_problems": [
+        "lumpy butter-like texture",
+        "collapsing foam",
+        "grainy texture"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Mashed Potatoes",
+      "category": "starch_cookery",
+      "ingredients": [
+        {
+          "item": "yukon gold potatoes",
+          "amount": 2,
+          "unit": "lb",
+          "notes": "peeled and cut into 1-inch cubes"
+        },
+        {
+          "item": "unsalted butter",
+          "amount": 4,
+          "unit": "tbsp",
+          "notes": "melted and warm"
+        },
+        {
+          "item": "whole milk or heavy cream",
+          "amount": 0.5,
+          "unit": "cup",
+          "notes": "warmed"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Start potatoes in cold salted water; bring to a boil and cook until fork-tender.",
+          "duration": "15-20 minutes",
+          "critical_point": "Starting in cold water ensures even cooking from outside to center — starting in boiling water cooks the exterior too fast, leaving the interior undercooked."
+        },
+        {
+          "step": 2,
+          "action": "Drain and return to hot pot over low heat for 2 minutes.",
+          "critical_point": "Steam-drying evaporates surface moisture, preventing a watery, loose mash."
+        },
+        {
+          "step": 3,
+          "action": "Pass potatoes through a ricer or food mill into the pot.",
+          "critical_point": "A ricer separates potato cells without rupturing starch granules. A blender or food processor shears cells, releasing amylose starch which forms a glue-like polymer gel."
+        },
+        {
+          "step": 4,
+          "action": "Fold in warm butter first, then warm cream/milk gently by hand.",
+          "critical_point": "Folding (not stirring) minimizes mechanical shearing of starch cells. Adding cold dairy shocks the starch and makes potatoes gluey."
+        }
+      ],
+      "temperatures": {
+        "dairy": "warm (110-120°F)",
+        "serving": "160°F+"
+      },
+      "common_problems": [
+        "sticky gluey potatoes",
+        "watery mash",
+        "lumpy potatoes"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Microwave Chocolate Ganache",
+      "category": "sauce_emulsions",
+      "ingredients": [
+        {
+          "item": "chocolate chips",
+          "amount": 1,
+          "unit": "cup",
+          "notes": "bittersweet or semisweet"
+        },
+        {
+          "item": "heavy cream",
+          "amount": 0.5,
+          "unit": "cup",
+          "notes": "minimum 36% fat"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Combine chocolate chips and cream in a completely dry microwave-safe bowl.",
+          "critical_point": "Any water or steam contact with chocolate before full melting causes seizing — sugar and cocoa particles clump irreversibly around water molecules."
+        },
+        {
+          "step": 2,
+          "action": "Microwave on high in 15-second intervals, stirring thoroughly between each.",
+          "critical_point": "Short intervals with stirring prevent hot spots — localized overheating scorches cocoa solids and breaks the fat emulsion."
+        },
+        {
+          "step": 3,
+          "action": "Stop microwaving when about 80% melted; stir vigorously until fully smooth.",
+          "critical_point": "Residual heat from chocolate and cream finishes the melt safely without risk of overheating. Over-microwaving past this point causes fat separation."
+        }
+      ],
+      "temperatures": {
+        "target": "110-115°F finished ganache"
+      },
+      "common_problems": [
+        "seized chocolate clump",
+        "grainy texture",
+        "oily separation"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Vinaigrette",
+      "category": "sauce_emulsions",
+      "ingredients": [
+        {
+          "item": "red wine vinegar",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "dijon mustard",
+          "amount": 1,
+          "unit": "tsp",
+          "notes": "acts as emulsifier/surfactant"
+        },
+        {
+          "item": "extra virgin olive oil",
+          "amount": 0.75,
+          "unit": "cup"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Whisk vinegar, mustard, salt, and pepper together in a bowl until fully combined.",
+          "critical_point": "Mustard's mucilage compounds act as a surfactant — they must be fully dissolved in the aqueous phase first before oil is introduced."
+        },
+        {
+          "step": 2,
+          "action": "Drizzle in olive oil in a very thin, steady stream while whisking vigorously.",
+          "critical_point": "Slow addition allows lecithin and mustard mucilage to coat each new oil droplet — adding oil too fast overwhelms the emulsifiers, causing instant separation."
+        },
+        {
+          "step": 3,
+          "action": "Taste and adjust seasoning. Use immediately or shake vigorously before each use.",
+          "critical_point": "Vinaigrette is a temporary emulsion — without protein-based emulsifiers like egg yolk it will separate over time. This is normal."
+        }
+      ],
+      "temperatures": {},
+      "common_problems": [
+        "separates quickly",
+        "too oily",
+        "flat flavor"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "White Rice",
+      "category": "starch_cookery",
+      "ingredients": [
+        {
+          "item": "long grain white rice",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "water",
+          "amount": 1.5,
+          "unit": "cups"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Rinse rice in a fine-mesh sieve under cold running water until water runs completely clear.",
+          "critical_point": "Rinsing removes surface amylopectin starch from milling — if left on, this starch gelatinizes into a sticky paste during cooking, gluing grains together."
+        },
+        {
+          "step": 2,
+          "action": "Combine rinsed rice, water, and salt in a saucepan; bring to a boil over high heat."
+        },
+        {
+          "step": 3,
+          "action": "Immediately reduce to lowest heat, cover tightly, and cook for 15 minutes.",
+          "duration": "15 minutes",
+          "critical_point": "Do not lift the lid or stir — stirring breaks grains and releases starch back into cooking water, causing stickiness. Steam trapped by the lid is essential for even cooking."
+        },
+        {
+          "step": 4,
+          "action": "Turn off heat and let stand covered for 10 minutes.",
+          "critical_point": "Resting allows residual steam to finish cooking the top layer and equalizes moisture throughout the pot."
+        }
+      ],
+      "temperatures": {
+        "simmer": "180-190°F"
+      },
+      "common_problems": [
+        "mushy rice",
+        "grains stuck together",
+        "crunchy undercooked center"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Blueberry Muffins",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "all-purpose flour",
+          "amount": 1.5,
+          "unit": "cups"
+        },
+        {
+          "item": "baking powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "granulated sugar",
+          "amount": 0.75,
+          "unit": "cup"
+        },
+        {
+          "item": "whole milk",
+          "amount": 0.75,
+          "unit": "cup"
+        },
+        {
+          "item": "vegetable oil",
+          "amount": 0.33,
+          "unit": "cup"
+        },
+        {
+          "item": "egg",
+          "amount": 1,
+          "unit": "large"
+        },
+        {
+          "item": "fresh blueberries",
+          "amount": 1.5,
+          "unit": "cups"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Whisk all dry ingredients together in a large bowl; whisk all wet ingredients in a separate bowl."
+        },
+        {
+          "step": 2,
+          "action": "Pour wet ingredients into dry; fold together with a spatula until just combined.",
+          "critical_point": "Over-mixing develops an elastic, strong gluten network that traps expanding CO2 bubbles into vertical tunnels rather than even, round air pockets. Lumps in the batter are acceptable and desirable."
+        },
+        {
+          "step": 3,
+          "action": "Fold in blueberries gently at the very end."
+        },
+        {
+          "step": 4,
+          "action": "Divide batter into muffin tin and bake immediately at 375°F for 20-22 minutes.",
+          "critical_point": "Baking soda and baking powder begin their CO2-producing acid-base reaction the moment they contact liquid — delaying baking wastes leavening power."
+        }
+      ],
+      "temperatures": {
+        "oven": "375°F"
+      },
+      "common_problems": [
+        "tunnels/holes inside",
+        "flat muffins",
+        "dense texture"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Caramel Sauce",
+      "category": "sauce_emulsions",
+      "ingredients": [
+        {
+          "item": "granulated sugar",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "water",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "lemon juice",
+          "amount": 1,
+          "unit": "drop",
+          "notes": "interfering agent against crystallization"
+        },
+        {
+          "item": "heavy cream",
+          "amount": 0.5,
+          "unit": "cup",
+          "notes": "warmed, added carefully"
+        },
+        {
+          "item": "unsalted butter",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Combine sugar, water, and lemon juice in a heavy-bottomed saucepan.",
+          "critical_point": "Lemon juice's citric acid acts as an interfering agent — it breaks sucrose into glucose and fructose, which do not re-crystallize as readily as sucrose."
+        },
+        {
+          "step": 2,
+          "action": "Stir over medium heat until sugar fully dissolves, then stop stirring completely once boiling begins.",
+          "critical_point": "Stirring while dissolving is necessary and correct. Stirring after boiling begins introduces undissolved crystals that seed a chain-reaction crystallization, turning the entire batch grainy."
+        },
+        {
+          "step": 3,
+          "action": "Brush down sides of pan with a wet pastry brush as needed.",
+          "critical_point": "Crystallized sugar on pan sides can fall into the syrup and trigger crystallization — wet brush dissolves these before they can seed."
+        },
+        {
+          "step": 4,
+          "action": "Cook undisturbed until amber color is reached at 320-338°F.",
+          "critical_point": "Light-to-medium amber forms at 320-338°F. Above 350°F sugar compounds break down into bitter, acrid pyrolysis products — this cannot be reversed. Remove from heat promptly."
+        },
+        {
+          "step": 5,
+          "action": "Carefully whisk in warmed cream a little at a time, then butter and salt.",
+          "critical_point": "Adding cold cream to hot caramel causes violent spattering — always use warm cream. Add slowly to control the exothermic reaction."
+        }
+      ],
+      "temperatures": {
+        "amber": "320-338°F",
+        "danger_zone": "350°F+"
+      },
+      "common_problems": [
+        "grainy caramel",
+        "burnt bitter flavor",
+        "crystallization"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Hainanese Chicken Rice",
+      "category": "protein cookery",
+      "difficulty": "medium",
+      "problem_statement": "Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",
+      "root_cause": "Cooking chicken at high heat (Rice Cooker 'Flash' mode) causes muscle fibers to contract and squeeze out moisture.",
+      "solution": "Gently poach chicken separately; pull breasts at 150-155°F, then immediately submerge in an ice bath.",
+      "scientific_principle": "Lower temperatures prevent protein over-coagulation, while the ice bath halts carry-over cooking and gelatinizes the skin for a springy texture.",
+      "steps": [
+        {
+          "step": 1,
+          "action": "Render chicken fat first to toast the rice for authentic flavor.",
+          "critical_point": "This builds the flavor base and ensures the rice grains are coated in aromatic fat."
+        },
+        {
+          "step": 2,
+          "action": "Gently poach chicken separately using a meat thermometer.",
+          "critical_point": "Pull chicken at exactly 155°F to ensure it remains juicy and doesn't over-coagulate."
+        },
+        {
+          "step": 3,
+          "action": "Immediately submerge chicken in an ice bath.",
+          "critical_point": "Halts carry-over cooking and creates the signature gelatinous skin texture."
+        }
+      ],
+      "temperatures": {
+        "pull_temp": "150-155°F",
+        "final_target": "155°F"
+      },
+      "common_problems": [
+        "dry meat",
+        "tough texture",
+        "lack of springiness"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Truffle & Mushroom Pizza",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "pizza dough",
+          "amount": 1,
+          "unit": "ball"
+        },
+        {
+          "item": "fresh mozzarella",
+          "amount": 6,
+          "unit": "oz"
+        },
+        {
+          "item": "mixed mushrooms",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "bottled black truffle",
+          "amount": 1,
+          "unit": "whole"
+        },
+        {
+          "item": "olive oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "yellow onion",
+          "amount": 0.5,
+          "unit": "medium"
+        },
+        {
+          "item": "garlic",
+          "amount": 2,
+          "unit": "cloves"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Preheat oven with a pizza stone or steel to 500°F."
+        },
+        {
+          "step": 2,
+          "action": "Sauté sliced mushrooms and onions in olive oil until browned and softened."
+        },
+        {
+          "step": 3,
+          "action": "Stretch dough and top with sautéed mixture and mozzarella; bake for 8-10 minutes until crust is charred."
+        },
+        {
+          "step": 4,
+          "action": "Remove pizza from oven and immediately grate or shave the bottled truffle over the top.",
+          "critical_point": "High oven heat destroys the volatile aromatic compounds of truffles; they must be added after cooking to preserve the flavor and scent."
+        }
+      ],
+      "temperatures": {
+        "oven": "500°F"
+      },
+      "common_problems": [
+        "flavorless truffle",
+        "rubbery truffle texture",
+        "soggy crust"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "White wine & Mushroom Sauce",
+      "category": "sauce_emulsions",
+      "ingredients": [
+        {
+          "item": "mixed mushrooms (cremini or button)",
+          "amount": 1,
+          "unit": "lb"
+        },
+        {
+          "item": "dry white wine (Sauvignon Blanc or Pinot Grigio)",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "heavy cream",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "unsalted butter (cold)",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "shallots, minced",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "fresh thyme",
+          "amount": 1,
+          "unit": "sprig"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Sauté mushrooms and shallots in a pan until mushrooms have released their moisture and turned golden brown."
+        },
+        {
+          "step": 2,
+          "action": "Deglaze the pan with white wine, scraping the bottom (fond) until the liquid has reduced by half."
+        },
+        {
+          "step": 3,
+          "action": "Add heavy cream and simmer until the sauce naturally thickens and coats the back of a spoon.",
+          "critical_point": "Using lower-fat 'liquid' cream or milk will result in a thin, watery texture that lacks the structural integrity to emulsify properly."
+        },
+        {
+          "step": 4,
+          "action": "Remove from heat and vigorously whisk in the cold butter 'knob' one tablespoon at a time.",
+          "critical_point": "The butter must be cold and added off-heat to create a stable emulsion (monter au beurre). If the sauce is boiling, the butter will simply melt into oil rather than thickening the sauce into a glossy finish."
+        }
+      ],
+      "temperatures": {
+        "simmer": "Low-Medium heat"
+      },
+      "common_problems": [
+        "thin/watery sauce",
+        "broken/oily emulsion",
+        "lack of gloss"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Thai Curry Paste",
+      "category": "Ingredient Prep",
+      "ingredients": [
+        {
+          "item": "lemongrass",
+          "amount": 3,
+          "unit": "stalks"
+        },
+        {
+          "item": "dried red chilies",
+          "amount": 10,
+          "unit": "whole"
+        },
+        {
+          "item": "galangal",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "garlic",
+          "amount": 4,
+          "unit": "cloves"
+        },
+        {
+          "item": "shallots",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "lemon zest",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "shrimp paste or fish sauce",
+          "amount": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Rehydrate dried chilies in warm water for 15 minutes."
+        },
+        {
+          "step": 2,
+          "action": "Finely mince lemongrass (tender inner cores only), galangal, garlic, and shallots."
+        },
+        {
+          "step": 3,
+          "action": "Pound all ingredients in a mortar and pestle or process in a food processor until a thick paste forms."
+        },
+        {
+          "step": 4,
+          "action": "Add the citrus zest and shrimp paste, then pulse until fully incorporated.",
+          "critical_point": "Only the outer oily layer of the citrus skin (zest) should be used. Including the white pith will introduce limonin, a chemical compound that creates a deep, lingering bitterness."
+        }
+      ],
+      "temperatures": {
+        "storage": "Refrigerate up to 1 week"
+      },
+      "common_problems": [
+        "bitterness from pith",
+        "woody texture",
+        "lack of aroma"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Thai Green Curry",
+      "category": "Thai",
+      "ingredients": [
+        {
+          "item": "green curry paste",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "item": "coconut paste (canned)",
+          "amount": 0.33,
+          "unit": "cup"
+        },
+        {
+          "item": "warm water",
+          "amount": 1.25,
+          "unit": "cups"
+        },
+        {
+          "item": "chicken thigh or tofu",
+          "amount": 1,
+          "unit": "lb"
+        },
+        {
+          "item": "Thai eggplant (quartered)",
+          "amount": 4,
+          "unit": "whole"
+        },
+        {
+          "item": "palm sugar",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "fish sauce",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "fresh Thai basil",
+          "amount": 0.5,
+          "unit": "cup"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "In a bowl, slowly whisk warm water into the coconut paste until it reaches the consistency of heavy cream."
+        },
+        {
+          "step": 2,
+          "action": "Fry the green curry paste in 2 tbsp of the coconut 'cream' (the thick part) until fragrant and the oil starts to separate."
+        },
+        {
+          "step": 3,
+          "action": "Slowly stir in the remaining diluted coconut liquid, then add proteins and vegetables.",
+          "critical_point": "Green curry paste contains fresh green chilies and herbs that oxidize quickly; over-boiling or using undiluted paste will turn the vibrant green into a muddy brown."
+        },
+        {
+          "step": 4,
+          "action": "Simmer gently until vegetables are tender; stir in fresh basil and fish sauce just before serving."
+        }
+      ],
+      "temperatures": {
+        "simmer": "Gentle medium-low heat"
+      },
+      "common_problems": [
+        "muddy color",
+        "oily separation",
+        "muted herbal flavor"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Sichuan Chili Oil",
+      "category": "Chinese",
+      "ingredients": [
+        {
+          "item": "neutral oil (canola or grapeseed)",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "Sichuan peppercorns (fresh)",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "red chili flakes (Gochugaru or Erjingtiao)",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "item": "star anise",
+          "amount": 2,
+          "unit": "whole"
+        },
+        {
+          "item": "cinnamon stick",
+          "amount": 1,
+          "unit": "small"
+        },
+        {
+          "item": "ginger",
+          "amount": 3,
+          "unit": "slices"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Heat oil with ginger, star anise, and cinnamon to 225-250°F to infuse aromatics."
+        },
+        {
+          "step": 2,
+          "action": "Add whole Sichuan peppercorns to the warm oil and let them steep for 5-10 minutes.",
+          "critical_point": "Do not grind the peppercorns into a fine powder for the oil; whole peppercorns allow the oil to extract flavor without the gritty, dusty texture of fine ground spices."
+        },
+        {
+          "step": 3,
+          "action": "Place chili flakes in a heat-proof jar and pour the strained hot oil over them."
+        },
+        {
+          "step": 4,
+          "action": "Let the oil sit for 24 hours to allow the 'mala' (numbing and spicy) flavors to fully develop."
+        }
+      ],
+      "temperatures": {
+        "infusion": "225°F - 250°F"
+      },
+      "common_problems": [
+        "lack of numbing sensation",
+        "bitter burnt chilies",
+        "gritty texture"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Egg Drop Soup",
+      "category": "Soup",
+      "ingredients": [
+        {
+          "item": "chicken broth (low sodium)",
+          "amount": 4,
+          "unit": "cups"
+        },
+        {
+          "item": "eggs (beaten)",
+          "amount": 2,
+          "unit": "large"
+        },
+        {
+          "item": "corn starch (or cassava flour)",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "cold water (for slurry)",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "soy sauce",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "white pepper",
+          "amount": 0.25,
+          "unit": "tsp"
+        },
+        {
+          "item": "sesame oil",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Bring the chicken broth, soy sauce, and white pepper to a light simmer in a pot."
+        },
+        {
+          "step": 2,
+          "action": "Mix the corn starch and cold water in a small bowl until smooth to create a slurry."
+        },
+        {
+          "step": 3,
+          "action": "Stir the slurry into the simmering broth and cook until the liquid thickens and becomes clear.",
+          "critical_point": "The broth must be thickened before adding the eggs. If the soup is too thin, the eggs will simply cloud the broth instead of forming distinct ribbons."
+        },
+        {
+          "step": 4,
+          "action": "Slowly drizzle the beaten eggs into the pot in a thin stream while stirring gently with chopsticks or a fork."
+        }
+      ],
+      "temperatures": {
+        "simmer": "Medium-low heat"
+      },
+      "common_problems": [
+        "clumpy starch dumplings",
+        "cloudy broth",
+        "lack of thickness"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Pan-Seared Monkfish Cheeks",
+      "category": "Seafood Prep",
+      "ingredients": [
+        {
+          "item": "monkfish cheeks",
+          "amount": 0.5,
+          "unit": "lb"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 0.25,
+          "unit": "tsp"
+        },
+        {
+          "item": "unsalted butter",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "olive oil",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "black pepper",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "item": "lemon wedge",
+          "amount": 1,
+          "unit": "whole"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Pat the monkfish cheeks completely dry with paper towels."
+        },
+        {
+          "step": 2,
+          "action": "Season lightly with salt and pepper just before cooking.",
+          "critical_point": "Salting too far in advance can draw out too much moisture and begin a 'curing' process that toughens the delicate cheek meat."
+        },
+        {
+          "step": 3,
+          "action": "Heat oil and butter in a pan over high heat until the butter foams."
+        },
+        {
+          "step": 4,
+          "action": "Sear the cheeks for 2-3 minutes per side until golden brown and just opaque in the center; finish with a squeeze of lemon."
+        }
+      ],
+      "temperatures": {
+        "searing": "High heat"
+      },
+      "common_problems": [
+        "rubbery texture from overcooking",
+        "fish sticking to pan",
+        "muted flavor"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Matcha Tofu Ice Cream",
+      "category": "Desserts",
+      "ingredients": [
+        {
+          "item": "silken soft tofu (drained)",
+          "amount": 12,
+          "unit": "oz"
+        },
+        {
+          "item": "unsweetened soy milk",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "white sugar",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "matcha green tea powder",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "canola oil",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Place the drained silken tofu, soy milk, and canola oil into a blender."
+        },
+        {
+          "step": 2,
+          "action": "Blend on high speed until the mixture is completely homogenous and aerated.",
+          "critical_point": "Silken tofu must be blended thoroughly to incorporate air; using regular tofu here would result in a gritty 'curd' texture that cannot be smoothed out by freezing."
+        },
+        {
+          "step": 3,
+          "action": "Add the sugar and matcha powder, then pulse until just combined to avoid over-oxidizing the tea."
+        },
+        {
+          "step": 4,
+          "action": "Pour the mixture into an ice cream maker and churn according to manufacturer instructions, or freeze in a shallow dish, stirring every 30 minutes."
+        }
+      ],
+      "temperatures": {
+        "freezing": "0°F"
+      },
+      "common_problems": [
+        "grainy/gritty texture",
+        "weak matcha flavor",
+        "ice crystals"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Yeasted Banana Sandwich Bread",
+      "category": "substitution",
+      "ingredients": [
+        {
+          "item": "bread flour"
+        },
+        {
+          "item": "ripe bananas"
+        },
+        {
+          "item": "yeast"
+        },
+        {
+          "item": "milk or water"
+        },
+        {
+          "item": "butter or oil"
+        },
+        {
+          "item": "salt"
+        },
+        {
+          "item": "sugar"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Combine wet ingredients and mashed bananas"
+        },
+        {
+          "step": 2,
+          "action": "Mix in dry ingredients to form a soft dough"
+        },
+        {
+          "step": 3,
+          "action": "Knead until elastic and smooth"
+        },
+        {
+          "step": 4,
+          "action": "Let dough rise until doubled in size"
+        },
+        {
+          "step": 5,
+          "action": "Shape, proof, and bake until fully set"
+        }
+      ],
+      "temperatures": {
+        "liquid": "95–110°F",
+        "proofing": "75–80°F",
+        "oven": "350–375°F"
+      },
+      "common_problems": [
+        "No instant yeast"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Sautéed Cremini Mushrooms",
+      "category": "Vegetable Technique",
+      "ingredients": [
+        {
+          "item": "cremini mushrooms (medium dice)",
+          "amount": 1,
+          "unit": "lb"
+        },
+        {
+          "item": "yellow onion (diced)",
+          "amount": 1,
+          "unit": "small"
+        },
+        {
+          "item": "olive oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "kosher salt",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "ground beef (optional)",
+          "amount": 0.5,
+          "unit": "lb"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Brown the ground beef in a Dutch oven, then remove the meat, leaving the residual fat."
+        },
+        {
+          "step": 2,
+          "action": "Toss the cubed mushrooms and diced onions into the pot at the same time."
+        },
+        {
+          "step": 3,
+          "action": "Add the salt immediately to help deglaze the pan with the mushroom moisture."
+        },
+        {
+          "step": 4,
+          "action": "Add olive oil and sauté until the mushrooms have color and the moisture appears to have evaporated."
+        }
+      ],
+      "temperatures": {
+        "heat": "Medium"
+      },
+      "common_problems": [
+        "rubbery/tough texture",
+        "sliminess",
+        "steaming instead of searing"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Black Sesame Paste",
+      "category": "Ingredient Prep",
+      "ingredients": [
+        {
+          "item": "black sesame seeds",
+          "amount": 18,
+          "unit": "oz"
+        },
+        {
+          "item": "honey",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "olive oil",
+          "amount": 1,
+          "unit": "splash"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Toast the black sesame seeds in a pan or oven for 5 minutes."
+        },
+        {
+          "step": 2,
+          "action": "Transfer the entire 18 oz batch of seeds into a food processor (Robot Coupe)."
+        },
+        {
+          "step": 3,
+          "action": "Process in 10-minute intervals, adding a splash of olive oil and honey to help the mixture bind.",
+          "critical_point": "A 5-minute toast is insufficient to release the oils in black sesame seeds, and olive oil's flavor profile clashes with the seeds; without sufficient oil release, the texture will remain sandy and crumbly rather than liquid."
+        },
+        {
+          "step": 4,
+          "action": "Continue blending until a smooth paste is achieved (may take over 60 minutes)."
+        }
+      ],
+      "temperatures": {
+        "toasting": "Medium heat"
+      },
+      "common_problems": [
+        "sandy/crumbly texture",
+        "overheated motor",
+        "lack of oil separation"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Classic Pie Crust",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "all-purpose flour"
+        },
+        {
+          "item": "butter"
+        },
+        {
+          "item": "salt"
+        },
+        {
+          "item": "cold water"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Cut cold fat into flour until coarse crumbs form"
+        },
+        {
+          "step": 2,
+          "action": "Add liquid just until dough holds together"
+        },
+        {
+          "step": 3,
+          "action": "Chill dough to relax gluten"
+        },
+        {
+          "step": 4,
+          "action": "Roll out and shape into pie pan"
+        }
+      ],
+      "temperatures": {
+        "butter": "below 40°F",
+        "chill": "30–40°F",
+        "oven": "375–425°F"
+      },
+      "common_problems": [
+        "My pie crust cracks and breaks apart while I am rolling it out."
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Vietnamese Bánh Thuẫn",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "eggs",
+          "amount": 5,
+          "unit": "large"
+        },
+        {
+          "item": "sugar",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "item": "arrowroot starch (bột bình tinh)",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "item": "all-purpose flour",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "item": "vanilla extract",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "cooking oil (for mold)",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Beat the eggs and sugar together at high speed for 15-20 minutes until the mixture reaches the 'ribbon stage'."
+        },
+        {
+          "step": 2,
+          "action": "Gently fold in the sifted arrowroot starch and wheat flour in small batches until no streaks remain."
+        },
+        {
+          "step": 3,
+          "action": "Preheat the brass or cast iron mold over coals or a gas burner until the oil inside the pockets is shimmering and slightly smoking.",
+          "critical_point": "If the mold is not preheated to at least 350°F, the batter will stick and the 'bloom' will fail; thermal shock is required to force steam upward to create the flower petals."
+        },
+        {
+          "step": 4,
+          "action": "Pour the batter into the pockets, cover with the lid (traditionally topped with hot coals), and bake for 5-7 minutes.",
+          "critical_point": "Substituting arrowroot with 100% wheat flour creates too much gluten elasticity; the cake will form a smooth dome like a cupcake rather than snapping open into the signature 5-petal apricot blossom shape."
+        },
+        {
+          "step": 5,
+          "action": "Carefully remove the cakes once the edges are golden and the tops have fully split open."
+        }
+      ],
+      "temperatures": {
+        "mold_preheat": "350°F - 375°F",
+        "baking": "Medium-High constant heat"
+      },
+      "common_problems": [
+        "failed to bloom (dome shape)",
+        "cake sticking to mold",
+        "dense/rubbery texture",
+        "collapsed petals after cooling"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Fresh Berry Pie",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "fresh berries"
+        },
+        {
+          "item": "sugar"
+        },
+        {
+          "item": "starch thickener"
+        },
+        {
+          "item": "pie crust"
+        },
+        {
+          "item": "lemon juice"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Combine fruit with sugar and thickener"
+        },
+        {
+          "step": 2,
+          "action": "Fill prepared pie shell"
+        },
+        {
+          "step": 3,
+          "action": "Bake until juices bubble and crust is browned"
+        },
+        {
+          "step": 4,
+          "action": "Cool fully to allow filling to set"
+        }
+      ],
+      "temperatures": {
+        "oven_start": "400–425°F",
+        "oven_finish": "375°F",
+        "cooling": "room temperature"
+      },
+      "common_problems": [
+        "The bottom of my fruit pie is pale and soggy after baking.",
+        "My berry pie filling is runny after baking."
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Vanilla Layer Cake",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "cake flour"
+        },
+        {
+          "item": "butter"
+        },
+        {
+          "item": "sugar"
+        },
+        {
+          "item": "eggs"
+        },
+        {
+          "item": "milk"
+        },
+        {
+          "item": "leavening agents"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Cream fat and sugar until light"
+        },
+        {
+          "step": 2,
+          "action": "Incorporate eggs gradually"
+        },
+        {
+          "step": 3,
+          "action": "Alternate dry and liquid ingredients"
+        },
+        {
+          "step": 4,
+          "action": "Bake until structure is fully set"
+        }
+      ],
+      "temperatures": {
+        "ingredients": "65–70°F",
+        "oven": "325–350°F"
+      },
+      "common_problems": [
+        "My cake sank in the center after taking it out of the oven."
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Swiss Meringue Buttercream ",
+      "category": "Baking",
+      "ingredients": [
+        {
+          "item": "egg whites",
+          "amount": 4,
+          "unit": "large"
+        },
+        {
+          "item": "granulated sugar",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "item": "unsalted butter (cool room temp)",
+          "amount": 225,
+          "unit": "g"
+        },
+        {
+          "item": "brick-style cream cheese",
+          "amount": 225,
+          "unit": "g"
+        },
+        {
+          "item": "vanilla extract",
+          "amount": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Whisk egg whites and sugar over a double boiler to 160°F, then whip to stiff peaks until the bowl is cool."
+        },
+        {
+          "step": 2,
+          "action": "Slowly add the cool butter and cream cheese in small chunks while whisking on medium-high speed."
+        },
+        {
+          "step": 3,
+          "action": "Continue beating until the frosting is smooth and holds a stiff peak.",
+          "critical_point": "Substituting 100% of the butter with cream cheese at a 1:1 ratio will cause the frosting to become soup-like. Butter is 80% milk fat and provides structural stability, while cream cheese is only 33% fat with high moisture, which collapses the delicate meringue."
+        },
+        {
+          "step": 4,
+          "action": "If the mixture is too soft, chill for 15 minutes and re-whip.",
+          "critical_point": "To maintain stability, use a maximum 50/50 split of butter and cream cheese. Ensure you use brick-style cream cheese (not spreadable) at a cool room temperature to prevent the meringue from melting."
+        }
+      ],
+      "temperatures": {
+        "meringue_base": "160°F",
+        "fat_addition": "Cool room temperature (approx. 65°F-68°F)"
+      },
+      "common_problems": [
+        "soup-like consistency",
+        "failure to hold peaks",
+        "meringue collapse",
+        "grainy/curdled appearance"
+      ],
+      "source": "Ask Culinary"
+    },
+    {
+      "id": 38,
+      "name": "Grilled Giant Octopus Legs",
+      "category": "Seafood",
+      "ingredients": [
+        {
+          "item": "giant octopus legs (pre-tenderized)",
+          "amount": 2,
+          "unit": "lbs"
+        },
+        {
+          "item": "olive oil",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "lemon juice",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "salt and pepper",
+          "amount": 1,
+          "unit": "to taste"
+        },
+        {
+          "item": "aromatics (bay leaf, peppercorns)",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare a pot of water with aromatics and bring it to a very gentle simmer."
+        },
+        {
+          "step": 2,
+          "action": "Submerge the pre-tenderized octopus legs and parboil for 20–30 minutes until just tender.",
+          "critical_point": "Long boiling after the fibers are already broken down by mechanical or chemical tenderization causes the proteins to tighten and lose moisture, reverting to a rubbery state."
+        },
+        {
+          "step": 3,
+          "action": "Immediately remove the octopus and cool down to stop the cooking process.",
+          "critical_point": "For tenderized meat, the water should always be a gentle simmer; never use a hard, rolling boil as it toughens the delicate protein structures."
+        },
+        {
+          "step": 4,
+          "action": "Pat the legs dry, coat with olive oil, and sear on a high-heat grill for 2-3 minutes per side until charred."
+        }
+      ],
+      "temperatures": {
+        "parboil": "Gentle simmer (approx. 180°F-190°F)",
+        "searing": "High heat (450°F+)"
+      },
+      "common_problems": [
+        "tough/rubbery texture",
+        "loss of moisture",
+        "protein over-tightening"
+      ],
+      "source": "Ask Culinary"
+    },
+    {
+      "id": 39,
+      "name": "Biscoff Cookie Spread",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "item": "Biscoff cookies",
+          "amount": 250,
+          "unit": "g"
+        },
+        {
+          "item": "granulated sugar",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "item": "neutral oil (canola or vegetable)",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "warm water",
+          "amount": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Pulse the cookies in a food processor until they reach a fine crumb consistency."
+        },
+        {
+          "step": 2,
+          "action": "Dissolve the sugar in a small amount of warm water before adding it to the mixture.",
+          "critical_point": "Adding granulated sugar directly to an oil-based cookie paste results in a grainy and 'sandy' texture. Sugar does not dissolve in oil; without water or extreme mechanical refining (conching), the crystals remain solid and provide a gritty mouthfeel."
+        },
+        {
+          "step": 3,
+          "action": "Add the sugar solution and oil to the crumbs, then blend at high speed until smooth."
+        },
+        {
+          "step": 4,
+          "action": "Monitor consistency and add a small amount of oil if the spread becomes too stiff.",
+          "critical_point": "If the spread becomes too thick after adding water, balance the texture by slightly increasing the neutral oil content to maintain a spreadable consistency."
+        }
+      ],
+      "temperatures": {
+        "blending": "Room temperature (friction may cause steaming)"
+      },
+      "common_problems": [
+        "grainy/sandy texture",
+        "mixture too thick after hydration",
+        "overheated mixture"
+      ],
+      "source": "Ask Culinary"
+    },
+    {
+      "id": 40,
+      "name": "Pico de Gallo",
+      "category": "Ingredient Prep",
+      "ingredients": [
+        {
+          "item": "white or red onion",
+          "amount": 1,
+          "unit": "medium"
+        },
+        {
+          "item": "ice-cold water",
+          "amount": 2,
+          "unit": "cups"
+        },
+        {
+          "item": "salt or vinegar",
+          "amount": 1,
+          "unit": "pinch/splash"
+        },
+        {
+          "item": "Roma tomatoes",
+          "amount": 3,
+          "unit": "large"
+        },
+        {
+          "item": "cilantro",
+          "amount": 0.5,
+          "unit": "bunch"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Slice or dice the raw onions as required for the recipe."
+        },
+        {
+          "step": 2,
+          "action": "Soak the onions in ice-cold water with a pinch of salt or a splash of vinegar for 10–15 minutes.",
+          "critical_point": "Using raw onions immediately after cutting leaves volatile sulfur compounds intact. Soaking leaches these water-soluble compounds (syn-propanethial-S-oxide) away, removing the harsh 'sulfur' bite and lingering aftertaste."
+        },
+        {
+          "step": 3,
+          "action": "Rinse the onions under cold water and pat them thoroughly dry.",
+          "critical_point": "Ice water keeps the onion cells turgid, ensuring they remain crunchy even after the harsh enzymatic gas is removed."
+        },
+        {
+          "step": 4,
+          "action": "Combine with other Pico de Gallo ingredients.",
+          "critical_point": "For an even milder flavor, slice the onion 'with the grain' (root to stem) rather than into rings, as this ruptures fewer cells and releases less gas."
+        }
+      ],
+      "temperatures": {
+        "soaking_liquid": "Ice-cold (below 40°F)"
+      },
+      "common_problems": [
+        "overpowering sulfur bite",
+        "lingering aftertaste",
+        "loss of crunchiness"
+      ],
+      "source": "Ask Culinary"
+    },
+    {
+      "id": 41,
+      "name": "Tiramisu",
+      "category": "Dessert",
+      "ingredients": [
+        {
+          "item": "Lady Fingers",
+          "amount": 24,
+          "unit": "pieces"
+        },
+        {
+          "item": "Mascarpone cheese",
+          "amount": 500,
+          "unit": "g"
+        },
+        {
+          "item": "Strong espresso",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "Marsala wine",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Locate the correct biscuit base in a UK/Ireland supermarket by looking for 'Sponge Fingers' or 'Trifle Sponges' instead of 'Lady Fingers'."
+        },
+        {
+          "step": 2,
+          "action": "Check international aisles or discount retailers like Lidl for packaging labeled as 'Savoiardi'.",
+          "critical_point": "The product is identical; 'Lady Finger' is primarily North American terminology, whereas UK/Ireland retailers categorize them under sponge fingers or trifle components."
+        },
+        {
+          "step": 3,
+          "action": "Briefly dip each biscuit into the espresso/Marsala mixture before layering with the mascarpone cream.",
+          "critical_point": "If you can only find square 'trifle sponges', simply slice them into strips; the structural composition is exactly the same as the finger-shaped variety."
+        },
+        {
+          "step": 4,
+          "action": "Assemble the Tiramisu in layers and refrigerate for at least 6 hours to allow the sponges to soften."
+        }
+      ],
+      "temperatures": {
+        "espresso_dip": "Room temperature",
+        "setting": "Refrigerated (approx. 40°F)"
+      },
+      "common_problems": [
+        "cannot find 'Lady Fingers' in local stores",
+        "soggy biscuits from over-dipping",
+        "incorrect biscuit texture"
+      ],
+      "source": "Ask Culinary"
+    },
+    {
+      "id": 42,
+      "name": "No-Knead Whole Wheat Bread",
+      "category": "substitution",
+      "ingredients": [
+        {
+          "item": "whole wheat flour"
+        },
+        {
+          "item": "yeast"
+        },
+        {
+          "item": "water or milk"
+        },
+        {
+          "item": "salt"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Mix all ingredients into a loose dough"
+        },
+        {
+          "step": 2,
+          "action": "Allow long fermentation to develop structure"
+        },
+        {
+          "step": 3,
+          "action": "Shape gently without kneading"
+        },
+        {
+          "step": 4,
+          "action": "Bake until firm with hollow sound"
+        }
+      ],
+      "temperatures": {
+        "fermentation": "65–75°F",
+        "oven": "425–450°F"
+      },
+      "common_problems": [
+        "No dry milk available"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Lactose-free Ice Cream",
+      "category": "Substitution",
+      "ingredients": [
+        {
+          "item": "heavy cream (treated with lactase drops)",
+          "amount": 2,
+          "unit": "cups"
+        },
+        {
+          "item": "lactose-free whole milk",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "item": "granulated sugar",
+          "amount": 0.75,
+          "unit": "cup"
+        },
+        {
+          "item": "vanilla extract",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "item": "fine salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Prepare the cream by adding lactase enzyme drops to regular heavy cream 24–48 hours before starting the recipe.",
+          "critical_point": "Attempting to emulsify melted butter into lactose-free half-and-half to mimic heavy cream without high-shear blending will fail. Milk is a complex emulsion; simply stirring melted butter into cold liquid results in fat globules that seize or separate during churning, leading to a greasy, 'waxy' mouthfeel."
+        },
+        {
+          "step": 2,
+          "action": "Allow the enzyme-treated cream to sit in the refrigerator for at least 24 hours.",
+          "critical_point": "The lactase enzyme needs sufficient time at refrigerator temperatures to break down the lactose molecules effectively before the liquid is frozen."
+        },
+        {
+          "step": 3,
+          "action": "Whisk the treated cream, lactose-free milk, sugar, vanilla, and salt together until the sugar is fully dissolved."
+        },
+        {
+          "step": 4,
+          "action": "Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions."
+        },
+        {
+          "step": 5,
+          "action": "Alternative: Use coconut cream for fat and texture if enzyme-treated dairy is unavailable."
+        }
+      ],
+      "temperatures": {
+        "enzyme_activation": "Refrigerated (approx. 38°F-40°F)",
+        "churning": "Below 32°F (0°C)"
+      },
+      "common_problems": [
+        "greasy/waxy mouthfeel",
+        "fat separation during churning",
+        "failure to freeze properly",
+        "incomplete lactose breakdown"
+      ],
+      "source": "Ask Culinary"
+    },
+    {
+      "id": 44,
+      "name": "Classic Potato Latkes",
+      "category": "Substitution",
+      "ingredients": [
+        {
+          "item": "Russet potatoes",
+          "amount": 2,
+          "unit": "lbs"
+        },
+        {
+          "item": "yellow onion",
+          "amount": 1,
+          "unit": "medium"
+        },
+        {
+          "item": "all-purpose flour",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "reclaimed potato starch",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "salt and pepper",
+          "amount": 1,
+          "unit": "to taste"
+        },
+        {
+          "item": "neutral oil (for frying)",
+          "amount": 1,
+          "unit": "cup"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Grate potatoes and onions, then place them in a clean kitchen towel and squeeze out as much liquid as possible into a bowl."
+        },
+        {
+          "step": 2,
+          "action": "Let the squeezed potato liquid sit undisturbed for 15 minutes.",
+          "critical_point": "Relying on moisture-heavy egg replacers like flax or applesauce in latkes results in a gummy, soft interior. Reclaiming the natural starch from the potato liquid provides a superior, neutral-tasting binder."
+        },
+        {
+          "step": 3,
+          "action": "Carefully pour off the dark water from the bowl to reveal the thick white starch 'sludge' at the bottom; add this back to the dry potato shreds.",
+          "critical_point": "Potato starch, when combined with a small amount of flour, creates a crisp 'matrix' that holds the potato shreds together during frying without the need for eggs."
+        },
+        {
+          "step": 4,
+          "action": "Mix in the flour, salt, and pepper, then fry portions in hot oil until golden brown and crispy.",
+          "critical_point": "The reclaimed starch is a powerful adhesive; ensure you incorporate all of it into the batter for maximum crunch and structural integrity."
+        }
+      ],
+      "temperatures": {
+        "frying": "350°F - 375°F"
+      },
+      "common_problems": [
+        "latkes falling apart during frying",
+        "gummy/soft interior",
+        "lack of crispness"
+      ],
+      "source": "Ask Culinary"
+    },
+    {
+      "id": 45,
+      "name": "Whole Grain Banana Bread",
+      "category": "substitution",
+      "ingredients": [
+        {
+          "item": "whole grain flour"
+        },
+        {
+          "item": "bananas"
+        },
+        {
+          "item": "fat"
+        },
+        {
+          "item": "eggs"
+        },
+        {
+          "item": "sugar"
+        },
+        {
+          "item": "leavening"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Mash bananas and combine wet ingredients"
+        },
+        {
+          "step": 2,
+          "action": "Fold in dry ingredients gently"
+        },
+        {
+          "step": 3,
+          "action": "Bake until center is set"
+        }
+      ],
+      "temperatures": {
+        "ingredients": "room temperature",
+        "oven": "325–350°F"
+      },
+      "common_problems": [
+        "No vegetable oil"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Manakish Bi Za'atar (Sumac-Free Substitution)",
+      "category": "Substitution",
+      "ingredients": [
+        {
+          "item": "dried thyme (or oregano/marjoram)",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "item": "toasted sesame seeds",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "item": "Amchoor (Green Mango Powder) or Citric Acid",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "item": "extra virgin olive oil",
+          "amount": 0.33,
+          "unit": "cup"
+        },
+        {
+          "item": "flatbread dough",
+          "amount": 1,
+          "unit": "portion"
+        },
+        {
+          "item": "salt",
+          "amount": 1,
+          "unit": "pinch"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "In a small bowl, combine the dried thyme, toasted sesame seeds, and the Amchoor or Citric Acid."
+        },
+        {
+          "step": 2,
+          "action": "Mix the dry spice blend with the olive oil to create a thick paste (Za'atar wu Zeit).",
+          "critical_point": "Using only dried thyme and oil results in a flat, bitter, and one-dimensional flavor. Sumac normally provides critical 'bright' acidity to balance the resinous notes of thyme; Amchoor mimics this dry tartness perfectly without adding moisture."
+        },
+        {
+          "step": 3,
+          "action": "Spread the paste evenly over the flattened dough, leaving a small border for the crust.",
+          "critical_point": "Always mix the spices with the oil first rather than sprinkling dry spices over oiled dough; this creates a protective paste that prevents the delicate dried herbs from burning in the high heat of the oven."
+        },
+        {
+          "step": 4,
+          "action": "Bake in a preheated oven at 450°F until the dough is golden and the topping is fragrant."
+        }
+      ],
+      "temperatures": {
+        "baking": "450°F (230°C)"
+      },
+      "common_problems": [
+        "bitter/one-dimensional flavor",
+        "burnt herbs",
+        "soggy flatbread",
+        "lack of acidity"
+      ],
+      "source": "Ask Culinary"
+    },
+    {
+      "id": 47,
+      "name": "Blind-Baked Pie Crust (Shrinkage)",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "pie dough"
+        },
+        {
+          "item": "pie weights"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Dock crust thoroughly"
+        },
+        {
+          "step": 2,
+          "action": "Chill before baking"
+        },
+        {
+          "step": 3,
+          "action": "Bake with weights until set"
+        }
+      ],
+      "temperatures": {
+        "chill": "30–40°F",
+        "oven": "375–425°F"
+      },
+      "common_problems": [
+        "My pie crust shrinks down the sides while baking.",
+        "My blind-baked crust puffs up despite pie weights."
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Double-Crust Fruit Pie",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "fruit filling"
+        },
+        {
+          "item": "double pie crust"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Assemble filled pie with top crust"
+        },
+        {
+          "step": 2,
+          "action": "Bake until filling bubbles vigorously"
+        },
+        {
+          "step": 3,
+          "action": "Protect edges if browning early"
+        }
+      ],
+      "temperatures": {
+        "oven_start": "400–425°F",
+        "oven_finish": "375°F"
+      },
+      "common_problems": [
+        "The edges of my pie crust brown too quickly."
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Lattice-Top Fruit Pie",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "fruit filling"
+        },
+        {
+          "item": "pie dough"
+        },
+        {
+          "item": "thickener"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Thicken filling before assembly"
+        },
+        {
+          "step": 2,
+          "action": "Weave lattice over cooled filling"
+        },
+        {
+          "step": 3,
+          "action": "Bake until bubbling and golden"
+        }
+      ],
+      "temperatures": {
+        "oven": "375–425°F"
+      },
+      "common_problems": [
+        "My lattice top collapsed into the filling during baking."
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Apple Pie",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "apples"
+        },
+        {
+          "item": "sugar"
+        },
+        {
+          "item": "starch thickener"
+        },
+        {
+          "item": "pie crust"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Slice and pre-mix apples with sugar and thickener"
+        },
+        {
+          "step": 2,
+          "action": "Fill crust evenly"
+        },
+        {
+          "step": 3,
+          "action": "Bake until filling reaches full gelation"
+        },
+        {
+          "step": 4,
+          "action": "Cool fully before slicing"
+        }
+      ],
+      "temperatures": {
+        "gelation": "200–210°F internal",
+        "oven": "375–425°F"
+      },
+      "common_problems": [
+        "My fruit pie filling never sets even after cooling.",
+        "My pie filling bubbles unevenly."
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Hand Pie Crust",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "all-purpose flour"
+        },
+        {
+          "item": "fat (butter or shortening)"
+        },
+        {
+          "item": "salt"
+        },
+        {
+          "item": "cold water"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Cut fat into flour until pea-sized pieces form"
+        },
+        {
+          "step": 2,
+          "action": "Add water gradually until dough just holds together"
+        },
+        {
+          "step": 3,
+          "action": "Chill dough to relax gluten and firm fat"
+        },
+        {
+          "step": 4,
+          "action": "Roll and cut portions suitable for hand pies"
+        }
+      ],
+      "temperatures": {
+        "ingredients": "cold (below 60°F)",
+        "chill": "30–40°F",
+        "oven": "375–425°F"
+      },
+      "common_problems": [
+        "My hand pie crust leaks during baking."
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Single-Crust Pie",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "pie dough"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Roll dough evenly to uniform thickness"
+        },
+        {
+          "step": 2,
+          "action": "Fit gently into pie pan without stretching"
+        },
+        {
+          "step": 3,
+          "action": "Chill before filling or blind baking"
+        }
+      ],
+      "temperatures": {
+        "chill": "30–40°F",
+        "oven": "375–425°F"
+      },
+      "common_problems": [
+        "My single crust shrinks during baking."
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Decorative Pie Crust",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "pie dough"
+        },
+        {
+          "item": "egg wash (optional)"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Keep dough cold but pliable"
+        },
+        {
+          "step": 2,
+          "action": "Cut shapes or braid dough strips"
+        },
+        {
+          "step": 3,
+          "action": "Chill decorations before baking to preserve shape"
+        }
+      ],
+      "temperatures": {
+        "chill": "30–40°F",
+        "oven": "375–425°F"
+      },
+      "common_problems": [
+        "My decorative edges lose their shape in the oven."
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Cherry Pie",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "cherries"
+        },
+        {
+          "item": "sugar"
+        },
+        {
+          "item": "starch thickener"
+        },
+        {
+          "item": "pie crust"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Pit cherries and combine with sugar and thickener"
+        },
+        {
+          "step": 2,
+          "action": "Allow mixture to macerate slightly before filling"
+        },
+        {
+          "step": 3,
+          "action": "Bake until juices bubble thickly"
+        }
+      ],
+      "temperatures": {
+        "gelation": "200–210°F internal",
+        "oven": "375–425°F"
+      },
+      "common_problems": [
+        "My cherry pie overflows or bubbles excessively."
+      ]
+    },
+    {
+      "id": 55,
+      "name": "All-Butter Pie Crust",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "all-purpose flour"
+        },
+        {
+          "item": "butter"
+        },
+        {
+          "item": "salt"
+        },
+        {
+          "item": "cold water"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Cut cold butter into flour until uneven flakes form"
+        },
+        {
+          "step": 2,
+          "action": "Add cold water just until dough holds together"
+        },
+        {
+          "step": 3,
+          "action": "Chill dough thoroughly before rolling"
+        }
+      ],
+      "temperatures": {
+        "ingredients": "cold (below 55°F)",
+        "chill": "30–40°F",
+        "oven": "375–425°F"
+      },
+      "common_problems": [
+        "My butter crust cracks while rolling."
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Custard Pie",
+      "category": "baking",
+      "ingredients": [
+        {
+          "item": "milk or cream"
+        },
+        {
+          "item": "eggs"
+        },
+        {
+          "item": "sugar"
+        },
+        {
+          "item": "flavoring"
+        },
+        {
+          "item": "pie crust"
+        }
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "action": "Mix custard gently to avoid incorporating air"
+        },
+        {
+          "step": 2,
+          "action": "Pour into unbaked or parbaked crust"
+        },
+        {
+          "step": 3,
+          "action": "Bake until edges are set and center jiggles slightly"
+        }
+      ],
+      "temperatures": {
+        "custard_set": "170–175°F internal",
+        "oven": "325–350°F"
+      },
+      "common_problems": [
+        "My custard pie curdled or cracked."
+      ]
+    }
+  ]
+}
