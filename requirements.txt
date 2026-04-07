@@ -1,0 +1,9 @@
+google-generativeai
+python-dotenv
+networkx
+pandas
+numpy
+groq
+scipy
+matplotlib
+seaborn
