@@ -1,0 +1,4202 @@
+[
+  {
+    "id": 1,
+    "recipe": "Hollandaise Sauce",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "recipe": "Pan-Seared Ribeye Steak",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "recipe": "Chocolate Ganache",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "recipe": "Hard-Boiled Eggs",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "recipe": "Blanched Basil Pesto",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "recipe": "Chocolate Chip Cookies",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "recipe": "Scrambled Eggs",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "recipe": "Macaroni and Cheese",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "recipe": "Ultra-Smashed Burger",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "recipe": "Spaghetti Aglio e Olio",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "recipe": "Immersion Blender Mayo",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "recipe": "Pan-Roasted Chicken Breast",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "recipe": "Vegetable Stir-Fry",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 14,
+    "recipe": "Whipped Cream",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "recipe": "Mashed Potatoes",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "recipe": "Microwave Chocolate Ganache",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "recipe": "Vinaigrette",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "recipe": "White Rice",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "recipe": "Blueberry Muffins",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "recipe": "Caramel Sauce",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "recipe": "Hainanese Chicken Rice",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "recipe": "Truffle & Mushroom Pizza",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 23,
+    "recipe": "White wine & Mushroom Sauce",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 24,
+    "recipe": "Curry Paste",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 25,
+    "recipe": "Thai Green Curry",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 26,
+    "recipe": "Sichuan Chilli Oil",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 27,
+    "recipe": "Egg Drop Soup",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 28,
+    "recipe": "Pan-Seared Monkfish Cheeks",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 29,
+    "recipe": "Matcha Tofu Ice Cream",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 30,
+    "recipe": "Yeasted Banana Sandwich Bread",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 31,
+    "recipe": "Saut\u00e9ed Cremini Mushrooms",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 32,
+    "recipe": "Black Sesame Paste",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 33,
+    "recipe": "Classic Pie Crust",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 34,
+    "recipe": "Vietnamese B\u00e1nh Thu\u1eabn",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 35,
+    "recipe": "Fresh Berry Pie",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 36,
+    "recipe": "Vanilla Layer Cake",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 37,
+    "recipe": "Swiss Meringue Buttercream",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 38,
+    "recipe": "Grilled Giant Octopus Legs",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 39,
+    "recipe": "Biscoff Cookie Spread",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 40,
+    "recipe": "Pico de Gallo",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 41,
+    "recipe": "Tiramisu",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 42,
+    "recipe": "No-Knead Whole Wheat Bread",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 43,
+    "recipe": "Lactose-free Ice cream",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 44,
+    "recipe": "Potato Latkes",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 45,
+    "recipe": "Whole Grain Banana Bread",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 46,
+    "recipe": "Manakish Bi Za'atar",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 47,
+    "recipe": "Blind-Baked Pie Crust",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 48,
+    "recipe": "Blind-Baked Pie Crust",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 49,
+    "recipe": "Double-Crust Fruit Pie",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 50,
+    "recipe": "Lattice-Top Fruit Pie",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 51,
+    "recipe": "Apple Pie",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 52,
+    "recipe": "Hand Pie Crust",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 53,
+    "recipe": "Single-Crust Pie",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 54,
+    "recipe": "Decorative Pie Crust",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 55,
+    "recipe": "Berry Pie",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 56,
+    "recipe": "Cherry Pie",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 57,
+    "recipe": "All-Butter Pie Crust",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 58,
+    "recipe": "Custard Pie",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 59,
+    "recipe": "Apple Pie",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 60,
+    "recipe": " Blind-Baked Crust",
+    "ingredients": {
+      "butter": {
+        "properties": {
+          "fat_content": 0.82,
+          "functions": [
+            "tenderness",
+            "flavor",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "coconut_oil",
+            "ratio": "3/4 cup per 1 cup butter",
+            "why": "similar fat",
+            "best_for": [
+              "baking"
+            ],
+            "avoid_for": [
+              "frosting"
+            ]
+          }
+        ]
+      },
+      "egg": {
+        "properties": {
+          "protein": "high",
+          "functions": [
+            "binding",
+            "structure"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "flaxseed",
+            "ratio": "1 tbsp + 3 tbsp water",
+            "why": "gel binding",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": [
+              "fluffy cakes"
+            ]
+          }
+        ]
+      },
+      "milk": {
+        "properties": {
+          "fat": "varies",
+          "functions": [
+            "moisture"
+          ]
+        },
+        "substitutes": [
+          {
+            "name": "almond_milk",
+            "ratio": "1:1",
+            "why": "plant alternative",
+            "best_for": [
+              "vegan"
+            ],
+            "avoid_for": []
+          }
+        ]
+      }
+    }
+  }
+]
