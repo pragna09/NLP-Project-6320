@@ -1,0 +1,52 @@
+{
+  "condition": "cot_only",
+  "model": "LLaMA 3.1 70B",
+  "timestamp": "20260410_184045",
+  "summary": {
+    "total_cases": 2,
+    "average_scores": {
+      "cause_accuracy": 0.0385,
+      "solution_appropriateness": 0.1741,
+      "scientific_accuracy": 0.0,
+      "overall": 0.0851
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "Step 3, where the hot butter is poured into the egg yolks, is the most likely cause of the problem.",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": "To fix the thin hollandaise sauce, start again from Step 1, and when pouring in the hot butter in Step 3, do it very slowly, almost drop by drop, while continuously blending. If the sauce still doesn't thicken, try whisking in a little more melted butter or an egg yolk.",
+      "scores": {
+        "cause_accuracy": 0.07692307692307693,
+        "solution_appropriateness": 0.2857142857142857,
+        "scientific_accuracy": 0.0,
+        "overall": 0.1451
+      },
+      "condition": "cot_only",
+      "raw_response": "CAUSE: Step 3, where the hot butter is poured into the egg yolks, is the most likely cause of the problem. \nSOLUTION: To fix the thin hollandaise sauce, start again from Step 1, and when pouring in the hot butter in Step 3, do it very slowly, almost drop by drop, while continuously blending. If the sauce still doesn't thicken, try whisking in a little more melted butter or an egg yolk.\nEXPLANATION: The scientific reason behind the failure of the sauce to thicken is that the emulsion between the egg yolks and butter was not formed correctly. When the hot butter is poured too quickly into the egg yolks, it can cause the mixture to break, resulting in a thin, separated sauce. The slow pouring of the butter allows the lecithin in the egg yolks to stabilize the fat molecules in the butter, creating a smooth and thick emulsion. If the butter is added too quickly, the lecithin is overwhelmed, and the sauce fails to thicken."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "Step 3: Heat oil in a cast iron skillet over high heat until smoking.",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "Increase the heat to the maximum and ensure the skillet is scorching hot before adding the steak, or use a thermometer to check the oil temperature, which should be around 450\u00b0F (232\u00b0C) for an ideal sear.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0625,
+        "scientific_accuracy": 0.0,
+        "overall": 0.025
+      },
+      "condition": "cot_only",
+      "raw_response": "CAUSE: Step 3: Heat oil in a cast iron skillet over high heat until smoking.\nSOLUTION: Increase the heat to the maximum and ensure the skillet is scorching hot before adding the steak, or use a thermometer to check the oil temperature, which should be around 450\u00b0F (232\u00b0C) for an ideal sear.\nEXPLANATION: The problem lies in the inadequate heat of the skillet, which is necessary for achieving the Maillard reaction - a chemical reaction between amino acids and reducing sugars that occurs when food is cooked, leading to the formation of new flavor compounds and browning. If the skillet is not hot enough, the steak will not sear properly, resulting in a gray color and lack of crust. The ideal temperature for searing is between 400\u00b0F (200\u00b0C) and 450\u00b0F (232\u00b0C). By ensuring the skillet reaches this temperature before adding the steak, a proper crust can be formed, and the steak will have a more appealing color and texture."
+    }
+  ]
+}

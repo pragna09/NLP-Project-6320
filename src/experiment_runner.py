@@ -1,9 +1,9 @@
 # src/experiment_runner.py
 import time
 from models import call_llama_big, call_llama_fast
-from rag import load_knowledge_base, retrieve_facts, format_facts_for_prompt
+from rag import load_knowledge_base, load_recipes, retrieve_facts, format_facts_for_prompt  # ← ADD load_recipes
 from knowledge_graphs import (
-    load_recipes, load_substitutions,
+    load_substitutions,
     build_fkg, build_skg,
     query_fkg, find_critical_steps,
     map_problem_to_step, find_substitutes,
@@ -108,21 +108,24 @@ def build_full_system_prompt(problem: str, recipe: str, steps: list,
         "EXPLANATION: [the food science behind the problem and solution]"
     )
 
-recipes = load_recipes()
-result = run_single_case(
-    tc, condition, model_fn, fkg, skg, knowledge_base, recipes  # add recipes
-)
+
 def run_single_case(test_case, condition, model_fn,
-                    fkg, skg, knowledge_base, recipes) -> dict:
+                    fkg, skg, knowledge_base, recipes) -> dict:  # ← CHANGED: added recipes
+    """Run a single test case through one experimental condition"""
+    
     problem     = test_case.get("Problem", "")
     recipe_name = test_case.get("Recipe", "")
 
+    # Get recipe information from FKG
     steps        = query_fkg(fkg, recipe_name)
     critical     = find_critical_steps(fkg, recipe_name)
     mapped       = map_problem_to_step(fkg, recipe_name, problem)
-    facts        = retrieve_facts(problem, recipe_name, knowledge_base, recipes, top_k=3)
+    
+    # Retrieve relevant facts using RAG (with recipe awareness)
+    facts        = retrieve_facts(problem, recipe_name, knowledge_base, recipes, top_k=3)  # ← CHANGED: added recipes
     retrieved    = format_facts_for_prompt(facts)
 
+    # Build prompt based on condition
     if condition == "baseline":
         prompt = build_baseline_prompt(problem, recipe_name, steps)
     elif condition == "cot_only":
@@ -141,6 +144,7 @@ def run_single_case(test_case, condition, model_fn,
     else:
         raise ValueError(f"Unknown condition: {condition}")
 
+    # Query model and evaluate
     response = model_fn(prompt)
     result   = evaluate_single(test_case, response)
     result["condition"]    = condition
@@ -149,17 +153,22 @@ def run_single_case(test_case, condition, model_fn,
 
 
 def run_all_experiments(max_cases: int = None, delay: float = 2.0):
+    """Run complete experiment suite"""
+    
     print("=" * 50)
     print("Starting R.E.C.I.P.E. Experiments")
     print("=" * 50)
 
-    test_cases    = load_test_cases()
+    # Load all data
+    test_cases     = load_test_cases()
     knowledge_base = load_knowledge_base()
-    fkg = build_fkg(load_recipes())
-    skg = build_skg(load_substitutions())
+    recipes        = load_recipes()  # ← CHANGED: load recipes separately
+    fkg            = build_fkg(recipes)  # ← CHANGED: use loaded recipes
+    skg            = build_skg(load_substitutions())
 
     print(f"Loaded {len(test_cases)} test cases")
     print(f"Loaded {len(knowledge_base)} science facts")
+    print(f"Loaded {len(recipes)} recipes")  # ← NEW: show recipe count
     print(f"FKG: {fkg.number_of_nodes()} nodes")
     print(f"SKG: {skg.number_of_nodes()} nodes")
 
@@ -167,41 +176,41 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
         test_cases = test_cases[:max_cases]
         print(f"\nLimited to {max_cases} test cases")
 
+    # Define models and conditions
     models = {
-        #"gemini_flash":  call_gemini_flash,
-        #"gemini_pro":    call_gemini_pro,
-        #"llama_70b":     call_llama,
-        #"mixtral_8x7b":  call_mixtral
         "LLaMA 3.1 70B": call_llama_big,
         "LLaMA 3.1 8B": call_llama_fast
     }
     conditions = ["baseline", "cot_only", "kg_augmented", "full_system"]
 
+    # Run experiments
     for model_name, model_fn in models.items():
         for condition in conditions:
             print(f"\n{'─' * 40}")
             print(f"Running: {condition} | {model_name}")
             print(f"{'─' * 40}")
+            
             results = []
             for i, tc in enumerate(test_cases):
                 print(f"  {i+1}/{len(test_cases)}: {tc.get('Problem','')[:50]}...")
                 try:
                     result = run_single_case(
-                        tc, condition, model_fn, fkg, skg, knowledge_base)
+                        tc, condition, model_fn, fkg, skg, knowledge_base, recipes)  # ← CHANGED: added recipes
                     results.append(result)
                     print(f"  Score: {result['scores']['overall']:.3f}")
                 except Exception as e:
                     print(f"  ERROR: {e}")
                 time.sleep(delay)
 
+            # Save and summarize results
             if results:
                 save_results(results, condition, model_name)
                 summary = evaluate_all(results)
                 print(f"\nSummary — {condition} | {model_name}:")
-                print(f"  Overall:  {summary['average_scores']['overall']}")
-                print(f"  Cause:    {summary['average_scores']['cause_accuracy']}")
-                print(f"  Solution: {summary['average_scores']['solution_appropriateness']}")
-                print(f"  Science:  {summary['average_scores']['scientific_accuracy']}")
+                print(f"  Overall:  {summary['average_scores']['overall']:.3f}")
+                print(f"  Cause:    {summary['average_scores']['cause_accuracy']:.3f}")
+                print(f"  Solution: {summary['average_scores']['solution_appropriateness']:.3f}")
+                print(f"  Science:  {summary['average_scores']['scientific_accuracy']:.3f}")
 
     print("\n" + "=" * 50)
     print("All experiments complete!")
@@ -210,6 +219,7 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
 
 
 def test_runner():
+    """Quick test with limited cases"""
     print("Running quick test with 2 cases...")
     run_all_experiments(max_cases=2, delay=1.0)
     print("Test complete!")

@@ -1,0 +1,52 @@
+{
+  "condition": "kg_augmented",
+  "model": "LLaMA 3.1 8B",
+  "timestamp": "20260410_184121",
+  "summary": {
+    "total_cases": 2,
+    "average_scores": {
+      "cause_accuracy": 0.0,
+      "solution_appropriateness": 0.0,
+      "scientific_accuracy": 0.0,
+      "overall": 0.0
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To troubleshoot the issue with the thin hollandaise sauce, I'll analyze the situation step by step.\n\n1. **Which critical control point was violated?**\n\nThe critical control point that was likely violated is Step 3: \"Butter must be 190-220\u00b0F to partially cook the yolks and stabilize the emulsion. At 175\u00b0F the butter is insufficiently hot and the sauce will be thin.\"\n\n2. **What is the chemical or physical reason?**\n\nThe butter is not hot enough to partially cook the egg yolks, which is essential for stabilizing the emulsion. When the butter is at 175\u00b0F, it's insufficiently hot to denature the proteins in the egg yolks, causing them to thicken and stabilize the sauce. This is supported by the fact that yeast dies at temperatures above 140\u00b0F because heat denatures essential enzymes. Similarly, the proteins in the egg yolks need to be denatured to create a stable emulsion.\n\n3. **What is the scientifically grounded solution?**\n\n**CAUSE:** The butter was not heated to a sufficient temperature to partially cook the egg yolks and stabilize the emulsion.\n\n**SOLUTION:** Increase the temperature of the butter to 190-220\u00b0F before pouring it into the egg yolks while blending.\n\n**EXPLANATION:** When the butter is heated to 190-220\u00b0F, the proteins in the egg yolks are denatured, causing them to thicken and stabilize the sauce. This is a critical step in creating a stable emulsion, as it allows the water droplets in the butter to be suspended in the fat, creating a smooth and creamy sauce. By increasing the temperature of the butter, you ensure that the egg yolks are partially cooked, which is essential for a thick and stable hollandaise sauce.\n\nAdditionally, to prevent this issue in the future, it's recommended to use a thermometer to monitor the temperature of the butter and ensure it reaches the desired temperature before pouring it into the egg yolks."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "**Cause:**\nViolation of Critical Control Point: Pan must reach ~450\u00b0F to ensure rapid searing and crust development.\n\n**Step 3: Heat oil in a cast iron skillet over high heat until smoking.**\nThe pan did not reach the required temperature of ~450\u00b0F, resulting in a gray steak and lack of crust.\n\n**What is the chemical or physical reason?**\nThe pan did not reach the Maillard reaction threshold of 285\u00b0F, which is necessary for the formation of the crust. This is because the pan temperature was too low, preventing the rapid searing and crust development.\n\n**Scientifically Grounded Solution:**\n**SOLUTION:**\nIncrease the pan temperature to reach ~450\u00b0F before adding the steak.\n\n**EXPLANATION:**\nAccording to food science, the Maillard reaction is responsible for the formation of the crust on the steak. This reaction requires a surface temperature of at least 285\u00b0F to initiate the breakdown of amino acids and sugars, resulting in the formation of complex flavor compounds and a crust. To achieve this, the pan must reach a temperature of ~450\u00b0F, which will allow for rapid searing and crust development. This can be achieved by increasing the heat under the pan, using a thermometer to monitor the temperature, and adjusting the heat as needed to reach the required temperature."
+    }
+  ]
+}

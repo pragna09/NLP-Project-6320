@@ -1,0 +1,52 @@
+{
+  "condition": "baseline",
+  "model": "LLaMA 3.1 8B",
+  "timestamp": "20260410_184059",
+  "summary": {
+    "total_cases": 2,
+    "average_scores": {
+      "cause_accuracy": 0.1603,
+      "solution_appropriateness": 0.0714,
+      "scientific_accuracy": 0.0,
+      "overall": 0.0927
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "The hollandaise sauce is thin and won't thicken up due to the incorrect temperature of the butter or the addition of too much water.",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": "Ensure the butter is at a temperature of around 180\u00b0F (82\u00b0C) to 190\u00b0F (88\u00b0C) before adding it to the egg yolks. If the butter is too cold, it won't emulsify properly, resulting in a thin sauce. Additionally, reduce the amount of water in the initial mixture or remove excess water by cooking the egg yolks slightly before adding the butter.",
+      "scores": {
+        "cause_accuracy": 0.15384615384615385,
+        "solution_appropriateness": 0.14285714285714285,
+        "scientific_accuracy": 0.0,
+        "overall": 0.1187
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The hollandaise sauce is thin and won't thicken up due to the incorrect temperature of the butter or the addition of too much water.\n\nSOLUTION: Ensure the butter is at a temperature of around 180\u00b0F (82\u00b0C) to 190\u00b0F (88\u00b0C) before adding it to the egg yolks. If the butter is too cold, it won't emulsify properly, resulting in a thin sauce. Additionally, reduce the amount of water in the initial mixture or remove excess water by cooking the egg yolks slightly before adding the butter.\n\nEXPLANATION: Hollandaise sauce relies on the emulsification of egg yolks and melted butter. When the hot butter is slowly incorporated into the egg yolks, the proteins in the egg yolks coagulate and create a network of particles that trap the fat molecules from the butter, resulting in a smooth and creamy sauce. However, if the butter is too cold, the egg yolks won't be able to coagulate properly, leading to a thin sauce. Similarly, excess water can disrupt the emulsion, causing the sauce to separate. By adjusting the temperature of the butter and reducing the amount of water, you can create a stable emulsion and achieve a thick, creamy hollandaise sauce."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "Insufficient Maillard Reaction or inadequate heat to achieve a crust, possibly due to a non-smoking skillet or under-seasoning.",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "Increase the heat to achieve a smoking skillet and ensure the steak is properly seasoned.",
+      "scores": {
+        "cause_accuracy": 0.16666666666666666,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0667
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: Insufficient Maillard Reaction or inadequate heat to achieve a crust, possibly due to a non-smoking skillet or under-seasoning.\n\nSOLUTION: Increase the heat to achieve a smoking skillet and ensure the steak is properly seasoned.\n\nEXPLANATION: The Maillard reaction is a chemical reaction between amino acids and reducing sugars that occurs when food is cooked, resulting in the formation of new flavor compounds and browning. To achieve a crust on the steak, the pan needs to be extremely hot, ideally smoking hot. This high heat will help to caramelize the natural sugars in the steak and create a flavorful crust. Additionally, proper seasoning is crucial to enhance the flavor and texture of the crust. A non-smoking skillet or under-seasoning can prevent the Maillard reaction from occurring, resulting in a gray and crustless steak. \n\nFurthermore, flipping the steak every 30 seconds may not be sufficient to achieve an even sear. Consider searing the steak for 2-3 minutes per side to allow for a more even Maillard reaction and crust formation.\n\nIt is also essential to note that the type of pan used can affect the outcome. Cast iron pans are ideal for searing steaks because they retain heat well and can achieve high temperatures. However, if the pan is not preheated properly or is not at the correct temperature, it may not be able to achieve the desired crust."
+    }
+  ]
+}
