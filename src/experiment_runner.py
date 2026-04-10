@@ -1,15 +1,15 @@
 # src/experiment_runner.py
 import time
-from src.models import call_gemini_flash, call_gemini_pro, call_llama, call_mixtral
-from src.rag import load_knowledge_base, retrieve_facts, format_facts_for_prompt
-from src.knowledge_graphs import (
+from models import call_llama_big, call_llama_fast
+from rag import load_knowledge_base, retrieve_facts, format_facts_for_prompt
+from knowledge_graphs import (
     load_recipes, load_substitutions,
     build_fkg, build_skg,
     query_fkg, find_critical_steps,
     map_problem_to_step, find_substitutes,
     format_substitutes_for_prompt
 )
-from src.evaluator import load_test_cases, evaluate_single, evaluate_all, save_results
+from evaluator import load_test_cases, evaluate_single, evaluate_all, save_results
 
 
 def build_baseline_prompt(problem: str, recipe: str, steps: list) -> str:
@@ -108,16 +108,19 @@ def build_full_system_prompt(problem: str, recipe: str, steps: list,
         "EXPLANATION: [the food science behind the problem and solution]"
     )
 
-
-def run_single_case(test_case: dict, condition: str, model_fn,
-                    fkg, skg, knowledge_base: list) -> dict:
+recipes = load_recipes()
+result = run_single_case(
+    tc, condition, model_fn, fkg, skg, knowledge_base, recipes  # add recipes
+)
+def run_single_case(test_case, condition, model_fn,
+                    fkg, skg, knowledge_base, recipes) -> dict:
     problem     = test_case.get("Problem", "")
     recipe_name = test_case.get("Recipe", "")
 
     steps        = query_fkg(fkg, recipe_name)
     critical     = find_critical_steps(fkg, recipe_name)
     mapped       = map_problem_to_step(fkg, recipe_name, problem)
-    facts        = retrieve_facts(problem, knowledge_base, top_k=3)
+    facts        = retrieve_facts(problem, recipe_name, knowledge_base, recipes, top_k=3)
     retrieved    = format_facts_for_prompt(facts)
 
     if condition == "baseline":
@@ -165,10 +168,12 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
         print(f"\nLimited to {max_cases} test cases")
 
     models = {
-        "gemini_flash":  call_gemini_flash,
-        "gemini_pro":    call_gemini_pro,
-        "llama_70b":     call_llama,
-        "mixtral_8x7b":  call_mixtral
+        #"gemini_flash":  call_gemini_flash,
+        #"gemini_pro":    call_gemini_pro,
+        #"llama_70b":     call_llama,
+        #"mixtral_8x7b":  call_mixtral
+        "LLaMA 3.1 70B": call_llama_big,
+        "LLaMA 3.1 8B": call_llama_fast
     }
     conditions = ["baseline", "cot_only", "kg_augmented", "full_system"]
 

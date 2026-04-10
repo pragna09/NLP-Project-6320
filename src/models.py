@@ -60,7 +60,7 @@ def test_all_models():
 
     models = {
     "LLaMA 3.1 70B": call_llama_big,
-    "LLaMA 3.1 8B": call_llama_fast,
+    "LLaMA 3.1 8B": call_llama_fast
         # "Gemini": call_gemini
     }
 
