@@ -1,8 +1,6 @@
 # main.py
 import argparse
 from src.experiment_runner import run_all_experiments, test_runner
-
-
 def parse_args():
     parser = argparse.ArgumentParser(
         description="R.E.C.I.P.E."
@@ -28,7 +26,7 @@ def parse_args():
 
 
 def run_single_interactive():
-    from src.models import call_gemini_flash
+    from src.models import call_llama_big,call_llama_fast
     from src.rag import load_knowledge_base, retrieve_facts, format_facts_for_prompt
     from src.knowledge_graphs import (
         load_recipes, load_substitutions,
@@ -60,7 +58,8 @@ def run_single_interactive():
             problem, recipe, steps, critical, mapped, facts)
 
         print("\nAnalyzing your problem...")
-        response = call_gemini_flash(prompt)
+        response = call_llama_fast(prompt)
+        response = call_llama_big(prompt)
 
         print("\n" + "-" * 50)
         print("DIAGNOSIS:")

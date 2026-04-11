@@ -1,11 +1,13 @@
 # src/models.py
 
+from importlib.metadata import files
 import os
+from anyio import Path
 from dotenv import load_dotenv
 from groq import Groq
 
 # -------------------- LOAD ENV --------------------
-load_dotenv()
+load_dotenv(dotenv_path=Path(__file__).parent.parent / ".env")
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
