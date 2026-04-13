@@ -1,8 +1,9 @@
 # src/models.py
 
-from importlib.metadata import files
+#from importlib.metadata import files
 import os
-from anyio import Path
+#from anyio import Path
+from pathlib import Path # ADDED this import to test
 from dotenv import load_dotenv
 from groq import Groq
 

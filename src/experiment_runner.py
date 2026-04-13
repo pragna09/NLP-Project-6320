@@ -1,15 +1,15 @@
 # src/experiment_runner.py
 import time
-from models import call_llama_big, call_llama_fast
-from rag import load_knowledge_base, load_recipes, retrieve_facts, format_facts_for_prompt  # ← ADD load_recipes
-from knowledge_graphs import (
+from src.models import call_llama_big, call_llama_fast
+from src.rag import load_knowledge_base, load_recipes, retrieve_facts, format_facts_for_prompt  # ← ADD load_recipes
+from src.knowledge_graphs import (
     load_substitutions,
     build_fkg, build_skg,
     query_fkg, find_critical_steps,
     map_problem_to_step, find_substitutes,
     format_substitutes_for_prompt
 )
-from evaluator import load_test_cases, evaluate_single, evaluate_all, save_results
+from src.evaluator import load_test_cases, evaluate_single, evaluate_all, save_results
 
 
 def build_baseline_prompt(problem: str, recipe: str, steps: list) -> str:
