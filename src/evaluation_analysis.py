@@ -12,9 +12,10 @@ import seaborn as sns
 # LOAD RESULTS
 # ─────────────────────────────────────────
 
-def load_all_results(results_dir: str = "results") -> list:
+def load_all_results(results_dir: str = "results", latest_only: bool = False) -> list:
     """
     Loads all JSON result files from the results/ folder.
+    If latest_only=True, only loads the most recent run.
     """
     all_results = []
     files = glob.glob(f"{results_dir}/*.json")
@@ -23,7 +24,19 @@ def load_all_results(results_dir: str = "results") -> list:
         print("No result files found in results/ folder.")
         return []
 
-    for filepath in files:
+    if latest_only:
+        # Group files by condition_model, keep only latest timestamp
+        from collections import defaultdict
+        groups = defaultdict(list)
+        for f in files:
+            # filename format: condition_model_timestamp.json
+            key = "_".join(os.path.basename(f).split("_")[:-2])
+            groups[key].append(f)
+        # Keep only the latest file per condition+model combo
+        files = [sorted(v)[-1] for v in groups.values()]
+        print(f"Latest only mode — loading {len(files)} files")
+
+    for filepath in sorted(files):
         with open(filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
             all_results.append(data)
@@ -31,7 +44,6 @@ def load_all_results(results_dir: str = "results") -> list:
 
     print(f"\nTotal files loaded: {len(all_results)}")
     return all_results
-
 
 def results_to_dataframe(all_results: list) -> pd.DataFrame:
     """
@@ -317,7 +329,7 @@ def run_analysis():
     and saves analysis to analysis/ folder.
     """
     print("Loading results...")
-    all_results = load_all_results()
+    all_results = load_all_results(latest_only=True)
 
     if not all_results:
         print("No results to analyze yet.")
