@@ -119,9 +119,9 @@ def anova_by_condition(df: pd.DataFrame) -> dict:
     ]
     f_stat, p_value = stats.f_oneway(*groups)
     return {
-        "f_statistic": round(f_stat, 4),
-        "p_value":     round(p_value, 6),
-        "significant": p_value < 0.05
+        "f_statistic": round(float(f_stat), 4),    # ← add float()
+        "p_value":     round(float(p_value), 6),   # ← add float()
+        "significant": bool(p_value < 0.05)        # ← add bool()
     }
 
 
@@ -133,9 +133,9 @@ def anova_by_model(df: pd.DataFrame) -> dict:
     ]
     f_stat, p_value = stats.f_oneway(*groups)
     return {
-        "f_statistic": round(f_stat, 4),
-        "p_value":     round(p_value, 6),
-        "significant": p_value < 0.05
+        "f_statistic": round(float(f_stat), 4),    # ← add float()
+        "p_value":     round(float(p_value), 6),   # ← add float()
+        "significant": bool(p_value < 0.05)        # ← add bool()
     }
 
 
