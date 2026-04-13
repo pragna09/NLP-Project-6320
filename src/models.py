@@ -62,7 +62,7 @@ def test_all_models():
     prompt = "In one sentence, what causes hollandaise sauce to break?"
 
     models = {
-    "LLaMA 3.1 70B": call_llama_big,
+    "LLaMA 3.3 70B": call_llama_big,
     "LLaMA 3.1 8B": call_llama_fast
         # "Gemini": call_gemini
     }

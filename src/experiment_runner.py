@@ -206,7 +206,7 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
 
     # Define models and conditions
     models = {
-        "LLaMA 3.1 70B": call_llama_big,
+        "LLaMA 3.3 70B": call_llama_big,
         "LLaMA 3.1 8B":  call_llama_fast
     }
     conditions = ["baseline", "cot_only", "kg_augmented", "full_system"]
