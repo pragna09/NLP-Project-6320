@@ -1,8 +1,9 @@
 # src/models.py
 
-from importlib.metadata import files
+#from importlib.metadata import files
 import os
-from anyio import Path
+#from anyio import Path
+from pathlib import Path # ADDED this import to test
 from dotenv import load_dotenv
 from groq import Groq
 
@@ -61,7 +62,7 @@ def test_all_models():
     prompt = "In one sentence, what causes hollandaise sauce to break?"
 
     models = {
-    "LLaMA 3.1 70B": call_llama_big,
+    "LLaMA 3.3 70B": call_llama_big,
     "LLaMA 3.1 8B": call_llama_fast
         # "Gemini": call_gemini
     }

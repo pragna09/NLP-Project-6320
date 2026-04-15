@@ -1,16 +1,20 @@
 # src/experiment_runner.py
 import time
-from models import call_llama_big, call_llama_fast
-from rag import load_knowledge_base, load_recipes, retrieve_facts, format_facts_for_prompt  # ← ADD load_recipes
-from knowledge_graphs import (
+from src.models import call_llama_big, call_llama_fast
+from src.rag import load_knowledge_base, load_recipes, retrieve_facts, format_facts_for_prompt
+from src.knowledge_graphs import (
     load_substitutions,
     build_fkg, build_skg,
     query_fkg, find_critical_steps,
     map_problem_to_step, find_substitutes,
     format_substitutes_for_prompt
 )
-from evaluator import load_test_cases, evaluate_single, evaluate_all, save_results
+from src.evaluator import load_test_cases, evaluate_single, evaluate_all, save_results
 
+
+# ─────────────────────────────────────────
+# PROMPT BUILDERS
+# ─────────────────────────────────────────
 
 def build_baseline_prompt(problem: str, recipe: str, steps: list) -> str:
     s = "\n".join(f"Step {s['step']}: {s['action']}" for s in steps)
@@ -109,21 +113,37 @@ def build_full_system_prompt(problem: str, recipe: str, steps: list,
     )
 
 
+# ─────────────────────────────────────────
+# RUN SINGLE CASE
+# ─────────────────────────────────────────
+
 def run_single_case(test_case, condition, model_fn,
-                    fkg, skg, knowledge_base, recipes) -> dict:  # ← CHANGED: added recipes
+                    fkg, skg, knowledge_base, recipes) -> dict:
     """Run a single test case through one experimental condition"""
-    
+
     problem     = test_case.get("Problem", "")
     recipe_name = test_case.get("Recipe", "")
 
     # Get recipe information from FKG
-    steps        = query_fkg(fkg, recipe_name)
-    critical     = find_critical_steps(fkg, recipe_name)
-    mapped       = map_problem_to_step(fkg, recipe_name, problem)
-    
+    steps    = query_fkg(fkg, recipe_name)
+    critical = find_critical_steps(fkg, recipe_name)
+    mapped   = map_problem_to_step(fkg, recipe_name, problem)
+
     # Retrieve relevant facts using RAG (with recipe awareness)
-    facts        = retrieve_facts(problem, recipe_name, knowledge_base, recipes, top_k=3)  # ← CHANGED: added recipes
-    retrieved    = format_facts_for_prompt(facts)
+    facts     = retrieve_facts(problem, recipe_name, knowledge_base, recipes, top_k=3)
+    retrieved = format_facts_for_prompt(facts)
+
+    # ── Extract science keywords from retrieved facts ──────────
+    science_keywords = []
+    for fact in facts:
+        kb_fact = next(
+            (f for f in knowledge_base if f["fact"] == fact["fact"]),
+            None
+        )
+        if kb_fact:
+            science_keywords.extend(kb_fact.get("keywords", []))
+    science_keywords = list(set(science_keywords))
+    # ──────────────────────────────────────────────────────────
 
     # Build prompt based on condition
     if condition == "baseline":
@@ -146,15 +166,23 @@ def run_single_case(test_case, condition, model_fn,
 
     # Query model and evaluate
     response = model_fn(prompt)
-    result   = evaluate_single(test_case, response)
+    result   = evaluate_single(
+        test_case,
+        response,
+        science_keywords=science_keywords    # ← now passed correctly
+    )
     result["condition"]    = condition
     result["raw_response"] = response
     return result
 
 
+# ─────────────────────────────────────────
+# RUN ALL EXPERIMENTS
+# ─────────────────────────────────────────
+
 def run_all_experiments(max_cases: int = None, delay: float = 2.0):
     """Run complete experiment suite"""
-    
+
     print("=" * 50)
     print("Starting R.E.C.I.P.E. Experiments")
     print("=" * 50)
@@ -162,13 +190,13 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
     # Load all data
     test_cases     = load_test_cases()
     knowledge_base = load_knowledge_base()
-    recipes        = load_recipes()  # ← CHANGED: load recipes separately
-    fkg            = build_fkg(recipes)  # ← CHANGED: use loaded recipes
+    recipes        = load_recipes()
+    fkg            = build_fkg(recipes)
     skg            = build_skg(load_substitutions())
 
     print(f"Loaded {len(test_cases)} test cases")
     print(f"Loaded {len(knowledge_base)} science facts")
-    print(f"Loaded {len(recipes)} recipes")  # ← NEW: show recipe count
+    print(f"Loaded {len(recipes)} recipes")
     print(f"FKG: {fkg.number_of_nodes()} nodes")
     print(f"SKG: {skg.number_of_nodes()} nodes")
 
@@ -178,8 +206,8 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
 
     # Define models and conditions
     models = {
-        "LLaMA 3.1 70B": call_llama_big,
-        "LLaMA 3.1 8B": call_llama_fast
+        "LLaMA 3.3 70B": call_llama_big,
+        "LLaMA 3.1 8B":  call_llama_fast
     }
     conditions = ["baseline", "cot_only", "kg_augmented", "full_system"]
 
@@ -189,13 +217,14 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
             print(f"\n{'─' * 40}")
             print(f"Running: {condition} | {model_name}")
             print(f"{'─' * 40}")
-            
+
             results = []
             for i, tc in enumerate(test_cases):
                 print(f"  {i+1}/{len(test_cases)}: {tc.get('Problem','')[:50]}...")
                 try:
                     result = run_single_case(
-                        tc, condition, model_fn, fkg, skg, knowledge_base, recipes)  # ← CHANGED: added recipes
+                        tc, condition, model_fn,
+                        fkg, skg, knowledge_base, recipes)
                     results.append(result)
                     print(f"  Score: {result['scores']['overall']:.3f}")
                 except Exception as e:
@@ -217,6 +246,10 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
     print("Results saved to results/")
     print("=" * 50)
 
+
+# ─────────────────────────────────────────
+# TEST
+# ─────────────────────────────────────────
 
 def test_runner():
     """Quick test with limited cases"""

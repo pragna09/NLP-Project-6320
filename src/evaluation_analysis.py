@@ -4,17 +4,19 @@ import os
 import glob
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt  
-import seaborn as sns         
+import matplotlib.pyplot as plt
+import seaborn as sns
+from collections import defaultdict
 
 
 # ─────────────────────────────────────────
 # LOAD RESULTS
 # ─────────────────────────────────────────
 
-def load_all_results(results_dir: str = "results") -> list:
+def load_all_results(results_dir: str = "results", latest_only: bool = False) -> list:
     """
     Loads all JSON result files from the results/ folder.
+    If latest_only=True, only loads the most recent run.
     """
     all_results = []
     files = glob.glob(f"{results_dir}/*.json")
@@ -23,7 +25,15 @@ def load_all_results(results_dir: str = "results") -> list:
         print("No result files found in results/ folder.")
         return []
 
-    for filepath in files:
+    if latest_only:
+        groups = defaultdict(list)
+        for f in files:
+            key = "_".join(os.path.basename(f).split("_")[:-2])
+            groups[key].append(f)
+        files = [sorted(v)[-1] for v in groups.values()]
+        print(f"Latest only mode — loading {len(files)} files")
+
+    for filepath in sorted(files):
         with open(filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
             all_results.append(data)
@@ -34,10 +44,6 @@ def load_all_results(results_dir: str = "results") -> list:
 
 
 def results_to_dataframe(all_results: list) -> pd.DataFrame:
-    """
-    Converts all result files into a single flat DataFrame
-    for easy analysis.
-    """
     rows = []
     for result_file in all_results:
         condition = result_file.get("condition")
@@ -67,10 +73,6 @@ def results_to_dataframe(all_results: list) -> pd.DataFrame:
 # ─────────────────────────────────────────
 
 def summarize_by_condition(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Average scores grouped by condition.
-    Shows how each condition performed overall.
-    """
     return df.groupby("condition")[
         ["cause_accuracy", "solution_appropriateness",
          "scientific_accuracy", "overall"]
@@ -78,10 +80,6 @@ def summarize_by_condition(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def summarize_by_model(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Average scores grouped by model.
-    Shows how each LLM performed overall.
-    """
     return df.groupby("model")[
         ["cause_accuracy", "solution_appropriateness",
          "scientific_accuracy", "overall"]
@@ -89,10 +87,6 @@ def summarize_by_model(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def summarize_by_condition_and_model(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Average scores grouped by condition AND model.
-    The main comparison table for your paper.
-    """
     return df.groupby(["condition", "model"])[
         ["cause_accuracy", "solution_appropriateness",
          "scientific_accuracy", "overall"]
@@ -100,10 +94,6 @@ def summarize_by_condition_and_model(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def summarize_by_difficulty(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Average scores grouped by difficulty level.
-    Shows if harder problems score lower.
-    """
     return df.groupby("difficulty")[
         ["cause_accuracy", "solution_appropriateness",
          "scientific_accuracy", "overall"]
@@ -111,10 +101,6 @@ def summarize_by_difficulty(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def summarize_by_category(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Average scores grouped by recipe category.
-    Shows which categories are harder to diagnose.
-    """
     return df.groupby("category")[
         ["cause_accuracy", "solution_appropriateness",
          "scientific_accuracy", "overall"]
@@ -126,54 +112,35 @@ def summarize_by_category(df: pd.DataFrame) -> pd.DataFrame:
 # ─────────────────────────────────────────
 
 def anova_by_condition(df: pd.DataFrame) -> dict:
-    """
-    One-way ANOVA test across the 4 conditions.
-    Tests if condition differences are statistically significant.
-
-    Returns F-statistic and p-value.
-    p < 0.05 means the differences are significant.
-    """
     from scipy import stats
-
     groups = [
         df[df["condition"] == c]["overall"].values
         for c in df["condition"].unique()
     ]
-
     f_stat, p_value = stats.f_oneway(*groups)
     return {
-        "f_statistic": round(f_stat, 4),
-        "p_value":     round(p_value, 6),
-        "significant": p_value < 0.05
+        "f_statistic": round(float(f_stat), 4),    # ← add float()
+        "p_value":     round(float(p_value), 6),   # ← add float()
+        "significant": bool(p_value < 0.05)        # ← add bool()
     }
 
 
 def anova_by_model(df: pd.DataFrame) -> dict:
-    """
-    One-way ANOVA test across the 4 models.
-    Tests if model differences are statistically significant.
-    """
     from scipy import stats
-
     groups = [
         df[df["model"] == m]["overall"].values
         for m in df["model"].unique()
     ]
-
     f_stat, p_value = stats.f_oneway(*groups)
     return {
-        "f_statistic": round(f_stat, 4),
-        "p_value":     round(p_value, 6),
-        "significant": p_value < 0.05
+        "f_statistic": round(float(f_stat), 4),    # ← add float()
+        "p_value":     round(float(p_value), 6),   # ← add float()
+        "significant": bool(p_value < 0.05)        # ← add bool()
     }
 
 
 def hallucination_rate(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Estimates hallucination rate per condition.
-    Low scientific_accuracy = likely hallucination.
-    Threshold: scientific_accuracy < 0.2
-    """
+    df = df.copy()
     df["hallucinated"] = df["scientific_accuracy"] < 0.2
     return df.groupby("condition")["hallucinated"].mean().round(4).reset_index()
 
@@ -183,12 +150,8 @@ def hallucination_rate(df: pd.DataFrame) -> pd.DataFrame:
 # ─────────────────────────────────────────
 
 def save_analysis(df: pd.DataFrame, output_dir: str = "analysis"):
-    """
-    Saves all summary tables to the analysis/ folder as CSV files.
-    """
     os.makedirs(output_dir, exist_ok=True)
 
-    # Save each summary table
     tables = {
         "by_condition":           summarize_by_condition(df),
         "by_model":               summarize_by_model(df),
@@ -202,15 +165,13 @@ def save_analysis(df: pd.DataFrame, output_dir: str = "analysis"):
         table.to_csv(path)
         print(f"Saved: {path}")
 
-    # Save full dataframe
     full_path = f"{output_dir}/full_results.csv"
     df.to_csv(full_path, index=False)
     print(f"Saved: {full_path}")
 
-    # Save ANOVA results
     anova_results = {
-        "anova_by_condition": anova_by_condition(df),
-        "anova_by_model":     anova_by_model(df),
+        "anova_by_condition":  anova_by_condition(df),
+        "anova_by_model":      anova_by_model(df),
         "hallucination_rates": hallucination_rate(df).to_dict(orient="records")
     }
 
@@ -218,7 +179,6 @@ def save_analysis(df: pd.DataFrame, output_dir: str = "analysis"):
     with open(anova_path, "w") as f:
         json.dump(anova_results, f, indent=2)
     print(f"Saved: {anova_path}")
-
     print(f"\nAll analysis saved to {output_dir}/")
 
 
@@ -227,9 +187,6 @@ def save_analysis(df: pd.DataFrame, output_dir: str = "analysis"):
 # ─────────────────────────────────────────
 
 def print_report(df: pd.DataFrame):
-    """
-    Prints a full summary report to the terminal.
-    """
     print("\n" + "=" * 60)
     print("R.E.C.I.P.E. EVALUATION REPORT")
     print("=" * 60)
@@ -271,53 +228,104 @@ def print_report(df: pd.DataFrame):
 
     print("\n" + "=" * 60)
 
+
 # ─────────────────────────────────────────
-# PLOTS 
+# PLOTS
 # ─────────────────────────────────────────
-  
+
 def generate_plots(df: pd.DataFrame, output_dir: str = "analysis/plots"):
     """
-    Creates visual charts to compare RAG vs. Baseline performance.
+    Generates 6 charts for the paper.
     """
     os.makedirs(output_dir, exist_ok=True)
     sns.set_theme(style="whitegrid")
 
-    # 1. Overall Performance by Condition and Model
+    # 1. Overall performance by condition and model
     plt.figure(figsize=(12, 6))
     sns.barplot(x="condition", y="overall", hue="model", data=df, palette="magma")
-    plt.title("R.E.C.I.P.E. Performance: Model & Condition Comparison", fontsize=15)
+    plt.title("R.E.C.I.P.E. Performance: Model and Condition Comparison", fontsize=15)
     plt.ylabel("Overall Score (Weighted)")
     plt.ylim(0, 1.0)
-    plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+    plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
     plt.tight_layout()
     plt.savefig(f"{output_dir}/overall_results.png")
     plt.close()
+    print(f"Saved: {output_dir}/overall_results.png")
 
-    # 2. Metric Breakdown Heatmap
-    metrics = ["cause_accuracy", "solution_appropriateness", "scientific_accuracy"]
+    # 2. Metric breakdown heatmap
+    metrics  = ["cause_accuracy", "solution_appropriateness", "scientific_accuracy"]
     pivot_df = df.groupby("condition")[metrics].mean()
-
     plt.figure(figsize=(10, 5))
-    sns.heatmap(pivot_df, annot=True, cmap="YlGnBu", cbar_kws={'label': 'Score'})
-    plt.title("Score Distribution Across Metrics")
+    sns.heatmap(pivot_df, annot=True, cmap="YlGnBu", cbar_kws={"label": "Score"})
+    plt.title("Score Breakdown Across Metrics by Condition")
     plt.tight_layout()
     plt.savefig(f"{output_dir}/metric_heatmap.png")
     plt.close()
+    print(f"Saved: {output_dir}/metric_heatmap.png")
 
-    print(f"Plots generated in {output_dir}/")
+    # 3. Scores by difficulty
+    plt.figure(figsize=(10, 5))
+    sns.barplot(x="difficulty", y="overall", hue="condition", data=df, palette="coolwarm")
+    plt.title("Performance by Difficulty Level")
+    plt.ylabel("Overall Score")
+    plt.ylim(0, 1.0)
+    plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/by_difficulty.png")
+    plt.close()
+    print(f"Saved: {output_dir}/by_difficulty.png")
+
+    # 4. Scores by recipe category
+    plt.figure(figsize=(14, 6))
+    sns.barplot(x="category", y="overall", hue="model", data=df, palette="viridis")
+    plt.title("Performance by Recipe Category")
+    plt.ylabel("Overall Score")
+    plt.ylim(0, 1.0)
+    plt.xticks(rotation=45, ha="right")
+    plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/by_category.png")
+    plt.close()
+    print(f"Saved: {output_dir}/by_category.png")
+
+    # 5. Score distribution boxplot
+    plt.figure(figsize=(12, 6))
+    sns.boxplot(x="condition", y="overall", hue="model", data=df, palette="Set2")
+    plt.title("Score Distribution by Condition and Model")
+    plt.ylabel("Overall Score")
+    plt.ylim(0, 1.0)
+    plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/score_distribution.png")
+    plt.close()
+    print(f"Saved: {output_dir}/score_distribution.png")
+
+    # 6. Hallucination rate by condition
+    hall_df = hallucination_rate(df)
+    plt.figure(figsize=(8, 5))
+    sns.barplot(x="condition", y="hallucinated", data=hall_df, palette="Reds")
+    plt.title("Hallucination Rate by Condition")
+    plt.ylabel("Rate (scientific accuracy < 0.2)")
+    plt.ylim(0, 1.0)
+    plt.tight_layout()
+    plt.savefig(f"{output_dir}/hallucination_rates.png")
+    plt.close()
+    print(f"Saved: {output_dir}/hallucination_rates.png")
+
+    print(f"\nAll plots saved to {output_dir}/")
 
 
 # ─────────────────────────────────────────
-# TEST
+# RUN ANALYSIS
 # ─────────────────────────────────────────
 
 def run_analysis():
     """
-    Main function — loads all results, prints report,
-    and saves analysis to analysis/ folder.
+    Main function — loads results, prints report,
+    saves CSVs and generates all 6 plots.
     """
     print("Loading results...")
-    all_results = load_all_results()
+    all_results = load_all_results(latest_only=True)
 
     if not all_results:
         print("No results to analyze yet.")
@@ -327,9 +335,8 @@ def run_analysis():
     df = results_to_dataframe(all_results)
     print_report(df)
     save_analysis(df)
-    
-    # Generate the visual plots
-    print("Generating visualizations...")
+
+    print("\nGenerating visualizations...")
     generate_plots(df)
 
 
