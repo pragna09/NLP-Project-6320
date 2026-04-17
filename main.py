@@ -22,7 +22,7 @@ def parse_args():
 
 
 def run_single_interactive():
-    from src.models import call_llama_big, call_llama_fast
+    from src.models import call_llama_big, call_llama_fast, call_ministral
     from src.rag import load_knowledge_base, load_recipes, retrieve_facts, format_facts_for_prompt
     from src.knowledge_graphs import (
         load_substitutions,
@@ -58,6 +58,7 @@ def run_single_interactive():
 
         response_llama_big  = call_llama_big(prompt)
         response_llama_fast = call_llama_fast(prompt)
+        response_ministral = call_ministral(prompt)
 
         print("\n" + "=" * 50)
         print("LLaMA 3.3 70B DIAGNOSIS:")
@@ -68,6 +69,12 @@ def run_single_interactive():
         print("LLaMA 3.1 8B DIAGNOSIS:")
         print("=" * 50)
         print(response_llama_fast)
+        print("=" * 50 + "\n")
+
+        print("\n" + "=" * 50)
+        print("Ministral 3 8B DIAGNOSIS:")
+        print("=" * 50)
+        print(response_ministral)
         print("=" * 50 + "\n")
 
 

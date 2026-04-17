@@ -1,24 +1,24 @@
 # src/models.py
 
-#from importlib.metadata import files
 import os
-#from anyio import Path
-from pathlib import Path # ADDED this import to test
+from pathlib import Path 
 from dotenv import load_dotenv
 from groq import Groq
+from mistralai import Mistral # ADDED this import for Ministral model
 
 # -------------------- LOAD ENV --------------------
 load_dotenv(dotenv_path=Path(__file__).parent.parent / ".env")
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+MINISTRAL_API_KEY = os.getenv("MINISTRAL_API_KEY")
 
 # -------------------- GROQ CLIENT --------------------
 groq_client = Groq(api_key=GROQ_API_KEY)
 
+# -------------------- Ministral CLIENT --------------------
+ministral_client = Mistral(api_key=MINISTRAL_API_KEY)
 
-# -------------------- GROQ MODELS --------------------
-# -------------------- GROQ MODELS --------------------
-
+# -------------------- GROQ MODEL: LLAMA 3.3 --------------------
 def call_llama_big(prompt: str) -> str:
     response = groq_client.chat.completions.create(
         model="llama-3.3-70b-versatile",
@@ -30,6 +30,7 @@ def call_llama_big(prompt: str) -> str:
     return response.choices[0].message.content
 
 
+# -------------------- GROQ MODEL: LLAMA 3.1 --------------------
 def call_llama_fast(prompt: str) -> str:
     response = groq_client.chat.completions.create(
         model="llama-3.1-8b-instant",
@@ -41,20 +42,15 @@ def call_llama_fast(prompt: str) -> str:
     return response.choices[0].message.content
 
 
-# -------------------- GEMINI (COMMENTED OUT) --------------------
-"""
-from google import genai
+# -------------------- MISTRAL AI MODEL: MINISTRAL 8B --------------------
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-gemini_client = genai.Client(api_key=GEMINI_API_KEY)
-
-def call_gemini(prompt: str) -> str:
-    response = gemini_client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents=prompt
+def call_ministral(prompt: str) -> str:
+    response = ministral_client.chat.complete(
+        model="ministral-8b-2512",
+        messages=[{"role": "user", "content": prompt}]
     )
-    return response.text
-"""
+    return response.choices[0].message.content
+
 
 
 # -------------------- TEST FUNCTION --------------------
@@ -62,9 +58,9 @@ def test_all_models():
     prompt = "In one sentence, what causes hollandaise sauce to break?"
 
     models = {
-    "LLaMA 3.3 70B": call_llama_big,
-    "LLaMA 3.1 8B": call_llama_fast
-        # "Gemini": call_gemini
+        "LLaMA 3.3 70B": call_llama_big,
+        "LLaMA 3.1 8B": call_llama_fast,
+        "Ministral 3 8B": call_ministral
     }
 
     print("Testing all models...")

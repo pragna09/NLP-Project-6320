@@ -1,6 +1,6 @@
 # src/experiment_runner.py
 import time
-from src.models import call_llama_big, call_llama_fast
+from src.models import call_llama_big, call_llama_fast, call_ministral
 from src.rag import load_knowledge_base, load_recipes, retrieve_facts, format_facts_for_prompt
 from src.knowledge_graphs import (
     load_substitutions,
@@ -206,11 +206,12 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
 
     # Define models and conditions
     models = {
-        "LLaMA 3.3 70B": call_llama_big
-        #"LLaMA 3.1 8B":  call_llama_fast
+        #"LLaMA 3.3 70B": call_llama_big,
+        #"LLaMA 3.1 8B":  call_llama_fast,
+        "Ministral 3 8B": call_ministral
     }
     #conditions = ["baseline", "cot_only", "kg_augmented", "full_system"] # to test all four conditions at once
-    conditions = ["full_system"] # replace ["baseline"] with the other conditions of the four conditions before running each one separately
+    conditions = ["baseline"] # replace ["baseline"] with the other conditions of the four conditions before running each one separately
 
     # Run experiments
     for model_name, model_fn in models.items():
