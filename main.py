@@ -22,7 +22,7 @@ def parse_args():
 
 
 def run_single_interactive():
-    from src.models import call_llama_big, call_llama_fast, call_ministral
+    from src.models import call_llama_big, call_llama_fast, call_gpt_oss
     from src.rag import load_knowledge_base, load_recipes, retrieve_facts, format_facts_for_prompt
     from src.knowledge_graphs import (
         load_substitutions,
@@ -58,7 +58,7 @@ def run_single_interactive():
 
         response_llama_big  = call_llama_big(prompt)
         response_llama_fast = call_llama_fast(prompt)
-        response_ministral = call_ministral(prompt)
+        response_gpt_oss = call_gpt_oss(prompt)
 
         print("\n" + "=" * 50)
         print("LLaMA 3.3 70B DIAGNOSIS:")
@@ -74,7 +74,7 @@ def run_single_interactive():
         print("\n" + "=" * 50)
         print("GPT OSS 20B DIAGNOSIS:")
         print("=" * 50)
-        print(response_ministral)
+        print(response_gpt_oss)
         print("=" * 50 + "\n")
 
 
