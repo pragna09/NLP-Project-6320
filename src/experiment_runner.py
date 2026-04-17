@@ -208,7 +208,7 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
     models = {
         #"LLaMA 3.3 70B": call_llama_big,
         #"LLaMA 3.1 8B":  call_llama_fast,
-        "Ministral 3 8B": call_ministral
+        "GPT OSS 20B": call_gpt_oss
     }
     #conditions = ["baseline", "cot_only", "kg_augmented", "full_system"] # to test all four conditions at once
     conditions = ["baseline"] # replace ["baseline"] with the other conditions of the four conditions before running each one separately
