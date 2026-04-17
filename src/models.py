@@ -4,19 +4,14 @@ import os
 from pathlib import Path 
 from dotenv import load_dotenv
 from groq import Groq
-from mistralai import Mistral # ADDED this import for Ministral model
 
 # -------------------- LOAD ENV --------------------
 load_dotenv(dotenv_path=Path(__file__).parent.parent / ".env")
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-MINISTRAL_API_KEY = os.getenv("MINISTRAL_API_KEY")
 
 # -------------------- GROQ CLIENT --------------------
 groq_client = Groq(api_key=GROQ_API_KEY)
-
-# -------------------- Ministral CLIENT --------------------
-ministral_client = Mistral(api_key=MINISTRAL_API_KEY)
 
 # -------------------- GROQ MODEL: LLAMA 3.3 --------------------
 def call_llama_big(prompt: str) -> str:
@@ -44,13 +39,15 @@ def call_llama_fast(prompt: str) -> str:
 
 # -------------------- MISTRAL AI MODEL: MINISTRAL 8B --------------------
 
-def call_ministral(prompt: str) -> str:
-    response = ministral_client.chat.complete(
-        model="ministral-8b-2512",
-        messages=[{"role": "user", "content": prompt}]
+def call_gpt_oss(prompt: str) -> str:
+    response = groq_client.chat.completions.create(
+        model="openai/gpt-oss-20b",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.7,
+        max_tokens=1024,
+        top_p=0.9
     )
     return response.choices[0].message.content
-
 
 
 # -------------------- TEST FUNCTION --------------------
@@ -60,7 +57,7 @@ def test_all_models():
     models = {
         "LLaMA 3.3 70B": call_llama_big,
         "LLaMA 3.1 8B": call_llama_fast,
-        "Ministral 3 8B": call_ministral
+        "GPT OSS 20B": call_gpt_oss
     }
 
     print("Testing all models...")

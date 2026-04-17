@@ -72,7 +72,7 @@ def run_single_interactive():
         print("=" * 50 + "\n")
 
         print("\n" + "=" * 50)
-        print("Ministral 3 8B DIAGNOSIS:")
+        print("GPT OSS 20B DIAGNOSIS:")
         print("=" * 50)
         print(response_ministral)
         print("=" * 50 + "\n")
