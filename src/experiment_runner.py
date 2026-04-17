@@ -210,7 +210,7 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
         #"LLaMA 3.1 8B":  call_llama_fast
     }
     #conditions = ["baseline", "cot_only", "kg_augmented", "full_system"] # to test all four conditions at once
-    conditions = ["baseline"] # replace ["baseline"] with the other conditions of the four conditions before running each one separately
+    conditions = ["full_system"] # replace ["baseline"] with the other conditions of the four conditions before running each one separately
 
     # Run experiments
     for model_name, model_fn in models.items():
