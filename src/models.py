@@ -37,7 +37,7 @@ def call_llama_fast(prompt: str) -> str:
     return response.choices[0].message.content
 
 
-# -------------------- MISTRAL AI MODEL: MINISTRAL 8B --------------------
+# -------------------- GROQ MODEL : GPT-OSS  --------------------
 
 def call_gpt_oss(prompt: str) -> str:
     response = groq_client.chat.completions.create(
