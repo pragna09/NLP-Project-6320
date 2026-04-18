@@ -1,4 +1,3 @@
-google-generativeai
 python-dotenv
 networkx
 pandas
@@ -7,4 +6,3 @@ groq
 scipy
 matplotlib
 seaborn
-mistralai
