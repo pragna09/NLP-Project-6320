@@ -169,7 +169,7 @@ def run_single_case(test_case, condition, model_fn,
     result   = evaluate_single(
         test_case,
         response,
-        science_keywords=science_keywords    # ← now passed correctly
+        science_keywords=science_keywords   
     )
     result["condition"]    = condition
     result["raw_response"] = response
@@ -206,12 +206,12 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
 
     # Define models and conditions
     models = {
-        #"LLaMA 3.3 70B": call_llama_big,
-        #"LLaMA 3.1 8B":  call_llama_fast,
+        "LLaMA 3.3 70B": call_llama_big,
+        "LLaMA 3.1 8B":  call_llama_fast,
         "GPT OSS 20B": call_gpt_oss
     }
-    #conditions = ["baseline", "cot_only", "kg_augmented", "full_system"] # to test all four conditions at once
-    conditions = ["baseline"] # replace ["baseline"] with the other conditions of the four conditions before running each one separately
+    conditions = ["baseline", "cot_only", "kg_augmented", "full_system"] # to test all four conditions at once
+    #conditions = ["baseline"] # replace ["baseline"] with the other conditions of the four conditions before running each one separately
 
     # Run experiments
     for model_name, model_fn in models.items():
