@@ -1,0 +1,8 @@
+python-dotenv
+networkx
+pandas
+numpy
+groq
+scipy
+matplotlib
+seaborn

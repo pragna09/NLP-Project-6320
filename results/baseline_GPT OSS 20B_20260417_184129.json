@@ -1,0 +1,1096 @@
+{
+  "condition": "baseline",
+  "model": "GPT OSS 20B",
+  "timestamp": "20260417_184129",
+  "summary": {
+    "total_cases": 60,
+    "average_scores": {
+      "cause_accuracy": 0.1974,
+      "solution_appropriateness": 0.2927,
+      "scientific_accuracy": 0.2839,
+      "overall": 0.2528
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "The butter was too cold or was added too quickly, and the water/lemon\u2011juice ratio diluted the yolks, preventing a stable emulsion and causing the sauce to stay thin.",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": " 1. Warm the butter to about 170\u202f\u00b0F (just below boiling) and keep it hot. 2. Place a narrow, heat\u2011proof bowl over a pot of gently simmering water (double boiler). 3. Whisk the egg yolks, lemon juice, salt, and **no more than 1\u202ftsp of water** until thickened. 4. With the whisk moving in a steady, circular motion, pour the hot butter in a very thin, steady stream, keeping the mixture hot. 5. Continue whisking (or blending) until the sauce thickens and coats the back of a spoon. If the sauce is still thin, start a new batch with the same technique; adding a pinch of flour or cornstarch is not recommended for hollandaise.",
+      "scores": {
+        "cause_accuracy": 0.3076923076923077,
+        "solution_appropriateness": 0.42857142857142855,
+        "scientific_accuracy": 0.6363636363636364,
+        "overall": 0.4218
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The butter was too cold or was added too quickly, and the water/lemon\u2011juice ratio diluted the yolks, preventing a stable emulsion and causing the sauce to stay thin.  \n\nSOLUTION:  \n1. Warm the butter to about 170\u202f\u00b0F (just below boiling) and keep it hot.  \n2. Place a narrow, heat\u2011proof bowl over a pot of gently simmering water (double boiler).  \n3. Whisk the egg yolks, lemon juice, salt, and **no more than 1\u202ftsp of water** until thickened.  \n4. With the whisk moving in a steady, circular motion, pour the hot butter in a very thin, steady stream, keeping the mixture hot.  \n5. Continue whisking (or blending) until the sauce thickens and coats the back of a spoon.  \nIf the sauce is still thin, start a new batch with the same technique; adding a pinch of flour or cornstarch is not recommended for hollandaise.  \n\nEXPLANATION: Hollandaise is a fat\u2011in\u2011water emulsion. Egg yolks contain lecithin, a natural emulsifier, but the emulsion only forms when the fat is hot enough to melt and the mixture is kept at a temperature that allows the lecithin to coat the fat droplets. Cold butter or a rapid, uneven addition causes the fat to separate rather than emulsify. Excess water or lemon juice dilutes the yolk\u2019s emulsifying power, making it harder for the mixture to thicken. A narrow, heat\u2011proof bowl over gentle heat keeps the temperature steady, preventing curdling or separation, and a slow, steady butter stream ensures a stable, creamy emulsion."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "The steak never reached a high enough temperature for the Maillard reaction to form a crust, and flipping it every 30\u202fseconds kept it from staying on the pan long enough to develop that sear.",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": " 1. Pat the steak completely dry and let it sit at room temperature for 15\u201320\u202fmin (not 45\u202fmin, which can over\u2011cool the surface). 2. Preheat a heavy\u2011bottom cast\u2011iron skillet over high heat until it starts to smoke. 3. Add a high\u2011smoke\u2011point oil (e.g., avocado, grapeseed, or clarified butter) and swirl to coat. 4. Place the steak in the skillet and **do not flip** for 2\u20133\u202fmin per side; let a golden\u2011brown crust form. 5. When the first side is ready, flip once, then add butter, garlic, and herbs and continue searing the second side for 1\u20132\u202fmin, basting with the butter. 6. Rest on a wire rack for 5\u202fmin before slicing.",
+      "scores": {
+        "cause_accuracy": 0.3333333333333333,
+        "solution_appropriateness": 0.1875,
+        "scientific_accuracy": 0.4444444444444444,
+        "overall": 0.2972
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The steak never reached a high enough temperature for the Maillard reaction to form a crust, and flipping it every 30\u202fseconds kept it from staying on the pan long enough to develop that sear.  \nSOLUTION:  \n1. Pat the steak completely dry and let it sit at room temperature for 15\u201320\u202fmin (not 45\u202fmin, which can over\u2011cool the surface).  \n2. Preheat a heavy\u2011bottom cast\u2011iron skillet over high heat until it starts to smoke.  \n3. Add a high\u2011smoke\u2011point oil (e.g., avocado, grapeseed, or clarified butter) and swirl to coat.  \n4. Place the steak in the skillet and **do not flip** for 2\u20133\u202fmin per side; let a golden\u2011brown crust form.  \n5. When the first side is ready, flip once, then add butter, garlic, and herbs and continue searing the second side for 1\u20132\u202fmin, basting with the butter.  \n6. Rest on a wire rack for 5\u202fmin before slicing.  \n\nEXPLANATION: The Maillard reaction that creates a brown, flavorful crust requires a surface temperature of ~400\u202f\u00b0F (200\u202f\u00b0C) and a dry environment. Frequent flipping interrupts the heat\u2011transfer cycle, causing the steak to stay in contact with the pan too briefly for the reaction to complete. Additionally, a wet surface or low\u2011smoke\u2011point oil lowers the pan temperature, further preventing crust formation. By allowing the steak to sit undisturbed on a preheated, dry skillet, you give the Maillard reaction enough time and heat to develop a rich, caramelized crust."
+    },
+    {
+      "test_case_id": 3,
+      "problem": "My chocolate ganache looks grainy and oily.",
+      "recipe": "Chocolate Ganache",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "The cream was heated too hot or mixed too vigorously, causing the chocolate\u2019s cocoa butter to separate and the ganache to become oily and grainy. Low\u2011quality chocolate with a high fat content can also contribute to a grainy texture if it isn\u2019t fully melted or tempered.",
+      "ground_truth_cause": "The emulsion broke due to excessive heat or a lack of sufficient water-based liquid.",
+      "predicted_solution": " 1. Use high\u2011quality, 70\u201185\u202f% dark chocolate (or a good\u2011quality milk chocolate). 2. Heat the cream to just below a simmer (about 80\u202f\u00b0C / 176\u202f\u00b0F), then remove from heat immediately. 3. Pour the hot cream over the chopped chocolate, cover, and let it sit for 5\u202fmin so the chocolate fully melts. 4. Whisk very gently in small circles from the center outward\u2014do not beat aggressively or for long. 5. If the ganache still feels grainy, add a teaspoon of warm water or a few drops of neutral\u2011flavored oil (e.g., canola) and whisk until smooth. 6. Keep the ganache at a consistent temperature (around 30\u201332\u202f\u00b0C / 86\u201390\u202f\u00b0F) before using.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.5,
+        "scientific_accuracy": 0.4444444444444444,
+        "overall": 0.2889
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The cream was heated too hot or mixed too vigorously, causing the chocolate\u2019s cocoa butter to separate and the ganache to become oily and grainy. Low\u2011quality chocolate with a high fat content can also contribute to a grainy texture if it isn\u2019t fully melted or tempered.\n\nSOLUTION:  \n1. Use high\u2011quality, 70\u201185\u202f% dark chocolate (or a good\u2011quality milk chocolate).  \n2. Heat the cream to just below a simmer (about 80\u202f\u00b0C / 176\u202f\u00b0F), then remove from heat immediately.  \n3. Pour the hot cream over the chopped chocolate, cover, and let it sit for 5\u202fmin so the chocolate fully melts.  \n4. Whisk very gently in small circles from the center outward\u2014do not beat aggressively or for long.  \n5. If the ganache still feels grainy, add a teaspoon of warm water or a few drops of neutral\u2011flavored oil (e.g., canola) and whisk until smooth.  \n6. Keep the ganache at a consistent temperature (around 30\u201332\u202f\u00b0C / 86\u201390\u202f\u00b0F) before using.\n\nEXPLANATION: Chocolate contains cocoa solids, cocoa butter, and sugar. When the cream is too hot or the mixture is over\u2011whisked, the cocoa butter can separate from the solids, creating an oily, gritty appearance. High\u2011quality chocolate has a more stable fat structure and less added fats, reducing the chance of separation. Heating the cream just below simmer ensures the fat melts without overheating, and gentle whisking allows the chocolate to emulsify with the cream without breaking the fat structure. Adding a small amount of water or neutral oil can help re\u2011emulsify any separated fat, resulting in a smooth, glossy ganache."
+    },
+    {
+      "test_case_id": 4,
+      "problem": "My hard-boiled eggs are impossible to peel.",
+      "recipe": "Hard-Boiled Eggs",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "The eggs are likely too fresh (low pH) and/or the cooking temperature/time is causing the inner membrane to fuse to the shell, making peeling difficult.",
+      "ground_truth_cause": "Starting eggs in cold water allows the membrane to bond slowly and strongly to the shell.",
+      "predicted_solution": "Use eggs that have been stored for at least a week, add a teaspoon of vinegar or a pinch of salt to the boiling water to lower the pH slightly, reduce the cooking time to 9\u201310 minutes for medium\u2011sized eggs, and immediately transfer the eggs to an ice\u2011water bath with a splash of baking soda to create a small gap between the membrane and shell. Crack the eggs on a hard surface, then peel under running water to help lift the membrane away.",
+      "scores": {
+        "cause_accuracy": 0.2,
+        "solution_appropriateness": 0.3333333333333333,
+        "scientific_accuracy": 0.4,
+        "overall": 0.2933
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The eggs are likely too fresh (low pH) and/or the cooking temperature/time is causing the inner membrane to fuse to the shell, making peeling difficult.  \n\nSOLUTION: Use eggs that have been stored for at least a week, add a teaspoon of vinegar or a pinch of salt to the boiling water to lower the pH slightly, reduce the cooking time to 9\u201310 minutes for medium\u2011sized eggs, and immediately transfer the eggs to an ice\u2011water bath with a splash of baking soda to create a small gap between the membrane and shell. Crack the eggs on a hard surface, then peel under running water to help lift the membrane away.  \n\nEXPLANATION: Fresh eggs contain a lower pH in the albumen, which keeps the inner membrane tightly adhered to the shell. When boiled, the albumen\u2019s pH rises, but if the eggs are too fresh or the water is too hot, the membrane doesn\u2019t separate easily. Adding vinegar or salt to the cooking water slightly acidifies the solution, promoting membrane separation. Cooling the eggs quickly in an ice bath stops cooking, creates condensation that helps separate the membrane, and a small amount of baking soda in the bath raises the pH of the water, further loosening the membrane. Peeling under running water provides a lubricating film that aids in lifting the shell off."
+    },
+    {
+      "test_case_id": 5,
+      "problem": "My pesto turned brown almost immediately.",
+      "recipe": "Blanched Basil Pesto",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "The basil wasn\u2019t fully inactivated by the short blanch (15\u202fs), so the polyphenol oxidase (PPO) stayed active. When the leaves were exposed to air after the ice\u2011bath and before the oil had fully coated them, the PPO oxidized the phenolics, turning the pesto brown almost immediately.",
+      "ground_truth_cause": "Polyphenol oxidase (PPO) enzymes reacted with oxygen upon bruising the leaves.",
+      "predicted_solution": " 1. **Blanch longer** \u2013 30\u201345\u202fs (or until the leaves just turn a bright green). 2. **Ice\u2011bath immediately** \u2013 use a very cold bath (add plenty of ice) and cool for 1\u202fmin. 3. **Dry thoroughly** \u2013 squeeze or pat the leaves with a clean towel to remove all surface water. 4. **Add oil quickly** \u2013 start drizzling the olive oil as soon as the basil is dry, and keep the processor running so the oil coats every leaf. 5. **Acidify** \u2013 add a splash of lemon juice or a pinch of vinegar before or during the oil drizzle. 6. **Keep covered** \u2013 store the pesto in an airtight container with a thin layer of oil on top to block air.",
+      "scores": {
+        "cause_accuracy": 0.3,
+        "solution_appropriateness": 0.25,
+        "scientific_accuracy": 0.36363636363636365,
+        "overall": 0.2927
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The basil wasn\u2019t fully inactivated by the short blanch (15\u202fs), so the polyphenol oxidase (PPO) stayed active. When the leaves were exposed to air after the ice\u2011bath and before the oil had fully coated them, the PPO oxidized the phenolics, turning the pesto brown almost immediately.  \n\nSOLUTION:  \n1. **Blanch longer** \u2013 30\u201345\u202fs (or until the leaves just turn a bright green).  \n2. **Ice\u2011bath immediately** \u2013 use a very cold bath (add plenty of ice) and cool for 1\u202fmin.  \n3. **Dry thoroughly** \u2013 squeeze or pat the leaves with a clean towel to remove all surface water.  \n4. **Add oil quickly** \u2013 start drizzling the olive oil as soon as the basil is dry, and keep the processor running so the oil coats every leaf.  \n5. **Acidify** \u2013 add a splash of lemon juice or a pinch of vinegar before or during the oil drizzle.  \n6. **Keep covered** \u2013 store the pesto in an airtight container with a thin layer of oil on top to block air.\n\nEXPLANATION:  \nBasil contains polyphenol oxidase, an enzyme that oxidizes phenolic compounds to brown quinones when the leaves are cut or bruised. Blanching denatures PPO, but the enzyme remains active until the tissue is cooled. A 15\u2011second blanch is often too short, especially for mature leaves, so PPO continues to work during the ice\u2011bath and drying period. Exposure to air supplies oxygen, the substrate for the reaction. Oil creates a physical barrier that limits oxygen contact, while acid (lemon juice) lowers the pH, further inhibiting PPO activity. By extending blanch time, cooling rapidly, removing moisture, and applying oil and acid promptly, you suppress the enzymatic browning and keep the pesto bright green."
+    },
+    {
+      "test_case_id": 6,
+      "problem": "My cookies spread into one giant flat sheet.",
+      "recipe": "Chocolate Chip Cookies",
+      "category": "baking",
+      "difficulty": "easy",
+      "predicted_cause": "The dough was too soft/under\u2011chilled (or slightly too low in fat and flour), so the butter melted and the sugar dissolved during baking, causing the cookies to spread into a single flat sheet.",
+      "ground_truth_cause": "Butter was too warm (above 68\u00b0F), preventing proper creaming structure.",
+      "predicted_solution": " 1. Chill the dough for **at least 4\u202fhours or overnight** in a cold place (refrigerator or freezer). 2. If the dough feels too soft, add **1\u20132 tablespoons of flour** (or an extra tablespoon of oat flour) and mix just until combined. 3. Keep the butter **cold**\u2014use a chilled butter or chill the dough after mixing. 4. Drop the dough in **larger, thicker scoops** (e.g., 2\u202fTbsp instead of 1\u202fTbsp). 5. Bake at **375\u2013380\u202f\u00b0F** for **8\u201310\u202fminutes**; the higher temp shortens the time the butter stays liquid, limiting spread. 6. Use parchment paper or a silicone mat to keep the cookies from sticking and to allow even baking.",
+      "scores": {
+        "cause_accuracy": 0.2222222222222222,
+        "solution_appropriateness": 0.5454545454545454,
+        "scientific_accuracy": 0.2,
+        "overall": 0.3471
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The dough was too soft/under\u2011chilled (or slightly too low in fat and flour), so the butter melted and the sugar dissolved during baking, causing the cookies to spread into a single flat sheet.\n\nSOLUTION:  \n1. Chill the dough for **at least 4\u202fhours or overnight** in a cold place (refrigerator or freezer).  \n2. If the dough feels too soft, add **1\u20132 tablespoons of flour** (or an extra tablespoon of oat flour) and mix just until combined.  \n3. Keep the butter **cold**\u2014use a chilled butter or chill the dough after mixing.  \n4. Drop the dough in **larger, thicker scoops** (e.g., 2\u202fTbsp instead of 1\u202fTbsp).  \n5. Bake at **375\u2013380\u202f\u00b0F** for **8\u201310\u202fminutes**; the higher temp shortens the time the butter stays liquid, limiting spread.  \n6. Use parchment paper or a silicone mat to keep the cookies from sticking and to allow even baking.\n\nEXPLANATION:  \n- **Butter** provides the fat that melts and creates a liquid film, allowing the cookie to spread. Cold butter stays solid longer, giving the dough more structure before it melts.  \n- **"
+    },
+    {
+      "test_case_id": 7,
+      "problem": "My scrambled eggs are weeping water and are rubbery.",
+      "recipe": "Scrambled Eggs",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "The eggs were cooked on too high a heat and stirred too aggressively, causing the proteins to coagulate too quickly. This rapid coagulation squeezes out water, leaving the scramble rubbery and watery.",
+      "ground_truth_cause": "High heat caused egg proteins to over-coagulate and contract too tightly, squeezing out moisture (syneresis).",
+      "predicted_solution": " 1. Lower the heat to the lowest setting that still allows the eggs to move (very low to medium\u2011low). 2. Add the eggs in a thin stream or in small batches so the pan stays cool. 3. Stir gently with a silicone or wooden spatula, moving the eggs from the edges toward the center, but avoid constant rapid stirring. 4. Remove the pan from heat when the eggs are still slightly glossy and just beginning to set; let the residual heat finish the cooking. 5. If desired, finish with a splash of milk or cream for extra moisture and a softer texture.",
+      "scores": {
+        "cause_accuracy": 0.38461538461538464,
+        "solution_appropriateness": 0.4444444444444444,
+        "scientific_accuracy": 0.1,
+        "overall": 0.3516
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The eggs were cooked on too high a heat and stirred too aggressively, causing the proteins to coagulate too quickly. This rapid coagulation squeezes out water, leaving the scramble rubbery and watery.\n\nSOLUTION:  \n1. Lower the heat to the lowest setting that still allows the eggs to move (very low to medium\u2011low).  \n2. Add the eggs in a thin stream or in small batches so the pan stays cool.  \n3. Stir gently with a silicone or wooden spatula, moving the eggs from the edges toward the center, but avoid constant rapid stirring.  \n4. Remove the pan from heat when the eggs are still slightly glossy and just beginning to set; let the residual heat finish the cooking.  \n5. If desired, finish with a splash of milk or cream for extra moisture and a softer texture.\n\nEXPLANATION: Egg proteins (mostly ovalbumin) begin to denature and coagulate at about 140\u202f\u00b0F (60\u202f\u00b0C). When the temperature rises too quickly, the proteins tighten together, expelling water. Aggressive stirring breaks the forming curds, making them rubbery. Cooking on a very low heat allows the proteins to set slowly and evenly, retaining moisture and producing a tender, creamy scramble."
+    },
+    {
+      "test_case_id": 8,
+      "problem": "My mac and cheese sauce is grainy and the cheese is clumping.",
+      "recipe": "Macaroni and Cheese",
+      "category": "starch emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "The cheese is being added to evaporated milk that is too hot (or the milk is added to cheese that is still very hot), causing the cheese proteins to coagulate and form clumps. Additionally, the pasta was cooked until the water was nearly fully absorbed, leaving the sauce very thin and lacking the fat and starch needed to stabilize the emulsion.",
+      "ground_truth_cause": "The cheese was added to a boiling liquid, causing the proteins to tighten and squeeze out fat (greasiness) and moisture (graininess).",
+      "predicted_solution": " 1. **Cool the milk** \u2013 After boiling the pasta, turn the heat off and let the saucepan sit for 1\u20132\u202fminutes so the evaporated milk cools to about 160\u202f\u00b0F (70\u202f\u00b0C). 2. **Use a lower heat** \u2013 Place the saucepan on low or medium\u2011low heat (or a double\u2011boiler). 3. **Add cheese slowly** \u2013 Sprinkle each cheese addition in a thin stream while whisking constantly. 4. **Create a roux** \u2013 In a separate small saucepan, melt 1\u202fTbsp butter, whisk in 1\u202fTbsp all\u2011purpose flour, and cook 1\u202fmin. Slowly whisk in 1/2 cup milk (or a small amount of the cooled evaporated milk) to make a thin b\u00e9chamel. Return this to the pasta sauce and whisk in the cheese. 5. **Finish with a splash of milk** \u2013 If the sauce is still thin, add 2\u20133\u202fTbsp whole milk or a little extra evaporated milk and whisk until smooth. 6. **Keep whisking** \u2013 Maintain constant whisking until the sauce is glossy and smooth.",
+      "scores": {
+        "cause_accuracy": 0.38461538461538464,
+        "solution_appropriateness": 0.45454545454545453,
+        "scientific_accuracy": 0.5454545454545454,
+        "overall": 0.4448
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The cheese is being added to evaporated milk that is too hot (or the milk is added to cheese that is still very hot), causing the cheese proteins to coagulate and form clumps. Additionally, the pasta was cooked until the water was nearly fully absorbed, leaving the sauce very thin and lacking the fat and starch needed to stabilize the emulsion.\n\nSOLUTION:  \n1. **Cool the milk** \u2013 After boiling the pasta, turn the heat off and let the saucepan sit for 1\u20132\u202fminutes so the evaporated milk cools to about 160\u202f\u00b0F (70\u202f\u00b0C).  \n2. **Use a lower heat** \u2013 Place the saucepan on low or medium\u2011low heat (or a double\u2011boiler).  \n3. **Add cheese slowly** \u2013 Sprinkle each cheese addition in a thin stream while whisking constantly.  \n4. **Create a roux** \u2013 In a separate small saucepan, melt 1\u202fTbsp butter, whisk in 1\u202fTbsp all\u2011purpose flour, and cook 1\u202fmin. Slowly whisk in 1/2 cup milk (or a small amount of the cooled evaporated milk) to make a thin b\u00e9chamel. Return this to the pasta sauce and whisk in the cheese.  \n5. **Finish with a splash of milk** \u2013 If the sauce is still thin, add 2\u20133\u202fTbsp whole milk or a little extra evaporated milk and whisk until smooth.  \n6. **Keep whisking** \u2013 Maintain constant whisking until the sauce is glossy and smooth.  \n\nEXPLANATION: Cheese curdles when the protein matrix is exposed to temperatures above 140\u202f\u00b0F (60\u202f\u00b0C) without enough fat or starch to keep the proteins dispersed. Evaporated milk is already high in solids, so adding it to hot cheese or adding cheese to hot milk can trigger coagulation. A roux supplies starch that thickens the sauce and helps bind the fat and proteins, creating a stable emulsion. Cooling the milk and using low heat allows the cheese to melt evenly, preventing grainy clumps and producing a creamy, uniform sauce."
+    },
+    {
+      "test_case_id": 9,
+      "problem": "My burgers are falling apart on the grill.",
+      "recipe": "Ultra-Smashed Burger",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "The beef is too cold and low\u2011fat, so the proteins contract too quickly when smashed, and the high heat pulls out moisture and fat, causing the patty to crumble and fall apart.",
+      "ground_truth_cause": "Meat was over-worked during forming, breaking down the fat structure and preventing natural protein binding. Alternatively, patties were flipped too early before a crust formed to hold them together.",
+      "predicted_solution": " 1. Use a lean\u2011fat mix of at least 80/20 (or 82/18) and let the meat sit at room temperature for 10\u201115\u202fmin before forming the ball. 2. Preheat a cast\u2011iron skillet or grill pan to 500\u202f\u00b0F, then lightly oil it. 3. Smash the ball gently\u2014apply firm, even pressure for 1\u20132\u202fsec\u2014then season the top with salt immediately. 4. Cook for 90\u202fsec, flip once, and avoid pressing the patty further. 5. If using a grill, cover it to keep heat uniform and avoid flare\u2011ups.",
+      "scores": {
+        "cause_accuracy": 0.041666666666666664,
+        "solution_appropriateness": 0.10344827586206896,
+        "scientific_accuracy": 0.2727272727272727,
+        "overall": 0.1126
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The beef is too cold and low\u2011fat, so the proteins contract too quickly when smashed, and the high heat pulls out moisture and fat, causing the patty to crumble and fall apart.  \n\nSOLUTION:  \n1. Use a lean\u2011fat mix of at least 80/20 (or 82/18) and let the meat sit at room temperature for 10\u201115\u202fmin before forming the ball.  \n2. Preheat a cast\u2011iron skillet or grill pan to 500\u202f\u00b0F, then lightly oil it.  \n3. Smash the ball gently\u2014apply firm, even pressure for 1\u20132\u202fsec\u2014then season the top with salt immediately.  \n4. Cook for 90\u202fsec, flip once, and avoid pressing the patty further.  \n5. If using a grill, cover it to keep heat uniform and avoid flare\u2011ups.  \n\nEXPLANATION:  \nWhen beef is cold, the myosin proteins are rigid; a sudden high temperature causes them to contract rapidly, squeezing out water and fat. The resulting loss of moisture and fat creates a dry, crumbly structure that cannot hold together. A higher fat content (80/20) provides a natural binder and keeps the patty moist. Allowing the meat to warm slightly reduces the shock of temperature change. Smashing quickly creates a thin patty with a high surface area, which cooks fast and locks in juices if the heat is uniform and the patty is not over\u2011worked. The salt applied after smashing prevents premature moisture loss, while the brief, single flip preserves the crust and prevents the patty from falling apart."
+    },
+    {
+      "test_case_id": 10,
+      "problem": "My garlic turned bitter and black in the oil.",
+      "recipe": "Spaghetti Aglio e Olio",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "The garlic was cooked on too high or inconsistent heat, causing it to over\u2011browning and then burn (Maillard reaction + caramelization of sulfur compounds), which produced a bitter, black residue.",
+      "ground_truth_cause": "Garlic was added to a hot pan and burnt before it could infuse.",
+      "predicted_solution": " 1. **Lower the heat** \u2013 use a true low setting (or set the burner to \u201clow\u201d and let the skillet warm slowly). 2. **Add the garlic after the oil is warm** \u2013 heat the oil first, then add the sliced garlic. 3. **Watch the color** \u2013 remove the pan from the heat as soon as the garlic turns a pale straw\u2011gold, not a light tan. 4. **Add a splash of water or pasta water earlier** \u2013 this lowers the temperature of the oil and stops the garlic from cooking further. 5. **Use a lighter oil** (e.g., refined olive oil, avocado, or canola) if you must keep a higher heat, or simply keep the heat low. SAMPLE RECIPE UPDATE - Warm 2\u202fTbsp olive oil over **low** heat. - Add 4\u20135 thin garlic slices, stir constantly. - When garlic is just pale gold (\u22481\u20132\u202fmin), add 1\u202fTbsp pasta water, stir, and remove from heat. - Toss with spaghetti, parsley, and parmesan.",
+      "scores": {
+        "cause_accuracy": 0.125,
+        "solution_appropriateness": 0.3333333333333333,
+        "scientific_accuracy": 0.4,
+        "overall": 0.2633
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The garlic was cooked on too high or inconsistent heat, causing it to over\u2011browning and then burn (Maillard reaction + caramelization of sulfur compounds), which produced a bitter, black residue.\n\nSOLUTION:  \n1. **Lower the heat** \u2013 use a true low setting (or set the burner to \u201clow\u201d and let the skillet warm slowly).  \n2. **Add the garlic after the oil is warm** \u2013 heat the oil first, then add the sliced garlic.  \n3. **Watch the color** \u2013 remove the pan from the heat as soon as the garlic turns a pale straw\u2011gold, not a light tan.  \n4. **Add a splash of water or pasta water earlier** \u2013 this lowers the temperature of the oil and stops the garlic from cooking further.  \n5. **Use a lighter oil** (e.g., refined olive oil, avocado, or canola) if you must keep a higher heat, or simply keep the heat low.\n\nSAMPLE RECIPE UPDATE  \n- Warm 2\u202fTbsp olive oil over **low** heat.  \n- Add 4\u20135 thin garlic slices, stir constantly.  \n- When garlic is just pale gold (\u22481\u20132\u202fmin), add 1\u202fTbsp pasta water, stir, and remove from heat.  \n- Toss with spaghetti, parsley, and parmesan.\n\nEXPLANATION:  \nGarlic contains sulfur\u2011rich compounds that become bitter when heated above ~120\u202f\u00b0C. Olive oil\u2019s smoke point (~190\u202f\u00b0C) is higher, but the garlic itself browns and caramelizes at lower temperatures. A cold skillet can create hot spots, and even a medium\u2011low setting can reach the critical temperature if the garlic stays too long. Adding water or pasta water momentarily cools the oil, halting further Maillard reactions. Keeping the heat low and monitoring color ensures the garlic stays fragrant and lightly golden, not bitter or black."
+    },
+    {
+      "test_case_id": 11,
+      "problem": "My mayonnaise won't emulsify; it's just oil and yellow liquid.",
+      "recipe": "Immersion Blender Mayo",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "The oil was added all at once and the mixture was not kept at a consistent temperature, causing the emulsion to break before the yolk could act as an emulsifier.",
+      "ground_truth_cause": "Oil was added too quickly at the start, preventing the initial droplets from being coated in emulsifier.",
+      "predicted_solution": "1) Let the yolk, mustard, lemon juice, and salt come to room temperature (about 20\u201322\u202f\u00b0C). 2) Place the jar in a warm spot or use a warm water bath. 3) Add the oil in a very thin, steady stream while the immersion blender is running at high speed from the bottom, keeping the blade submerged. 4) If the mixture starts to separate, pause, add a teaspoon of warm water, and resume blending. 5) Once thickened, finish by slowly lifting the blender through the remaining oil.",
+      "scores": {
+        "cause_accuracy": 0.3076923076923077,
+        "solution_appropriateness": 0.14285714285714285,
+        "scientific_accuracy": 0.5833333333333334,
+        "overall": 0.2969
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The oil was added all at once and the mixture was not kept at a consistent temperature, causing the emulsion to break before the yolk could act as an emulsifier.  \n\nSOLUTION: 1) Let the yolk, mustard, lemon juice, and salt come to room temperature (about 20\u201322\u202f\u00b0C). 2) Place the jar in a warm spot or use a warm water bath. 3) Add the oil in a very thin, steady stream while the immersion blender is running at high speed from the bottom, keeping the blade submerged. 4) If the mixture starts to separate, pause, add a teaspoon of warm water, and resume blending. 5) Once thickened, finish by slowly lifting the blender through the remaining oil.  \n\nEXPLANATION: Mayonnaise is a water-in-oil emulsion where lecithin in egg yolk stabilizes droplets of oil. For a stable emulsion, the yolk must be at a similar temperature to the oil, and oil must be added gradually so the emulsifier can coat each droplet. Sudden temperature differences or too much oil at once overwhelm the emulsifier, causing the emulsion to break into separate oil and aqueous layers. Using a warm, consistent environment and a slow, steady oil addition allows the lecithin to form a stable film around each droplet, resulting in a thick, homogeneous mayonnaise."
+    },
+    {
+      "test_case_id": 12,
+      "problem": "My chicken breast is dry and stringy.",
+      "recipe": "Pan-Roasted Chicken Breast",
+      "category": "protein cookery",
+      "difficulty": "medium",
+      "predicted_cause": "The chicken breast was cooked at too high a temperature (400\u202f\u00b0F) for a lean cut, and the target internal temperature of 150\u202f\u00b0F is lower than recommended for poultry, causing rapid protein denaturation and moisture loss. The short rest time and slicing against the grain further contributed to a dry, stringy texture.",
+      "ground_truth_cause": "Internal temperature exceeded 165\u00b0F for too long, causing muscle fibers to contract irreversibly and squeeze out all retained moisture.",
+      "predicted_solution": "Reduce the oven temperature to 350\u202f\u00b0F, cook until the internal temperature reaches 165\u202f\u00b0F, then rest the chicken for 10\u201315\u202fminutes. Slice the breast against the grain and, if desired, baste with a small amount of melted butter or a quick pan sauce while it rests to add moisture.",
+      "scores": {
+        "cause_accuracy": 0.29411764705882354,
+        "solution_appropriateness": 0.27586206896551724,
+        "scientific_accuracy": 0.1,
+        "overall": 0.248
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The chicken breast was cooked at too high a temperature (400\u202f\u00b0F) for a lean cut, and the target internal temperature of 150\u202f\u00b0F is lower than recommended for poultry, causing rapid protein denaturation and moisture loss. The short rest time and slicing against the grain further contributed to a dry, stringy texture.  \nSOLUTION: Reduce the oven temperature to 350\u202f\u00b0F, cook until the internal temperature reaches 165\u202f\u00b0F, then rest the chicken for 10\u201315\u202fminutes. Slice the breast against the grain and, if desired, baste with a small amount of melted butter or a quick pan sauce while it rests to add moisture.  \nEXPLANATION: Lean poultry like chicken breast loses moisture quickly when exposed to high heat; cooking to 165\u202f\u00b0F ensures safety while minimizing over\u2011cooking. Resting allows the muscle fibers to re\u2011absorb juices that were driven outward during heat exposure. Slicing against the grain shortens the muscle fibers, reducing the stringy, tough texture that results when fibers are cut parallel to their natural orientation."
+    },
+    {
+      "test_case_id": 13,
+      "problem": "My stir-fry is soggy and boiling in its own juice.",
+      "recipe": "Vegetable Stir-Fry",
+      "category": "protein cookery",
+      "difficulty": "medium",
+      "predicted_cause": "The vegetables were not completely dry and/or the wok was not hot enough, causing the veggies to steam instead of sear; adding soy sauce too early or in excess introduced extra liquid that turned the stir\u2011fry into a soup.",
+      "ground_truth_cause": "The pan was crowded, dropping the temperature and preventing evaporation.",
+      "predicted_solution": "1) Pat all vegetables dry with paper towels or a clean cloth before cutting. 2) Preheat the wok on high until it smokes, then add a thin layer of oil and immediately drop in a small batch of vegetables\u2014no more than \u00bd cup per batch. 3) Keep the wok very hot, tossing constantly with a scooping motion, and only add a splash of soy sauce in the final 30 seconds of cooking. 4) Finish with a drizzle of sesame oil off the heat.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.3333333333333333,
+        "overall": 0.0667
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The vegetables were not completely dry and/or the wok was not hot enough, causing the veggies to steam instead of sear; adding soy sauce too early or in excess introduced extra liquid that turned the stir\u2011fry into a soup.  \nSOLUTION: 1) Pat all vegetables dry with paper towels or a clean cloth before cutting. 2) Preheat the wok on high until it smokes, then add a thin layer of oil and immediately drop in a small batch of vegetables\u2014no more than \u00bd cup per batch. 3) Keep the wok very hot, tossing constantly with a scooping motion, and only add a splash of soy sauce in the final 30 seconds of cooking. 4) Finish with a drizzle of sesame oil off the heat.  \nEXPLANATION: Stir\u2011frying relies on the Maillard reaction, which needs high heat and a dry surface to produce caramelization and a firm texture. Moisture from wet vegetables or added liquids creates steam, which lowers the wok temperature and turns searing into steaming, resulting in sogginess. Adding soy sauce early introduces additional water and sugar, further increasing steam. By drying the veggies, keeping the wok hot, cooking in small batches, and adding sauce only at the end, the moisture is evaporated quickly, allowing the vegetables to crisp and retain their bright color and texture."
+    },
+    {
+      "test_case_id": 14,
+      "problem": "My whipped cream is turning into lumpy butter.",
+      "recipe": "Whipped Cream",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "The cream was whipped too long or at too high a speed, causing the fat globules to break out of their protective film and coalesce into butter (lumpy butter).",
+      "ground_truth_cause": "Over-agitation caused fat globules to collide and fuse into a solid mass.",
+      "predicted_solution": " 1. Chill the bowl and whisk attachment for the full 10\u202fminutes. 2. Use a light to medium speed (not high) and stop the mixer as soon as soft peaks form\u2014do **not** let the peaks firm up or turn stiff. 3. If you notice the mixture beginning to look thick and grainy, immediately pause the whisk, stir gently, and add a splash of cold cream or a teaspoon of cold water to re\u2011emulsify. 4. If you have already made butter, discard it and start over with fresh, cold heavy cream, using the same gentle\u2011whisk technique.",
+      "scores": {
+        "cause_accuracy": 0.3333333333333333,
+        "solution_appropriateness": 0.3333333333333333,
+        "scientific_accuracy": 0.5454545454545454,
+        "overall": 0.3758
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The cream was whipped too long or at too high a speed, causing the fat globules to break out of their protective film and coalesce into butter (lumpy butter).\n\nSOLUTION:  \n1. Chill the bowl and whisk attachment for the full 10\u202fminutes.  \n2. Use a light to medium speed (not high) and stop the mixer as soon as soft peaks form\u2014do **not** let the peaks firm up or turn stiff.  \n3. If you notice the mixture beginning to look thick and grainy, immediately pause the whisk, stir gently, and add a splash of cold cream or a teaspoon of cold water to re\u2011emulsify.  \n4. If you have already made butter, discard it and start over with fresh, cold heavy cream, using the same gentle\u2011whisk technique.\n\nEXPLANATION:  \nHeavy cream contains fat globules coated with phospholipids that keep them dispersed. Whipping introduces air and shear, creating a stable foam. When whipping continues past the \u201csoft\u2011peak\u201d stage, the shear forces break the stabilizing films, allowing the fat globules to merge into larger droplets\u2014this is butter. Cold temperatures help maintain the integrity of the film, while too much sugar can interfere with the stabilizers. Therefore, keeping the speed moderate, stopping at soft peaks, and maintaining cold conditions prevents fat separation and yields smooth, airy whipped cream."
+    },
+    {
+      "test_case_id": 15,
+      "problem": "My mashed potatoes are sticky like glue.",
+      "recipe": "Mashed Potatoes",
+      "category": "baking",
+      "difficulty": "easy",
+      "predicted_cause": "The potatoes were either over\u2011cooked or over\u2011mixed (or the liquid was added too quickly/cold), causing excess starch gelatinization and a glue\u2011like consistency.",
+      "ground_truth_cause": "Mechanical shearing (blender) ruptured starch granules, releasing too much amylose.",
+      "predicted_solution": " 1. **Drain and dry** the boiled potatoes thoroughly; let them sit in the hot pot for a minute to evaporate surface moisture. 2. **Use a ricer or food mill** (not a blender) to avoid breaking the starch granules. 3. **Add fat first** \u2013 a generous knob of warm butter, then warm milk/cream a little at a time. 4. **Mix gently** by hand or with a rubber spatula; stop as soon as the potatoes are smooth. 5. If still sticky, fold in a small splash of warm sour cream or a teaspoon of flour\u2011based roux to absorb excess starch. 6. Serve immediately, or keep warm over low heat while gently stirring.",
+      "scores": {
+        "cause_accuracy": 0.2,
+        "solution_appropriateness": 0.36363636363636365,
+        "scientific_accuracy": 0.3,
+        "overall": 0.2855
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The potatoes were either over\u2011cooked or over\u2011mixed (or the liquid was added too quickly/cold), causing excess starch gelatinization and a glue\u2011like consistency.  \nSOLUTION:  \n1. **Drain and dry** the boiled potatoes thoroughly; let them sit in the hot pot for a minute to evaporate surface moisture.  \n2. **Use a ricer or food mill** (not a blender) to avoid breaking the starch granules.  \n3. **Add fat first** \u2013 a generous knob of warm butter, then warm milk/cream a little at a time.  \n4. **Mix gently** by hand or with a rubber spatula; stop as soon as the potatoes are smooth.  \n5. If still sticky, fold in a small splash of warm sour cream or a teaspoon of flour\u2011based roux to absorb excess starch.  \n6. Serve immediately, or keep warm over low heat while gently stirring.\n\nEXPLANATION:  \n- **Starch gelatinization**: When potatoes are boiled, starch granules swell and absorb water. Over\u2011cooking or adding cold liquid forces the starch to gelatinize further, creating a gummy matrix.  \n- **Protein denaturation**: Excess heat or rapid liquid addition denatures potato proteins, which can bind starch and water, thickening the mash.  \n- **Emulsification of fat**: Warm butter coats starch granules, preventing them from clumping. Cold liquid or too much liquid overwhelms this coating, leaving the starch free to stick together.  \n- **Dryness vs. moisture balance**: Properly drained, slightly dry potatoes hold the right amount of moisture; too much residual water or added liquid pushes the mash into a glue\u2011like consistency.  \n\nBy controlling heat, moisture, and mixing speed, you keep the starch granules intact and the mash light, fluffy, and non\u2011sticky."
+    },
+    {
+      "test_case_id": 16,
+      "problem": "My chocolate chips seized into a dry clump in the microwave.",
+      "recipe": "Microwave Chocolate Ganache",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "The chocolate chips clumped because the mixture was too dry and the microwave heat was uneven, causing the chocolate to over\u2011melt in hot spots and then seize as the cocoa butter solidified before the rest of the chocolate could melt.",
+      "ground_truth_cause": "A small amount of water caused sugar and cocoa particles to clump together.",
+      "predicted_solution": " 1. Add a tablespoon of milk or cream to the bowl to increase moisture. 2. Cover the bowl with a microwave\u2011safe lid or a piece of parchment paper to trap steam and create a more even temperature. 3. Microwave on medium (50\u201360\u202f% power) in 10\u2011second bursts, stirring vigorously after each burst. 4. Once about 80\u202f% of the chocolate is melted, stir vigorously for 30\u201160\u202fseconds until the mixture is completely smooth.",
+      "scores": {
+        "cause_accuracy": 0.1111111111111111,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.2222222222222222,
+        "overall": 0.0889
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The chocolate chips clumped because the mixture was too dry and the microwave heat was uneven, causing the chocolate to over\u2011melt in hot spots and then seize as the cocoa butter solidified before the rest of the chocolate could melt.\n\nSOLUTION:  \n1. Add a tablespoon of milk or cream to the bowl to increase moisture.  \n2. Cover the bowl with a microwave\u2011safe lid or a piece of parchment paper to trap steam and create a more even temperature.  \n3. Microwave on medium (50\u201360\u202f% power) in 10\u2011second bursts, stirring vigorously after each burst.  \n4. Once about 80\u202f% of the chocolate is melted, stir vigorously for 30\u201160\u202fseconds until the mixture is completely smooth.\n\nEXPLANATION: Chocolate melts when the cocoa butter reaches ~34\u201338\u202f\u00b0C. In a dry bowl, microwave energy creates hot spots that melt the chocolate too quickly, causing the cocoa butter to separate and the remaining chocolate to crystallize (seize). Adding moisture and a lid raises the local humidity, promoting even heat distribution and preventing the cocoa butter from solidifying prematurely. Lowering the power reduces hot spots, and frequent stirring ensures that heat is shared uniformly, allowing the chocolate to melt into a glossy, smooth ganache."
+    },
+    {
+      "test_case_id": 17,
+      "problem": "My vinaigrette separates the second I stop shaking it.",
+      "recipe": "Vinaigrette",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "The vinaigrette wasn\u2019t fully emulsified\u2014oil droplets weren\u2019t stabilized by enough emulsifier (mustard/heat/whisking) and the oil was added too quickly, so when you stopped shaking the droplets coalesced and the mixture separated.",
+      "ground_truth_cause": "Lack of a surfactant (emulsifier) to lower the surface tension between oil and vinegar.",
+      "predicted_solution": " 1. **Add a stronger emulsifier** \u2013 use a teaspoon of Dijon mustard or a small egg yolk (if safe for you). 2. **Whisk vigorously for at least 30\u201360\u202fseconds** after adding the oil, keeping the oil in a very thin, steady stream. 3. **If you\u2019re still having trouble, use a blender or food processor**: combine vinegar, mustard, salt, pepper, and a splash of water, then pulse; slowly drizzle in oil while the machine runs until thick and glossy. 4. **Store in a sealed container** and give it a quick shake before each use.",
+      "scores": {
+        "cause_accuracy": 0.1111111111111111,
+        "solution_appropriateness": 0.5,
+        "scientific_accuracy": 0.4166666666666667,
+        "overall": 0.3278
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The vinaigrette wasn\u2019t fully emulsified\u2014oil droplets weren\u2019t stabilized by enough emulsifier (mustard/heat/whisking) and the oil was added too quickly, so when you stopped shaking the droplets coalesced and the mixture separated.  \n\nSOLUTION:  \n1. **Add a stronger emulsifier** \u2013 use a teaspoon of Dijon mustard or a small egg yolk (if safe for you).  \n2. **Whisk vigorously for at least 30\u201360\u202fseconds** after adding the oil, keeping the oil in a very thin, steady stream.  \n3. **If you\u2019re still having trouble, use a blender or food processor**: combine vinegar, mustard, salt, pepper, and a splash of water, then pulse; slowly drizzle in oil while the machine runs until thick and glossy.  \n4. **Store in a sealed container** and give it a quick shake before each use.  \n\nEXPLANATION: A vinaigrette is an oil-in-water emulsion. The mustard\u2019s proteins and small amounts of emulsifying sugars create a film around oil droplets, keeping them dispersed. Whisking breaks the oil into tiny droplets and spreads the emulsifier. If the oil is added too fast or the whisking stops, the droplets merge (coalesce) and the mixture separates into a clear oil layer and a cloudy acidic layer. Using a stronger emulsifier or a blender ensures a more stable, uniform emulsion that won\u2019t separate when you stop shaking."
+    },
+    {
+      "test_case_id": 18,
+      "problem": "My rice is mushy and stuck together.",
+      "recipe": "White Rice",
+      "category": "starch cookery",
+      "difficulty": "easy",
+      "predicted_cause": "Too much water (or an incorrect water\u2011to\u2011rice ratio) and/or over\u2011cooking the grains, which causes the starches to gelatinize excessively and stick together.",
+      "ground_truth_cause": "Excess surface starch (amylopectin) was not rinsed off before cooking, gelatinizing into a sticky coating during boiling.",
+      "predicted_solution": " 1. Use the proper ratio \u2013 1 cup of white rice to 1.5 cups of water (or 1\u202f:\u202f1.75 for firmer rice). 2. Rinse the rice until the water runs clear, then drain well. 3. Combine rice and water in a pot that\u2019s at least 1\u2011inch larger in diameter than the rice volume to allow steam to circulate. 4. Bring to a rolling boil over high heat, then reduce to the lowest heat and cover tightly. 5. Cook for 12\u201313 minutes (not 15) \u2013 check the rice at 12 minutes; it should be tender but not mushy. 6. Turn off the heat, keep the lid on, and let the rice steam for an additional 10 minutes. 7. Fluff gently with a fork before serving.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.24242424242424243,
+        "scientific_accuracy": 0.4,
+        "overall": 0.177
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: Too much water (or an incorrect water\u2011to\u2011rice ratio) and/or over\u2011cooking the grains, which causes the starches to gelatinize excessively and stick together.  \n\nSOLUTION:  \n1. Use the proper ratio \u2013 1 cup of white rice to 1.5 cups of water (or 1\u202f:\u202f1.75 for firmer rice).  \n2. Rinse the rice until the water runs clear, then drain well.  \n3. Combine rice and water in a pot that\u2019s at least 1\u2011inch larger in diameter than the rice volume to allow steam to circulate.  \n4. Bring to a rolling boil over high heat, then reduce to the lowest heat and cover tightly.  \n5. Cook for 12\u201313 minutes (not 15) \u2013 check the rice at 12 minutes; it should be tender but not mushy.  \n6. Turn off the heat, keep the lid on, and let the rice steam for an additional 10 minutes.  \n7. Fluff gently with a fork before serving.  \n\nEXPLANATION: White rice grains contain amylose and amylopectin. When too much water is present, the starch granules swell and gelatinize, releasing amylose into the surrounding liquid. Excess amylose makes the grains stick together. Over\u2011cooking further breaks down the starch structure, turning the rice into a mush. By using the correct water ratio, a larger pot, and a slightly shorter cook time, the starches gelatinize just enough to absorb water without becoming sticky, and the resting period allows the moisture to redistribute evenly, yielding fluffy, separate grains."
+    },
+    {
+      "test_case_id": 19,
+      "problem": "My muffins have huge holes (tunnels) inside.",
+      "recipe": "Blueberry Muffins",
+      "category": "baking",
+      "difficulty": "easy",
+      "predicted_cause": "Excessive leavening (or a batter that\u2019s too thin) caused the CO\u2082 bubbles to grow too large and stay open, creating tunnel\u2011shaped holes in the muffins.",
+      "ground_truth_cause": "Over-mixing developed an elastic gluten network that trapped air bubbles.",
+      "predicted_solution": " 1. **Reduce the leavening** \u2013 cut the baking powder (or baking soda) by about \u00bc to \u2153 teaspoon. 2. **Adjust the batter consistency** \u2013 add an extra 1\u20132 tablespoons of flour to thicken it slightly. 3. **Mix gently** \u2013 fold the wet into the dry until just combined; avoid any vigorous stirring. 4. **Fill the tin \u2154 full** \u2013 not overfilled, so the batter has room to rise without over\u2011expanding. 5. **Bake at 375\u202f\u00b0F (190\u202f\u00b0C)** for 18\u201320 minutes, checking for a golden top and a toothpick that comes out clean.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.4444444444444444,
+        "scientific_accuracy": 0.36363636363636365,
+        "overall": 0.2505
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: Excessive leavening (or a batter that\u2019s too thin) caused the CO\u2082 bubbles to grow too large and stay open, creating tunnel\u2011shaped holes in the muffins.  \nSOLUTION:  \n1. **Reduce the leavening** \u2013 cut the baking powder (or baking soda) by about \u00bc to \u2153 teaspoon.  \n2. **Adjust the batter consistency** \u2013 add an extra 1\u20132 tablespoons of flour to thicken it slightly.  \n3. **Mix gently** \u2013 fold the wet into the dry until just combined; avoid any vigorous stirring.  \n4. **Fill the tin \u2154 full** \u2013 not overfilled, so the batter has room to rise without over\u2011expanding.  \n5. **Bake at 375\u202f\u00b0F (190\u202f\u00b0C)** for 18\u201320 minutes, checking for a golden top and a toothpick that comes out clean.\n\nEXPLANATION:  \nLeavening agents release CO\u2082 when heated. In a thin batter, the gas bubbles expand quickly and can\u2019t be held by enough gluten network, so they form large, open channels that become the holes. By reducing the leavening amount and thickening the batter, you limit the amount of gas produced and give the gluten matrix more strength to trap the bubbles, resulting in a uniform crumb. Gentle folding preserves the air pockets without over\u2011developing gluten, which would otherwise make the muffins tough. Filling the tin only \u2154 full allows the muffins to rise without spilling over, preventing excessive bubble growth."
+    },
+    {
+      "test_case_id": 20,
+      "problem": "My caramel is grainy and full of sugar crystals.",
+      "recipe": "Caramel Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "The caramel was stirred (or \u201cbrushed\u201d too aggressively) after the sugar had begun to boil, creating nucleation sites that allowed sugar crystals to form. In addition, the syrup likely never reached the proper 320\u2011338\u202f\u00b0F range or had an incorrect sugar\u2011to\u2011water ratio, so the sugar remained supersaturated and crystallized when cooled or when cream was added.",
+      "ground_truth_cause": "A single undissolved crystal triggered a chain reaction of sucrose crystallization (seeding).",
+      "predicted_solution": " 1. **Use a heavy\u2011bottomed saucepan** and a reliable candy thermometer. 2. Combine the sugar, water, and lemon juice; stir **only until the sugar dissolves**. 3. **Stop stirring** as soon as the mixture comes to a rolling boil. 4. Let the syrup **cook undisturbed** until it reaches 320\u2011338\u202f\u00b0F (170\u2011180\u202f\u00b0C). 5. While it\u2019s boiling, **brush the sides** of the pan with a wet pastry brush *only when the syrup is at the target temperature* to remove any crystals that may have formed on the walls. 6. Remove the pan from heat, then **whisk in the warmed cream slowly** (a few tablespoons at a time), keeping the mixture at a steady 320\u2011338\u202f\u00b0F. 7. Finish with butter and salt. 8. If the mixture still feels grainy, add a pinch of salt or a splash of vinegar to the syrup before the final whisking step; these acids help break down sucrose and reduce crystallization.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.25,
+        "scientific_accuracy": 0.5,
+        "overall": 0.2
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The caramel was stirred (or \u201cbrushed\u201d too aggressively) after the sugar had begun to boil, creating nucleation sites that allowed sugar crystals to form. In addition, the syrup likely never reached the proper 320\u2011338\u202f\u00b0F range or had an incorrect sugar\u2011to\u2011water ratio, so the sugar remained supersaturated and crystallized when cooled or when cream was added.\n\nSOLUTION:  \n1. **Use a heavy\u2011bottomed saucepan** and a reliable candy thermometer.  \n2. Combine the sugar, water, and lemon juice; stir **only until the sugar dissolves**.  \n3. **Stop stirring** as soon as the mixture comes to a rolling boil.  \n4. Let the syrup **cook undisturbed** until it reaches 320\u2011338\u202f\u00b0F (170\u2011180\u202f\u00b0C).  \n5. While it\u2019s boiling, **brush the sides** of the pan with a wet pastry brush *only when the syrup is at the target temperature* to remove any crystals that may have formed on the walls.  \n6. Remove the pan from heat, then **whisk in the warmed cream slowly** (a few tablespoons at a time), keeping the mixture at a steady 320\u2011338\u202f\u00b0F.  \n7. Finish with butter and salt.  \n8. If the mixture still feels grainy, add a pinch of salt or a splash of vinegar to the syrup before the final whisking step; these acids help break down sucrose and reduce crystallization.\n\nEXPLANATION:  \n- **Stirring after boiling** introduces metal ions and physical agitation that serve as nucleation sites for sugar crystals. Once nucleation starts, the supersaturated syrup readily forms a grainy"
+    },
+    {
+      "test_case_id": 21,
+      "problem": "Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",
+      "recipe": "Hainanese Chicken Rice",
+      "category": "protein cookery",
+      "difficulty": "medium",
+      "predicted_cause": "The chicken breast was over\u2011cooked during the poaching step and then immediately chilled, which caused the muscle fibers to contract too quickly and expel moisture, resulting in a dry, tough texture. Additionally, rendering chicken fat first removed the natural fat that would help keep the breast moist and tender.",
+      "ground_truth_cause": "Cooking chicken at high heat (Rice Cooker \"Flash\" mode) causes muscle fibers to contract and squeeze out moisture.",
+      "predicted_solution": " 1. **Poach at a lower temperature (80\u201385\u202f\u00b0C / 176\u2013185\u202f\u00b0F) and stop when the internal temp reaches 63\u202f\u00b0C (145\u202f\u00b0F).** 2. **Do not immediately chill the chicken; allow it to rest at room temperature for 5\u201310\u202fmin after cooking to let the juices redistribute.** 3. **Add a small amount of fat or a moist cooking medium (e.g., a broth or a splash of wine) to the poaching liquid, or coat the breast lightly with a butter\u2011oil mixture before poaching, to preserve moisture.**",
+      "scores": {
+        "cause_accuracy": 0.25,
+        "solution_appropriateness": 0.15384615384615385,
+        "scientific_accuracy": 0.09090909090909091,
+        "overall": 0.1797
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The chicken breast was over\u2011cooked during the poaching step and then immediately chilled, which caused the muscle fibers to contract too quickly and expel moisture, resulting in a dry, tough texture. Additionally, rendering chicken fat first removed the natural fat that would help keep the breast moist and tender.  \n\nSOLUTION:  \n1. **Poach at a lower temperature (80\u201385\u202f\u00b0C / 176\u2013185\u202f\u00b0F) and stop when the internal temp reaches 63\u202f\u00b0C (145\u202f\u00b0F).**  \n2. **Do not immediately chill the chicken; allow it to rest at room temperature for 5\u201310\u202fmin after cooking to let the juices redistribute.**  \n3. **Add a small amount of fat or a moist cooking medium (e.g., a broth or a splash of wine) to the poaching liquid, or coat the breast lightly with a butter\u2011oil mixture before poaching, to preserve moisture.**  \n\nEXPLANATION: Chicken breast is a lean cut; heat causes protein fibers to contract and squeeze out water. Cooking at too high a temperature or for too long accelerates this contraction. Allowing the meat to rest lets the fibers relax and the juices re\u2011absorb, improving tenderness. Adding fat or a moist medium during poaching provides a barrier against moisture loss and adds flavor, mimicking the natural fat that would have been retained if the breast had not been rendered first."
+    },
+    {
+      "test_case_id": 22,
+      "problem": "Bottled black truffle is flavorless or \"rubbery\" when cooked on pizza.",
+      "recipe": "Truffle & Mushroom Pizza",
+      "category": "baking",
+      "difficulty": "easy",
+      "predicted_cause": "The bottled truffle is either a preservative\u2011infused product (often in oil or water) that loses its volatile aroma at high temperatures, or the truffle was already past its prime. When exposed to 500\u202f\u00b0F, the truffle\u2019s delicate aroma compounds evaporate and the remaining solids become rubbery and flavorless.",
+      "ground_truth_cause": "Cooking the truffle in the oven or saut\u00e9ing it with toppings.",
+      "predicted_solution": " 1. Use a fresh, whole black truffle (or a high\u2011quality truffle paste) instead of a bottled product. 2. Shave or grate the fresh truffle immediately after baking, not before. 3. If you must use a bottled product, add it as a finishing drizzle of truffle oil or truffle\u2011infused butter at the very end of baking (or after the pizza is removed). 4. Keep the pizza\u2019s final baking time short (8\u201310\u202fmin) and the oven temperature just below 500\u202f\u00b0F if you want to incorporate a small amount of truffle directly into the dough.",
+      "scores": {
+        "cause_accuracy": 0.16666666666666666,
+        "solution_appropriateness": 0.6,
+        "scientific_accuracy": 0.18181818181818182,
+        "overall": 0.343
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The bottled truffle is either a preservative\u2011infused product (often in oil or water) that loses its volatile aroma at high temperatures, or the truffle was already past its prime. When exposed to 500\u202f\u00b0F, the truffle\u2019s delicate aroma compounds evaporate and the remaining solids become rubbery and flavorless.  \n\nSOLUTION:  \n1. Use a fresh, whole black truffle (or a high\u2011quality truffle paste) instead of a bottled product.  \n2. Shave or grate the fresh truffle immediately after baking, not before.  \n3. If you must use a bottled product, add it as a finishing drizzle of truffle oil or truffle\u2011infused butter at the very end of baking (or after the pizza is removed).  \n4. Keep the pizza\u2019s final baking time short (8\u201310\u202fmin) and the oven temperature just below 500\u202f\u00b0F if you want to incorporate a small amount of truffle directly into the dough.  \n\nEXPLANATION:  \nBlack truffle flavor is carried by volatile sulfur\u2011containing compounds (e.g., 2\u2011(methyl\u2011sulfanyl)\u20112\u2011methyl\u2011propanol) that are highly heat\u2011labile. At temperatures above ~200\u202f\u00b0C (400\u202f\u00b0F) these molecules evaporate quickly, leaving only the truffle\u2019s texture, which can become rubbery when the moisture is driven off. Bottled truffles are usually preserved in oil or water with additives that further reduce volatility and can impart a rubbery mouthfeel when heated. Fresh truffle, shaved after cooking, delivers the aroma at body temperature, preserving the complex scent profile. Using truffle oil or butter as a finishing touch keeps the volatile compounds intact because the oil protects the aroma molecules until they reach the palate."
+    },
+    {
+      "test_case_id": 23,
+      "problem": "Mushroom sauce is too thin/light and lacks a rich, glossy texture.",
+      "recipe": "White wine & Mushroom Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "The sauce never fully reduced and lacked sufficient fat to form a stable, glossy emulsion, so the final mixture stayed thin and light.",
+      "ground_truth_cause": "Relying solely on low-fat \"liquid\" cream without reduction or emulsification.",
+      "predicted_solution": " 1. **Reduce the wine more aggressively** \u2013 after deglazing, let the wine simmer until it\u2019s cut in half (or 75\u201180\u202f% of its original volume) before adding cream. 2. **Add a small thickening agent** \u2013 whisk in a 1\u202ftsp cornstarch slurry (cornstarch + cold water) or a 1\u202ftsp flour roux after the cream has begun to thicken. 3. **Increase the butter** \u2013 whisk in a larger knob of cold butter (2\u202fTbsp) in a slow, steady stream, or finish with a splash of extra heavy cream. 4. **Let it simmer until it coats the back of a spoon** \u2013 this ensures the starch/cream mixture thickens properly.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.36363636363636365,
+        "scientific_accuracy": 0.7272727272727273,
+        "overall": 0.2909
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The sauce never fully reduced and lacked sufficient fat to form a stable, glossy emulsion, so the final mixture stayed thin and light.  \n\nSOLUTION:  \n1. **Reduce the wine more aggressively** \u2013 after deglazing, let the wine simmer until it\u2019s cut in half (or 75\u201180\u202f% of its original volume) before adding cream.  \n2. **Add a small thickening agent** \u2013 whisk in a 1\u202ftsp cornstarch slurry (cornstarch + cold water) or a 1\u202ftsp flour roux after the cream has begun to thicken.  \n3. **Increase the butter** \u2013 whisk in a larger knob of cold butter (2\u202fTbsp) in a slow, steady stream, or finish with a splash of extra heavy cream.  \n4. **Let it simmer until it coats the back of a spoon** \u2013 this ensures the starch/cream mixture thickens properly.  \n\nEXPLANATION:  \n- **Reduction** concentrates both flavor and viscosity; a more reduced wine yields a thicker base.  \n- **Starch or roux** gelatinizes and traps liquid, giving body without relying solely on cream.  \n- **Fat content** is critical for a glossy sheen; butter, when whisked into hot cream, forms a stable emulsion that coats the sauce, adding richness and shine.  \n- **Proper whisking** incorporates air and evenly distributes the butter, preventing separation and ensuring a smooth, glossy finish."
+    },
+    {
+      "test_case_id": 24,
+      "problem": "Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.",
+      "recipe": "Thai Curry Paste",
+      "category": "Ingredient Prep",
+      "difficulty": "medium",
+      "predicted_cause": "The recipe mistakenly incorporated the white lemon pith (the bitter, fibrous part of the citrus) into the curry paste instead of using only the bright, aromatic zest. The pith contains high concentrations of bitter essential oils, tannins, and fibrous material that overwhelm the delicate balance of flavors in a Thai curry paste.",
+      "ground_truth_cause": "Accidentally processing the white lemon pith into the paste instead of just the zest.",
+      "predicted_solution": " 1. **Separate the zest from the pith** \u2013 use a microplane or citrus zester to scrape only the colored outer layer of the lemon, discarding the white pith. 2. **Re\u2011make the paste** \u2013 after rehydrating the chilies, mince lemongrass, galangal, garlic, and shallots as before, then pound or process until thick. 3. **Add the citrus zest** \u2013 pulse in the lemon zest and shrimp paste, but do so in small increments, tasting as you go to avoid over\u2011bitterening. 4. **Balance the flavor** \u2013 if bitterness persists, add a small pinch of palm sugar or a splash of coconut milk to mellow the paste.",
+      "scores": {
+        "cause_accuracy": 0.7,
+        "solution_appropriateness": 0.10526315789473684,
+        "scientific_accuracy": 0.14285714285714285,
+        "overall": 0.3507
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The recipe mistakenly incorporated the white lemon pith (the bitter, fibrous part of the citrus) into the curry paste instead of using only the bright, aromatic zest. The pith contains high concentrations of bitter essential oils, tannins, and fibrous material that overwhelm the delicate balance of flavors in a Thai curry paste.\n\nSOLUTION:  \n1. **Separate the zest from the pith** \u2013 use a microplane or citrus zester to scrape only the colored outer layer of the lemon, discarding the white pith.  \n2. **Re\u2011make the paste** \u2013 after rehydrating the chilies, mince lemongrass, galangal, garlic, and shallots as before, then pound or process until thick.  \n3. **Add the citrus zest** \u2013 pulse in the lemon zest and shrimp paste, but do so in small increments, tasting as you go to avoid over\u2011bitterening.  \n4. **Balance the flavor** \u2013 if bitterness persists, add a small pinch of palm sugar or a splash of coconut milk to mellow the paste.  \n\nEXPLANATION: The white pith of citrus is rich in bitter compounds such as limonin, tannins, and certain essential oils that are not masked by the bright citric acids found in the zest. When ground into the paste, these compounds dominate the flavor profile, producing an unpleasant bitterness. By using only the zest, you preserve the citrus's bright, fragrant oils and citric acid without the bitter load, allowing the shrimp paste and other aromatics to shine. Adding a touch of sugar or coconut milk further balances the bitterness by providing sweetness and fat, which coat the palate and help integrate the strong flavors."
+    },
+    {
+      "test_case_id": 25,
+      "problem": "The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",
+      "recipe": "Thai Green Curry",
+      "category": "Thai",
+      "difficulty": "medium",
+      "predicted_cause": "The recipe used coconut paste (a concentrated, high\u2011fat coconut milk powder) as a 1:1 substitute for liquid coconut milk. When reconstituted, it creates a thick, very oily base that separates when fried, darkens the sauce through Maillard browning, and overwhelms the subtle green\u2011curry herbs.",
+      "ground_truth_cause": "Using concentrated coconut paste 1:1 without dilution, which causes the sauce to \"split\" and overpowers the fresh green chili/herbal flavors.",
+      "predicted_solution": " 1. Replace the coconut paste with a standard coconut milk (or a 50/50 mix of coconut milk and water). 2. Use only a teaspoon or two of neutral oil (e.g., vegetable or light sesame) to saut\u00e9 the green\u2011curry paste; do not fry it in the coconut \u201ccream.\u201d 3. Add a small splash of broth or stock after the paste is fragrant to keep the sauce light. 4. Stir in fresh basil and herbs earlier, before adding proteins and vegetables, so they\u2019re not buried in the heavy coconut base. 5. If a richer sauce is desired, finish with a drizzle of light coconut cream, not the thick paste.",
+      "scores": {
+        "cause_accuracy": 0.25,
+        "solution_appropriateness": 0.25,
+        "scientific_accuracy": 0.0,
+        "overall": 0.2
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The recipe used coconut paste (a concentrated, high\u2011fat coconut milk powder) as a 1:1 substitute for liquid coconut milk. When reconstituted, it creates a thick, very oily base that separates when fried, darkens the sauce through Maillard browning, and overwhelms the subtle green\u2011curry herbs.\n\nSOLUTION:  \n1. Replace the coconut paste with a standard coconut milk (or a 50/50 mix of coconut milk and water).  \n2. Use only a teaspoon or two of neutral oil (e.g., vegetable or light sesame) to saut\u00e9 the green\u2011curry paste; do not fry it in the coconut \u201ccream.\u201d  \n3. Add a small splash of broth or stock after the paste is fragrant to keep the sauce light.  \n4. Stir in fresh basil and herbs earlier, before adding proteins and vegetables, so they\u2019re not buried in the heavy coconut base.  \n5. If a richer sauce is desired, finish with a drizzle of light coconut cream, not the thick paste.\n\nEXPLANATION: Coconut paste is a highly concentrated form of coconut milk powder; when reconstituted it contains a higher fat percentage than liquid coconut milk. The excess fat droplets coalesce when heated, producing a greasy, oily texture and a darker color from caramelization. This overpowering coconut flavor masks the delicate herbs in the green\u2011curry paste. By using regular coconut milk (lower fat) and a minimal amount of neutral oil for saut\u00e9ing, the fat remains emulsified, the sauce stays translucent and flavorful, and the herbal notes shine through. Adding herbs early prevents them from being lost in the cooking process."
+    },
+    {
+      "test_case_id": 26,
+      "problem": "The Sichuan pepper provides no numbing sensation or flavor (tastes like \"dust\") even after being ground into a fine powder",
+      "recipe": "Sichuan Chilli Oil",
+      "category": "Chinese",
+      "difficulty": "easy",
+      "predicted_cause": "The oil was heated too hot (225\u2011250\u202f\u00b0F), causing the heat\u2011labile numbing compound hydroxy\u2011\u03b1\u2011sanshool to degrade, and the peppercorns were likely old or not properly toasted, so the infusion extracted little flavor.",
+      "ground_truth_cause": "Using old, stale peppercorns or over-processing high-quality ones into a fine dust before infusion.",
+      "predicted_solution": " 1. Use fresh, high\u2011quality Sichuan peppercorns. 2. Toast the peppercorns in a dry pan at 180\u2011200\u202f\u00b0F (80\u201193\u202f\u00b0C) for 2\u20133\u202fmin until fragrant. 3. Add the toasted peppercorns to oil that has been heated to 180\u2011200\u202f\u00b0F (not above 200\u202f\u00b0F). 4. Steep for 15\u201320\u202fmin, then remove the peppercorns. 5. Grind the peppercorns immediately before adding them to the oil (or add the ground powder after the oil has cooled to <200\u202f\u00b0F). 6. Pour the infused oil over the chili flakes, strain, and let the mixture sit for 48\u202fh to allow the mala",
+      "scores": {
+        "cause_accuracy": 0.08333333333333333,
+        "solution_appropriateness": 0.23076923076923078,
+        "scientific_accuracy": 0.1,
+        "overall": 0.1456
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The oil was heated too hot (225\u2011250\u202f\u00b0F), causing the heat\u2011labile numbing compound hydroxy\u2011\u03b1\u2011sanshool to degrade, and the peppercorns were likely old or not properly toasted, so the infusion extracted little flavor.\n\nSOLUTION:  \n1. Use fresh, high\u2011quality Sichuan peppercorns.  \n2. Toast the peppercorns in a dry pan at 180\u2011200\u202f\u00b0F (80\u201193\u202f\u00b0C) for 2\u20133\u202fmin until fragrant.  \n3. Add the toasted peppercorns to oil that has been heated to 180\u2011200\u202f\u00b0F (not above 200\u202f\u00b0F).  \n4. Steep for 15\u201320\u202fmin, then remove the peppercorns.  \n5. Grind the peppercorns immediately before adding them to the oil (or add the ground powder after the oil has cooled to <200\u202f\u00b0F).  \n6. Pour the infused oil over the chili flakes, strain, and let the mixture sit for 48\u202fh to allow the mala"
+    },
+    {
+      "test_case_id": 27,
+      "problem": "The soup remains thin and watery, or the starch forms \"dumplings\" (clumps) instead of thickening the broth evenly.",
+      "recipe": "Egg Drop Soup",
+      "category": "soup",
+      "difficulty": "easy",
+      "predicted_cause": "The cornstarch slurry was either too thin or added too quickly/at too high a temperature, causing the starch granules to gelatinize unevenly\u2014either not thickening the broth or clumping into \u201cdumplings\u201d instead of dispersing smoothly.",
+      "ground_truth_cause": "Adding dry starch directly to hot broth or failing to use a thickener like cornstarch or cassava flour.",
+      "predicted_solution": " 1. **Make a thicker, smoother slurry** \u2013 use 1\u202fTbsp cornstarch to 1\u202fTbsp cold water, whisk until completely dissolved. 2. **Add the slurry slowly** \u2013 pour it in a thin stream while the broth is at a gentle simmer, not a rolling boil. 3. **Stir constantly** \u2013 use a whisk or spoon to keep the mixture moving so the starch stays dispersed. 4. **Let it cook** \u2013 once added, allow the soup to cook for 1\u20132\u202fminutes (until it turns opaque and thickens) before reducing heat and adding the eggs.",
+      "scores": {
+        "cause_accuracy": 0.23076923076923078,
+        "solution_appropriateness": 0.35294117647058826,
+        "scientific_accuracy": 0.5,
+        "overall": 0.3335
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The cornstarch slurry was either too thin or added too quickly/at too high a temperature, causing the starch granules to gelatinize unevenly\u2014either not thickening the broth or clumping into \u201cdumplings\u201d instead of dispersing smoothly.  \n\nSOLUTION:  \n1. **Make a thicker, smoother slurry** \u2013 use 1\u202fTbsp cornstarch to 1\u202fTbsp cold water, whisk until completely dissolved.  \n2. **Add the slurry slowly** \u2013 pour it in a thin stream while the broth is at a gentle simmer, not a rolling boil.  \n3. **Stir constantly** \u2013 use a whisk or spoon to keep the mixture moving so the starch stays dispersed.  \n4. **Let it cook** \u2013 once added, allow the soup to cook for 1\u20132\u202fminutes (until it turns opaque and thickens) before reducing heat and adding the eggs.  \n\nEXPLANATION: Cornstarch thickens liquids by gelatinization\u2014when heated, the starch granules swell and release starch molecules that increase viscosity. If the slurry is too thin, not enough starch is present to form a network; if the slurry is added too quickly or at too high a temperature, the starch granules burst and clump together, creating lumps. A smooth slurry, gentle heat, and constant stirring ensure the starch molecules spread evenly, forming a uniform, clear thickening rather than clumps."
+    },
+    {
+      "test_case_id": 28,
+      "problem": "Monkfish cheeks are inedibly salty and slightly \"cured\" after being left in the fridge with too much salt for too long.",
+      "recipe": "Pan-Seared Monkfish Cheeks",
+      "category": "seafood",
+      "difficulty": "medium",
+      "predicted_cause": "Over\u2011salting and prolonged refrigeration caused the monkfish cheeks to cure, drawing out moisture and concentrating salt, resulting in an inedibly salty, rubbery texture.",
+      "ground_truth_cause": "Overestimating the salt amount or curing time needed to draw out moisture from delicate seafood.",
+      "predicted_solution": "Rinse the cheeks under cold running water to remove surface salt, then soak them in a large bowl of cold water for 30\u201360\u202fminutes (changing the water halfway through) to leach out excess salt. Pat dry thoroughly, season lightly with salt just before cooking, and proceed with the pan\u2011searing steps.",
+      "scores": {
+        "cause_accuracy": 0.16666666666666666,
+        "solution_appropriateness": 0.4,
+        "scientific_accuracy": 0.2,
+        "overall": 0.2667
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: Over\u2011salting and prolonged refrigeration caused the monkfish cheeks to cure, drawing out moisture and concentrating salt, resulting in an inedibly salty, rubbery texture.  \nSOLUTION: Rinse the cheeks under cold running water to remove surface salt, then soak them in a large bowl of cold water for 30\u201360\u202fminutes (changing the water halfway through) to leach out excess salt. Pat dry thoroughly, season lightly with salt just before cooking, and proceed with the pan\u2011searing steps.  \nEXPLANATION: Salt acts osmotically, pulling water out of fish flesh and concentrating flavor; prolonged exposure allows the salt to penetrate deeper, effectively curing the meat. Rinsing and a brief water soak reverse this process by extracting surface salt and rehydrating the tissue, restoring a more tender, less salty bite."
+    },
+    {
+      "test_case_id": 29,
+      "problem": "The vegan ice cream has a grainy, \"oatmeal-like\" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",
+      "recipe": "Matcha Tofu Ice Cream",
+      "category": "dessert",
+      "difficulty": "easy",
+      "predicted_cause": "The tofu\u2011soy\u2011milk mixture isn\u2019t fully homogenized and lacks sufficient fat and stabilizer, so protein particles and ice crystals remain un\u2011dispersed. The matcha powder is also not fully dissolved, adding grit, and the churning time or pre\u2011cooling is inadequate, producing a dense, grainy product.",
+      "ground_truth_cause": "Substituting silken tofu with regular (firm or extra-firm) tofu in a high-fat dessert base.",
+      "predicted_solution": " 1. **Pre\u2011blend** the tofu, soy milk, and canola oil on very high speed for 2\u20133\u202fminutes until the mixture is a fine, uniform emulsion. 2. **Sift** the matcha powder and dissolve it in a small amount of warm soy milk before adding it to the blender to eliminate grit. 3. **Add a stabilizer** (0.5\u20131\u202f% xanthan gum or guar gum, or a commercial ice\u2011cream stabilizer) to the mixture and whisk or blend until fully dispersed. 4. **Increase fat** slightly by adding a tablespoon of coconut oil or using a higher\u2011fat plant milk (e.g., oat or cashew milk). 5. **Pre\u2011chill** the ice\u2011cream maker or the mixture in the freezer for at least 1\u202fhour before churning. 6. **Churn** until the ice cream thickens to a soft\u2011serve consistency; if freezing in a shallow dish, stir vigorously every 15\u202fminutes for the first 2\u202fhours to break up ice crystals.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.14285714285714285,
+        "scientific_accuracy": 0.1,
+        "overall": 0.0771
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The tofu\u2011soy\u2011milk mixture isn\u2019t fully homogenized and lacks sufficient fat and stabilizer, so protein particles and ice crystals remain un\u2011dispersed. The matcha powder is also not fully dissolved, adding grit, and the churning time or pre\u2011cooling is inadequate, producing a dense, grainy product.  \n\nSOLUTION:  \n1. **Pre\u2011blend** the tofu, soy milk, and canola oil on very high speed for 2\u20133\u202fminutes until the mixture is a fine, uniform emulsion.  \n2. **Sift** the matcha powder and dissolve it in a small amount of warm soy milk before adding it to the blender to eliminate grit.  \n3. **Add a stabilizer** (0.5\u20131\u202f% xanthan gum or guar gum, or a commercial ice\u2011cream stabilizer) to the mixture and whisk or blend until fully dispersed.  \n4. **Increase fat** slightly by adding a tablespoon of coconut oil or using a higher\u2011fat plant milk (e.g., oat or cashew milk).  \n5. **Pre\u2011chill** the ice\u2011cream maker or the mixture in the freezer for at least 1\u202fhour before churning.  \n6. **Churn** until the ice cream thickens to a soft\u2011serve consistency; if freezing in a shallow dish, stir vigorously every 15\u202fminutes for the first 2\u202fhours to break up ice crystals.  \n\nEXPLANATION:  \n- **Homogenization** breaks protein and fat globules into tiny droplets, creating a smooth emulsion.  \n- **Stabilizers** bind water and fat, preventing ice crystals from growing large, which keeps the mouthfeel light and creamy.  \n- **Sufficient fat** provides the \u201cmouth\u2011feel\u201d and reduces the perception of density; plant milks with low fat leave the product gritty.  \n- **Proper dissolution of matcha** avoids undissolved powder that contributes to a grainy texture.  \n- **Pre\u2011cooling and adequate churning** limit ice crystal size, ensuring a silky, smooth ice cream rather"
+    },
+    {
+      "test_case_id": 30,
+      "problem": "No instant yeast",
+      "recipe": "Yeasted Banana Sandwich Bread",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "The recipe relies on instant yeast for fermentation, but you have none, so the dough will not rise and the bread will be dense.",
+      "ground_truth_cause": "Missing Ingredient",
+      "predicted_solution": "Replace the instant yeast with 2\u202ftsp of active dry yeast (or 1\u202ftsp fresh yeast) by dissolving it in \u00bc\u202fcup warm water (110\u202f\u00b0F) with a pinch of sugar, let it sit 5\u202fmin until foamy, then add to the dough; or, if you truly have no yeast, use 2\u202ftsp baking powder plus \u00bd\u202ftsp baking soda with 1\u202ftsp vinegar or lemon juice to activate the leavening and bake immediately.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.5714285714285714,
+        "scientific_accuracy": 0.2857142857142857,
+        "overall": 0.2857
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The recipe relies on instant yeast for fermentation, but you have none, so the dough will not rise and the bread will be dense.  \nSOLUTION: Replace the instant yeast with 2\u202ftsp of active dry yeast (or 1\u202ftsp fresh yeast) by dissolving it in \u00bc\u202fcup warm water (110\u202f\u00b0F) with a pinch of sugar, let it sit 5\u202fmin until foamy, then add to the dough; or, if you truly have no yeast, use 2\u202ftsp baking powder plus \u00bd\u202ftsp baking soda with 1\u202ftsp vinegar or lemon juice to activate the leavening and bake immediately.  \nEXPLANATION: Yeast ferments sugars to produce CO\u2082, which expands the gluten network and gives the bread its airy structure. Active dry yeast is a slower but equivalent leavening agent once activated; fresh yeast works similarly. Baking powder and soda are chemical leaveners that release CO\u2082 instantly when wet and heated, providing a quick rise but yielding a denser crumb and different flavor profile."
+    },
+    {
+      "test_case_id": 31,
+      "problem": "Saut\u00e9ed mushrooms are rubbery, tough, and \"slimy\" instead of being tender and meaty.",
+      "recipe": "Saut\u00e9ed Cremini Mushrooms",
+      "category": "Ingredient Prep",
+      "difficulty": "easy",
+      "predicted_cause": "Salt was added too early, causing the mushrooms to release too much water and steam instead of sear; the pan was overcrowded and the oil was added after the salt, preventing proper browning and leaving the mushrooms rubbery and slimy.",
+      "ground_truth_cause": "Overcrowding the pan and adding onions/salt too early, which causes the mushrooms to steam in their own juice.",
+      "predicted_solution": " 1. Pat the mushrooms dry with a paper towel. 2. Heat the Dutch oven over medium\u2011high heat and add a small amount of oil (or the residual beef fat) first. 3. Add the mushrooms alone, spread them out, and let them sear for 3\u20134\u202fmin without stirring until a brown crust forms. 4. Add the diced onions and cook until they soften. 5. Sprinkle salt only after the mushrooms have browned and most moisture has evaporated, then finish saut\u00e9ing for 1\u20132\u202fmin.",
+      "scores": {
+        "cause_accuracy": 0.38461538461538464,
+        "solution_appropriateness": 0.4375,
+        "scientific_accuracy": 0.42857142857142855,
+        "overall": 0.4146
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: Salt was added too early, causing the mushrooms to release too much water and steam instead of sear; the pan was overcrowded and the oil was added after the salt, preventing proper browning and leaving the mushrooms rubbery and slimy.  \n\nSOLUTION:  \n1. Pat the mushrooms dry with a paper towel.  \n2. Heat the Dutch oven over medium\u2011high heat and add a small amount of oil (or the residual beef fat) first.  \n3. Add the mushrooms alone, spread them out, and let them sear for 3\u20134\u202fmin without stirring until a brown crust forms.  \n4. Add the diced onions and cook until they soften.  \n5. Sprinkle salt only after the mushrooms have browned and most moisture has evaporated, then finish saut\u00e9ing for 1\u20132\u202fmin.  \n\nEXPLANATION: Mushrooms contain ~80\u202f% water. Salt draws that water out; if added before the mushrooms are seared, the released moisture turns into steam, preventing a Maillard browning reaction and yielding a rubbery, slimy texture. High heat and a dry pan allow rapid evaporation of moisture, creating a crisp exterior. Adding oil first ensures even heat transfer and prevents sticking, while adding salt later limits water extraction during the searing phase, resulting in tender, meaty mushrooms."
+    },
+    {
+      "test_case_id": 32,
+      "problem": "The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",
+      "recipe": "Black Sesame Paste",
+      "category": "Ingredient Prep",
+      "difficulty": "medium",
+      "predicted_cause": "The paste is too dry and the oil hasn\u2019t been released or emulsified properly \u2013 likely due to insufficient or wrong\u2011type oil, too much honey (which adds viscosity and pulls in moisture), over\u2011toasting that dries the seeds, and a processor that can\u2019t break down the fibers",
+      "ground_truth_cause": "Toasting the seeds for only 5 minutes (insufficient to release oils) and attempting to process too large a batch (18 oz) at once.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.05555555555555555,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0222
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The paste is too dry and the oil hasn\u2019t been released or emulsified properly \u2013 likely due to insufficient or wrong\u2011type oil, too much honey (which adds viscosity and pulls in moisture), over\u2011toasting that dries the seeds, and a processor that can\u2019t break down the fibers"
+    },
+    {
+      "test_case_id": 33,
+      "problem": "My pie crust cracks and breaks apart while I am rolling it out.",
+      "recipe": "Classic Pie Crust",
+      "category": "Baking",
+      "difficulty": "medium",
+      "predicted_cause": "The dough was overworked or not chilled long enough, causing gluten to tighten and the fat to melt, which makes the crust brittle and prone to cracking when rolled.",
+      "ground_truth_cause": "The dough is too cold or lacks sufficient moisture.",
+      "predicted_solution": "Stop mixing once the dough just comes together, immediately wrap it in plastic and chill for at least 30\u201360\u202fminutes (or overnight). When rolling, keep the dough cold by working in a chilled room or placing the dough on a chilled surface, and lightly dust the surface with flour\u2014no more than a thin coat\u2014to keep it from sticking. If the dough still feels stiff, lightly fold in a small amount of cold water or cold butter, chill again, then roll.",
+      "scores": {
+        "cause_accuracy": 0.16666666666666666,
+        "solution_appropriateness": 0.4,
+        "scientific_accuracy": 0.25,
+        "overall": 0.2767
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The dough was overworked or not chilled long enough, causing gluten to tighten and the fat to melt, which makes the crust brittle and prone to cracking when rolled.  \nSOLUTION: Stop mixing once the dough just comes together, immediately wrap it in plastic and chill for at least 30\u201360\u202fminutes (or overnight). When rolling, keep the dough cold by working in a chilled room or placing the dough on a chilled surface, and lightly dust the surface with flour\u2014no more than a thin coat\u2014to keep it from sticking. If the dough still feels stiff, lightly fold in a small amount of cold water or cold butter, chill again, then roll.  \nEXPLANATION: Gluten forms when flour proteins absorb water and align into strands; when dough is worked too much or left at room temperature, these strands tighten and create a firm structure. Cold fat blocks gluten development, keeping the crust tender. If the dough warms up, the fat melts, allowing gluten to tighten and the dough to become tough and crack when stretched. Chilling halts gluten formation, keeps the fat solid, and gives the dough a pliable, crack\u2011free consistency for rolling."
+    },
+    {
+      "test_case_id": 34,
+      "problem": "The cakes fail to \"bloom\" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",
+      "recipe": "Vietnamese B\u00e1nh Thu\u1eabn",
+      "category": "Baking",
+      "difficulty": "hard",
+      "predicted_cause": "The batter was made with wheat flour alone instead of the specified arrowroot starch, so it lacked the high\u2011starch, low\u2011gluten component that creates the airy, bubble\u2011filled structure needed for the cakes to \u201cbloom\u201d and split open.",
+      "ground_truth_cause": "Substituting arrowroot powder with a wheat starch/cake flour mix.",
+      "predicted_solution": " 1. **Replace the wheat\u2011flour\u2011only mix with the correct ratio of arrowroot starch to wheat flour** (e.g., \u00be cup arrowroot starch + \u00bc cup wheat flour for each cup of batter). 2. **Whip the eggs and sugar to ribbon stage (15\u201320\u202fmin)** and fold in the starch\u2011flour blend in small batches to keep the batter light. 3. **Preheat the mold to a moderate temperature** (oil just shimmering, not smoking) and keep the lid on to trap steam. 4. **Bake 5\u20137\u202fmin, checking for the first golden edge and the visible split on the tops**. 5. If the tops still dome, lower the heat slightly or add a pinch of baking powder to encourage lift.",
+      "scores": {
+        "cause_accuracy": 0.5,
+        "solution_appropriateness": 0.3333333333333333,
+        "scientific_accuracy": 0.36363636363636365,
+        "overall": 0.4061
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The batter was made with wheat flour alone instead of the specified arrowroot starch, so it lacked the high\u2011starch, low\u2011gluten component that creates the airy, bubble\u2011filled structure needed for the cakes to \u201cbloom\u201d and split open.\n\nSOLUTION:  \n1. **Replace the wheat\u2011flour\u2011only mix with the correct ratio of arrowroot starch to wheat flour** (e.g., \u00be cup arrowroot starch + \u00bc cup wheat flour for each cup of batter).  \n2. **Whip the eggs and sugar to ribbon stage (15\u201320\u202fmin)** and fold in the starch\u2011flour blend in small batches to keep the batter light.  \n3. **Preheat the mold to a moderate temperature** (oil just shimmering, not smoking) and keep the lid on to trap steam.  \n4. **Bake 5\u20137\u202fmin, checking for the first golden edge and the visible split on the tops**.  \n5. If the tops still dome, lower the heat slightly or add a pinch of baking powder to encourage lift.\n\nEXPLANATION: Arrowroot is a pure, low\u2011gluten starch that gelatinizes at a lower temperature and expands rapidly when heated, forming many small air pockets that give the cake a light, airy crumb and allow the top to split open (\u201cbloom\u201d). Wheat flour contains gluten, which creates a stronger, tighter network that traps air but also makes the batter denser and the crumb tougher. By using the correct arrowroot\u2011to\u2011flour ratio, the batter retains enough starch for expansion while limiting gluten development, resulting in the desired domed, split\u2011open tops."
+    },
+    {
+      "test_case_id": 35,
+      "problem": "The bottom of my fruit pie is pale and soggy after baking.",
+      "recipe": "Berry Pie",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "The crust was not pre\u2011baked and the filling was too liquidy, so the bottom never browned and stayed soggy.",
+      "ground_truth_cause": "Moisture from the fruit seeps into the bottom crust before the oven's heat can set it.",
+      "predicted_solution": "Blind\u2011bake the bottom of the pie shell for 8\u201310\u202fminutes at 375\u202f\u00b0F (190\u202f\u00b0C) before adding the filling. Increase the thickener (e.g., 2\u202fTbsp cornstarch or 1\u202fTbsp flour) and reduce the fruit juice by about \u00bc cup. When baking the pie, cover the edges with foil or a pastry shield after the first 15\u202fminutes to prevent over\u2011browning, and bake until the filling is set and the crust is golden.",
+      "scores": {
+        "cause_accuracy": 0.15384615384615385,
+        "solution_appropriateness": 0.2727272727272727,
+        "scientific_accuracy": 0.0,
+        "overall": 0.1706
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The crust was not pre\u2011baked and the filling was too liquidy, so the bottom never browned and stayed soggy.  \nSOLUTION: Blind\u2011bake the bottom of the pie shell for 8\u201310\u202fminutes at 375\u202f\u00b0F (190\u202f\u00b0C) before adding the filling. Increase the thickener (e.g., 2\u202fTbsp cornstarch or 1\u202fTbsp flour) and reduce the fruit juice by about \u00bc cup. When baking the pie, cover the edges with foil or a pastry shield after the first 15\u202fminutes to prevent over\u2011browning, and bake until the filling is set and the crust is golden.  \nEXPLANATION: Pre\u2011baking removes excess moisture from the crust, allowing it to crisp and brown. A thicker filling (more starch or flour) absorbs liquid and sets faster, preventing sogginess. Covering the edges stops the crust from burning while the interior finishes cooking. This combination ensures a browned, crisp bottom and a firm filling."
+    },
+    {
+      "test_case_id": 36,
+      "problem": "My cake sank in the center after taking it out of the oven.",
+      "recipe": "Vanilla Layer Cake",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "The cake likely over\u2011baked or the oven temperature was too high, causing the outer structure to set too quickly while the center stayed liquid; when the heat dissipated, the center collapsed and the cake sank.",
+      "ground_truth_cause": "Opening the oven door too early or too much leavening agent.",
+      "predicted_solution": " 1. **Lower the oven temperature by 10\u201315\u202f\u00b0C (25\u201330\u202f\u00b0F).** 2. **Use an oven thermometer to confirm the actual temperature.** 3. **Bake until a toothpick inserted near the center comes out clean or with just a few moist crumbs\u2014usually 8\u201310\u202f% less time than the original recipe.** 4. **Do not open the oven door until the cake is at least 90\u202f% done to prevent a sudden temperature drop.** 5. **If the batter had too much liquid, reduce the liquid by 10\u201315\u202f% or add a tablespoon of flour to tighten the structure.**",
+      "scores": {
+        "cause_accuracy": 0.25,
+        "solution_appropriateness": 0.14285714285714285,
+        "scientific_accuracy": 0.0,
+        "overall": 0.1571
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The cake likely over\u2011baked or the oven temperature was too high, causing the outer structure to set too quickly while the center stayed liquid; when the heat dissipated, the center collapsed and the cake sank.\n\nSOLUTION:  \n1. **Lower the oven temperature by 10\u201315\u202f\u00b0C (25\u201330\u202f\u00b0F).**  \n2. **Use an oven thermometer to confirm the actual temperature.**  \n3. **Bake until a toothpick inserted near the center comes out clean or with just a few moist crumbs\u2014usually 8\u201310\u202f% less time than the original recipe.**  \n4. **Do not open the oven door until the cake is at least 90\u202f% done to prevent a sudden temperature drop.**  \n5. **If the batter had too much liquid, reduce the liquid by 10\u201315\u202f% or add a tablespoon of flour to tighten the structure.**\n\nEXPLANATION:  \nCake batter relies on a delicate balance of leavening gases, protein coagulation, and gluten development. When the oven is too hot, the batter rises rapidly and the outer shell sets before the interior proteins have fully coagulated. This creates a fragile crust that cannot support the internal pressure; when the heat dissipates, the uncoagulated center collapses, causing the cake to sink. Lowering the temperature allows the batter to rise more slowly, giving the proteins and gluten time to set evenly throughout. Using a thermometer ensures consistent heat, and baking to the correct internal temperature (usually 88\u201393\u202f\u00b0C / 190\u2013200\u202f\u00b0F) guarantees a firm but tender crumb without over\u2011baking."
+    },
+    {
+      "test_case_id": 37,
+      "problem": "The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",
+      "recipe": "Swiss Meringue Buttercream",
+      "category": "Baking",
+      "difficulty": "medium",
+      "predicted_cause": "Replacing all butter with cream cheese lowered the fat content and increased the water content of the frosting. Cream cheese contains ~48\u202f% fat and ~36\u202f% water, whereas butter is ~80\u202f% fat and ~1\u202f% water. The Swiss\u2011meringue base relies on a high\u2011fat emulsion to trap the air whipped into the meringue; the extra water from the cream cheese dilutes that emulsion, preventing the mixture from setting into stiff peaks. Additionally, the cream cheese may have been too cold or not fully softened, causing it to separate during incorporation.",
+      "ground_truth_cause": "Substituting cream cheese for butter at a 1:1 ratio in a meringue-based frosting without adjusting for fat content.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.2857142857142857,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.2143
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: Replacing all butter with cream cheese lowered the fat content and increased the water content of the frosting. Cream cheese contains ~48\u202f% fat and ~36\u202f% water, whereas butter is ~80\u202f% fat and ~1\u202f% water. The Swiss\u2011meringue base relies on a high\u2011fat emulsion to trap the air whipped into the meringue; the extra water from the cream cheese dilutes that emulsion, preventing the mixture from setting into stiff peaks. Additionally, the cream cheese may have been too cold or not fully softened, causing it to separate during incorporation.\n\nSOLUTION:  \n"
+    },
+    {
+      "test_case_id": 38,
+      "problem": "The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.",
+      "recipe": "Grilled Giant Octopus Legs",
+      "category": "seafood",
+      "difficulty": "medium",
+      "predicted_cause": "The octopus legs were over\u2011cooked during the parboiling step (20\u201330\u202fmin at a gentle simmer is often too long for pre\u2011tenderized legs), which caused the muscle proteins to tighten and the connective tissue to contract, producing a rubbery texture. The subsequent high\u2011heat sear may have further tightened the surface.",
+      "ground_truth_cause": "Boiling the octopus for a long duration (standard prep) when it has already been mechanically or chemically tenderized.",
+      "predicted_solution": " 1. **Shorten the parboil time** \u2013 simmer the legs for only 8\u201312\u202fminutes, checking for a slight tenderness (the flesh should be just pliable, not fully cooked). 2. **Use a lower simmer** \u2013 keep the water at 80\u201385\u202f\u00b0C (just below boiling) to avoid rapid protein denaturation. 3. **Add a tenderizing agent** \u2013 finish the pre\u2011tenderization with a small amount of acidic liquid (lemon juice or vinegar) or a commercial octopus tenderizer. 4. **Rest the legs** \u2013 after parboiling, cool them gently in ice water for 5\u202fminutes to stop cooking and allow the proteins to relax. 5. **Sear at moderate heat** \u2013 grill at medium\u2011high (not blast\u2011hot) for 1\u20132\u202fminutes per side, just enough to char the exterior without over\u2011tightening the muscle.",
+      "scores": {
+        "cause_accuracy": 0.21428571428571427,
+        "solution_appropriateness": 0.25,
+        "scientific_accuracy": 0.36363636363636365,
+        "overall": 0.2584
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The octopus legs were over\u2011cooked during the parboiling step (20\u201330\u202fmin at a gentle simmer is often too long for pre\u2011tenderized legs), which caused the muscle proteins to tighten and the connective tissue to contract, producing a rubbery texture. The subsequent high\u2011heat sear may have further tightened the surface.\n\nSOLUTION:  \n1. **Shorten the parboil time** \u2013 simmer the legs for only 8\u201312\u202fminutes, checking for a slight tenderness (the flesh should be just pliable, not fully cooked).  \n2. **Use a lower simmer** \u2013 keep the water at 80\u201385\u202f\u00b0C (just below boiling) to avoid rapid protein denaturation.  \n3. **Add a tenderizing agent** \u2013 finish the pre\u2011tenderization with a small amount of acidic liquid (lemon juice or vinegar) or a commercial octopus tenderizer.  \n4. **Rest the legs** \u2013 after parboiling, cool them gently in ice water for 5\u202fminutes to stop cooking and allow the proteins to relax.  \n5. **Sear at moderate heat** \u2013 grill at medium\u2011high (not blast\u2011hot) for 1\u20132\u202fminutes per side, just enough to char the exterior without over\u2011tightening the muscle.\n\nEXPLANATION: Octopus muscle contains a high amount of collagen and connective tissue. When cooked slowly at a low temperature, collagen converts to gelatin, yielding tender meat. However, prolonged exposure to heat (even at a gentle simmer) causes the muscle fibers to contract and expel moisture, leading to a rubbery texture. A brief, low\u2011temperature parboil preserves the delicate balance of proteins and collagen, while a moderate sear adds flavor without tightening the surface."
+    },
+    {
+      "test_case_id": 39,
+      "problem": "The cookie spread is extremely grainy and \"sandy\" despite high-speed blending to the point of the mixture steaming.",
+      "recipe": "Biscoff Cookie Spread",
+      "category": "Dessert",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Adding granulated sugar directly to an oil-based cookie paste without a liquid to dissolve the crystals.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "baseline",
+      "raw_response": ""
+    },
+    {
+      "test_case_id": 40,
+      "problem": "Raw onions are overpowering, causing a harsh \"sulfur\" bite and a lingering aftertaste that lasts for hours.",
+      "recipe": "Pico de Gallo",
+      "category": "Ingredient Prep",
+      "difficulty": "easy",
+      "predicted_cause": "The onions were cut into very fine pieces of a high\u2011sulfur, very fresh variety and soaked only briefly in cold water with a minimal amount of salt and vinegar, so the enzymes that convert sulfur\u2011containing amino acids into pungent thiosulfinates had too little time and too little acid to neutralize them.",
+      "ground_truth_cause": "Using raw onions immediately after cutting without removing the volatile sulfur compounds.",
+      "predicted_solution": " 1. Use a milder onion (e.g., Vidalia or sweet onion) or reduce the onion quantity. 2. Cut the onion into slightly larger chunks to limit surface area. 3. Soak the onions for 30\u201360\u202fminutes in ice\u2011cold water with 1\u202ftsp of salt and a generous splash of vinegar (or 1\u202fTbsp of lime juice). 4. After soaking, rinse under running water, pat dry, and optionally add a pinch of sugar to balance the acidity.",
+      "scores": {
+        "cause_accuracy": 0.09090909090909091,
+        "solution_appropriateness": 0.5,
+        "scientific_accuracy": 0.18181818181818182,
+        "overall": 0.2727
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The onions were cut into very fine pieces of a high\u2011sulfur, very fresh variety and soaked only briefly in cold water with a minimal amount of salt and vinegar, so the enzymes that convert sulfur\u2011containing amino acids into pungent thiosulfinates had too little time and too little acid to neutralize them.  \n\nSOLUTION:  \n1. Use a milder onion (e.g., Vidalia or sweet onion) or reduce the onion quantity.  \n2. Cut the onion into slightly larger chunks to limit surface area.  \n3. Soak the onions for 30\u201360\u202fminutes in ice\u2011cold water with 1\u202ftsp of salt and a generous splash of vinegar (or 1\u202fTbsp of lime juice).  \n4. After soaking, rinse under running water, pat dry, and optionally add a pinch of sugar to balance the acidity.  \n\nEXPLANATION: Onions contain sulfur\u2011rich amino acids that, when the cell walls are broken, are"
+    },
+    {
+      "test_case_id": 41,
+      "problem": "cannot find \"Lady Fingers\" in local UK/Ireland supermarkets for a Tiramisu recipe.",
+      "recipe": "Tiramisu",
+      "category": "substitution",
+      "difficulty": "easy",
+      "predicted_cause": "Lady Fingers (savoiardi) are not stocked in many UK/Ireland supermarkets, so the recipe\u2019s key biscuit base is missing.",
+      "ground_truth_cause": "Cannot Find the \"Lady Fingers\"",
+      "predicted_solution": "Substitute with locally available alternatives that have a similar porous, sweet sponge texture\u2014such as \u201cSponge Fingers\u201d or \u201cTrifle Sponges\u201d from the bakery or confectionery aisle, or \u201cSavoiardi\u201d from the international or discount (e.g., Lidl) section. If those are unavailable, bake your own ladyfingers using a standard recipe (egg whites, sugar, flour, vanilla) or use plain sponge cake cut into thin slices.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0625,
+        "scientific_accuracy": 0.0,
+        "overall": 0.025
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: Lady Fingers (savoiardi) are not stocked in many UK/Ireland supermarkets, so the recipe\u2019s key biscuit base is missing.  \nSOLUTION: Substitute with locally available alternatives that have a similar porous, sweet sponge texture\u2014such as \u201cSponge Fingers\u201d or \u201cTrifle Sponges\u201d from the bakery or confectionery aisle, or \u201cSavoiardi\u201d from the international or discount (e.g., Lidl) section. If those are unavailable, bake your own ladyfingers using a standard recipe (egg whites, sugar, flour, vanilla) or use plain sponge cake cut into thin slices.  \nEXPLANATION: Lady Fingers are a light, airy sponge that readily absorbs espresso or marsala without disintegrating, providing structural support for the mascarpone layers. Sponge or trifle sponges share the same low density and high surface area, allowing them to soak the liquid while remaining firm enough to hold the cream. Homemade ladyfingers mimic the exact crumb and flavor profile, ensuring the traditional tiramisu texture and taste."
+    },
+    {
+      "test_case_id": 42,
+      "problem": "No dry milk available",
+      "recipe": "No-Knead Whole Wheat Bread",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "The recipe calls for dry milk, which you don\u2019t have, so the dough lacks the proteins, lactose, and minerals that help structure, moisture retention, and flavor.",
+      "ground_truth_cause": "Missing Ingredient",
+      "predicted_solution": "Replace the dry milk with an equivalent wet milk or milk\u2011based ingredient. For each tablespoon of dry milk, add 1\u202fTbsp of liquid milk (or \u00bd\u202fTbsp milk + \u00bd\u202fTbsp water) to the dough. If you prefer a richer crumb, use \u00bc\u202fcup fresh milk or \u00bc\u202fcup buttermilk, or dissolve 1\u202fTbsp milk powder in 1\u202fTbsp water and add it. Adjust the total liquid in the dough by the amount of milk added to keep the dough\u2019s hydration consistent.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.6,
+        "scientific_accuracy": 0.5714285714285714,
+        "overall": 0.3543
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The recipe calls for dry milk, which you don\u2019t have, so the dough lacks the proteins, lactose, and minerals that help structure, moisture retention, and flavor.\n\nSOLUTION: Replace the dry milk with an equivalent wet milk or milk\u2011based ingredient. For each tablespoon of dry milk, add 1\u202fTbsp of liquid milk (or \u00bd\u202fTbsp milk + \u00bd\u202fTbsp water) to the dough. If you prefer a richer crumb, use \u00bc\u202fcup fresh milk or \u00bc\u202fcup buttermilk, or dissolve 1\u202fTbsp milk powder in 1\u202fTbsp water and add it. Adjust the total liquid in the dough by the amount of milk added to keep the dough\u2019s hydration consistent.\n\nEXPLANATION: Dry milk supplies casein and whey proteins that reinforce the gluten network, lactose that feeds yeast and promotes browning, and calcium that activates enzymes for dough development. These components give a softer crumb, better rise, and richer flavor. Substituting with liquid milk or a milk\u2011based alternative restores these benefits, ensuring the bread still ferments properly and bakes to a tender, well\u2011structured loaf."
+    },
+    {
+      "test_case_id": 43,
+      "problem": "cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.",
+      "recipe": "Lactose-free Ice cream",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "The recipe calls for lactose\u2011free heavy cream, but the only product you have is lactose\u2011free half\u2011and\u2011half. Half\u2011and\u2011half is only 10\u201112\u202f% fat, whereas heavy cream is 35\u201140\u202f% fat. Adding melted butter to the half\u2011and\u2011half does increase the fat content, but it also introduces a lot of water and can alter the ice\u2011cream\u2019s texture and freezing point, making it less smooth and more prone to iciness.",
+      "ground_truth_cause": "Attempting to emulsify melted butter into half-and-half to mimic heavy cream without proper stabilizers or high-shear blending.",
+      "predicted_solution": " 1. **Use a proper lactose\u2011free heavy\u2011cream alternative** (many brands now offer 35\u201140\u202f% fat lactose\u2011free cream). 2. If you must use half\u2011and\u2011half, replace the missing fat with **pure lactose\u2011free butter**: for every 1 cup of half\u2011and\u2011half, melt 2\u20133\u202fTbsp of butter (\u2248\u202f30\u201345\u202fg) and mix it in. This gives roughly 25\u202f% fat, closer to a light cream. 3. For an even better texture, add a small amount of **coconut cream** (30\u201335\u202f% fat) or a dairy\u2011free \u201ccream\u201d blend that contains stabilizers.",
+      "scores": {
+        "cause_accuracy": 0.2857142857142857,
+        "solution_appropriateness": 0.13333333333333333,
+        "scientific_accuracy": 0.45454545454545453,
+        "overall": 0.2585
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The recipe calls for lactose\u2011free heavy cream, but the only product you have is lactose\u2011free half\u2011and\u2011half. Half\u2011and\u2011half is only 10\u201112\u202f% fat, whereas heavy cream is 35\u201140\u202f% fat. Adding melted butter to the half\u2011and\u2011half does increase the fat content, but it also introduces a lot of water and can alter the ice\u2011cream\u2019s texture and freezing point, making it less smooth and more prone to iciness.  \n\nSOLUTION:  \n1. **Use a proper lactose\u2011free heavy\u2011cream alternative** (many brands now offer 35\u201140\u202f% fat lactose\u2011free cream).  \n2. If you must use half\u2011and\u2011half, replace the missing fat with **pure lactose\u2011free butter**: for every 1 cup of half\u2011and\u2011half, melt 2\u20133\u202fTbsp of butter (\u2248\u202f30\u201345\u202fg) and mix it in. This gives roughly 25\u202f% fat, closer to a light cream.  \n3. For an even better texture, add a small amount of **coconut cream** (30\u201335\u202f% fat) or a dairy\u2011free \u201ccream\u201d blend that contains stabilizers.  \n\nEXPLANATION:  \nHeavy cream supplies the high fat content that coats ice\u2011cream molecules, reduces ice\u2011crystal growth, and gives a creamy mouthfeel. Half\u2011and\u2011half\u2019s lower fat means more water is present, which freezes at a lower temperature and leads to larger ice crystals. Melted butter adds fat but also carries water; the ratio of fat to water must be balanced to keep the ice\u2011cream from becoming grainy. By using a proper lactose\u2011free heavy cream or carefully adjusting the butter addition, you maintain the right fat\u2011to\u2011water ratio and preserve the desired texture and smoothness."
+    },
+    {
+      "test_case_id": 44,
+      "problem": "needs a egg substitute for potato latkes that ensures they don't fall apart during frying.",
+      "recipe": "Potato Latkes",
+      "category": "substitution",
+      "difficulty": "easy",
+      "predicted_cause": "The latkes are falling apart because the egg substitute (or lack of one) is not providing enough protein\u2011based binding to hold the grated potato and starch together during frying.",
+      "ground_truth_cause": "Relying on moisture-heavy egg replacers (like flax or applesauce) that result in a gummy, soft interior.",
+      "predicted_solution": "Add a high\u2011binding, low\u2011moisture agent to the mixture\u2014such as 1\u202fTbsp potato starch + 1\u202ftsp baking powder per cup of grated potatoes, or 1\u202fTbsp ground flaxseed mixed with 3\u202fTbsp water (let sit 5\u202fmin) before adding to the batter. Mix the binder thoroughly into the potato slurry before frying. Keep the batter as dry as possible by squeezing out excess moisture and letting the \u201cstarch sludge\u201d sit for 15\u202fmin before adding the binder.",
+      "scores": {
+        "cause_accuracy": 0.07692307692307693,
+        "solution_appropriateness": 0.18181818181818182,
+        "scientific_accuracy": 0.3333333333333333,
+        "overall": 0.1702
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The latkes are falling apart because the egg substitute (or lack of one) is not providing enough protein\u2011based binding to hold the grated potato and starch together during frying.\n\nSOLUTION: Add a high\u2011binding, low\u2011moisture agent to the mixture\u2014such as 1\u202fTbsp potato starch + 1\u202ftsp baking powder per cup of grated potatoes, or 1\u202fTbsp ground flaxseed mixed with 3\u202fTbsp water (let sit 5\u202fmin) before adding to the batter. Mix the binder thoroughly into the potato slurry before frying. Keep the batter as dry as possible by squeezing out excess moisture and letting the \u201cstarch sludge\u201d sit for 15\u202fmin before adding the binder.\n\nEXPLANATION: Eggs provide protein that, when heated, denatures and cross\u2011links to form a firm matrix that traps moisture and holds the latke together. Potato starch and baking powder act as a binding network: the starch gelatinizes, and the baking powder releases CO\u2082, creating a light, cohesive structure. Ground flaxseed (or chia) forms a gel when mixed with water, mimicking the binding action of egg protein while adding minimal moisture. By using these substitutes, the latkes retain their shape and crispness during frying."
+    },
+    {
+      "test_case_id": 45,
+      "problem": "No vegetable oil",
+      "recipe": "Whole Grain Banana Bread",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "The banana bread is missing the fat component (vegetable oil), which means the batter lacks moisture, tenderness, and the ability to coat gluten strands, leading to a dry, crumbly loaf that may not rise properly.",
+      "ground_truth_cause": "Missing Ingredient",
+      "predicted_solution": "Replace the missing oil with an equal volume (\u22481/3 cup) of an alternative fat or moisture source\u2014such as melted butter, unsweetened applesauce, or Greek yogurt. Mix it in with the wet ingredients before folding in the dry mix. If you prefer a lower\u2011fat option, use a small amount of mashed avocado or a light\u2011oil substitute, and add one extra egg to help with binding and structure.",
+      "scores": {
+        "cause_accuracy": 0.5,
+        "solution_appropriateness": 0.09090909090909091,
+        "scientific_accuracy": 0.2,
+        "overall": 0.2764
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The banana bread is missing the fat component (vegetable oil), which means the batter lacks moisture, tenderness, and the ability to coat gluten strands, leading to a dry, crumbly loaf that may not rise properly.\n\nSOLUTION: Replace the missing oil with an equal volume (\u22481/3 cup) of an alternative fat or moisture source\u2014such as melted butter, unsweetened applesauce, or Greek yogurt. Mix it in with the wet ingredients before folding in the dry mix. If you prefer a lower\u2011fat option, use a small amount of mashed avocado or a light\u2011oil substitute, and add one extra egg to help with binding and structure.\n\nEXPLANATION: Fat coats gluten strands, preventing them from forming a tight network that can over\u2011tighten the batter and create a tough crumb. It also adds moisture and richness, helping the bread stay soft and extending shelf life. In banana bread, the banana\u2019s natural sugars and moisture partially compensate, but without added fat the batter dries out and the loaf can become dense. By substituting a comparable fat or a moist alternative, you restore the proper balance of moisture, tenderness, and structure."
+    },
+    {
+      "test_case_id": 46,
+      "problem": "making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",
+      "recipe": "Manakish Bi Za'atar",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "The improvised Za\u2019atar lacks the balanced citrus tang and herbal depth that sumac normally provides, and the substitutes (amchur or citric acid) are either too sharp or too mild, resulting in a bland or overly acidic topping that doesn\u2019t bind well with the oil.",
+      "ground_truth_cause": "Using only dried thyme and oil, resulting in a flat, bitter, and one-dimensional flavor profile.",
+      "predicted_solution": " 1. **Replace sumac with a milder citrus acid** \u2013 use a small splash of fresh lemon juice (\u22481 tsp per \u00bd cup of oil) or finely grated lemon zest. 2. **Add complementary herbs** \u2013 include a pinch of dried oregano or mint to supply the herbal notes sumac would normally contribute. 3. **Adjust the paste** \u2013 mix the thyme",
+      "scores": {
+        "cause_accuracy": 0.09090909090909091,
+        "solution_appropriateness": 0.125,
+        "scientific_accuracy": 0.2727272727272727,
+        "overall": 0.1409
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The improvised Za\u2019atar lacks the balanced citrus tang and herbal depth that sumac normally provides, and the substitutes (amchur or citric acid) are either too sharp or too mild, resulting in a bland or overly acidic topping that doesn\u2019t bind well with the oil.\n\nSOLUTION:  \n1. **Replace sumac with a milder citrus acid** \u2013 use a small splash of fresh lemon juice (\u22481 tsp per \u00bd cup of oil) or finely grated lemon zest.  \n2. **Add complementary herbs** \u2013 include a pinch of dried oregano or mint to supply the herbal notes sumac would normally contribute.  \n3. **Adjust the paste** \u2013 mix the thyme"
+    },
+    {
+      "test_case_id": 47,
+      "problem": "My pie crust shrinks down the sides while baking.",
+      "recipe": "Blind-Baked Pie Crust",
+      "category": "Baking",
+      "difficulty": "Easy",
+      "predicted_cause": "The dough was not chilled long enough (or at all) and/or the fat was too warm, causing the gluten to relax and the crust to shrink during baking.",
+      "ground_truth_cause": "Gluten contraction due to insufficient resting after rolling.",
+      "predicted_solution": "Chill the assembled dough in the refrigerator for at least 1\u202fhour (or overnight) before baking, keep the fat cold, roll the dough to a uniform thickness, dock it properly, and bake at the correct temperature (usually 375\u2013400\u202f\u00b0F) with pie weights until the edges are set.",
+      "scores": {
+        "cause_accuracy": 0.14285714285714285,
+        "solution_appropriateness": 0.3333333333333333,
+        "scientific_accuracy": 0.25,
+        "overall": 0.2405
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The dough was not chilled long enough (or at all) and/or the fat was too warm, causing the gluten to relax and the crust to shrink during baking.  \nSOLUTION: Chill the assembled dough in the refrigerator for at least 1\u202fhour (or overnight) before baking, keep the fat cold, roll the dough to a uniform thickness, dock it properly, and bake at the correct temperature (usually 375\u2013400\u202f\u00b0F) with pie weights until the edges are set.  \nEXPLANATION: Cold dough keeps the fat solid, preventing it from melting into the flour and creating steam pockets that pull the crust inward. Proper chilling also limits gluten development, keeping the structure stable. Baking at the right temperature ensures the crust sets before the dough has a chance to shrink."
+    },
+    {
+      "test_case_id": 48,
+      "problem": "My blind-baked crust puffs up despite pie weights.",
+      "recipe": "Blind-Baked Pie Crust",
+      "category": "Baking",
+      "difficulty": "Medium",
+      "predicted_cause": "The dough wasn\u2019t chilled long enough and the docking was incomplete, so steam trapped during baking caused the crust to rise despite the pie weights.",
+      "ground_truth_cause": "Steam trapped under insufficiently docked dough.",
+      "predicted_solution": "Chill the dough for at least 2\u202fhours (or overnight), dock it thoroughly with a fork or dough scraper, place a full layer of heavy pie weights or dried beans over the parchment\u2011lined crust, and bake at the correct temperature (375\u202f\u00b0F) for the recommended time.",
+      "scores": {
+        "cause_accuracy": 0.3333333333333333,
+        "solution_appropriateness": 0.3333333333333333,
+        "scientific_accuracy": 0.25,
+        "overall": 0.3167
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The dough wasn\u2019t chilled long enough and the docking was incomplete, so steam trapped during baking caused the crust to rise despite the pie weights.  \nSOLUTION: Chill the dough for at least 2\u202fhours (or overnight), dock it thoroughly with a fork or dough scraper, place a full layer of heavy pie weights or dried beans over the parchment\u2011lined crust, and bake at the correct temperature (375\u202f\u00b0F) for the recommended time.  \nEXPLANATION: Cold dough has relaxed gluten, preventing the structure from pulling back on the rising steam. Docking creates small holes that let steam escape, while the weights counteract the upward pressure of the steam and keep the crust flat. If the dough is warm or undocked, steam builds up and pushes the crust upward, causing puffing."
+    },
+    {
+      "test_case_id": 49,
+      "problem": "The edges of my pie crust brown too quickly.",
+      "recipe": "Double-Crust Fruit Pie",
+      "category": "Baking",
+      "difficulty": "Easy",
+      "predicted_cause": "The oven temperature is too high or the crust edges are exposed without protection, causing the sugars and proteins in the dough to brown rapidly (Maillard reaction and caramelization).",
+      "ground_truth_cause": "Thinner dough at the rim and greater exposure to radiant heat.",
+      "predicted_solution": "Lower the oven temperature by 25\u201350\u202f\u00b0F (\u22485\u201310\u202f\u00b0C) and cover the edges with a strip of aluminum foil or parchment paper during baking. Alternatively, blind\u2011bake the crust for 5\u20137\u202fminutes before adding the filling, or use a slightly thicker dough with less sugar.",
+      "scores": {
+        "cause_accuracy": 0.125,
+        "solution_appropriateness": 0.5555555555555556,
+        "scientific_accuracy": 0.5,
+        "overall": 0.3722
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The oven temperature is too high or the crust edges are exposed without protection, causing the sugars and proteins in the dough to brown rapidly (Maillard reaction and caramelization).\n\nSOLUTION: Lower the oven temperature by 25\u201350\u202f\u00b0F (\u22485\u201310\u202f\u00b0C) and cover the edges with a strip of aluminum foil or parchment paper during baking. Alternatively, blind\u2011bake the crust for 5\u20137\u202fminutes before adding the filling, or use a slightly thicker dough with less sugar.\n\nEXPLANATION: At high heat, sugars and proteins in the crust react quickly (Maillard reaction) and caramelize, producing brown color. The edges are more exposed and heat up faster. Lowering the temperature slows these reactions, and covering the edges blocks direct heat, preventing premature browning while the filling cooks."
+    },
+    {
+      "test_case_id": 50,
+      "problem": "My lattice top collapsed into the filling during baking.",
+      "recipe": "Lattice-Top Fruit Pie",
+      "category": "Baking",
+      "difficulty": "Medium",
+      "predicted_cause": "The filling was too liquid and the lattice wasn\u2019t secured or pre\u2011baked, so the liquid seeped through the gaps and the crust softened, causing the lattice to collapse into the filling.",
+      "ground_truth_cause": "Filling was too liquid at oven entry.",
+      "predicted_solution": " 1. Thicken the filling with 1\u20132 tablespoons of cornstarch, flour, or a pastry thickener and let it cool. 2. Pre\u2011bake the bottom crust (blind bake) for 5\u20137\u202fminutes to set the structure. 3. Weave the lattice tightly and crimp the edges to seal it against the crust. 4. If the lattice is still loose, bake it on a sheet for 5\u202fminutes before adding the filling or use a sturdier pastry dough.",
+      "scores": {
+        "cause_accuracy": 0.5,
+        "solution_appropriateness": 0.5,
+        "scientific_accuracy": 0.0,
+        "overall": 0.4
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The filling was too liquid and the lattice wasn\u2019t secured or pre\u2011baked, so the liquid seeped through the gaps and the crust softened, causing the lattice to collapse into the filling.  \n\nSOLUTION:  \n1. Thicken the filling with 1\u20132 tablespoons of cornstarch, flour, or a pastry thickener and let it cool.  \n2. Pre\u2011bake the bottom crust (blind bake) for 5\u20137\u202fminutes to set the structure.  \n3. Weave the lattice tightly and crimp the edges to seal it against the crust.  \n4. If the lattice is still loose, bake it on a sheet for 5\u202fminutes before adding the filling or use a sturdier pastry dough.  \n\nEXPLANATION: A liquid filling creates excess moisture that seeps through the lattice\u2019s gaps, softening the crust and weakening the lattice. Thickening the filling raises its viscosity, reducing seepage. Pre\u2011baking the crust builds a firm base that resists collapse. Tighter weaving and edge sealing prevent liquid from reaching the lattice, keeping it crisp and intact during baking."
+    },
+    {
+      "test_case_id": 51,
+      "problem": "My fruit pie filling never sets even after cooling.",
+      "recipe": "Apple Pie",
+      "category": "Starch Cookery",
+      "difficulty": "Medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Incorrect thickener choice for the fruit\u2019s pH and moisture level.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "baseline",
+      "raw_response": ""
+    },
+    {
+      "test_case_id": 52,
+      "problem": "My pie crust looks dull and pale.",
+      "recipe": "Hand Pie Crust",
+      "category": "Substitution",
+      "difficulty": "Easy",
+      "predicted_cause": "The crust lacks the browning and color that comes from a proper fat\u2011to\u2011flour ratio, adequate sugar, and a dry, well\u2011mixed dough that allows the Maillard reaction to occur. Too much water or insufficient fat lets the dough steam rather than brown, and a lack of sugar or egg wash reduces caramelization.",
+      "ground_truth_cause": "No surface protein or sugar to promote browning.",
+      "predicted_solution": " 1. **Adjust the fat** \u2013 Use at least 75\u202f% butter (or a mix of butter and shortening) by weight of flour. Cut the butter into the flour until pea\u2011size, but be sure the butter is cold and still solid. 2. **Add a touch of sugar** \u2013 Stir in 1\u20132\u202fTbsp of granulated sugar (or a pinch of brown sugar) to promote caramelization. 3. **Limit water** \u2013 Add water just until the dough comes together; avoid excess moisture. 4. **Keep the dough cold** \u2013 After mixing, chill the dough for at least 30\u202fmin (or overnight) to keep the fat solid and prevent steam. 5. **Roll thin and brush** \u2013 Roll the dough to 1/8\u2011in. thickness and brush the surface with a lightly beaten egg or milk before baking. 6. **Bake at the right temperature** \u2013 Preheat the oven to 425\u202f\u00b0F (220\u202f\u00b0C). Bake the crust for 8\u201310\u202fmin until golden, then lower the temperature to 375\u202f\u00b0F (190\u202f\u00b0C) if you need to finish the filling.",
+      "scores": {
+        "cause_accuracy": 0.16666666666666666,
+        "solution_appropriateness": 0.8333333333333334,
+        "scientific_accuracy": 0.5,
+        "overall": 0.5
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The crust lacks the browning and color that comes from a proper fat\u2011to\u2011flour ratio, adequate sugar, and a dry, well\u2011mixed dough that allows the Maillard reaction to occur. Too much water or insufficient fat lets the dough steam rather than brown, and a lack of sugar or egg wash reduces caramelization.\n\nSOLUTION:  \n1. **Adjust the fat** \u2013 Use at least 75\u202f% butter (or a mix of butter and shortening) by weight of flour. Cut the butter into the flour until pea\u2011size, but be sure the butter is cold and still solid.  \n2. **Add a touch of sugar** \u2013 Stir in 1\u20132\u202fTbsp of granulated sugar (or a pinch of brown sugar) to promote caramelization.  \n3. **Limit water** \u2013 Add water just until the dough comes together; avoid excess moisture.  \n4. **Keep the dough cold** \u2013 After mixing, chill the dough for at least 30\u202fmin (or overnight) to keep the fat solid and prevent steam.  \n5. **Roll thin and brush** \u2013 Roll the dough to 1/8\u2011in. thickness and brush the surface with a lightly beaten egg or milk before baking.  \n6. **Bake at the right temperature** \u2013 Preheat the oven to 425\u202f\u00b0F (220\u202f\u00b0C). Bake the crust for 8\u201310\u202fmin until golden, then lower the temperature to 375\u202f\u00b0F (190\u202f\u00b0C) if you need to finish the filling.\n\nEXPLANATION:  \nBrowning in pie crust comes from the Maillard reaction (protein\u2011sugar interaction) and caramelization of sugars. Adequate fat creates a tender crumb and keeps the crust from drying out; it also helps the surface dry enough for browning. Excess water turns to steam, keeping the surface moist and preventing Maillard browning. Sugar accelerates the reaction, while an egg wash adds protein and fat that brown more readily. Keeping the dough cold preserves the fat in solid form, allowing it to melt evenly during baking, which creates a flaky texture and a golden color."
+    },
+    {
+      "test_case_id": 53,
+      "problem": "Bottom crust is fully baked but tastes tough.",
+      "recipe": "Single-Crust Pie",
+      "category": "Baking",
+      "difficulty": "Medium",
+      "predicted_cause": "The dough was over\u2011worked (or too much flour was added) and/or not chilled long enough before blind\u2011baking, which caused excess gluten development and a dry, tough bottom crust.",
+      "ground_truth_cause": " Excessive gluten development from overworking the dough.",
+      "predicted_solution": " 1. **Rest the dough** \u2013 After rolling, wrap the dough in plastic and chill in the fridge for at least 30\u202fminutes (preferably 1\u20132\u202fhours) before blind\u2011baking. 2. **Use the right flour\u2011fat ratio** \u2013 For a single crust, use about 2\u202fparts flour to 1\u202fpart fat (butter or a butter/shortening blend). Keep the fat cold and cut it into the flour until the mixture resembles coarse crumbs. 3. **Add just enough liquid** \u2013 Use the minimum amount of cold water (or ice\u2011cold water) needed to bring the dough together; excess water can weaken the structure. 4. **Blind\u2011bake correctly** \u2013 Line the crust with parchment and pie weights, bake at 375\u202f\u00b0F (190\u202f\u00b0C) for 10\u201312\u202fminutes, then remove the weights and parchment and bake an additional 5\u20137\u202fminutes until the bottom is golden. 5. **Avoid high oven temperatures** \u2013 Baking at too high a temperature dries the crust too quickly, making it tough.",
+      "scores": {
+        "cause_accuracy": 0.3333333333333333,
+        "solution_appropriateness": 0.125,
+        "scientific_accuracy": 0.25,
+        "overall": 0.2333
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The dough was over\u2011worked (or too much flour was added) and/or not chilled long enough before blind\u2011baking, which caused excess gluten development and a dry, tough bottom crust.\n\nSOLUTION:  \n1. **Rest the dough** \u2013 After rolling, wrap the dough in plastic and chill in the fridge for at least 30\u202fminutes (preferably 1\u20132\u202fhours) before blind\u2011baking.  \n2. **Use the right flour\u2011fat ratio** \u2013 For a single crust, use about 2\u202fparts flour to 1\u202fpart fat (butter or a butter/shortening blend). Keep the fat cold and cut it into the flour until the mixture resembles coarse crumbs.  \n3. **Add just enough liquid** \u2013 Use the minimum amount of cold water (or ice\u2011cold water) needed to bring the dough together; excess water can weaken the structure.  \n4. **Blind\u2011bake correctly** \u2013 Line the crust with parchment and pie weights, bake at 375\u202f\u00b0F (190\u202f\u00b0C) for 10\u201312\u202fminutes, then remove the weights and parchment and bake an additional 5\u20137\u202fminutes until the bottom is golden.  \n5. **Avoid high oven temperatures** \u2013 Baking at too high a temperature dries the crust too quickly, making it tough.\n\nEXPLANATION:  \n- **Gluten development**: When dough is kneaded or rolled too aggressively, gluten strands align and tighten, creating a chewy, tough texture. Resting the dough allows the gluten to relax, and cold fat coats the flour particles, preventing gluten formation.  \n- **Flour\u2011fat balance**: Adequate fat interrupts the gluten network, yielding a tender, flaky crust. Too much flour or insufficient fat lets gluten form more readily.  \n- **Chilling**: Cold dough is less sticky and easier to roll, and chilling also helps the fat remain solid, which creates steam pockets during baking that lift the crust and keep it tender.  \n- **Blind\u2011baking**: Baking the crust before adding filling removes excess moisture and sets the structure. Using pie weights prevents doming and ensures even heat distribution.  \n- **Temperature control**: A moderate oven temperature allows the crust to brown and set without over\u2011drying the surface, which would produce a hard, tough crust."
+    },
+    {
+      "test_case_id": 54,
+      "problem": "My crimped edges lost their shape in the oven.",
+      "recipe": "Decorative Pie Crust",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "The dough was too warm and the butter had melted before baking, so the crimped edges relaxed. The dough was not chilled long enough after shaping and the oven temperature was too high, allowing the layers to fuse and lose their defined shape.",
+      "ground_truth_cause": "Warm dough at oven entry.",
+      "predicted_solution": "Chill the shaped crust for at least 30\u202fminutes (or overnight) before baking. Keep the dough cold during handling, press the edges firmly into the desired pattern, and bake at a lower temperature (e.g., 350\u202f\u00b0F instead of 375\u202f\u00b0F). Use chilled butter or cold water to keep the fat solid, and consider placing the crust on a preheated baking sheet to reduce heat shock.",
+      "scores": {
+        "cause_accuracy": 0.6,
+        "solution_appropriateness": 0.5,
+        "scientific_accuracy": 0.0,
+        "overall": 0.44
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The dough was too warm and the butter had melted before baking, so the crimped edges relaxed. The dough was not chilled long enough after shaping and the oven temperature was too high, allowing the layers to fuse and lose their defined shape.  \n\nSOLUTION: Chill the shaped crust for at least 30\u202fminutes (or overnight) before baking. Keep the dough cold during handling, press the edges firmly into the desired pattern, and bake at a lower temperature (e.g., 350\u202f\u00b0F instead of 375\u202f\u00b0F). Use chilled butter or cold water to keep the fat solid, and consider placing the crust on a preheated baking sheet to reduce heat shock.  \n\nEXPLANATION: Pie crust relies on layers of dough and solid fat. Cold fat stays solid, creating flaky layers and holding the shape. When the dough warms too quickly, the fat melts, the layers merge, and the gluten relaxes, causing the crimped edges to flatten. Keeping the dough cold and baking at a moderate temperature preserves the solid fat, limits gluten development, and maintains the crisp, defined edges."
+    },
+    {
+      "test_case_id": 55,
+      "problem": " My fruit boiled over and burned on the oven floor.",
+      "recipe": "Berry Pie",
+      "category": "Baking",
+      "difficulty": "medium",
+      "predicted_cause": "The filling was too liquid/sugary and the oven temperature was too high, causing the fruit juices to boil rapidly, overflow, and burn on the oven floor.",
+      "ground_truth_cause": "Overfilled pie combined with vigorous starch swelling.",
+      "predicted_solution": " 1. Reduce the amount of added sugar or replace part of it with a thickening agent (cornstarch, arrowroot, or pectin). 2. Lower the oven temperature by 25\u201350\u202f\u00b0F (\u224815\u201330\u202f\u00b0C) and bake the pie longer to allow the filling to set without rapid boiling. 3. Make a few small slits in the top crust to vent steam. 4. Place the pie on a rack or in a shallow pan to keep the filling from touching the oven floor.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.6666666666666666,
+        "scientific_accuracy": 0.0,
+        "overall": 0.2667
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The filling was too liquid/sugary and the oven temperature was too high, causing the fruit juices to boil rapidly, overflow, and burn on the oven floor.  \n\nSOLUTION:  \n1. Reduce the amount of added sugar or replace part of it with a thickening agent (cornstarch, arrowroot, or pectin).  \n2. Lower the oven temperature by 25\u201350\u202f\u00b0F (\u224815\u201330\u202f\u00b0C) and bake the pie longer to allow the filling to set without rapid boiling.  \n3. Make a few small slits in the top crust to vent steam.  \n4. Place the pie on a rack or in a shallow pan to keep the filling from touching the oven floor.  \n\nEXPLANATION:  \n- Sugar lowers the boiling point of the liquid and caramelizes at high temperatures, so a high\u2011sugar filling can steam and bubble over quickly.  \n- A higher oven temperature increases the rate of evaporation; the liquid expands, pushes against the crust, and spills out.  \n- Venting allows steam to escape, preventing pressure build\u2011up and overflow.  \n- Baking at a slightly lower temperature slows the evaporation, giving the filling time to thicken and set, while a shallow pan or rack keeps the filling from contacting the oven floor and burning."
+    },
+    {
+      "test_case_id": 56,
+      "problem": "My pie filling is cloudy instead of glossy.",
+      "recipe": "Cherry Pie",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "The filling likely contains too much liquid or the thickener (cornstarch/flour) wasn\u2019t fully dissolved and gelatinized, causing the starch to remain in a cloudy suspension rather than forming a glossy, light\u2011reflecting gel.",
+      "ground_truth_cause": " Flour used as thickener instead of pure starch",
+      "predicted_solution": " 1. **Reduce excess liquid** \u2013 If you macerated the cherries too long, drain a bit of the liquid or add a tablespoon of flour to absorb it. 2. **Fully dissolve the thickener** \u2013 Whisk the cornstarch (or flour) with a small amount of cold sugar or water to make a smooth slurry before adding to the cherries. 3. **Cook to the right temperature** \u2013 Bring the filling to a gentle boil and keep it at 190\u2011200\u202f\u00b0F (88\u201193\u202f\u00b0C) for 2\u20133\u202fminutes until it thickens and becomes translucent. 4. **Avoid over\u2011mixing** \u2013 Stir just until the thickener is incorporated; vigorous stirring can break the gel and create cloudiness. 5. **Add a pinch of salt or a splash of lemon juice** \u2013 This balances acidity and helps the starch gelatinize more evenly.",
+      "scores": {
+        "cause_accuracy": 0.2857142857142857,
+        "solution_appropriateness": 0.5,
+        "scientific_accuracy": 0.0,
+        "overall": 0.3143
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The filling likely contains too much liquid or the thickener (cornstarch/flour) wasn\u2019t fully dissolved and gelatinized, causing the starch to remain in a cloudy suspension rather than forming a glossy, light\u2011reflecting gel.\n\nSOLUTION:  \n1. **Reduce excess liquid** \u2013 If you macerated the cherries too long, drain a bit of the liquid or add a tablespoon of flour to absorb it.  \n2. **Fully dissolve the thickener** \u2013 Whisk the cornstarch (or flour) with a small amount of cold sugar or water to make a smooth slurry before adding to the cherries.  \n3. **Cook to the right temperature** \u2013 Bring the filling to a gentle boil and keep it at 190\u2011200\u202f\u00b0F (88\u201193\u202f\u00b0C) for 2\u20133\u202fminutes until it thickens and becomes translucent.  \n4. **Avoid over\u2011mixing** \u2013 Stir just until the thickener is incorporated; vigorous stirring can break the gel and create cloudiness.  \n5. **Add a pinch of salt or a splash of lemon juice** \u2013 This balances acidity and helps the starch gelatinize more evenly.\n\nEXPLANATION: A glossy pie filling results when starch granules swell and form a uniform, light\u2011scattering gel. If the thickener isn\u2019t fully dissolved or the mixture is too watery, the starch remains in suspension, scattering light and producing a cloudy appearance. Proper dissolution, adequate heat, and controlled liquid levels allow the starch to gelatinize fully, giving the filling its characteristic shine."
+    },
+    {
+      "test_case_id": 57,
+      "problem": "My pie leaks butter during baking.",
+      "recipe": "All-Butter Pie Crust",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "The butter was not kept sufficiently cold and the dough was not chilled long enough, causing the butter to melt during baking and leak out of the crust.",
+      "ground_truth_cause": "Broken dough layers from over-mixing.",
+      "predicted_solution": " 1. **Use very cold butter** \u2013 cut the butter into 1\u2011inch cubes and chill it in the fridge for at least 30\u202fmin before cutting. 2. **Add ice\u2011cold water** \u2013 use a mixture of ice water and a few drops of cold milk to keep the dough cool. 3. **Chill the dough thoroughly** \u2013 after mixing, wrap the dough in plastic and refrigerate for at least 2\u202fhours (or overnight). 4. **Roll and chill again** \u2013 after rolling, place the dough in the fridge for 15\u201320\u202fmin before baking. 5. **Seal the edges** \u2013 crimp the edges tightly and press the filling against the crust to prevent butter from escaping. 6. **Blind bake (optional)** \u2013 pre\u2011bake the crust with pie weights and parchment to set the structure before adding the filling.",
+      "scores": {
+        "cause_accuracy": 0.2,
+        "solution_appropriateness": 0.14285714285714285,
+        "scientific_accuracy": 0.7142857142857143,
+        "overall": 0.28
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The butter was not kept sufficiently cold and the dough was not chilled long enough, causing the butter to melt during baking and leak out of the crust.\n\nSOLUTION:  \n1. **Use very cold butter** \u2013 cut the butter into 1\u2011inch cubes and chill it in the fridge for at least 30\u202fmin before cutting.  \n2. **Add ice\u2011cold water** \u2013 use a mixture of ice water and a few drops of cold milk to keep the dough cool.  \n3. **Chill the dough thoroughly** \u2013 after mixing, wrap the dough in plastic and refrigerate for at least 2\u202fhours (or overnight).  \n4. **Roll and chill again** \u2013 after rolling, place the dough in the fridge for 15\u201320\u202fmin before baking.  \n5. **Seal the edges** \u2013 crimp the edges tightly and press the filling against the crust to prevent butter from escaping.  \n6. **Blind bake (optional)** \u2013 pre\u2011bake the crust with pie weights and parchment to set the structure before adding the filling.\n\nEXPLANATION: Butter melts at about 90\u202f\u00b0F. In a pie crust, the fat is meant to stay solid and create flaky layers. If the butter is too warm or the dough is left at room temperature, it melts during baking, turning into liquid that can seep through the dough. Chilling the dough keeps the butter solid, and the cold water helps keep the dough temperature low. Proper sealing and blind baking lock in the structure, preventing melted butter from leaking."
+    },
+    {
+      "test_case_id": 58,
+      "problem": "The bottom crust is greasy instead of crisp.",
+      "recipe": "Custard Pie",
+      "category": "Baking",
+      "difficulty": "medium",
+      "predicted_cause": "The crust was left unbaked (or only par\u2011baked) and the custard\u2019s high fat content seeped into the dough, making it greasy instead of crisp.",
+      "ground_truth_cause": "Underbaking and insufficient moisture evaporation.",
+      "predicted_solution": "Blind\u2011bake the entire crust (with pie weights or parchment) before adding the custard, use a lower\u2011fat custard (e.g., skim milk or reduced\u2011fat milk and fewer whole\u2011egg yolks), and cover the top with a pie shield or foil to prevent excess browning.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.1111111111111111,
+        "scientific_accuracy": 0.25,
+        "overall": 0.0944
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The crust was left unbaked (or only par\u2011baked) and the custard\u2019s high fat content seeped into the dough, making it greasy instead of crisp.  \nSOLUTION: Blind\u2011bake the entire crust (with pie weights or parchment) before adding the custard, use a lower\u2011fat custard (e.g., skim milk or reduced\u2011fat milk and fewer whole\u2011egg yolks), and cover the top with a pie shield or foil to prevent excess browning.  \nEXPLANATION: Baking the crust first creates a moisture\u2011resistant barrier and allows steam to escape, preventing the fat from the custard from soaking into the dough. Lower\u2011fat custard reduces the amount of liquid fat that can melt into the crust, and a pie shield protects the top from over\u2011browning while the bottom sets, resulting in a crisp, non\u2011greasy base."
+    },
+    {
+      "test_case_id": 59,
+      "problem": "My pie filling bubbles unevenly.",
+      "recipe": "Apple Pie",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "The filling was unevenly thickened and the apples released excess water during baking, creating steam pockets that caused uneven bubbling.",
+      "ground_truth_cause": " Uneven oven heat or thickener clumps.",
+      "predicted_solution": "Reheat the apple mixture gently, whisk in an additional tablespoon of flour or cornstarch, ensure the apples are sliced uniformly, spread the filling evenly in the crust, seal the edges tightly, and bake at a slightly lower temperature (about 175\u202f\u00b0C/350\u202f\u00b0F) to allow gradual gelation.",
+      "scores": {
+        "cause_accuracy": 0.2,
+        "solution_appropriateness": 0.125,
+        "scientific_accuracy": 0.25,
+        "overall": 0.18
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The filling was unevenly thickened and the apples released excess water during baking, creating steam pockets that caused uneven bubbling.  \nSOLUTION: Reheat the apple mixture gently, whisk in an additional tablespoon of flour or cornstarch, ensure the apples are sliced uniformly, spread the filling evenly in the crust, seal the edges tightly, and bake at a slightly lower temperature (about 175\u202f\u00b0C/350\u202f\u00b0F) to allow gradual gelation.  \nEXPLANATION: Uneven thickness and insufficient thickener prevent proper gelatinization of starches, so water remains unbound and turns to steam. A uniform, well\u2011thickened filling allows starch granules to swell and form a cohesive matrix, trapping steam and preventing large bubbles. Lower oven heat reduces rapid water vaporization, giving the filling time to set."
+    },
+    {
+      "test_case_id": 60,
+      "problem": "My crust blistered and formed bubbles after baking.",
+      "recipe": "Blind-Baked Pie Crust",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "The dough wasn\u2019t chilled long enough (and docking was incomplete), so the butter melted quickly during baking and steam from the dough\u2019s moisture expanded, forming bubbles and blisters.",
+      "ground_truth_cause": "Steam pockets from undocked dough.",
+      "predicted_solution": "Chill the crust for at least 1\u20132 hours (or overnight) after shaping, ensure thorough docking, use cold butter, bake at a slightly lower temperature (e.g., 375\u202f\u00b0F instead of 425\u202f\u00b0F) with pie weights, and cover the edges with foil or a pie crust shield if needed.",
+      "scores": {
+        "cause_accuracy": 0.4,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.25,
+        "overall": 0.21
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The dough wasn\u2019t chilled long enough (and docking was incomplete), so the butter melted quickly during baking and steam from the dough\u2019s moisture expanded, forming bubbles and blisters.  \n\nSOLUTION: Chill the crust for at least 1\u20132 hours (or overnight) after shaping, ensure thorough docking, use cold butter, bake at a slightly lower temperature (e.g., 375\u202f\u00b0F instead of 425\u202f\u00b0F) with pie weights, and cover the edges with foil or a pie crust shield if needed.  \n\nEXPLANATION: Cold dough keeps the butter solid, creating a barrier that prevents steam from escaping and reduces blistering. When the dough is warm, the butter melts and steam builds up, producing bubbles. Adequate chilling also relaxes gluten, minimizing shrinkage and collapse. Baking at a moderate temperature allows the crust to set slowly, letting steam escape without puffing, while weights keep the crust flat."
+    }
+  ]
+}
