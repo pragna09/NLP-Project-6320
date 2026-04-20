@@ -1,0 +1,52 @@
+{
+  "condition": "full_system",
+  "model": "LLaMA 3.1 70B",
+  "timestamp": "20260413_151636",
+  "summary": {
+    "total_cases": 2,
+    "average_scores": {
+      "cause_accuracy": 0.1154,
+      "solution_appropriateness": 0.1786,
+      "scientific_accuracy": 0.0,
+      "overall": 0.1176
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "The hollandaise sauce is thin and won't thicken up because the butter was not hot enough when it was poured into the egg yolks. Specifically, the butter temperature was likely below 190\u00b0F, which is necessary to partially cook the yolks and stabilize the emulsion. This is a critical control point in the recipe, as stated in Step 3. At a temperature of 175\u00b0F, the butter is insufficiently hot, and the sauce will be thin.",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": " 1. Reheat the butter to a temperature between 190-220\u00b0F. 2. Restart the blending process with the immersion blender at the bottom of the jar. 3. Slowly pour the hot butter into the egg yolks in a thin, steady stream while continuously blending. 4. Continue blending until the sauce is thick, creamy, and coats a spoon, ensuring the final yolk temperature reaches 149\u00b0F (65\u00b0C) for food safety and emulsion stability.",
+      "scores": {
+        "cause_accuracy": 0.23076923076923078,
+        "solution_appropriateness": 0.35714285714285715,
+        "scientific_accuracy": 0.0,
+        "overall": 0.2352
+      },
+      "condition": "full_system",
+      "raw_response": "CAUSE: The hollandaise sauce is thin and won't thicken up because the butter was not hot enough when it was poured into the egg yolks. Specifically, the butter temperature was likely below 190\u00b0F, which is necessary to partially cook the yolks and stabilize the emulsion. This is a critical control point in the recipe, as stated in Step 3. At a temperature of 175\u00b0F, the butter is insufficiently hot, and the sauce will be thin.\n\nSOLUTION: \n1. Reheat the butter to a temperature between 190-220\u00b0F.\n2. Restart the blending process with the immersion blender at the bottom of the jar.\n3. Slowly pour the hot butter into the egg yolks in a thin, steady stream while continuously blending.\n4. Continue blending until the sauce is thick, creamy, and coats a spoon, ensuring the final yolk temperature reaches 149\u00b0F (65\u00b0C) for food safety and emulsion stability.\n\nEXPLANATION: \nThe food science behind this problem and solution lies in the emulsification process. Hollandaise sauce is a water-in-fat emulsion, where the egg yolks (water component) are stabilized with the help of fat (butter). The heat from the butter is essential to partially cook the egg yolks, making them more stable and able to hold the emulsion together. When the butter is not hot enough, the egg yolks are not sufficiently cooked, and the emulsion breaks, resulting in a thin sauce. By reheating the butter to the correct temperature and re-blending, the egg yolks are cooked, and the emulsion is stabilized, resulting in a thick and creamy hollandaise sauce. \n\nAdditionally, it's worth noting that using substitutes like coconut oil or flaxseed may alter the emulsification properties of the sauce, and their ratios and interactions with other ingredients would need to be carefully considered to achieve the desired consistency and flavor. However, in this case, the primary issue is the temperature of the butter, and addressing this should resolve the problem without the need for ingredient substitution."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "full_system",
+      "raw_response": "**CAUSE:** The pan did not reach the required temperature of ~450\u00b0F to initiate the Maillard reaction, resulting in a gray steak with no crust. This is because the pan was not heated to the point where it was smoking, indicating that it had not reached the necessary temperature for rapid searing and crust development.\n\n**SOLUTION:**\n1. Preheat the cast iron skillet over high heat for at least 5-7 minutes or until it reaches a temperature of ~450\u00b0F.\n2. Use a thermometer to verify the pan's temperature, if possible.\n3. Once the pan is hot, add a small amount of oil (about 1-2 teaspoons) and let it heat up for another 30 seconds to 1 minute, until it starts smoking.\n4. Then, add the steak to the pan and proceed with the recipe as instructed.\n\n**EXPLANATION:** The Maillard reaction is a non-enzymatic browning reaction between amino acids and reducing sugars that occurs when food is heated, resulting in the formation of new flavor compounds, browning, and aromas. This reaction begins at a temperature of 285\u00b0F, which is why it's essential to heat the pan to a high temperature (~450\u00b0F) to initiate the reaction quickly and achieve a nice crust on the steak. If the pan is not hot enough, the steak will cook, but it will not develop the desired crust, resulting in a gray and unappetizing appearance. By ensuring the pan reaches the necessary temperature, we can initiate the Maillard reaction and achieve a nicely browned crust on the steak. \n\nNote: The other steps in the recipe, such as patting the steak dry and seasoning it, are also crucial for achieving a good crust, but the primary issue in this case is the pan temperature."
+    }
+  ]
+}

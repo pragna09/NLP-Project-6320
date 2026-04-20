@@ -1,0 +1,52 @@
+{
+  "condition": "full_system",
+  "model": "LLaMA 3.1 8B",
+  "timestamp": "20260413_151701",
+  "summary": {
+    "total_cases": 2,
+    "average_scores": {
+      "cause_accuracy": 0.0,
+      "solution_appropriateness": 0.0,
+      "scientific_accuracy": 0.0,
+      "overall": 0.0
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "full_system",
+      "raw_response": "**Cause:**\nButter was not hot enough, specifically below 190\u00b0F, which led to insufficient partial cooking of the yolks and unstable emulsion. This caused the hollandaise sauce to remain thin.\n\n**Symptom Mapping:**\nFailed Step: Step 3 - Butter must be 190-220\u00b0F to partially cook the yolks and stabilize the emulsion.\n\n**Relevant Food Science Principle:**\nThe principle of thermal denaturation of proteins is crucial here. When the butter is heated to a temperature between 190\u00b0F and 220\u00b0F, it partially cooks the yolks, denaturing the proteins and creating a stable emulsion. If the butter is not hot enough (below 190\u00b0F), the proteins in the yolk do not denature properly, resulting in an unstable emulsion and a thin sauce.\n\n**Reasoning from Symptom to Root Cause to Solution:**\nThe root cause of the problem is the butter not being hot enough. To solve this issue, we need to ensure the butter reaches the required temperature. A possible solution is to heat the butter to the correct temperature before pouring it into the blender.\n\n**Solution:**\n1. Heat the butter to 190-220\u00b0F in a saucepan over low heat, stirring occasionally.\n2. Remove the butter from the heat and let it cool slightly to around 180-190\u00b0F.\n3. Proceed with Step 3 of the original recipe, slowly pouring the hot butter into the blender while it is running.\n\n**Verification of Solution:**\nThis solution should not cause a secondary problem, as heating the butter to the correct temperature is essential for creating a stable emulsion. However, it's essential to be careful not to overheat the butter, as this can cause it to separate or burn.\n\n**Additional Considerations:**\nTo further ensure the emulsion is stable, it's crucial to monitor the final yolk temperature, which should reach 149\u00b0F (65\u00b0C) for food safety and emulsion stability."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "full_system",
+      "raw_response": "**Symptom:** Gray steak with no crust after searing\n\n**Failed Step:** Step 3: Heat oil in a cast iron skillet over high heat until smoking.\n\n**Relevant Food Science Principle:** The Maillard reaction begins at 285\u00b0F, creating complex flavor compounds between amino acids and sugars, and is essential for crust development and flavor. Additionally, surface moisture causes steam, which caps surface temperature at 212\u00b0F and blocks the Maillard reaction threshold.\n\n**Cause:** The pan did not reach the required temperature of ~450\u00b0F to ensure rapid searing and crust development, resulting in a gray steak with no crust.\n\n**Solution:**\n\n1. Preheat the cast iron skillet in the oven to 450\u00b0F (232\u00b0C) for 30 minutes before adding oil. This will ensure the pan reaches the required temperature.\n2. While the pan is preheating, prepare the steak as instructed in the original recipe.\n3. Once the pan is preheated, carefully remove it from the oven and add a small amount of oil (about 1-2 tablespoons). This will help maintain the high temperature.\n4. Add the steak to the pan and proceed with the original recipe.\n\n**Explanation:** The critical control point in step 3 is the temperature of the pan, which must reach ~450\u00b0F to ensure rapid searing and crust development. By preheating the pan in the oven, we can ensure it reaches the required temperature, allowing the Maillard reaction to occur and creating a crust on the steak. This solution does not cause a secondary problem, as the pan will still reach the required temperature, and the steak will be cooked evenly.\n\n**Additional Considerations:**\n\n* To maintain the high temperature, it's essential to use a thermometer to monitor the pan's temperature. This will ensure it reaches the required temperature and stays there.\n* When adding oil to the preheated pan, use a small amount to prevent the oil from cooling the pan down.\n* Keep an eye on the steak while it's cooking, and adjust the cooking time as needed to ensure it reaches the desired level of doneness."
+    }
+  ]
+}

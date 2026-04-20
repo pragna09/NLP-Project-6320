@@ -1,0 +1,52 @@
+{
+  "condition": "cot_only",
+  "model": "LLaMA 3.1 70B",
+  "timestamp": "20260413_155047",
+  "summary": {
+    "total_cases": 2,
+    "average_scores": {
+      "cause_accuracy": 0.1154,
+      "solution_appropriateness": 0.308,
+      "scientific_accuracy": 0.4949,
+      "overall": 0.2683
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "Step 3, where the hot butter is poured into the egg yolks, is the most likely cause of the problem. The butter was probably poured too quickly or not in a thin enough stream, causing the sauce to break and remain thin.",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": "To fix the thin hollandaise sauce, start again from the beginning with a new egg yolk and slowly whisk in the broken sauce, a little at a time, until the desired consistency is achieved. Alternatively, whisk in a little more lemon juice or warm water to help stabilize the sauce, then slowly add more melted butter in a thin stream while continuously whisking.",
+      "scores": {
+        "cause_accuracy": 0.23076923076923078,
+        "solution_appropriateness": 0.42857142857142855,
+        "scientific_accuracy": 0.5454545454545454,
+        "overall": 0.3728
+      },
+      "condition": "cot_only",
+      "raw_response": "CAUSE: Step 3, where the hot butter is poured into the egg yolks, is the most likely cause of the problem. The butter was probably poured too quickly or not in a thin enough stream, causing the sauce to break and remain thin.\nSOLUTION: To fix the thin hollandaise sauce, start again from the beginning with a new egg yolk and slowly whisk in the broken sauce, a little at a time, until the desired consistency is achieved. Alternatively, whisk in a little more lemon juice or warm water to help stabilize the sauce, then slowly add more melted butter in a thin stream while continuously whisking.\nEXPLANATION: The scientific reason behind the failure is the improper tempering of the egg yolks with the hot butter. When the hot butter is added too quickly, it can cause the eggs to scramble, resulting in a thin and separated sauce. The key to making a successful hollandaise sauce is to slowly and carefully temper the egg yolks with the hot butter, allowing the eggs to warm up and emulsify with the butter. This process creates a stable emulsion, where the fat molecules from the butter are suspended in the water-based egg yolks, resulting in a thick and creamy sauce."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "Step 3, heating oil in a cast iron skillet over high heat until smoking, is likely the cause of the gray steak with no crust. However, it's more probable that the issue lies in the execution of this step or the preceding steps, particularly Step 1 and Step 2, in ensuring the steak is properly prepared for searing.",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "To fix this, ensure the steak is completely dry, especially after patting it dry with paper towels, and consider dry-brining for a longer period. Then, preheat the skillet over high heat, but reduce the heat to medium-high once the steak is added to prevent burning the outside before a crust can form. Use a thermometer to check the oil temperature, aiming for around 400\u00b0F to 450\u00b0F (200\u00b0C to 230\u00b0C) for the perfect sear. Finally, do not flip the steak every 30 seconds; instead, sear for 2-3 minutes per side to allow a crust to develop.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.1875,
+        "scientific_accuracy": 0.4444444444444444,
+        "overall": 0.1639
+      },
+      "condition": "cot_only",
+      "raw_response": "CAUSE: Step 3, heating oil in a cast iron skillet over high heat until smoking, is likely the cause of the gray steak with no crust. However, it's more probable that the issue lies in the execution of this step or the preceding steps, particularly Step 1 and Step 2, in ensuring the steak is properly prepared for searing.\nSOLUTION: To fix this, ensure the steak is completely dry, especially after patting it dry with paper towels, and consider dry-brining for a longer period. Then, preheat the skillet over high heat, but reduce the heat to medium-high once the steak is added to prevent burning the outside before a crust can form. Use a thermometer to check the oil temperature, aiming for around 400\u00b0F to 450\u00b0F (200\u00b0C to 230\u00b0C) for the perfect sear. Finally, do not flip the steak every 30 seconds; instead, sear for 2-3 minutes per side to allow a crust to develop.\nEXPLANATION: The scientific reason behind the failure to achieve a crust on the steak is due to the Maillard reaction, a chemical reaction between amino acids and reducing sugars that gives browned food its distinctive flavor. This reaction occurs when the steak is heated to a certain temperature (around 300\u00b0F or 150\u00b0C) in the presence of oil. If the steak is not dry, the water on its surface will steam instead of sear, preventing the Maillard reaction and resulting in a gray, unappetizing color. Additionally, flipping the steak too frequently disrupts the formation of the crust, as it doesn't allow the steak to stay in contact with the hot pan long enough for the reaction to occur. By ensuring the steak is dry, using the right oil temperature, and allowing it to sear undisturbed for a few minutes, you can achieve a perfect crust on your steak."
+    }
+  ]
+}

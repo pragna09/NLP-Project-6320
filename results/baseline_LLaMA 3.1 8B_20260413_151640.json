@@ -1,0 +1,52 @@
+{
+  "condition": "baseline",
+  "model": "LLaMA 3.1 8B",
+  "timestamp": "20260413_151640",
+  "summary": {
+    "total_cases": 2,
+    "average_scores": {
+      "cause_accuracy": 0.0833,
+      "solution_appropriateness": 0.1027,
+      "scientific_accuracy": 0.0,
+      "overall": 0.0744
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "The hollandaise sauce is thin and won't thicken up due to an insufficient or incorrect emulsification process.",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": "Stop the blender and add a small amount (about 1/4 teaspoon) of egg yolk and then slowly continue pouring in the hot butter while blending. This will help to create a more stable emulsion.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.14285714285714285,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0571
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The hollandaise sauce is thin and won't thicken up due to an insufficient or incorrect emulsification process.\n\nSOLUTION: Stop the blender and add a small amount (about 1/4 teaspoon) of egg yolk and then slowly continue pouring in the hot butter while blending. This will help to create a more stable emulsion.\n\nEXPLANATION: Hollandaise sauce is a classic emulsion sauce that relies on the combination of two or more liquids that don't normally mix, such as oil (butter) and water (egg yolks and lemon juice). When the hot butter is slowly poured into the egg yolks while blending, it creates a stable emulsion by distributing the fat molecules evenly throughout the sauce. However, if the emulsion is not stable, the sauce will break, resulting in a thin and unappetizing consistency. Adding a small amount of egg yolk will provide more emulsifying agents (lecithin) to help stabilize the sauce and thicken it to the desired consistency."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "Inadequate Maillard Reaction due to lack of crust formation and insufficient searing time.",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "Increase searing time and temperature, ensure proper pan preparation, and use a thermometer to achieve the ideal temperature.",
+      "scores": {
+        "cause_accuracy": 0.16666666666666666,
+        "solution_appropriateness": 0.0625,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0917
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: Inadequate Maillard Reaction due to lack of crust formation and insufficient searing time.\n\nSOLUTION: Increase searing time and temperature, ensure proper pan preparation, and use a thermometer to achieve the ideal temperature.\n\nEXPLANATION: The Maillard reaction is a chemical reaction between amino acids and reducing sugars that occurs when food is cooked, resulting in the formation of new flavor compounds and browning. For a perfect crust to form on a steak, it needs to be seared at a high temperature (around 400\u00b0F/200\u00b0C) for a sufficient amount of time (around 2-3 minutes per side) to achieve the Maillard reaction. However, in your case, the steak is being flipped every 30 seconds, which may not allow for enough time for the crust to form. Additionally, a gray steak suggests that the internal temperature may not be high enough to caramelize the natural sugars, resulting in a lack of browning."
+    }
+  ]
+}

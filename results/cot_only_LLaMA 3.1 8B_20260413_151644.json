@@ -1,0 +1,52 @@
+{
+  "condition": "cot_only",
+  "model": "LLaMA 3.1 8B",
+  "timestamp": "20260413_151644",
+  "summary": {
+    "total_cases": 2,
+    "average_scores": {
+      "cause_accuracy": 0.0385,
+      "solution_appropriateness": 0.1786,
+      "scientific_accuracy": 0.0,
+      "overall": 0.0868
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "Step 3, specifically the action of slowly pouring in the hot butter in a thin, steady stream while blending.",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": "Stop the blender and whisk the sauce vigorously by hand until it thickens. Then, resume adding the hot butter in a slow, thin stream while blending.",
+      "scores": {
+        "cause_accuracy": 0.07692307692307693,
+        "solution_appropriateness": 0.35714285714285715,
+        "scientific_accuracy": 0.0,
+        "overall": 0.1736
+      },
+      "condition": "cot_only",
+      "raw_response": "CAUSE: Step 3, specifically the action of slowly pouring in the hot butter in a thin, steady stream while blending.\n\nSOLUTION: Stop the blender and whisk the sauce vigorously by hand until it thickens. Then, resume adding the hot butter in a slow, thin stream while blending.\n\nEXPLANATION: When hot butter is slowly added to the egg yolks while blending, it causes the mixture to heat up rapidly. This rapid heat increase can cause the egg yolks to scramble, breaking down the proteins and resulting in a thin, watery sauce. The immersion blender's high speed and the thin stream of butter accelerate this process, making it more likely to occur. By stopping the blender and whisking the sauce by hand, you allow the mixture to cool slightly and the proteins to re-emulsify, making it easier to thicken the sauce."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "Step 4: Add steak; flip every 30 seconds to ensure even internal cooking.",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "Reduce the frequency of flipping the steak to every 1-2 minutes, or better yet, let it cook undisturbed for 3-4 minutes on the first side to develop a crust.",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "cot_only",
+      "raw_response": "CAUSE: Step 4: Add steak; flip every 30 seconds to ensure even internal cooking.\n\nSOLUTION: Reduce the frequency of flipping the steak to every 1-2 minutes, or better yet, let it cook undisturbed for 3-4 minutes on the first side to develop a crust.\n\nEXPLANATION: When the steak is flipped too frequently, it prevents the Maillard reaction from occurring, which is a chemical reaction between amino acids and reducing sugars that occurs when food is cooked, resulting in the formation of new flavor compounds and the development of a crust. The Maillard reaction requires time and heat to develop, and excessive flipping disrupts this process. Additionally, flipping too frequently can also lead to the loss of heat in the pan, causing the steak to cook unevenly and preventing the crust from forming. By reducing the frequency of flipping, you allow the steak to develop a crust and cook evenly."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "condition": "baseline",
+  "model": "LLaMA 3.1 8B",
+  "timestamp": "20260413_155101",
+  "summary": {
+    "total_cases": 2,
+    "average_scores": {
+      "cause_accuracy": 0.0417,
+      "solution_appropriateness": 0.1429,
+      "scientific_accuracy": 0.5505,
+      "overall": 0.1839
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "Insufficient tempering or incorrect temperature of the egg yolks.",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": "Temper the egg yolks with a small amount of warm water or melted butter before adding the hot butter. Alternatively, heat the egg yolks gently over a double boiler or in a microwave-safe bowl in 10-second increments, whisking between each interval, until they reach 140\u00b0F to 150\u00b0F (60\u00b0C to 65\u00b0C).",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.2857142857142857,
+        "scientific_accuracy": 0.5454545454545454,
+        "overall": 0.2234
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: Insufficient tempering or incorrect temperature of the egg yolks.\n\nSOLUTION: Temper the egg yolks with a small amount of warm water or melted butter before adding the hot butter. Alternatively, heat the egg yolks gently over a double boiler or in a microwave-safe bowl in 10-second increments, whisking between each interval, until they reach 140\u00b0F to 150\u00b0F (60\u00b0C to 65\u00b0C).\n\nEXPLANATION: When hot butter is added directly to egg yolks without tempering, the sudden temperature change can cause the egg yolks to scramble and separate, resulting in a thin and unappetizing sauce. This is because the proteins in the egg yolks coagulate and become too thick to emulsify the fat from the butter. By tempering the egg yolks or heating them gently, you can create a stable emulsion that will thicken the sauce properly."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "The steak is gray and has no crust after searing due to insufficient Maillard reaction.",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "Adjust the heat and oil temperature, and sear the steak for a longer initial time to achieve a proper crust. Then, reduce heat and continue cooking to prevent overcooking.",
+      "scores": {
+        "cause_accuracy": 0.08333333333333333,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5555555555555556,
+        "overall": 0.1444
+      },
+      "condition": "baseline",
+      "raw_response": "CAUSE: The steak is gray and has no crust after searing due to insufficient Maillard reaction.\n\nSOLUTION: Adjust the heat and oil temperature, and sear the steak for a longer initial time to achieve a proper crust. Then, reduce heat and continue cooking to prevent overcooking.\n\nEXPLANATION: The Maillard reaction is a chemical reaction between amino acids and reducing sugars that occurs when food is cooked, resulting in the formation of new flavor compounds and browning. In the case of searing a steak, the Maillard reaction is responsible for the formation of the crust. However, if the heat is too low or the oil temperature is not hot enough, the Maillard reaction may not occur properly, resulting in a gray, uncrusted steak.\n\nTo achieve a proper crust, it's essential to heat the oil to the correct temperature (around 400\u00b0F/200\u00b0C) and maintain it at that temperature for a sufficient amount of time (about 2-3 minutes per side). This will allow the Maillard reaction to occur, resulting in a golden-brown crust.\n\nAdditionally, searing the steak at too high a heat can cause it to cook too quickly on the outside, leading to a gray color. By reducing the heat after the initial sear, you can continue cooking the steak while preventing overcooking.\n\nHere's an updated Step 3:\n\nStep 3: Heat oil in a cast iron skillet over high heat until smoking (around 400\u00b0F/200\u00b0C). Sear the steak for 2-3 minutes per side, or until a proper crust forms. Then, reduce heat to medium-high and continue cooking the steak as described in the original recipe."
+    }
+  ]
+}

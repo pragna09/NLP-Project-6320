@@ -1,0 +1,9 @@
+condition,model,cause_accuracy,solution_appropriateness,scientific_accuracy,overall
+baseline,LLaMA 3.1 70B,0.0769,0.2321,0.303,0.1842
+baseline,LLaMA 3.1 8B,0.0417,0.1429,0.5505,0.1839
+cot_only,LLaMA 3.1 70B,0.1154,0.308,0.4949,0.2684
+cot_only,LLaMA 3.1 8B,0.0385,0.1071,0.3586,0.13
+full_system,LLaMA 3.1 70B,0.0,0.0,0.4949,0.099
+full_system,LLaMA 3.1 8B,0.0,0.0,0.6061,0.1212
+kg_augmented,LLaMA 3.1 70B,0.0,0.0,0.5505,0.1101
+kg_augmented,LLaMA 3.1 8B,0.0417,0.0,0.4949,0.1156

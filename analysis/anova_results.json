@@ -1,0 +1,30 @@
+{
+  "anova_by_condition": {
+    "f_statistic": 2.1265,
+    "p_value": 0.150168,
+    "significant": false
+  },
+  "anova_by_model": {
+    "f_statistic": 0.5968,
+    "p_value": 0.45265,
+    "significant": false
+  },
+  "hallucination_rates": [
+    {
+      "condition": "baseline",
+      "hallucinated": 0.0
+    },
+    {
+      "condition": "cot_only",
+      "hallucinated": 0.0
+    },
+    {
+      "condition": "full_system",
+      "hallucinated": 0.0
+    },
+    {
+      "condition": "kg_augmented",
+      "hallucinated": 0.0
+    }
+  ]
+}
