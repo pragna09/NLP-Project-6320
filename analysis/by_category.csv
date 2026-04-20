@@ -1,0 +1,17 @@
+category,cause_accuracy,solution_appropriateness,scientific_accuracy,overall
+Baking,0.0868,0.1064,0.3019,0.1377
+Chinese,0.0417,0.0962,0.1083,0.0768
+Dessert,0.0303,0.0556,0.1742,0.0692
+Ingredient Prep,0.1452,0.1382,0.2775,0.1688
+Starch Cookery,0.0521,0.0312,0.0,0.0333
+Substitution,0.0139,0.2083,0.4792,0.1847
+Thai,0.1302,0.1302,0.0,0.1042
+baking,0.0407,0.1484,0.2648,0.1286
+dessert,0.0333,0.0754,0.175,0.0785
+protein cookery,0.0548,0.0941,0.2468,0.1089
+sauce emulsions,0.0513,0.0919,0.4196,0.1412
+seafood,0.058,0.1286,0.2648,0.1276
+soup,0.0641,0.1716,0.375,0.1693
+starch cookery,0.0333,0.0985,0.3917,0.1311
+starch emulsions,0.109,0.1591,0.4545,0.1981
+substitution,0.0601,0.1253,0.2717,0.1285

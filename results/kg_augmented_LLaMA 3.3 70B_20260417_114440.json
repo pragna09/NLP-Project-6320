@@ -1,0 +1,1096 @@
+{
+  "condition": "kg_augmented",
+  "model": "LLaMA 3.3 70B",
+  "timestamp": "20260417_114440",
+  "summary": {
+    "total_cases": 60,
+    "average_scores": {
+      "cause_accuracy": 0.0083,
+      "solution_appropriateness": 0.0052,
+      "scientific_accuracy": 0.3431,
+      "overall": 0.074
+    }
+  },
+  "results": [
+    {
+      "test_case_id": 1,
+      "problem": "My hollandaise sauce is thin and won't thicken up.",
+      "recipe": "Hollandaise Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Butter added too fast or yolks not sufficiently cooked (below 149\u00b0F/65\u00b0C) to create a stable suspension.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5454545454545454,
+        "overall": 0.1091
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with the hollandaise sauce, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point that was most likely violated is Step 3, where the hot butter is poured into the egg yolks. The critical point here is that the butter must be between 190-220\u00b0F to partially cook the yolks and stabilize the emulsion.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the sauce not thickening is that the butter was not hot enough. If the butter is below the required temperature range (specifically at 175\u00b0F as mentioned), it does not provide enough heat to cook the egg yolks sufficiently. This insufficient heating fails to stabilize the emulsion, resulting in a thin sauce. The emulsion in hollandaise sauce is stabilized by the heat-induced coagulation of egg yolk proteins and the formation of a complex network that traps fat droplets, making the sauce thick and creamy.\n\n3. **Scientifically Grounded Solution**: To fix the issue, ensure that the butter is heated to the correct temperature range of 190-220\u00b0F before slowly pouring it into the egg yolks while blending. This temperature range is crucial because it not only helps in cooking the egg yolks to a safe temperature (reaching a final yolk temperature of at least 149\u00b0F for food safety) but also because it melts the butter to a state where it can be properly emulsified with the egg yolks. The heat from the butter denatures the proteins in the egg yolks, making them more capable of stabilizing the emulsion by forming a complex with the fat (butter) and water (from the butter and egg yolks), thus thickening the sauce.\n\n**CAUSE**: The butter was not hot enough (below 190\u00b0F), leading to insufficient cooking of the egg yolks and failure to stabilize the emulsion.\n\n**SOLUTION**: Heat the butter to the correct temperature range (190-220\u00b0F) before adding it to the egg yolks.\n\n**EXPLANATION**: The science behind this solution lies in the thermal denaturation of proteins and the principles of emulsion formation. By heating the butter to the correct temperature, you ensure that the egg yolks are cooked sufficiently to stabilize the emulsion, resulting in a thick and creamy hollandaise sauce. The heat treatment is essential for the coagulation of egg yolk proteins, which then act as emulsifiers, allowing the sauce to maintain its structure and texture."
+    },
+    {
+      "test_case_id": 2,
+      "problem": "My steak is gray and has no crust after searing.",
+      "recipe": "Pan-Seared Ribeye Steak",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Surface moisture caused steam, preventing the surface temperature from reaching the Maillard reaction threshold (>285\u00b0F/140\u00b0C).",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5555555555555556,
+        "overall": 0.1111
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the gray steak with no crust after searing, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 3, where the pan must reach ~450\u00b0F to ensure rapid searing and crust development. This suggests that the critical control point violated is the pan temperature not reaching the required ~450\u00b0F.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the failure to achieve a crust is the lack of sufficient heat to initiate and sustain the Maillard reaction. The Maillard reaction, which is responsible for the formation of the flavorful crust, begins at 285\u00b0F. If the pan temperature does not exceed this threshold, the reaction cannot occur, resulting in a lack of browning and crust formation.\n\n3. **Scientifically Grounded Solution**: To fix the issue, it is essential to ensure that the pan reaches the required high temperature before adding the steak. This can be achieved by preheating the cast iron skillet over high heat for a longer period or using a thermometer to verify that the pan has reached ~450\u00b0F before adding the oil and then the steak. Additionally, using the right type of oil with a high smoke point (such as avocado oil) can help prevent the oil from smoking too early, which can lower the pan's temperature.\n\n**CAUSE**: The pan temperature not reaching ~450\u00b0F, failing to initiate the Maillard reaction necessary for crust formation.\n\n**SOLUTION**: Preheat the cast iron skillet to the correct temperature (~450\u00b0F) before adding the oil and steak, and use a thermometer to ensure the temperature is adequate.\n\n**EXPLANATION**: The science behind achieving a crust on a seared steak involves the Maillard reaction, a chemical reaction between amino acids and reducing sugars that gives browned food its distinctive flavor. This reaction starts at 285\u00b0F, and for it to occur efficiently and form a crust, the pan must be hot enough. If the pan temperature is too low, the reaction cannot proceed, resulting in a gray, unappetizing steak without a crust. By ensuring the pan reaches a high enough temperature, the conditions for the Maillard reaction are met, leading to the formation of a flavorful crust on the steak."
+    },
+    {
+      "test_case_id": 3,
+      "problem": "My chocolate ganache looks grainy and oily.",
+      "recipe": "Chocolate Ganache",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "The emulsion broke due to excessive heat or a lack of sufficient water-based liquid.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5555555555555556,
+        "overall": 0.1111
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the grainy and oily chocolate ganache, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 2, where the cream is heated in a small saucepan over medium until it reaches a bare simmer. The critical point here is not to let the cream reach a rolling boil, as excessive heat (above 200\u00b0F) can break the dairy emulsion and scorch the chocolate.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the grainy and oily texture of the chocolate ganache is the breakdown of the dairy emulsion due to excessive heat. When cream is heated too high, the fat globules in the cream can melt and separate, leading to an unstable emulsion. This instability can cause the fat to separate from the water, resulting in an oily texture. Additionally, scorching the chocolate can lead to the formation of grainy, seized chocolate particles.\n\n3. **Scientifically Grounded Solution**: To fix the issue, it's essential to heat the cream to the correct temperature. The solution involves heating the cream to a temperature below 200\u00b0F (around 180\u00b0F to 190\u00b0F) to prevent the breakdown of the dairy emulsion. This can be achieved by using a thermometer to monitor the temperature of the cream or by removing the cream from the heat as soon as it starts to simmer.\n\n**CAUSE**: The cream was overheated, causing the dairy emulsion to break and the chocolate to scorch, resulting in a grainy and oily texture.\n\n**SOLUTION**: Heat the cream to a temperature below 200\u00b0F (around 180\u00b0F to 190\u00b0F) to prevent the breakdown of the dairy emulsion.\n\n**EXPLANATION**: The science behind this solution lies in the properties of emulsions and the behavior of fat globules in cream. By heating the cream to a lower temperature, the fat globules remain stable, and the emulsion remains intact, resulting in a smooth and glossy chocolate ganache. This is supported by the relevant food science fact that excessive heat can break the dairy emulsion, and the critical control point that warns against letting the cream reach a rolling boil."
+    },
+    {
+      "test_case_id": 4,
+      "problem": "My hard-boiled eggs are impossible to peel.",
+      "recipe": "Hard-Boiled Eggs",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Starting eggs in cold water allows the membrane to bond slowly and strongly to the shell.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.4,
+        "overall": 0.08
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of hard-boiled eggs being impossible to peel, let's analyze the given information step by step.\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 2, the hot-start method. This method is crucial for creating a condition where the egg white denatures and contracts rapidly, which helps in pulling away from the shell membrane, making peeling easier. If this step is not performed correctly, it could lead to difficulties in peeling.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the difficulty in peeling could be related to the lack of proper thermal shock. When eggs are not lowered gently into boiling water, the sudden change in temperature might not be sufficient to cause the egg white to denature and contract away from the shell membrane effectively. This could result in the egg white sticking to the shell, making peeling challenging.\n\n3. **Scientifically Grounded Solution**: To fix the issue, ensure that the hot-start method is followed accurately. This means gently lowering the eggs into the boiling water using a slotted spoon. Additionally, using older eggs can help, as the pH of the egg white increases over time, making it easier for the egg white to separate from the shell membrane during cooking. However, the provided recipe and steps do not directly mention the age of the eggs or any additional treatments to enhance peelability.\n\n**CAUSE**: The hot-start method was likely not performed correctly, or the eggs might be too fresh, leading to poor separation between the egg white and the shell membrane.\n\n**SOLUTION**: Ensure the hot-start method is followed precisely, and consider using eggs that are at least a week to ten days old, as they tend to peel more easily due to the natural changes in the egg white's pH over time.\n\n**EXPLANATION**: The science behind this solution involves understanding how the thermal shock from the hot-start method helps in denaturing proteins in the egg white, making it contract and pull away from the shell membrane. Additionally, the natural increase in pH of the egg white over time makes older eggs easier to peel, as the higher pH facilitates the separation of the egg white from the shell membrane during cooking."
+    },
+    {
+      "test_case_id": 5,
+      "problem": "My pesto turned brown almost immediately.",
+      "recipe": "Blanched Basil Pesto",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "Inadequate blanching time, leading to insufficient deactivation of polyphenol oxidase (PPO) enzymes, caused the pesto to turn brown.",
+      "ground_truth_cause": "Polyphenol oxidase (PPO) enzymes reacted with oxygen upon bruising the leaves.",
+      "predicted_solution": "Ensure precise blanching time (15 seconds), completely dry the basil after the ice bath, and minimize oxygen exposure during processing.",
+      "scores": {
+        "cause_accuracy": 0.3,
+        "solution_appropriateness": 0.16666666666666666,
+        "scientific_accuracy": 0.2727272727272727,
+        "overall": 0.2412
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the pesto turning brown almost immediately, let's break down the problem step by step.\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 2: Blanching the basil leaves for exactly 15 seconds. If the blanching time was not precisely controlled, it could lead to inadequate deactivation of the polyphenol oxidase (PPO) enzymes.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the browning is the enzymatic browning reaction catalyzed by polyphenol oxidase (PPO). PPO reacts with oxygen in the presence of phenolic compounds, leading to the formation of brown pigments. If the basil leaves were not blanched for the correct amount of time, the PPO enzymes might not have been fully deactivated, causing the pesto to turn brown.\n\n3. **Scientifically Grounded Solution**: To prevent the browning, it's essential to ensure that the basil leaves are blanched for exactly 15 seconds to deactivate the PPO enzymes without breaking down the chlorophyll, which is responsible for the green color. Additionally, ensuring that the basil is completely dry after the ice bath (as per Step 3) and minimizing exposure to oxygen during the processing steps can help reduce the enzymatic browning reaction.\n\nCAUSE: Inadequate blanching time, leading to insufficient deactivation of polyphenol oxidase (PPO) enzymes, caused the pesto to turn brown.\n\nSOLUTION: Ensure precise blanching time (15 seconds), completely dry the basil after the ice bath, and minimize oxygen exposure during processing.\n\nEXPLANATION: The science behind this issue is rooted in enzymatic browning, where polyphenol oxidase (PPO) reacts with oxygen and phenolic compounds to produce brown pigments. By controlling the blanching time and minimizing oxygen exposure, the enzymatic browning reaction can be mitigated, preserving the green color of the pesto."
+    },
+    {
+      "test_case_id": 6,
+      "problem": "My cookies spread into one giant flat sheet.",
+      "recipe": "Chocolate Chip Cookies",
+      "category": "baking",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Butter was too warm (above 68\u00b0F), preventing proper creaming structure.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To tackle this problem, let's analyze it step by step:\n\n1. **Which critical control point was violated?**\n   The most likely failed step is Step 3: Whisk flour, baking soda, and salt in a separate bowl; fold into wet ingredients. The critical point here is to stop mixing as soon as flour streaks disappear to avoid over-mixing, which develops gluten and can cause cookies to spread excessively or become tough.\n\n2. **What is the chemical or physical reason?**\n   The chemical reason behind the excessive spreading is the over-development of gluten in the dough. Gluten is a network of proteins (gliadin and glutenin) found in wheat flour. When flour is mixed with liquid ingredients and then subjected to mechanical stress (like mixing), these proteins start to bond, forming a network that gives dough its elasticity and structure. Over-mixing exacerbates this process, creating a tough, dense dough that can lead to cookies spreading more than they should during baking.\n\n3. **What is the scientifically grounded solution?**\n   The solution to prevent over-mixing and thus excessive spreading is to ensure that the flour is just incorporated into the wet ingredients until no streaks of flour remain. This can be achieved by gently folding the flour mixture into the wet ingredients with a rubber spatula, stopping as soon as the flour is just combined. This method minimizes the mechanical stress on the gluten network, preserving the structure of the cookies and preventing them from becoming too flat.\n\n**CAUSE:** Over-mixing during the incorporation of flour into the wet ingredients, leading to the over-development of gluten.\n**SOLUTION:** Fold the flour into the wet ingredients gently and briefly, just until no flour streaks remain, to minimize gluten development.\n**EXPLANATION:** The science behind this solution lies in understanding the role of gluten in dough. By minimizing the mixing time and intensity after flour is added, the formation of a dense gluten network is prevented. This approach ensures that the cookies retain the right balance of structure and tenderness, leading to a better texture and less spreading during baking."
+    },
+    {
+      "test_case_id": 7,
+      "problem": "My scrambled eggs are weeping water and are rubbery.",
+      "recipe": "Scrambled Eggs",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "High heat caused egg proteins to over-coagulate and contract too tightly, squeezing out moisture (syneresis).",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.1,
+        "overall": 0.02
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of weeping water and rubbery scrambled eggs, let's analyze the given information step by step:\n\n1. **Identifying the Violated Critical Control Point**: \nThe most likely failed step is Step 1: Whisk eggs with salt and let sit for 15 minutes before cooking. This step is crucial for pre-salting, which modifies the myosin protein structure to improve water retention for a tender, moist curd.\n\n2. **Chemical or Physical Reason**:\nThe chemical reason behind the failure could be related to the myosin protein structure not being modified correctly due to insufficient or incorrect pre-salting. This could lead to poor water retention, causing the eggs to weep water. Additionally, if the eggs were overcooked (violating Step 4), it could lead to syneresis, where proteins contract too tightly and squeeze out water, making the eggs rubbery.\n\n3. **Scientifically Grounded Solution**:\nTo fix the issue, ensure that Step 1 is followed correctly: whisk eggs with the appropriate amount of salt and let them sit for the full 15 minutes. This allows sufficient time for the salt to modify the myosin protein structure, enhancing water retention. Additionally, be cautious with the cooking time and heat (Step 4), removing the eggs from the heat while they still look slightly wet and glossy to prevent overcooking and syneresis.\n\n**CAUSE**: The likely cause is the violation of the critical control point related to pre-salting (Step 1) and possibly overcooking (Step 4), leading to poor water retention and syneresis.\n\n**SOLUTION**: Ensure proper pre-salting and resting time for the eggs, and avoid overcooking by removing the eggs from the heat at the right moment.\n\n**EXPLANATION**: The science behind this involves the modification of myosin protein structure by salt, which improves water retention, and the prevention of syneresis by avoiding overcooking. When eggs are pre-salted and allowed to rest, the salt dissolves and penetrates the eggs, modifying the myosin proteins in a way that helps them retain more water, leading to a moister and more tender curd. Overcooking, on the other hand, causes the proteins to contract too much, squeezing out water and leading to a rubbery texture and weeping."
+    },
+    {
+      "test_case_id": 8,
+      "problem": "My mac and cheese sauce is grainy and the cheese is clumping.",
+      "recipe": "Macaroni and Cheese",
+      "category": "starch emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "The cheese was added to a boiling liquid, causing the proteins to tighten and squeeze out fat (greasiness) and moisture (graininess).",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5454545454545454,
+        "overall": 0.1091
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the grainy mac and cheese sauce and clumping cheese, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 2, where the pasta is brought to a boil over high heat, stirring constantly until the water is nearly fully absorbed. The critical point here is the constant stirring to release amylopectin starch into the water, creating a glossy, thick base sauce, and not draining the starchy water as it's essential.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the grainy sauce and clumping cheese is likely the inadequate release of amylopectin starch from the pasta during the cooking process. Amylopectin is a component of starch that acts as an emulsifier, helping to stabilize mixtures of water and fat (like the cheese sauce). If the starch isn't adequately released into the water, the sauce may not emulsify properly, leading to a grainy texture and separation of the cheese fat, causing it to clump.\n\n3. **Scientifically Grounded Solution**: To fix the issue, ensure that during Step 2, the pasta is stirred constantly and thoroughly as it comes to a boil and until the water is nearly fully absorbed. This process should release sufficient amylopectin starch into the water, creating a base that will help to stabilize the cheese sauce. Additionally, make sure not to drain this starchy water, as it's crucial for the emulsification and thickening of the sauce. If the problem persists, consider adjusting the heat to prevent scorching the starch, which can also lead to a grainy texture, and ensure that the cheese is added in the specified three additions, stirring well between each to prevent temperature shock to the cheese proteins.\n\n**CAUSE**: Inadequate release of amylopectin starch from the pasta during cooking, likely due to insufficient stirring or improper heat management, leading to poor emulsification of the cheese sauce.\n\n**SOLUTION**: Ensure constant and thorough stirring of the pasta as it cooks, maintain appropriate heat to prevent scorching, and retain the starchy water to act as a natural emulsifier and thickener in the cheese sauce.\n\n**EXPLANATION**: The science behind this solution involves the role of amylopectin starch as an emulsifier. By releasing this starch into the cooking water through constant stirring, a stable base for the cheese sauce is created. This starch helps to stabilize the mixture of water and fat (from the cheese), preventing separation and resulting in a smooth, glossy sauce rather than a grainy, clumping one."
+    },
+    {
+      "test_case_id": 9,
+      "problem": "My burgers are falling apart on the grill.",
+      "recipe": "Ultra-Smashed Burger",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Meat was over-worked during forming, breaking down the fat structure and preventing natural protein binding. Alternatively, patties were flipped too early before a crust formed to hold them together.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.2727272727272727,
+        "overall": 0.0545
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To analyze the problem of the burgers falling apart on the grill, let's break it down step by step based on the provided context:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 2, where the cast iron skillet may not have been heated to the required temperature of at least 500\u00b0F. This step is crucial for initiating the Maillard reaction immediately, which contributes to the formation of a crust on the burger patty.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the burgers falling apart is related to the lack of a properly formed crust due to insufficient heat. The Maillard reaction, which starts at 285\u00b0F, is essential for creating the crust. If the skillet is not hot enough, this reaction may not occur intensely enough or quickly enough to form a robust crust. The crust is crucial because it helps hold the patty together.\n\n3. **Scientifically Grounded Solution**: To fix the issue, ensure that the cast iron skillet reaches a temperature of at least 500\u00b0F before placing the burger ball on it. This high heat will immediately initiate the Maillard reaction, leading to the rapid formation of a crust. The crust acts as a 'glue' that holds the patty together, preventing it from falling apart when flipped or handled.\n\n**CAUSE**: The skillet was likely not heated to a high enough temperature, failing to initiate the Maillard reaction strongly enough to form a solid crust on the burger patty.\n\n**SOLUTION**: Preheat the cast iron skillet to at least 500\u00b0F before smashing the burger ball onto it to ensure a strong Maillard reaction and crust formation.\n\n**EXPLANATION**: The science behind this solution lies in the Maillard reaction, a chemical reaction between amino acids and reducing sugars that gives browned food its distinctive flavor. This reaction starts at 285\u00b0F but occurs more rapidly and intensely at higher temperatures, such as 500\u00b0F. By ensuring the skillet is hot enough, you facilitate a quick and robust Maillard reaction, which is essential for forming a crust that holds the burger patty together, preventing it from falling apart during cooking."
+    },
+    {
+      "test_case_id": 10,
+      "problem": "My garlic turned bitter and black in the oil.",
+      "recipe": "Spaghetti Aglio e Olio",
+      "category": "protein cookery",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Garlic was added to a hot pan and burnt before it could infuse.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.2,
+        "overall": 0.04
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of garlic turning bitter and black in the oil during the preparation of Spaghetti Aglio e Olio, let's break down the problem step by step.\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 1, where sliced garlic and olive oil are placed together in a cold skillet. The critical point here is starting in cold oil to allow flavor compounds to infuse slowly as the temperature rises.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the garlic turning bitter and black is the pyrolysis of its sugars. When garlic is heated too quickly or to too high a temperature, the sugars in the garlic undergo pyrolysis, a process that breaks down the molecules into bitter, acrid compounds. This is why it's crucial not to exceed a certain temperature (in this case, 300\u00b0F) and to heat the garlic slowly.\n\n3. **Scientifically Grounded Solution**: To prevent garlic from turning bitter and black, it's essential to start with cold oil and heat it slowly. This slow heating allows the flavor compounds in the garlic to infuse into the oil without burning the garlic's exterior before the interior aromatics can escape. Additionally, ensuring that the oil does not exceed the maximum temperature of 300\u00b0F is critical. If the garlic starts to darken beyond a pale straw gold, it's necessary to remove it from the heat immediately to stop the cooking process.\n\n**CAUSE**: The garlic turned bitter and black because the oil was either too hot initially or the temperature rose too quickly, causing the sugars in the garlic to undergo pyrolysis.\n\n**SOLUTION**: Start with cold oil and sliced garlic in the skillet, then heat it slowly over medium-low heat, stirring occasionally, until the garlic reaches a pale straw gold color. Monitor the temperature to ensure it does not exceed 300\u00b0F.\n\n**EXPLANATION**: The science behind this solution lies in the controlled release of flavor compounds from the garlic into the oil as the temperature rises slowly. By avoiding high temperatures and rapid heating, the process of pyrolysis is prevented, thereby avoiding the formation of bitter, acrid compounds that result from the breakdown of garlic's sugars. This method ensures that the garlic contributes its rich, aromatic flavor to the dish without becoming bitter."
+    },
+    {
+      "test_case_id": 11,
+      "problem": "My mayonnaise won't emulsify; it's just oil and yellow liquid.",
+      "recipe": "Immersion Blender Mayo",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Oil was added too quickly at the start, preventing the initial droplets from being coated in emulsifier.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with the mayonnaise not emulsifying, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 2, where the immersion blender is inserted to the very bottom of the jar before turning it on. The critical point here is that the blender at the base creates a 'seed' emulsion from the yolk and a small amount of oil first, which then absorbs the remaining oil above.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the failure to emulsify is related to the function of lecithin in egg yolks as an emulsifier. Lecithin has one water-loving (hydrophilic) end and one fat-loving (hydrophobic) end, allowing it to bind to both water and oil, thereby stabilizing the emulsion. If the blender is not properly positioned at the bottom, it may not effectively create this initial 'seed' emulsion, leading to a failure in incorporating the oil into the yolks due to insufficient stabilization by lecithin.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The immersion blender was likely not inserted correctly to the very bottom of the jar, or it was moved too soon, preventing the formation of a stable 'seed' emulsion.\n   - **SOLUTION**: Ensure the immersion blender is placed at the very bottom of the jar, touching the egg yolks, before turning it on. Hold it still for about 10 seconds to allow the formation of a stable emulsion base before slowly lifting it through the oil.\n   - **EXPLANATION**: By starting the blending at the bottom, where the egg yolks are, and holding the blender still for a few seconds, you allow the lecithin in the yolks to effectively emulsify a small amount of oil that gets drawn down by the blender. This initial emulsion acts as a 'seed' that can then absorb more oil as you slowly lift the blender, gradually incorporating all the oil into the mayonnaise. This process relies on the principle of emulsification, where the lecithin molecules stabilize the mixture of two immiscible liquids (oil and water/vinegar/lemon juice) by reducing the interfacial tension between them, thus creating a stable emulsion."
+    },
+    {
+      "test_case_id": 12,
+      "problem": "My chicken breast is dry and stringy.",
+      "recipe": "Pan-Roasted Chicken Breast",
+      "category": "protein cookery",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Internal temperature exceeded 165\u00b0F for too long, causing muscle fibers to contract irreversibly and squeeze out all retained moisture.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.1,
+        "overall": 0.02
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the dry and stringy chicken breast, let's analyze the problem step by step:\n\n1. **Which critical control point was violated?**\nThe most likely failed step is Step 1: Dry brine chicken breast with salt 1 hour before cooking; pat dry before searing. This step is crucial for modifying muscle protein structure to improve water retention during cooking.\n\n2. **What is the chemical or physical reason?**\nThe chemical reason behind the dryness could be the incomplete or ineffective modification of muscle protein structure due to insufficient dry brining time or improper patting dry. This could lead to inadequate water retention within the meat during cooking.\n\n3. **What is the scientifically grounded solution?**\nTo fix the issue, ensure that the dry brining step is executed correctly. This involves applying salt to the chicken breast and letting it sit for at least an hour before cooking. After the brining period, pat the chicken dry thoroughly, especially the skin, to ensure crispiness during searing. It's also essential to verify that the internal temperature does not exceed 150\u00b0F (65.5\u00b0C) before resting, as overcooking can contribute to dryness.\n\n**CAUSE:** Insufficient or ineffective dry brining, leading to poor water retention within the muscle fibers of the chicken breast.\n\n**SOLUTION:** Ensure proper dry brining by applying salt at least an hour before cooking and patting the chicken dry before searing. Monitor the internal temperature closely to avoid overcooking.\n\n**EXPLANATION:** The science behind this solution lies in the effect of salt on muscle proteins. Salt helps to break down the proteins on the surface of the meat, allowing them to reorganize into a more water-retentive structure. This process, combined with the subsequent patting dry, enhances the meat's ability to retain moisture during cooking. By controlling the cooking temperature and not overcooking, the natural juices within the meat are preserved, leading to a more tender and less dry final product."
+    },
+    {
+      "test_case_id": 13,
+      "problem": "My stir-fry is soggy and boiling in its own juice.",
+      "recipe": "Vegetable Stir-Fry",
+      "category": "protein cookery",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "The pan was crowded, dropping the temperature and preventing evaporation.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of a soggy stir-fry, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 1: Ensure all vegetables are completely dry before cooking. The critical control point violated here is that surface moisture causes immediate steaming on contact with the hot wok, dropping the pan temperature and producing soggy vegetables.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the soggy stir-fry is the introduction of excess moisture from the vegetables into the wok. When vegetables with high surface moisture content are added to a very hot wok, the moisture instantly turns into steam. This steam not only prevents the vegetables from searing (which requires a dry surface to achieve the Maillard reaction) but also drops the temperature of the wok. This temperature drop prevents the wok from maintaining the high heat necessary for achieving Wok Hei and for quickly cooking the vegetables without them becoming soggy.\n\n3. **Scientifically Grounded Solution**: The scientifically grounded solution is to ensure that all vegetables are completely dry before cooking. This can be achieved by gently patting the vegetables dry with a paper towel or a clean kitchen cloth after washing and before slicing them. Additionally, ensuring that the wok is heated to the highest possible temperature (around 500\u00b0F) before adding the vegetables helps in instantly evaporating any residual moisture, thus preventing steaming and promoting searing.\n\n**CAUSE**: The cause of the soggy stir-fry is the failure to remove excess moisture from the vegetables before cooking, leading to immediate steaming instead of searing when they are added to the hot wok.\n\n**SOLUTION**: Dry the vegetables thoroughly before cooking, and ensure the wok is at the highest possible heat to quickly evaporate any residual moisture and achieve the desired sear.\n\n**EXPLANATION**: The science behind this solution lies in understanding the importance of surface moisture in cooking. Excess moisture prevents the Maillard reaction (which starts at 285\u00b0F and is crucial for developing flavor and browning) from occurring efficiently, as it leads to steaming instead of searing. By removing excess moisture and ensuring the wok is at a high enough temperature, the conditions are optimized for achieving the Maillard reaction and thus for producing a stir-fry that is not soggy but instead crispy and flavorful."
+    },
+    {
+      "test_case_id": 14,
+      "problem": "My whipped cream is turning into lumpy butter.",
+      "recipe": "Whipped Cream",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Over-agitation caused fat globules to collide and fuse into a solid mass.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5454545454545454,
+        "overall": 0.1091
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of whipped cream turning into lumpy butter, let's analyze the problem step by step:\n\n1. **Which critical control point was violated?**\n   - The most likely failed step is Step 2, where the cream must be below 40\u00b0F for the fat globules to bond into a stable foam. However, given the context, it seems the issue is more aligned with over-whipping, which points towards a violation of Step 4: Stop immediately when peaks just hold their shape. Over-whipping breaks the fat globule membranes, causing them to fuse into solid clumps, which results in the formation of butter.\n\n2. **What is the chemical or physical reason?**\n   - The physical reason behind the whipped cream turning into lumpy butter is the over-whipping of the cream. When cream is whipped, air bubbles are incorporated into the mixture, and the fat globules in the cream form a protective 'cage' around these air bubbles, creating a stable foam structure. However, if the cream is over-whipped, the fat globule membranes are broken, and the fat globules fuse together, forming clumps of butter and causing the foam structure to collapse.\n\n3. **What is the scientifically grounded solution?**\n   - **CAUSE:** Over-whipping of the cream, leading to the breakdown of fat globule membranes and the formation of butter.\n   - **SOLUTION:** Stop whipping the cream as soon as it reaches the soft peak stage. If the cream has already been over-whipped, it's best to start over with a new batch of cold cream.\n   - **EXPLANATION:** The science behind whipped cream involves the formation of a stable foam structure through the incorporation of air bubbles and the protective 'cage' formed by fat globules around these bubbles. To maintain this structure, it's crucial not to over-whip the cream, as this leads to the breakdown of the fat globules and the collapse of the foam. By stopping the whipping process at the right time, the integrity of the fat globules is preserved, and a stable, smooth whipped cream is achieved."
+    },
+    {
+      "test_case_id": 15,
+      "problem": "My mashed potatoes are sticky like glue.",
+      "recipe": "Mashed Potatoes",
+      "category": "baking",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Mechanical shearing (blender) ruptured starch granules, releasing too much amylose.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.4,
+        "overall": 0.08
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of sticky mashed potatoes, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 4, where it's specified to fold in warm butter first, then warm cream/milk gently by hand. The critical point here is that folding (not stirring) minimizes mechanical shearing of starch cells, and adding cold dairy shocks the starch, making potatoes gluey.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the stickiness or glue-like consistency of the mashed potatoes is the mechanical shearing of starch cells and the addition of cold dairy. When potatoes are cooked, the starch granules absorb water and swell. If these swollen granules are then subjected to excessive mechanical stress (like over-mixing or stirring), they can rupture, releasing amylose, a component of starch. Amylose can form a gel-like substance when it comes into contact with water, leading to a sticky or glue-like consistency. Additionally, if cold dairy is added, it can cause the starches to retrograde (or recrystallize), contributing to an unappealing texture.\n\n3. **Scientifically Grounded Solution**: To fix the issue of sticky mashed potatoes, it's essential to follow the guidelines provided in the recipe more closely. This means ensuring that the butter and dairy (cream or milk) are warm when added to the potatoes. Warmth helps to keep the starches from retrograding and reduces the likelihood of forming a glue-like texture. Furthermore, it's crucial to fold these ingredients into the potatoes gently by hand, rather than stirring vigorously, which can rupture starch cells and release amylose, leading to the undesired texture.\n\n**CAUSE**: The cause of the sticky mashed potatoes is likely the violation of the critical control point in Step 4, where either cold dairy was added, or the potatoes were over-mixed (instead of being folded gently), or both. This leads to the mechanical shearing of starch cells and the formation of a glue-like polymer gel due to the release of amylose.\n\n**SOLUTION**: To fix the sticky mashed potatoes, ensure that all dairy products (butter and cream/milk) are warm before adding them to the potatoes. Then, gently fold these warm ingredients into the potatoes by hand, avoiding any vigorous stirring or mixing that could rupture the starch cells.\n\n**EXPLANATION**: The science behind the solution involves understanding the behavior of starches in potatoes when they are cooked and mixed. Starches in potatoes are made of amylose and amylopectin. When potatoes are cooked, these starches absorb water and swell. If the swollen starch granules are not subjected to excessive mechanical stress and are handled gently with warm ingredients, they are less likely to rupture and release amylose, which can form a glue-like gel. By following the guidelines of using warm dairy products and gentle folding, the formation of this gel can be minimized, resulting in smoother, less sticky mashed potatoes."
+    },
+    {
+      "test_case_id": 16,
+      "problem": "My chocolate chips seized into a dry clump in the microwave.",
+      "recipe": "Microwave Chocolate Ganache",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "A small amount of water caused sugar and cocoa particles to clump together.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.2222222222222222,
+        "overall": 0.0444
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of chocolate chips seizing into a dry clump in the microwave, let's analyze the situation step by step.\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 1, where it's crucial to combine chocolate chips and cream in a completely dry microwave-safe bowl. The critical control point violated here is \"Any water or steam contact with chocolate before full melting causes seizing \u2014 sugar and cocoa particles clump irreversibly around water molecules.\"\n\n2. **Chemical or Physical Reason**: The chemical reason behind the seizing of chocolate chips is the introduction of water or steam into the mixture before the chocolate is fully melted. When water comes into contact with the sugar and cocoa particles in the chocolate, it causes these particles to clump together irreversibly around the water molecules. This is because sugar is highly hydrophilic (water-loving) and will readily form bonds with water molecules, leading to the formation of a dry, clumpy texture that is characteristic of seized chocolate.\n\n3. **Scientifically Grounded Solution**: To prevent the seizing of chocolate chips, it's essential to ensure that the bowl, chocolate chips, and cream are completely dry before microwaving. Here's how to adjust the process:\n   - **CAUSE**: Introduction of water or steam into the chocolate-cream mixture before full melting, causing sugar and cocoa particles to clump irreversibly.\n   - **SOLUTION**: Ensure all components (bowl, chocolate chips, and cream) are completely dry. If necessary, dry the bowl and utensils with a clean towel, and make sure the cream is at room temperature to minimize condensation.\n   - **EXPLANATION**: The science behind this solution lies in preventing the premature contact between water and the dry components of the chocolate (sugar and cocoa particles). By keeping everything dry, you allow the chocolate to melt smoothly without the sugar and cocoa particles seizing up around water molecules. This approach is grounded in the understanding of the hydrophilic nature of sugar and the importance of controlling moisture levels when working with chocolate to achieve a smooth, consistent texture in the final product."
+    },
+    {
+      "test_case_id": 17,
+      "problem": "My vinaigrette separates the second I stop shaking it.",
+      "recipe": "Vinaigrette",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Lack of a surfactant (emulsifier) to lower the surface tension between oil and vinegar.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.08333333333333333,
+        "overall": 0.0167
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the vinaigrette separating immediately after shaking, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 1, where the instructions are to whisk vinegar, mustard, salt, and pepper together until fully combined. The critical point here is that mustard's mucilage compounds must be fully dissolved in the aqueous phase before oil is introduced.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the immediate separation of the vinaigrette is the insufficient dissolution of mustard's mucilage compounds in the aqueous phase. Mustard contains mucilage, which acts as a surfactant. Surfactants are crucial for reducing the surface tension between two liquids, such as oil and water, allowing them to mix more easily. If the mucilage compounds are not fully dissolved, they cannot effectively coat the oil droplets as the oil is added, leading to an unstable emulsion that separates quickly.\n\n3. **Scientifically Grounded Solution**: To fix the issue, ensure that the mustard is fully incorporated and dissolved in the vinegar before adding the oil. This can be achieved by whisking the mixture of vinegar, mustard, salt, and pepper for a longer period or until the mixture is smooth and there are no visible particles of mustard. Additionally, using a smaller amount of oil relative to the aqueous phase or adding the oil even more slowly while whisking vigorously can help in creating a more stable emulsion.\n\n**CAUSE**: Insufficient dissolution of mustard's mucilage compounds in the aqueous phase before introducing oil.\n\n**SOLUTION**: Whisk the aqueous phase (vinegar, mustard, salt, and pepper) for a longer duration to ensure the mustard is fully dissolved before slowly adding the oil while whisking vigorously.\n\n**EXPLANATION**: The science behind this solution lies in the role of surfactants (like mustard's mucilage) in emulsification. Fully dissolving the mustard's mucilage compounds allows them to effectively reduce the surface tension between the oil and water phases, facilitating the formation of a more stable emulsion. By ensuring the mucilage is fully dissolved and then slowly adding the oil, the chances of creating a stable vinaigrette that does not separate immediately are significantly improved."
+    },
+    {
+      "test_case_id": 18,
+      "problem": "My rice is mushy and stuck together.",
+      "recipe": "White Rice",
+      "category": "starch cookery",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Excess surface starch (amylopectin) was not rinsed off before cooking, gelatinizing into a sticky coating during boiling.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of mushy and stuck-together rice, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 3, where it's crucial not to lift the lid or stir the rice during the 15-minute cooking period. This step is critical because lifting the lid or stirring can release steam and break the grains, leading to uneven cooking and stickiness.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the stickiness is the gelatinization of starch, specifically amylopectin, which is a component of starch found in rice. When rice is cooked, the heat causes the starch granules to absorb water, swell, and eventually burst, releasing the starch into the cooking water. This process, known as gelatinization, occurs between 140\u00b0F and 158\u00b0F. If the grains are broken during cooking (by stirring, for example), more starch is released into the water, leading to a sticky or mushy texture.\n\n3. **Scientifically Grounded Solution**: To prevent the rice from becoming mushy and stuck together, it's essential to follow the critical control points, especially during Step 3. This means not lifting the lid to peek or stirring the rice during the cooking time. The steam trapped by the lid is crucial for even cooking and helps to cook the rice without making it sticky. Additionally, ensuring that the rice is rinsed properly before cooking to remove excess surface starch (amylopectin) is vital. This step helps in preventing the grains from sticking together during cooking.\n\n**CAUSE**: The likely cause of the mushy and stuck-together rice is the violation of the critical control point during Step 3, where either the lid was lifted, or the rice was stirred, leading to the release of starch into the cooking water and causing the rice to become sticky.\n\n**SOLUTION**: To fix the issue, ensure that the rice is rinsed thoroughly before cooking to remove excess starch, and during the cooking process, especially in Step 3, do not lift the lid or stir the rice. This will help in preventing the release of excess starch into the cooking water and ensure that the steam is retained for even cooking.\n\n**EXPLANATION**: The science behind the solution lies in the understanding of starch gelatinization and the role of steam in cooking rice. By not stirring and keeping the lid closed, the steam helps to cook the rice evenly without causing the starch granules to rupture excessively, thus preventing the rice from becoming mushy and sticky. The initial rinsing of rice removes excess surface starch, further reducing the likelihood of stickiness during cooking."
+    },
+    {
+      "test_case_id": 19,
+      "problem": "My muffins have huge holes (tunnels) inside.",
+      "recipe": "Blueberry Muffins",
+      "category": "baking",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Over-mixing developed an elastic gluten network that trapped air bubbles.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.36363636363636365,
+        "overall": 0.0727
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of huge holes (tunnels) inside the muffins, let's analyze the given information step by step.\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 2, where it's advised not to over-mix the batter to prevent developing an elastic, strong gluten network. Over-mixing can lead to the formation of tunnels or large holes in the muffins instead of the desired even, round air pockets.\n\n2. **Chemical or Physical Reason**: The chemical reason behind this issue is the over-development of gluten in the dough, which creates a strong, elastic network. When baking powder and baking soda react with liquid ingredients, they produce carbon dioxide gas. In a properly mixed batter, this gas gets trapped in small, round pockets, contributing to the light texture of the muffin. However, if the gluten network is over-developed due to over-mixing, the carbon dioxide bubbles can become trapped in larger, more elongated spaces, forming tunnels or large holes.\n\n3. **Scientifically Grounded Solution**: To prevent the formation of huge holes or tunnels in the muffins, it's essential to avoid over-mixing the batter. This means mixing the wet and dry ingredients just until they come together in a shaggy mass, still retaining some lumps. This approach ensures that the gluten network remains weak, allowing for a more even distribution of the carbon dioxide bubbles produced by the leavening agents. As a result, the muffins will have a more uniform texture with smaller, round air pockets instead of large tunnels.\n\n**CAUSE**: Over-mixing of the batter, leading to the development of a strong gluten network that traps carbon dioxide bubbles in elongated spaces, forming tunnels.\n\n**SOLUTION**: Mix the wet and dry ingredients until they are just combined, retaining lumps in the batter to prevent over-development of gluten.\n\n**EXPLANATION**: The science behind this solution lies in the understanding of how gluten develops in dough and how leavening agents work. By minimizing the mixing time and avoiding over-mixing, the gluten network remains under-developed, allowing for a lighter, more evenly textured muffin with smaller air pockets. This approach is grounded in the principles of baking science, where the control of gluten development and the action of leavening agents are crucial for achieving the desired texture in baked goods."
+    },
+    {
+      "test_case_id": 20,
+      "problem": "My caramel is grainy and full of sugar crystals.",
+      "recipe": "Caramel Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "A single undissolved crystal triggered a chain reaction of sucrose crystallization (seeding).",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.4,
+        "overall": 0.08
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of grainy caramel, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 2, where it's instructed to stop stirring completely once boiling begins. The violation occurs when stirring continues after the boiling point is reached.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the grainy texture is the reintroduction of undissolved sugar crystals into the boiling sugar syrup. When you stir the mixture after it has started boiling, you are introducing seeds for crystallization. These seeds can come from undissolved sugar crystals on the spoon, the sides of the pan, or even microscopic dust particles in the air. Once these seeds are introduced into the hot, supersaturated sugar solution, they trigger a chain-reaction crystallization. This process causes the sugar solution to rapidly form crystals, resulting in a grainy texture.\n\n3. **Scientifically Grounded Solution**: To prevent this, it's crucial to follow the instruction to stop stirring once the sugar solution reaches the boiling point. Any necessary interventions, like brushing down the sides of the pan with a wet pastry brush, should be done gently to avoid introducing seeds for crystallization. Additionally, ensuring that all utensils and the pan are clean and dry before use can minimize the introduction of foreign particles that could act as seeds for crystallization.\n\n**CAUSE**: The cause of the grainy caramel is the introduction of seeds for crystallization during the boiling process, likely due to stirring after the boiling point was reached.\n\n**SOLUTION**: To fix the issue, stop stirring the sugar solution once it reaches the boiling point. Use a wet pastry brush to gently brush down the sides of the pan if necessary, and ensure all equipment is clean and dry before use.\n\n**EXPLANATION**: The science behind this solution is based on the principles of crystallization and the supersaturation of sugar solutions. When a sugar solution is heated, the dissolved sugar molecules are in a state of supersaturation, meaning the solution contains more dissolved sugar than it can hold at equilibrium. The introduction of a seed crystal into this supersaturated solution provides a site for sugar molecules to crystallize onto, leading to rapid crystallization and a grainy texture. By avoiding the introduction of these seeds and controlling the boiling process carefully, a smooth, non-grainy caramel can be achieved."
+    },
+    {
+      "test_case_id": 21,
+      "problem": "Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",
+      "recipe": "Hainanese Chicken Rice",
+      "category": "protein cookery",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Cooking chicken at high heat (Rice Cooker \"Flash\" mode) causes muscle fibers to contract and squeeze out moisture.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.09090909090909091,
+        "overall": 0.0182
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of dry, tough, and lacking juicy/springy texture in the chicken breast for the Hainanese Chicken Rice recipe, let's analyze the steps and the provided food science facts.\n\n1. **Identifying the Critical Control Point Violation**: The most likely failed step is Step 3, where the chicken is supposed to be immediately submerged in an ice bath after poaching. This step is crucial for halting carry-over cooking and achieving the desired texture.\n\n2. **Chemical or Physical Reason**: The violation of Step 3 likely resulted in overcooking due to unchecked carry-over cooking. When the chicken is not immediately stopped from cooking by rapidly lowering its temperature (as would be achieved by submerging it in an ice bath), the internal temperature continues to rise. This overcooking can lead to the denaturation of proteins and the squeezing out of moisture from the meat, resulting in a dry and tough texture.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The failure to immediately submerge the poached chicken in an ice bath allowed carry-over cooking to continue, leading to overcooking and a loss of moisture.\n   - **SOLUTION**: Ensure that the chicken is immediately submerged in an ice bath after poaching to halt carry-over cooking. Additionally, verify that the chicken was pulled from the poaching liquid at exactly 155\u00b0F to prevent overcooking.\n   - **EXPLANATION**: The science behind this solution involves understanding the concept of carry-over cooking and the importance of rapid cooling. When chicken is cooked, the heat from the cooking process continues to penetrate the meat even after it's removed from the heat source, a phenomenon known as carry-over cooking. By immediately submerging the chicken in an ice bath, the cooling process is accelerated, stopping the cooking process and helping to retain the natural juices within the meat. This rapid cooling also aids in preventing the over-coagulation of proteins, which can make the meat tough and dry. Furthermore, pulling the chicken at the correct internal temperature ensures that the meat is cooked sufficiently to be safe to eat but not so much that it becomes dry and tough."
+    },
+    {
+      "test_case_id": 22,
+      "problem": "Bottled black truffle is flavorless or \"rubbery\" when cooked on pizza.",
+      "recipe": "Truffle & Mushroom Pizza",
+      "category": "baking",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Cooking the truffle in the oven or saut\u00e9ing it with toppings.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.36363636363636365,
+        "overall": 0.0727
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the bottled black truffle being flavorless or \"rubbery\" when cooked on pizza, let's analyze the given information step by step:\n\n1. **Critical Control Point Violation**: The critical control point that was violated is Step 4, which states that high oven heat destroys the volatile aromatic compounds of truffles. However, the issue arises from the fact that the truffle was added after cooking, as per the instructions. This means the violation might not be directly related to the timing of the truffle addition but could be related to how the truffle interacts with the pizza after it's been baked.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the truffle being flavorless or \"rubbery\" could be due to the heat from the pizza itself, even after it's been removed from the oven. Truffles contain volatile compounds that are sensitive to heat. If the pizza is too hot when the truffle is added, these compounds could still be degraded, leading to a loss of flavor and aroma. Additionally, the texture issue could be related to the truffle's composition and how it reacts when heated or when coming into contact with the hot, cheesy surface of the pizza.\n\n3. **Scientifically Grounded Solution**: To prevent the degradation of the truffle's volatile compounds and to maintain its texture, it's crucial to ensure the pizza has cooled slightly before adding the truffle. This doesn't mean letting it cool completely, as some warmth can help release the truffle's aroma, but it should not be scorching hot. Additionally, considering the Maillard reaction and caramelization temperatures, the pizza's crust and toppings have already undergone significant chemical changes that enhance flavors. However, the truffle's unique flavor profile is best preserved by minimizing its exposure to high temperatures.\n\n**CAUSE**: The truffle becomes flavorless or \"rubbery\" because its volatile aromatic compounds are degraded when exposed to the high temperature of the freshly baked pizza, even after it's been removed from the oven.\n\n**SOLUTION**: Allow the pizza to cool for about 30 seconds to 1 minute after removing it from the oven before adding the truffle. This brief cooling period can help reduce the temperature of the pizza surface, preserving the delicate flavor and aroma compounds of the truffle.\n\n**EXPLANATION**: The science behind this solution involves understanding the sensitivity of truffle compounds to heat and the importance of the Maillard reaction and caramelization in enhancing flavors during cooking. By adding the truffle when the pizza is slightly cooler, the volatile compounds are less likely to degrade, preserving the truffle's unique flavor and aroma. This approach balances the need to protect the truffle's delicate flavor profile with the culinary goal of integrating its flavor into the dish."
+    },
+    {
+      "test_case_id": 23,
+      "problem": "Mushroom sauce is too thin/light and lacks a rich, glossy texture.",
+      "recipe": "White wine & Mushroom Sauce",
+      "category": "sauce emulsions",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Relying solely on low-fat \"liquid\" cream without reduction or emulsification.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.45454545454545453,
+        "overall": 0.0909
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the mushroom sauce being too thin and lacking a rich, glossy texture, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 4, where the cold butter is whisked into the sauce. The critical point here is that the butter must be cold and added off-heat to create a stable emulsion.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the failure is related to the emulsification process. When butter (a 'water-in-fat' emulsion) is added to a hot sauce, the heat causes the butter to melt, separating into its fat and water components instead of forming a stable emulsion with the sauce. This results in the sauce not thickening as desired and lacking the glossy finish that a properly emulsified sauce would have.\n\n3. **Scientifically Grounded Solution**: To fix the issue, it's essential to ensure that the sauce is removed from the heat before adding the cold butter. The sauce should be at a temperature where it's still warm but not boiling. Then, the cold butter should be whisked in gradually, one tablespoon at a time, allowing each portion to fully incorporate before adding the next. This process, known as \"monter au beurre,\" relies on the principle of emulsification, where the fat in the butter coats the water-based components of the sauce, creating a smooth, thick, and glossy texture.\n\n**CAUSE**: The butter was likely added to the sauce while it was still boiling, causing the butter to melt into oil rather than emulsifying with the sauce.\n\n**SOLUTION**: Remove the sauce from the heat, let it cool slightly to a warm temperature, and then whisk in the cold butter one tablespoon at a time to create a stable emulsion.\n\n**EXPLANATION**: The science behind this solution lies in the principles of emulsification and the properties of butter as a 'water-in-fat' emulsion. By adding cold butter to a warm (not hot) sauce, the fat in the butter can effectively coat and stabilize the water-based components of the sauce, resulting in a thick, glossy, and rich texture. This process is analogous to making a vinaigrette, where oil (fat) and vinegar (water) are mixed with an emulsifier (like mustard) to create a stable emulsion. Similarly, in the case of the mushroom sauce, the cold butter acts as the emulsifier, stabilizing the sauce and giving it the desired texture."
+    },
+    {
+      "test_case_id": 24,
+      "problem": "Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.",
+      "recipe": "Thai Curry Paste",
+      "category": "Ingredient Prep",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Accidentally processing the white lemon pith into the paste instead of just the zest.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.2857142857142857,
+        "overall": 0.0571
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with the curry paste, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point that was violated is in Step 4, where it's specified that only the outer oily layer of the citrus skin (zest) should be used. The violation occurred when the white pith of the lemon was included in the processing instead of just using the zest.\n\n2. **Chemical or Physical Reason**: The chemical reason for the bitterness is the inclusion of limonin, a compound found in the white pith of citrus fruits. Limonin is responsible for the deep, lingering bitterness in the curry paste.\n\n3. **Scientifically Grounded Solution**: To fix the issue, the curry paste should be remade, ensuring that only the zest (the outer, oily layer of the citrus skin) is used, excluding the white pith. This will prevent the introduction of limonin into the paste, thereby avoiding the bitterness.\n\n**CAUSE**: The cause of the problem is the inclusion of the white pith of the lemon, which contains limonin, a compound known for its bitter taste.\n\n**SOLUTION**: The solution is to carefully prepare the citrus ingredient by only zesting the outer layer and avoiding the white pith, then proceeding with the recipe as instructed.\n\n**EXPLANATION**: The science behind the bitterness is rooted in the chemical composition of citrus fruits. The white pith of citrus fruits, such as lemons, contains limonin, a limonoid that is known for its bitter taste. When the pith is included in the processing of the curry paste, the limonin is released and distributed throughout the paste, resulting in an overly bitter and potentially inedible product. By excluding the pith and only using the zest, the bitterness can be significantly reduced, leading to a more balanced flavor profile in the final product."
+    },
+    {
+      "test_case_id": 25,
+      "problem": "The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",
+      "recipe": "Thai Green Curry",
+      "category": "Thai",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Using concentrated coconut paste 1:1 without dilution, which causes the sauce to \"split\" and overpowers the fresh green chili/herbal flavors.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To analyze the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point that was most likely violated is Step 3, where the remaining diluted coconut liquid is stirred in, and then proteins and vegetables are added. This is indicated by the mention of the green curry turning dark and the delicate herbal notes being drowned out, which aligns with the critical point about green curry paste containing fresh green chilies and herbs that oxidize quickly.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the failure is the oxidation of the fresh green chilies and herbs in the green curry paste, which can lead to a change in color from vibrant green to a muddy brown. Additionally, the use of coconut paste as a 1:1 substitute for milk without proper adjustment could lead to an overly rich and oily sauce, drowning out the delicate herbal notes.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The cause of the problem is two-fold. Firstly, the improper substitution of coconut paste for milk without adjusting the proportions and method of incorporation led to an overly oily sauce. Secondly, the potential over-boiling or improper handling of the green curry paste during the cooking process caused the oxidation of the fresh green chilies and herbs, resulting in a dark color and loss of delicate flavors.\n   - **SOLUTION**: To fix this, one should first prepare the coconut 'cream' by whisking warm water into the coconut paste to achieve the right consistency before using it in the recipe. Then, during Step 3, the diluted coconut liquid should be stirred in gradually while monitoring the heat to prevent over-boiling. It's also crucial to add the proteins and vegetables in a way that they cook gently without causing the sauce to boil vigorously, which can accelerate oxidation. Finally, adjusting the amount of coconut paste used and ensuring that the green curry paste is not over-processed or boiled for too long will help preserve the vibrant color and delicate flavors.\n   - **EXPLANATION**: The science behind this solution involves understanding the properties of coconut paste and how it behaves when mixed with water and heated. Coconut paste is high in fat, which can make sauces rich and oily if not diluted properly. The emulsion formed when coconut paste is mixed with water can break if overheated, leading to separation and an unappealing texture. The oxidation of fresh green chilies and herbs in the green curry paste is a chemical reaction that can be minimized by controlling the heat and cooking time, thus preserving the color and flavor compounds that are sensitive to heat and oxygen. By gently simmering the curry and avoiding over-boiling, the delicate herbal notes can be preserved, and the vibrant green color of the curry can be maintained."
+    },
+    {
+      "test_case_id": 26,
+      "problem": "The Sichuan pepper provides no numbing sensation or flavor (tastes like \"dust\") even after being ground into a fine powder",
+      "recipe": "Sichuan Chilli Oil",
+      "category": "Chinese",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Using old, stale peppercorns or over-processing high-quality ones into a fine dust before infusion.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.1,
+        "overall": 0.02
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with the Sichuan pepper not providing the expected numbing sensation or flavor in the Sichuan Chilli Oil recipe, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point that was most likely violated is the instruction not to grind the Sichuan peppercorns into a fine powder for the oil infusion. The problem statement mentions that the Sichuan pepper was ground into a fine powder, which directly contradicts the advice given in the critical control points.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the loss of flavor and numbing sensation when Sichuan peppercorns are ground into a fine powder could be related to the volatile nature of the compounds responsible for these sensory effects. Sichuan peppercorns contain hydroxy-alpha-sanshool, a compound known for its unique numbing and slightly spicy sensation. When peppercorns are ground into a fine powder, these volatile compounds can be lost more quickly due to increased surface area exposure to air, heat, and light. Furthermore, the fine powder might not infuse as effectively into the oil because the smaller particles could potentially settle or be strained out more efficiently, reducing the extraction of the desired compounds into the oil.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The Sichuan peppercorns were ground into a fine powder, likely leading to the loss of volatile compounds responsible for the numbing sensation and flavor.\n   - **SOLUTION**: Use whole Sichuan peppercorns in the oil infusion step as instructed. This allows for a more controlled release of the flavor and numbing compounds into the oil without the premature loss of these volatile substances.\n   - **EXPLANATION**: By using whole Sichuan peppercorns, the natural encapsulation of the volatile compounds within the peppercorn's cellular structure is preserved. This encapsulation protects the compounds from immediate degradation or loss due to exposure to air, heat, or light. As the whole peppercorns steep in the warm oil, the compounds are slowly extracted into the oil, preserving the integrity and potency of the Sichuan pepper's unique flavor and numbing sensation. This method aligns with the principles of flavor extraction and the preservation of volatile compounds in culinary practices."
+    },
+    {
+      "test_case_id": 27,
+      "problem": "The soup remains thin and watery, or the starch forms \"dumplings\" (clumps) instead of thickening the broth evenly.",
+      "recipe": "Egg Drop Soup",
+      "category": "soup",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Adding dry starch directly to hot broth or failing to use a thickener like cornstarch or cassava flour.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To analyze and solve the issue with the Egg Drop Soup, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point that was most likely violated is Step 3, where the broth must be thickened before adding the eggs. The violation here is that the starch did not effectively thicken the broth, leading to it remaining thin and watery, or forming \"dumplings\" (clumps) instead of thickening evenly.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind this issue is related to the gelatinization of starch granules. For starch to effectively thicken a liquid, the granules must swell and burst, a process known as gelatinization, which occurs between 140\u00b0F and 158\u00b0F. If the starch slurry is not adequately cooked within this temperature range, the starch granules may not fully gelatinize, leading to ineffective thickening. Additionally, if the slurry is not well mixed into the broth, or if it is added too quickly, it can form lumps (or \"dumplings\") instead of distributing evenly and thickening the soup.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The starch slurry was not effectively incorporated into the broth, or it was not cooked sufficiently to achieve gelatinization, resulting in a thin, watery soup or the formation of starch clumps.\n   - **SOLUTION**: To fix this, ensure that the starch slurry is thoroughly mixed with cold water until it is smooth and free of lumps before adding it to the broth. Then, gradually stir the slurry into the simmering broth while maintaining a gentle simmer. Continue to cook for a few minutes after adding the slurry, ensuring that the mixture reaches a temperature within the gelatinization range (between 140\u00b0F and 158\u00b0F) and that the broth has visibly thickened and become clear. This step is crucial for the starch to effectively thicken the soup.\n   - **EXPLANATION**: The science behind this solution lies in the process of gelatinization. By ensuring that the starch slurry is well mixed into the broth and cooked at an appropriate temperature, the starch granules can fully gelatinize, effectively thickening the liquid. Proper mixing and cooking prevent the formation of lumps, allowing the starch to distribute evenly and achieve the desired consistency for the Egg Drop Soup."
+    },
+    {
+      "test_case_id": 28,
+      "problem": "Monkfish cheeks are inedibly salty and slightly \"cured\" after being left in the fridge with too much salt for too long.",
+      "recipe": "Pan-Seared Monkfish Cheeks",
+      "category": "seafood",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Overestimating the salt amount or curing time needed to draw out moisture from delicate seafood.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with the monkfish cheeks being inedibly salty and slightly \"cured,\" let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point that was violated is Step 2, where it's advised to season lightly with salt and pepper just before cooking. The violation occurred because the monkfish cheeks were left with too much salt for too long.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the issue is related to the effect of salt on proteins in meat. When salt is applied to meat too far in advance, it can denature proteins, particularly myosin, which is a key component of muscle tissue. Denaturation of myosin proteins allows them to hold more water initially, but prolonged exposure to salt can lead to an excessive loss of moisture and the beginning of a curing process. This curing process can toughen the delicate meat of the monkfish cheeks, making them unpalatable.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The excessive salting and prolonged exposure to salt led to the denaturation of proteins and the initiation of a curing process, resulting in tough, salty monkfish cheeks.\n   - **SOLUTION**: To fix this, one should rinse the monkfish cheeks under cold running water to remove excess salt, then pat them dry with paper towels. Afterward, proceed with the recipe as instructed, seasoning lightly with salt and pepper just before cooking to avoid further moisture loss and curing.\n   - **EXPLANATION**: The science behind this solution involves understanding the effects of salt on meat proteins. By removing excess salt and applying salt just before cooking, the denaturation of myosin proteins is minimized to the necessary extent for flavor enhancement without initiating an unwanted curing process. This approach helps preserve the natural texture and juiciness of the monkfish cheeks, ensuring a better culinary outcome."
+    },
+    {
+      "test_case_id": 29,
+      "problem": "The vegan ice cream has a grainy, \"oatmeal-like\" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",
+      "recipe": "Matcha Tofu Ice Cream",
+      "category": "dessert",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Substituting silken tofu with regular (firm or extra-firm) tofu in a high-fat dessert base.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.1,
+        "overall": 0.02
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with the vegan ice cream having a grainy, \"oatmeal-like\" texture and a heavy, dense mouthfeel, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point that was most likely violated is in Step 2, where it's crucial to blend the silken tofu thoroughly to incorporate air. The problem statement and the critical control points suggest that if the silken tofu is not blended properly, it could result in a gritty texture.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the grainy texture is likely due to the incomplete breakdown and aeration of the silken tofu. Silken tofu, when not fully incorporated with air and other ingredients, can retain its curd-like structure, leading to a grainy or oatmeal-like texture in the final product. This is exacerbated if the blending process does not sufficiently break down the tofu's protein network and incorporate air, which is essential for a smooth and creamy texture.\n\n3. **Scientifically Grounded Solution**: To fix the issue, ensure that the silken tofu is blended at high speed for a sufficient amount of time until it is completely smooth and homogenous with the soy milk and canola oil. This step is critical because it not only mixes the ingredients but also incorporates air, which is necessary for achieving a light and creamy texture in ice cream. Additionally, using an ice cream maker can help in further aerating the mixture as it churns, which contributes to a smoother texture. If using the \"freeze and stir\" method, it's essential to stir vigorously every 30 minutes to break down ice crystals and incorporate air, helping to achieve a smoother consistency.\n\n**CAUSE**: The silken tofu was not blended thoroughly enough to incorporate sufficient air and break down its curd-like structure, leading to a grainy texture.\n\n**SOLUTION**: Ensure thorough blending of silken tofu with other ingredients until completely homogenous and aerated, and consider using an ice cream maker for additional aeration.\n\n**EXPLANATION**: The science behind this solution lies in the importance of aeration and the breakdown of the protein network in silken tofu for achieving a smooth texture. Incorporating air during the blending process and potentially during churning (if using an ice cream maker) helps to create a lighter, more even texture by introducing air pockets into the mixture. This process, combined with the proper breakdown of the tofu's structure, is key to producing a creamy ice cream rather than one with a grainy, oatmeal-like texture."
+    },
+    {
+      "test_case_id": 30,
+      "problem": "No instant yeast",
+      "recipe": "Yeasted Banana Sandwich Bread",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Missing Ingredient",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.2857142857142857,
+        "overall": 0.0571
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To tackle this problem, let's break it down step by step:\n\n1. **Identify the Critical Control Point Violated**: The critical control point violated in this scenario is the absence of instant yeast, which is crucial for the dough to rise. This absence directly impacts Step 4 of the recipe, where the dough is supposed to rise until doubled in size.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the necessity of yeast in this recipe is that yeast consumes sugars and releases carbon dioxide gas. This process is essential for the dough to rise, as the carbon dioxide gets trapped by the gluten network in the dough, causing it to expand. Without yeast, this process cannot occur, and the dough will not rise.\n\n3. **Scientifically Grounded Solution**: Since the problem is the absence of instant yeast, a scientifically grounded solution would involve finding an alternative leavening agent or method to leaven the bread. However, given that yeast is specifically required for a \"yeasted\" banana sandwich bread, the best solution would be to either obtain instant yeast or use an alternative type of yeast (like active dry yeast or sourdough starter) that can facilitate the fermentation process necessary for the bread to rise.\n\n**CAUSE**: The absence of instant yeast prevents the fermentation process, which is necessary for the dough to rise.\n\n**SOLUTION**: Obtain instant yeast or use an alternative leavening agent/method, such as active dry yeast or a sourdough starter, to facilitate the rise of the dough.\n\n**EXPLANATION**: The science behind this solution is based on the principle that yeast fermentation is essential for bread to rise. Yeast consumes sugars and produces carbon dioxide, which gets trapped by the gluten in the dough, causing it to rise. By using a form of yeast or an alternative leavening agent, you can ensure that the dough undergoes the necessary fermentation process to rise properly."
+    },
+    {
+      "test_case_id": 31,
+      "problem": "Saut\u00e9ed mushrooms are rubbery, tough, and \"slimy\" instead of being tender and meaty.",
+      "recipe": "Saut\u00e9ed Cremini Mushrooms",
+      "category": "Ingredient Prep",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Overcrowding the pan and adding onions/salt too early, which causes the mushrooms to steam in their own juice.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.7142857142857143,
+        "overall": 0.1429
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of rubbery, tough, and \"slimy\" saut\u00e9ed mushrooms, let's analyze the given recipe and critical control points step by step.\n\n1. **Critical Control Point Violation**: The critical control point violated in this recipe is the simultaneous addition of mushrooms and onions to the pot, followed by the immediate addition of salt. This step, as described, does not allow for the proper searing or browning of the mushrooms due to the release of moisture from both the mushrooms and the onions, which interferes with the Maillard reaction\u2014a chemical reaction between amino acids and reducing sugars that gives browned food its distinctive flavor.\n\n2. **Chemical or Physical Reason**: The primary issue here is the excess moisture released by both the mushrooms and the onions when they are added to the pot at the same time. Mushrooms are about 90% water, and when they are heated, this water is released. The presence of onions, which also contain a high amount of water, exacerbates this issue. The immediate addition of salt, while intended to help deglaze the pan, actually accelerates the release of moisture from the mushrooms due to osmosis, making the environment even more aqueous and less conducive to browning.\n\n3. **Scientifically Grounded Solution**: To achieve tender and meaty saut\u00e9ed mushrooms, it's essential to modify the cooking technique to minimize the initial moisture release and facilitate the browning process. Here\u2019s a step-by-step solution:\n   - **CAUSE**: The simultaneous cooking of mushrooms and onions with immediate salting leads to an environment that is too moist for the Maillard reaction to occur efficiently, resulting in rubbery and tough mushrooms.\n   - **SOLUTION**: Cook the onions first until they are translucent or slightly caramelized, then remove them from the pot. Next, add a small amount of oil to the pot if necessary, and then add the mushrooms. Allow the mushrooms to sear and brown on one side before stirring them. This initial browning is crucial for developing flavor and texture. Once the mushrooms have started to brown, you can add the cooked onions back into the pot, along with any seasonings, including salt.\n   - **EXPLANATION**: By cooking the onions separately first, you reduce the initial moisture content in the pot when the mushrooms are added. Allowing the mushrooms to sear and brown before stirring them enables the Maillard reaction to occur, which enhances the flavor and texture of the mushrooms. This approach takes advantage of the fact that mushrooms contain heat-stable chitin in their cell walls, making them resistant to overcooking, and leverages the principle that the key to tender and meaty mushrooms is not avoiding moisture altogether but managing it to facilitate the right chemical reactions during cooking."
+    },
+    {
+      "test_case_id": 32,
+      "problem": "The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",
+      "recipe": "Black Sesame Paste",
+      "category": "Ingredient Prep",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Toasting the seeds for only 5 minutes (insufficient to release oils) and attempting to process too large a batch (18 oz) at once.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.1,
+        "overall": 0.02
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with the black sesame paste, let's analyze the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point violated in this process is Step 3, where the black sesame seeds are processed in 10-minute intervals with the addition of olive oil and honey. Specifically, the issue arises from the insufficient toasting time of the black sesame seeds (only 5 minutes) and the choice of oil used (olive oil).\n\n2. **Chemical or Physical Reason**: The chemical reason behind the failure to achieve a smooth, glossy paste is the insufficient release of oils from the black sesame seeds due to inadequate toasting time. Black sesame seeds contain a high amount of oil, but this oil is trapped within the seed's cellular structure. Proper toasting or roasting is necessary to break down these cell walls, releasing the oil and facilitating the formation of a smooth paste. Furthermore, the use of olive oil, which has a distinct flavor profile, may not be the best choice for enhancing the extraction of sesame oil from the seeds.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: Insufficient toasting time and inappropriate oil choice led to the failure in achieving a smooth black sesame paste.\n   - **SOLUTION**: Increase the toasting time of the black sesame seeds to at least 10-15 minutes or until they are fragrant and slightly darkened. This will help in releasing more oil from the seeds. Additionally, consider using a neutral-tasting oil like canola or grapeseed oil instead of olive oil to facilitate better oil release and paste formation without altering the flavor profile of the sesame seeds.\n   - **EXPLANATION**: The science behind this solution lies in the thermal degradation of cell wall components in sesame seeds during the toasting process. Longer toasting times and higher temperatures can break down the cell walls more effectively, releasing the trapped oil. This oil release is crucial for achieving a smooth, glossy texture in the final paste. Moreover, using a neutral oil that can easily mix with the sesame oil will help in grinding the seeds into a smoother paste. The principle is similar to how emulsions work in sauces, where the right combination and amount of oils can lead to a stable, smooth texture. In this context, the proper toasting of sesame seeds and the choice of a suitable oil are key to creating an effective emulsion that results in a smooth black sesame paste."
+    },
+    {
+      "test_case_id": 33,
+      "problem": "My pie crust cracks and breaks apart while I am rolling it out.",
+      "recipe": "Classic Pie Crust",
+      "category": "Baking",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "The dough is too cold or lacks sufficient moisture.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.25,
+        "overall": 0.05
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To tackle the problem of a pie crust cracking and breaking apart while rolling it out, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The critical control point that was likely violated is Step 3: Chill dough to relax gluten. This step is crucial for allowing the gluten network in the dough to relax, which makes the dough easier to roll out without cracking.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the pie crust cracking and breaking apart is related to the gluten network in the dough. When flour is mixed with fat and liquid, gluten strands start to form and create a network. This network can become tight and rigid if the dough is not given enough time to rest and relax. If the gluten is not relaxed, the dough becomes brittle and prone to cracking when rolled out.\n\n3. **Scientifically Grounded Solution**: To fix the issue, it's essential to ensure that the dough is properly chilled and rested. This allows the gluten network to relax, making the dough more pliable and less prone to cracking. Additionally, when rolling out the dough, it's crucial to apply gentle and even pressure to avoid putting too much stress on the gluten network.\n\n**CAUSE**: Insufficient resting and chilling of the dough, leading to a tight and rigid gluten network.\n\n**SOLUTION**: Ensure the dough is chilled for a sufficient amount of time (at least 30 minutes to an hour) to allow the gluten to relax. When rolling out, apply gentle and even pressure, and consider rolling between lightly floured parchment papers to reduce friction.\n\n**EXPLANATION**: The science behind this solution lies in the properties of gluten and how it behaves in dough. Gluten is a network of proteins that gives dough its structure and elasticity. When dough is first mixed, the gluten network is tense and rigid. Chilling the dough allows the gluten to relax, making the dough easier to roll out without cracking. By applying gentle pressure and reducing friction during the rolling process, the risk of cracking the dough is further minimized. This approach is grounded in the understanding of gluten dynamics and the physical properties of dough, ensuring a more successful pie crust rolling experience."
+    },
+    {
+      "test_case_id": 34,
+      "problem": "The cakes fail to \"bloom\" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",
+      "recipe": "Vietnamese B\u00e1nh Thu\u1eabn",
+      "category": "Baking",
+      "difficulty": "hard",
+      "predicted_cause": "",
+      "ground_truth_cause": "Substituting arrowroot powder with a wheat starch/cake flour mix.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.2727272727272727,
+        "overall": 0.0545
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with the Vietnamese B\u00e1nh Thu\u1eabn cakes failing to \"bloom\" and resulting in dense, domed tops, let's analyze the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point that was violated is Step 4, where it's mentioned that substituting arrowroot with 100% wheat flour creates too much gluten elasticity, leading to a smooth dome shape instead of the desired 5-petal apricot blossom shape.\n\n2. **Chemical or Physical Reason**: The chemical reason behind this issue is the high gluten content in wheat flour compared to arrowroot powder. Gluten provides elasticity to dough, which is beneficial in many baked goods but not in this specific case where the goal is to achieve a delicate, splitting effect. Arrowroot powder, being gluten-free, does not develop this elasticity, allowing for the thermal shock to create the flower petals effect without resistance from gluten networks.\n\n3. **Scientifically Grounded Solution**: The solution to this problem is to use arrowroot powder as originally specified in the recipe instead of substituting it with wheat flour. If arrowroot powder is not available, another gluten-free starch like tapioca flour or cornstarch could be used as a substitute, though the exact ratio might need adjustment based on the specific properties of the substitute starch.\n\n**CAUSE**: The substitution of arrowroot powder with wheat flour introduced excessive gluten into the batter, leading to increased elasticity and a dense, domed shape instead of the desired bloom.\n\n**SOLUTION**: Use arrowroot powder or another gluten-free starch as specified in the recipe to minimize gluten elasticity and allow for the thermal shock to effectively create the flower petals shape.\n\n**EXPLANATION**: The science behind this solution lies in the properties of gluten and its effects on baked goods. Gluten, a protein found in wheat, barley, and rye, gives dough its elasticity and chewiness. In the case of Vietnamese B\u00e1nh Thu\u1eabn, this elasticity is undesirable because it prevents the cake from splitting open into the characteristic flower shape. By using gluten-free arrowroot powder, the batter lacks the elasticity that would prevent it from responding to the thermal shock with the desired blooming effect. The thermal shock, achieved by pouring the batter into a very hot mold, forces steam upward rapidly, which can then create the flower petals effect without the resistance from gluten networks, resulting in the traditional 5-petal apricot blossom shape of B\u00e1nh Thu\u1eabn."
+    },
+    {
+      "test_case_id": 35,
+      "problem": "The bottom of my fruit pie is pale and soggy after baking.",
+      "recipe": "Berry Pie",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Moisture from the fruit seeps into the bottom crust before the oven's heat can set it.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To tackle the issue of a pale and soggy bottom in a fruit pie, let's analyze the problem step by step:\n\n1. **Identifying the Critical Control Point Violation**: The critical control point that was likely violated is related to the preparation and baking of the pie crust, particularly the bottom part. This involves ensuring that the crust is properly baked and not undercooked or inadequately protected from the moist filling.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind a soggy bottom is often related to the migration of moisture from the filling into the crust, causing it to become soggy. This can happen if the crust is not properly sealed or if it is underbaked. Additionally, the lack of a sufficient barrier between the filling and the crust can lead to moisture transfer, exacerbating the issue.\n\n3. **Scientifically Grounded Solution**: To prevent a soggy bottom, several strategies can be employed:\n    - **Blind Baking**: Pre-baking the pie crust (without the filling) can help set the crust and prevent it from becoming soggy. This step, also known as blind baking, involves lining the crust with parchment paper and filling it with pie weights or dried beans to prevent the crust from bubbling up.\n    - **Egg Wash or Barrier**: Applying an egg wash to the crust before baking can create a barrier that prevents moisture from the filling from penetrating the crust. Alternatively, a thin layer of melted chocolate or a pastry dough barrier can serve a similar purpose.\n    - **Proper Baking**: Ensuring that the pie is baked at the correct temperature and for the sufficient amount of time is crucial. A well-baked crust will be golden brown and firm, reducing the likelihood of sogginess.\n    - **Crust Composition**: The type of flour used in the crust can also impact its ability to withstand moisture. Using a flour with a higher protein content can help the crust to be more robust and less prone to sogginess.\n\n**CAUSE**: The pie crust was not adequately prepared or protected against the moist filling, leading to moisture migration and a soggy bottom.\n\n**SOLUTION**: Implement blind baking, apply an egg wash or another form of barrier to the crust, ensure proper baking conditions, and consider the composition of the crust to improve its durability against moisture.\n\n**EXPLANATION**: The science behind these solutions involves understanding the principles of moisture transfer, the role of barriers in preventing this transfer, and the physical properties of different types of flour and crust preparations. By applying these principles, it's possible to create a crust that remains crisp and golden, even when filled with a moist and juicy filling like a berry mixture."
+    },
+    {
+      "test_case_id": 36,
+      "problem": "My cake sank in the center after taking it out of the oven.",
+      "recipe": "Vanilla Layer Cake",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Opening the oven door too early or too much leavening agent.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the cake sinking in the center after taking it out of the oven, let's break down the problem step by step.\n\n1. **Critical Control Point Violated**: The critical control point that was likely violated is Step 4: Bake until structure is fully set. This step is crucial because it ensures that the cake is fully baked and stable. If the cake is not fully set, it can collapse or sink in the center.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the cake sinking is related to the structure and leavening of the cake. Cakes rise due to the production of carbon dioxide gas by leavening agents (like baking powder or baking soda) and the incorporation of air during the mixing process. If the cake is not fully baked, the structure may not be stable enough to hold its shape once it is removed from the oven. This can lead to a collapse or sinking in the center.\n\n3. **Scientifically Grounded Solution**: To prevent the cake from sinking in the center, it's essential to ensure that it is fully baked. This can be achieved by checking the cake's doneness more accurately. Here are some steps to follow:\n   - **Check for Doneness**: Before removing the cake from the oven, check if it's done by inserting a toothpick into the center. If the toothpick comes out clean or with a few moist crumbs, the cake is ready. If not, bake for a few more minutes and check again.\n   - **Avoid Overmixing**: Make sure to not overmix the batter, especially after adding the flour, as this can lead to a dense cake that is more prone to sinking.\n   - **Proper Leavening**: Ensure that your leavening agents (baking powder or baking soda) are fresh and used in the correct proportions. Old leavening agents may not produce enough carbon dioxide, leading to a cake that doesn't rise properly.\n   - **Even Oven Temperature**: Ensure your oven is at the correct temperature. An oven that runs too cool can lead to a cake that is not fully set by the time the recommended baking time is over.\n\n**CAUSE**: The cake sank in the center because it was not fully baked, leading to an unstable structure that collapsed once it was removed from the oven.\n\n**SOLUTION**: To fix this, ensure the cake is fully baked by checking its doneness with a toothpick, avoid overmixing the batter, use fresh leavening agents, and verify that your oven is at the correct temperature.\n\n**EXPLANATION**: The science behind cake structure and stability is rooted in the balance between leavening (the production of carbon dioxide gas), the incorporation of air during mixing, and the coagulation of proteins and starches during baking. A fully baked cake has a stable structure that can hold its shape. If any of these elements are off-balance (e.g., underbaking, overmixing, or incorrect leavening), the cake may not have the necessary strength to maintain its shape, leading to sinking or collapse."
+    },
+    {
+      "test_case_id": 37,
+      "problem": "The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",
+      "recipe": "Swiss Meringue Buttercream",
+      "category": "Baking",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Substituting cream cheese for butter at a 1:1 ratio in a meringue-based frosting without adjusting for fat content.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with the overly soft, soup-like frosting that fails to hold a peak after substituting 100% of the butter with cream cheese in a Swiss Meringue Buttercream recipe, let's analyze the situation step by step.\n\n1. **Critical Control Point Violated**: The critical control point that was violated is substituting 100% of the butter with cream cheese at a 1:1 ratio. According to the provided information, this substitution is known to cause the frosting to become soup-like because butter provides structural stability due to its high fat content, whereas cream cheese has lower fat content and higher moisture.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind this issue is the difference in composition between butter and cream cheese. Butter is roughly 80% fat and 15% water, making it a 'water-in-fat' emulsion. This high fat content contributes to the structural stability of the buttercream. In contrast, cream cheese is only about 33% fat and has higher moisture content. When 100% of the butter is substituted with cream cheese, the introduction of more water and less fat disrupts the balance necessary for a stable meringue-based frosting, causing it to collapse and become overly soft.\n\n3. **Scientifically Grounded Solution**: The scientifically grounded solution to this problem is to use a maximum of 50/50 split of butter and cream cheese, as recommended. This balance maintains enough fat content from the butter to provide structural stability to the frosting while incorporating the desired flavor and texture from the cream cheese. Additionally, ensuring that the brick-style cream cheese is at a cool room temperature before adding it to the meringue is crucial to prevent the meringue from melting due to the warmth and moisture of the cream cheese.\n\n**CAUSE**: The cause of the problem is the substitution of 100% of the butter with cream cheese, which alters the fat and water balance crucial for the structural integrity of the Swiss Meringue Buttercream.\n\n**SOLUTION**: To fix the issue, use a maximum 50/50 ratio of butter to cream cheese and ensure the cream cheese is at a cool room temperature before incorporation.\n\n**EXPLANATION**: The science behind this solution lies in the emulsion properties of butter and the composition of cream cheese. Maintaining a balance that favors higher fat content (from butter) is essential for the stability of the meringue-based frosting. This balance prevents the collapse of the meringue structure due to excessive moisture from the cream cheese, thereby achieving a smooth and stiff peak in the buttercream."
+    },
+    {
+      "test_case_id": 38,
+      "problem": "The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.",
+      "recipe": "Grilled Giant Octopus Legs",
+      "category": "seafood",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Boiling the octopus for a long duration (standard prep) when it has already been mechanically or chemically tenderized.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.2727272727272727,
+        "overall": 0.0545
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the giant octopus legs turning out tough and rubbery despite being pre-tenderized before cooking, let's break down the problem step by step.\n\n1. **Critical Control Point Violated**: The critical control point that was most likely violated is Step 2, where the pre-tenderized octopus legs were parboiled for 20\u201330 minutes. The critical point here is that long boiling after the fibers are already broken down by mechanical or chemical tenderization causes the proteins to tighten and lose moisture, reverting to a rubbery state.\n\n2. **Chemical or Physical Reason**: The chemical reason behind this issue is related to the denaturation and coagulation of proteins when exposed to heat for an extended period. Proteins in meat, such as those in octopus, are complex structures that can unwind (denature) and then reorganize into tighter, less moist structures when heated excessively. This process, especially in pre-tenderized meat, leads to a loss of moisture and an increase in toughness and rubberiness.\n\n3. **Scientifically Grounded Solution**: To prevent the octopus legs from becoming tough and rubbery, the parboiling time should be significantly reduced. Since the octopus is pre-tenderized, the goal of parboiling is not to break down the fibers further but to heat the meat through gently without causing the proteins to tighten up. A shorter parboiling time, possibly in the range of 5-10 minutes, or even using a different initial cooking method such as steaming, could help preserve the tenderization achieved in the pre-treatment step. Additionally, ensuring the water is at a very gentle simmer, as opposed to a rolling boil, is crucial to prevent further toughening of the delicate protein structures.\n\n**CAUSE**: The likely cause of the tough and rubbery texture of the giant octopus legs is the prolonged parboiling time after pre-tenderization, which caused the proteins to denature, lose moisture, and tighten up.\n\n**SOLUTION**: Reduce the parboiling time significantly (to 5-10 minutes) and ensure the water is at a gentle simmer to prevent overcooking and protein tightening.\n\n**EXPLANATION**: The science behind this solution lies in the understanding of protein denaturation and coagulation in response to heat. By minimizing the heat exposure time and avoiding vigorous boiling, the proteins in the pre-tenderized octopus legs are less likely to unwind, reorganize into tight structures, and lose moisture, thus maintaining a more tender and less rubbery texture."
+    },
+    {
+      "test_case_id": 39,
+      "problem": "The cookie spread is extremely grainy and \"sandy\" despite high-speed blending to the point of the mixture steaming.",
+      "recipe": "Biscoff Cookie Spread",
+      "category": "Dessert",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Adding granulated sugar directly to an oil-based cookie paste without a liquid to dissolve the crystals.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.18181818181818182,
+        "overall": 0.0364
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To solve the problem of the grainy and \"sandy\" cookie spread, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 2, where the sugar is supposed to be dissolved in a small amount of warm water before being added to the mixture. The critical control point violated here is adding granulated sugar directly to an oil-based cookie paste, which results in a grainy and 'sandy' texture.\n\n2. **Chemical or Physical Reason**: The chemical reason behind this issue is that sugar does not dissolve in oil. Sugar (sucrose) is soluble in water but not in oil due to its polar nature. When sugar is added directly to the oil-based cookie paste without dissolving it in water first, the sugar crystals remain solid and do not integrate into the mixture properly, leading to a grainy texture.\n\n3. **Scientifically Grounded Solution**: The solution to this problem is to ensure that the sugar is properly dissolved in water before adding it to the cookie paste. This can be achieved by:\n   - Dissolving the sugar in a small amount of warm water to create a sugar syrup.\n   - Allowing the sugar syrup to cool slightly before adding it to the cookie paste.\n   - Alternatively, using a sugar that is more soluble in oil, such as powdered sugar or confectioner's sugar, which has been ground into finer particles that can more easily incorporate into the oil-based mixture.\n\n**CAUSE**: The sugar was not properly dissolved in water before being added to the oil-based cookie paste, leading to undissolved sugar crystals causing a grainy and \"sandy\" texture.\n\n**SOLUTION**: Dissolve the sugar in a small amount of warm water to create a sugar syrup before adding it to the cookie paste, or use a finer form of sugar like powdered sugar.\n\n**EXPLANATION**: The science behind this solution lies in the solubility properties of sugar. By dissolving the sugar in water first, the sucrose molecules are able to fully dissolve and then can be evenly distributed throughout the oil-based cookie paste when the sugar syrup is added, preventing the formation of a grainy texture. This approach leverages the principle of solubility and the properties of sugar to achieve a smooth texture in the cookie spread."
+    },
+    {
+      "test_case_id": 40,
+      "problem": "Raw onions are overpowering, causing a harsh \"sulfur\" bite and a lingering aftertaste that lasts for hours.",
+      "recipe": "Pico de Gallo",
+      "category": "Ingredient Prep",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Using raw onions immediately after cutting without removing the volatile sulfur compounds.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.45454545454545453,
+        "overall": 0.0909
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To tackle this problem, let's analyze it step by step:\n\n1. **Critical Control Point Violated**: The most likely failed step is Step 2, where the onions are supposed to be soaked in ice-cold water with a pinch of salt or a splash of vinegar for 10\u201315 minutes. This step is critical for removing the volatile sulfur compounds that cause the harsh \"sulfur\" bite and lingering aftertaste.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the overpowering taste and smell of raw onions is the presence of volatile sulfur compounds, specifically syn-propanethial-S-oxide. When onions are cut, the damage to their cells releases enzymes that break down into these compounds, leading to the characteristic pungency and tear-inducing effects.\n\n3. **Scientifically Grounded Solution**: The solution to mitigate the harsh flavor and aftertaste of raw onions involves understanding and applying the principles of food science related to the chemical properties of onions and how they can be modified through simple kitchen techniques.\n\n**CAUSE**: The cause of the problem is the failure to adequately remove the volatile sulfur compounds from the cut onions, likely due to skipping or inadequately performing the soaking step (Step 2). This results in the retention of syn-propanethial-S-oxide, the compound responsible for the harsh \"sulfur\" bite and lingering aftertaste.\n\n**SOLUTION**: To fix this issue, one should ensure that the onions are soaked in ice-cold water with a pinch of salt or a splash of vinegar for the full recommended 10\u201315 minutes. This step should not be skipped or shortened, as it is crucial for leaching out the water-soluble sulfur compounds. Additionally, slicing the onions with the grain (from root to stem) can help minimize cell rupture and thus reduce the amount of gas released.\n\n**EXPLANATION**: The science behind this solution lies in the properties of the sulfur compounds found in onions. These compounds are water-soluble, which means they can be dissolved and removed by soaking the onions in water. The addition of salt or vinegar can enhance this process by altering the pH or osmotic balance, further facilitating the removal of the unwanted compounds. By removing these compounds, the harsh, pungent flavor and lingering aftertaste associated with raw onions can be significantly reduced, resulting in a milder and more palatable flavor profile in dishes like Pico de Gallo."
+    },
+    {
+      "test_case_id": 41,
+      "problem": "cannot find \"Lady Fingers\" in local UK/Ireland supermarkets for a Tiramisu recipe.",
+      "recipe": "Tiramisu",
+      "category": "substitution",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Cannot Find the \"Lady Fingers\"",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of not finding \"Lady Fingers\" for a Tiramisu recipe in UK/Ireland supermarkets, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point violated is Step 2, which involves checking international aisles or discount retailers like Lidl for packaging labeled as 'Savoiardi'. This step is crucial because it provides an alternative source for the ladyfingers, which are essential for the Tiramisu recipe.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the failure to find \"Lady Fingers\" is primarily due to terminology differences between North America and the UK/Ireland. In the UK and Ireland, these biscuits are commonly known as \"Sponge Fingers\" or \"Trifle Sponges,\" not \"Lady Fingers.\" This nomenclature difference can lead to confusion and difficulty in locating the correct product.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The cause of the problem is the unawareness of the terminology difference between regions, leading to an inability to locate the correct biscuit base for the Tiramisu recipe.\n   - **SOLUTION**: The solution is to look for \"Sponge Fingers\" or \"Trifle Sponges\" in local supermarkets or check international aisles and discount retailers for packaging labeled as \"Savoiardi.\" If square \"trifle sponges\" are found, they can be sliced into strips as their structural composition is the same as the finger-shaped variety.\n   - **EXPLANATION**: The science behind this solution lies in understanding the equivalence of \"Lady Fingers,\" \"Sponge Fingers,\" \"Trifle Sponges,\" and \"Savoiardi.\" All these terms refer to a type of sweet sponge biscuit that is crucial for the structure and flavor of Tiramisu. The key physical characteristic of these biscuits is their porous, sponge-like texture, which allows them to absorb the espresso/Marsala mixture without becoming too soggy, thus providing the necessary texture contrast in the dessert. The chemical aspect involves the interaction between the biscuit's starches and the liquid ingredients, which softens the biscuits over time, integrating them into the creamy mascarpone layer. By using the correct terminology and understanding the physical and chemical properties of these biscuits, one can successfully assemble a Tiramisu in the UK/Ireland, despite the initial difficulty in locating the ingredients."
+    },
+    {
+      "test_case_id": 42,
+      "problem": "No dry milk available",
+      "recipe": "No-Knead Whole Wheat Bread",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Missing Ingredient",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5714285714285714,
+        "overall": 0.1143
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of no dry milk available in the No-Knead Whole Wheat Bread recipe, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The critical control point violated in this scenario is the absence of a key ingredient (dry milk) that affects the dough's development and final product quality. In bread making, milk or its dry form contributes to browning, flavor, and texture through the Maillard reaction and by providing nutrients for yeast fermentation.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the importance of milk in bread making involves its protein and lactose content. Milk proteins help strengthen the dough, while lactose (milk sugar) serves as a nutrient for yeast, facilitating fermentation. The physical aspect involves the hydration and structure that milk helps to achieve in the bread.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The absence of dry milk, which is typically used to enhance flavor, browning, and to provide additional nutrients for yeast, potentially affecting the bread's rise and texture.\n   - **SOLUTION**: Substitute dry milk with an equivalent amount of regular milk (considering the liquid content in the recipe) or use a non-dairy milk alternative if the goal is to keep the recipe free from dairy. Another option could be to use yogurt or buttermilk, keeping in mind that these will introduce acidity, which might require adjustments in yeast amount or type, and possibly in the recipe's pH level.\n   - **EXPLANATION**: From a food science perspective, milk or its alternatives contribute to the bread's quality by providing casein and whey proteins, which strengthen the gluten network, and lactose, which feeds the yeast, promoting fermentation. Lactose also participates in the Maillard reaction during baking, contributing to the bread's browning and flavor development. If substituting with a non-dairy milk, choose one that is unflavored and unsweetened to avoid altering the bread's taste profile. Additionally, consider the water content in the substitute to adjust the overall hydration level in the recipe accordingly."
+    },
+    {
+      "test_case_id": 43,
+      "problem": "cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.",
+      "recipe": "Lactose-free Ice cream",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Attempting to emulsify melted butter into half-and-half to mimic heavy cream without proper stabilizers or high-shear blending.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5454545454545454,
+        "overall": 0.1091
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the problem of finding a substitute for lactose-free heavy cream in making lactose-free ice cream by considering the option of melting butter into lactose-free half-and-half, let's analyze the situation step by step.\n\n1. **Critical Control Point Violated**: The critical control point violated here is the substitution of ingredients without considering their compositional and functional impacts on the final product. Specifically, the attempt to replace lactose-free heavy cream with a mixture of melted butter and lactose-free half-and-half may not provide the desired consistency, texture, and stability in the ice cream.\n\n2. **Chemical or Physical Reason**: The chemical and physical reason behind this issue lies in the differences in composition between heavy cream and the proposed substitute. Heavy cream is primarily composed of fat (around 36%), water, and a small percentage of milk solids. Butter, on the other hand, is roughly 80% fat and 15% water, with the remainder consisting of milk solids. Half-and-half is a mixture of milk and cream, containing about 10-12% fat. When butter is melted into half-and-half, the resulting mixture will have a higher fat content than half-and-half alone but may lack the stability and structure that the original fat and protein composition of heavy cream provides in ice cream.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The cause of the potential issue is the substitution of lactose-free heavy cream with a mixture that has a significantly different fat and water composition, which can affect the texture, stability, and overall quality of the ice cream.\n   - **SOLUTION**: To fix this, one could consider adjusting the ratio of melted butter to lactose-free half-and-half to more closely mimic the fat content of heavy cream. Additionally, incorporating stabilizers like guar gum or carrageenan, which are commonly used in ice cream production to improve texture and prevent ice crystal formation, could help. Another approach would be to seek out alternative lactose-free dairy products that more closely match the composition of heavy cream.\n   - **EXPLANATION**: The science behind this solution involves understanding the roles of fat, water, and stabilizers in ice cream. Fat contributes to the richness and texture, while water content affects the ice crystal formation and the scoopability of the ice cream. Stabilizers help in improving the mix's viscosity and preventing the growth of ice crystals, thereby enhancing the smoothness and stability of the ice cream. By adjusting the composition of the substitute mixture and potentially adding stabilizers, one can more closely replicate the desirable properties of lactose-free heavy cream in ice cream production."
+    },
+    {
+      "test_case_id": 44,
+      "problem": "needs a egg substitute for potato latkes that ensures they don't fall apart during frying.",
+      "recipe": "Potato Latkes",
+      "category": "substitution",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Relying on moisture-heavy egg replacers (like flax or applesauce) that result in a gummy, soft interior.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.3333333333333333,
+        "overall": 0.0667
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To determine the cause and solution, let's analyze the given information step by step:\n\n1. **Critical Control Point Violation**: The most likely failed step is Step 3, where the dark water is poured off to reveal the thick white starch 'sludge' at the bottom, which is then added back to the dry potato shreds. The critical point here is that potato starch, when combined with a small amount of flour, creates a crisp 'matrix' that holds the potato shreds together during frying without the need for eggs. The violation likely occurred because not all of the reclaimed starch was incorporated into the batter, or the starch was not properly mixed with the flour.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the failure is related to the role of starch in the latke mixture. Starch acts as an adhesive and, when combined with flour, forms a matrix that provides structural integrity to the latkes during frying. If this starch is not properly reclaimed or mixed, the latkes will lack the necessary binding properties, leading to them falling apart during frying.\n\n3. **Scientifically Grounded Solution**: The solution is to ensure that all of the reclaimed starch is properly incorporated into the potato mixture. This involves carefully pouring off the dark water from the bowl after the potato liquid has sat undisturbed for 15 minutes, then thoroughly mixing the thick white starch 'sludge' back into the dry potato shreds along with the flour. This step is crucial because the starch, when combined with flour, creates a crisp matrix that holds the potato shreds together, allowing the latkes to maintain their shape and crispiness during frying.\n\n**CAUSE**: The cause of the latkes falling apart is likely the insufficient incorporation of the reclaimed potato starch into the potato mixture, violating the critical control point that relies on the starch-flour matrix for structural integrity.\n\n**SOLUTION**: To fix the issue, ensure that all of the reclaimed starch is properly mixed back into the dry potato shreds along with the flour. This will provide the necessary binding properties for the latkes to hold their shape during frying.\n\n**EXPLANATION**: The science behind this solution lies in the properties of starch as an adhesive and its role in forming a crisp matrix when combined with flour. By maximizing the incorporation of reclaimed starch into the potato mixture, the structural integrity of the latkes is enhanced, allowing them to fry without falling apart. This approach leverages the natural binding properties of the potato's own starch, eliminating the need for egg or other external binders."
+    },
+    {
+      "test_case_id": 45,
+      "problem": "No vegetable oil",
+      "recipe": "Whole Grain Banana Bread",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Missing Ingredient",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.3,
+        "overall": 0.06
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the problem of having no vegetable oil in the Whole Grain Banana Bread recipe, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The critical control point violated in this scenario is the absence of a crucial ingredient (vegetable oil) that affects the texture and consistency of the final product. Specifically, this relates to Step 1: Mash bananas and combine wet ingredients, where oil is typically added to enhance moisture and tenderness.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the importance of oil in baking is its role in tenderizing the final product and contributing to its overall texture. Oil helps to keep the bread moist by inhibiting the development of gluten networks in the dough, which can make the bread tough. Without oil, the bread may turn out denser and drier.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The absence of vegetable oil, which is crucial for maintaining moisture and tenderizing the bread, leading to a potentially dry and dense final product.\n   - **SOLUTION**: Substitute vegetable oil with another fat source that has a similar function in baking, such as melted butter, coconut oil, or avocado oil. Ensure that the substitute has a high enough smoke point if the recipe involves any high-heat steps, although this is less relevant for baking banana bread, which is typically done at moderate temperatures.\n   - **EXPLANATION**: The science behind this solution lies in the properties of fats in baking. Different fats can affect the final texture and flavor of baked goods. For instance, using melted butter will not only provide moisture but also add a richer flavor compared to vegetable oil. Coconut oil, on the other hand, adds a unique flavor and can contribute to a slightly denser texture due to its higher saturated fat content. Avocado oil, with its mild flavor and high smoke point, can be a good neutral substitute for vegetable oil. Understanding the chemical properties (such as smoke point and saturation levels) of these fats allows for an informed substitution that can salvage the recipe in the absence of vegetable oil."
+    },
+    {
+      "test_case_id": 46,
+      "problem": "making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",
+      "recipe": "Manakish Bi Za'atar",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Using only dried thyme and oil, resulting in a flat, bitter, and one-dimensional flavor profile.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.2727272727272727,
+        "overall": 0.0545
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue with making Manakish (Za'atar Flatbread) without pre-mixed Za'atar and considering the allergy to sumac, let's analyze the situation step by step:\n\n1. **Critical Control Point Violated**: The critical control point violated is Step 2, where the dry spice blend is mixed with olive oil to create a thick paste (Za'atar wu Zeit). The issue here is the lack of a component that provides 'bright' acidity to balance the flavor, typically provided by sumac, which the person is allergic to.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the failure is the absence of an acidic component that can balance the resinous notes of thyme. Sumac provides a dry, tart flavor that is crucial for the characteristic taste of Za'atar. Without this acidity, the flavor becomes flat, bitter, and one-dimensional. The physical aspect involves the interaction of flavors and the perception of taste, where the absence of acidity disrupts the balance of flavors.\n\n3. **Scientifically Grounded Solution**: The solution provided in the context is the use of Amchoor (dried mango powder) or Citric Acid as a substitute for sumac. Amchoor mimics the dry tartness of sumac without adding moisture, thus providing the necessary acidity to balance the flavor of thyme. This is scientifically grounded because Amchoor contains malic acid and citric acid, which are natural preservatives and flavor enhancers. The use of Amchoor or Citric Acid in the recipe ensures that the Za'atar blend has the required acidity to balance the bitterness of thyme, thereby enhancing the overall flavor profile of the Manakish.\n\n**CAUSE**: The absence of an acidic component (sumac) in the Za'atar blend, which is crucial for balancing the flavor of thyme, leading to a flat, bitter taste.\n\n**SOLUTION**: Use Amchoor (dried mango powder) or Citric Acid as a substitute for sumac to provide the necessary acidity.\n\n**EXPLANATION**: The solution works because Amchoor or Citric Acid introduces malic and citric acids into the Za'atar blend, which are essential for providing a 'bright' acidity that balances the resinous notes of thyme. This balance is crucial for the characteristic flavor of Za'atar and, by extension, the Manakish. The use of these ingredients is based on the principle of flavor balancing, where acidity is used to cut through richness and bitterness, enhancing the overall taste experience."
+    },
+    {
+      "test_case_id": 47,
+      "problem": "My pie crust shrinks down the sides while baking.",
+      "recipe": "Blind-Baked Pie Crust",
+      "category": "Baking",
+      "difficulty": "Easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Gluten contraction due to insufficient resting after rolling.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the pie crust shrinking down the sides while baking, let's break down the problem step by step:\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 2: Chill before baking, and possibly the execution of Step 3: Bake with weights until set. However, the primary issue seems to be related to the handling and preparation of the crust before baking, which could involve insufficient chilling or improper docking and weighting.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the pie crust shrinking is related to the contraction of the gluten network within the dough as it bakes. When dough is not adequately relaxed (through chilling) before baking, the gluten strands can still be somewhat tense. As the dough is exposed to heat, the moisture inside the dough turns to steam, causing the dough to expand initially. However, if the gluten network is not fully relaxed, it can snap back, leading to shrinkage. Additionally, if the crust is not properly weighted, the sides can collapse or shrink as the crust bakes and the gluten contracts.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: Insufficient chilling of the dough before baking, leading to a tense gluten network, and possibly inadequate weighting during baking.\n   - **SOLUTION**: Ensure the dough is chilled for a sufficient amount of time to relax the gluten. This could mean chilling the dough for at least 30 minutes to an hour before baking. Additionally, make sure to dock the crust thoroughly to prevent large bubbles from forming and to weight it evenly to prevent the sides from shrinking.\n   - **EXPLANATION**: The science behind this solution involves understanding the role of gluten in dough. Gluten is a network of proteins that gives dough its elasticity and strength. When dough is worked (mixed, rolled, etc.), the gluten strands become aligned and tense, which can lead to shrinkage during baking if not properly relaxed. Chilling the dough allows the gluten to relax, reducing the likelihood of significant shrinkage. Proper docking and weighting ensure that the crust bakes evenly and that the sides do not collapse due to steam buildup or uneven heating. While the provided fact about bread crust formation is interesting, the key issue here is managing the gluten network and the physical stresses on the dough during baking."
+    },
+    {
+      "test_case_id": 48,
+      "problem": "My blind-baked crust puffs up despite pie weights.",
+      "recipe": "Blind-Baked Pie Crust",
+      "category": "Baking",
+      "difficulty": "Medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Steam trapped under insufficiently docked dough.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 1.0,
+        "overall": 0.2
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the blind-baked crust puffing up despite the use of pie weights, let's analyze the situation step by step.\n\n1. **Critical Control Point Violated**: The critical control point that was likely violated is Step 2: Chill before baking. However, the issue might also stem from an inadequate execution of Step 1: Dock crust thoroughly, or an insufficient baking time and temperature in Step 3. But considering the puffing up despite the use of pie weights, the most probable cause relates to the structure and handling of the dough before baking.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the crust puffing up could be related to the buildup of steam within the dough during baking. When dough is not adequately chilled or docked, the steam produced during baking can cause the layers within the dough to separate and expand, leading to puffing. Additionally, if the dough was not relaxed enough (allowed to rest) after rolling out, the gluten network might still be under tension, contributing to the puffing as the dough relaxes during baking.\n\n3. **Scientifically Grounded Solution**: The scientifically grounded solution involves ensuring that the dough is properly relaxed (allowed to rest after rolling out), thoroughly chilled, and adequately docked before baking. Docking allows steam to escape, reducing the likelihood of puffing. Chilling the dough helps to relax the gluten network and reduces the likelihood of excessive steam buildup. Furthermore, ensuring the crust is baked at the correct temperature and for the right amount of time is crucial. The crust should be baked until it is set and lightly browned, which helps to create a structure that is less prone to puffing.\n\n**CAUSE**: Inadequate chilling or docking of the crust, leading to steam buildup and puffing during baking.\n\n**SOLUTION**: Ensure the dough is thoroughly docked, chilled for an adequate amount of time, and baked at the correct temperature until set.\n\n**EXPLANATION**: The science behind the solution lies in understanding the role of steam and the structure of the dough. By allowing steam to escape (through docking) and reducing steam buildup (through chilling), the crust can bake flat without puffing. This is analogous to the formation of the crust on bread, where rapid evaporation of water concentrates sugars and leads to the Maillard reaction, but in the case of pie crust, controlling steam is key to preventing unwanted puffing."
+    },
+    {
+      "test_case_id": 49,
+      "problem": "The edges of my pie crust brown too quickly.",
+      "recipe": "Double-Crust Fruit Pie",
+      "category": "Baking",
+      "difficulty": "Easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Thinner dough at the rim and greater exposure to radiant heat.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the edges of the pie crust browning too quickly, let's break down the problem step by step:\n\n1. **Critical Control Point Violated**: The critical control point violated in this scenario is Step 3: Protect edges if browning early. This step is crucial because it directly addresses the issue of uneven browning, which is a common problem in baking pies.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the edges browning too quickly is related to the Maillard reaction, a chemical reaction between amino acids and reducing sugars that gives browned food its distinctive flavor. This reaction is enhanced by higher temperatures and the concentration of sugars on the surface. In the context of pie crust, the edges are thinner and have a larger surface area exposed to heat compared to the rest of the crust, which can accelerate the Maillard reaction, leading to quicker browning.\n\n3. **Scientifically Grounded Solution**: To prevent the edges from browning too quickly, one can employ a technique known as \"shielding.\" This involves covering the edges of the pie with a pie shield or strips of aluminum foil for part of the baking time. The science behind this solution is twofold:\n   - **Reduced Heat Exposure**: By covering the edges, they are exposed to less direct heat, which slows down the Maillard reaction and, consequently, the browning process.\n   - **Moisture Retention**: The covering can also help retain moisture near the edges, further reducing the concentration of sugars on the surface and thereby slowing down the browning.\n\n**CAUSE**: The edges of the pie crust are browning too quickly due to the accelerated Maillard reaction caused by their thinner profile and larger surface area exposed to heat.\n\n**SOLUTION**: Protect the edges of the pie crust with a pie shield or aluminum foil for part of the baking time to reduce direct heat exposure and retain moisture.\n\n**EXPLANATION**: The solution works by mitigating the factors that contribute to the Maillard reaction, such as heat and sugar concentration, thereby slowing down the browning process at the edges of the pie crust and ensuring a more even browning across the entire crust."
+    },
+    {
+      "test_case_id": 50,
+      "problem": "My lattice top collapsed into the filling during baking.",
+      "recipe": "Lattice-Top Fruit Pie",
+      "category": "Baking",
+      "difficulty": "Medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Filling was too liquid at oven entry.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the lattice top collapsing into the filling during baking, let's break down the problem step by step:\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 1: Thicken filling before assembly. If the filling is not sufficiently thickened, it can cause structural issues during baking.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the lattice top collapsing is related to the viscosity and consistency of the filling. If the filling is too runny or not adequately thickened, the heat from baking can cause it to expand and become even more fluid. This increased fluidity can lead to the lattice top sinking into the filling as the structure of the pie is compromised.\n\n3. **Scientifically Grounded Solution**: To prevent the lattice top from collapsing, it's essential to ensure the filling is properly thickened before assembling the pie. This can be achieved by using the right amount of thickening agents (like cornstarch, flour, or pectin, depending on the type of fruit and desired consistency) and cooking the filling sufficiently to activate these agents. Additionally, allowing the filling to cool completely before topping it with the lattice can help, as this reduces the likelihood of the filling continuing to cook and become more fluid during the baking of the pie.\n\n**CAUSE**: Insufficient thickening of the filling, leading to a structure that cannot support the lattice top during baking.\n\n**SOLUTION**: Properly thicken the filling using appropriate thickening agents and ensure it cools before assembling the pie. This might involve adjusting the recipe to include more thickening agents or cooking the filling for a longer period to achieve the desired consistency.\n\n**EXPLANATION**: The science behind this issue involves the principles of rheology (the study of the flow of matter) and the chemistry of thickening agents. Thickening agents like pectin, cornstarch, and flour work by absorbing excess water and forming a network that gives the filling its structure. When these agents are not adequately activated (through cooking) or are present in insufficient quantities, the filling remains too fluid. During baking, this fluidity, combined with the expansion of gases within the filling, can cause the lattice top to collapse into the pie. By properly thickening the filling, you create a stable base that can support the lattice top throughout the baking process."
+    },
+    {
+      "test_case_id": 51,
+      "problem": "My fruit pie filling never sets even after cooling.",
+      "recipe": "Apple Pie",
+      "category": "Starch Cookery",
+      "difficulty": "Medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Incorrect thickener choice for the fruit\u2019s pH and moisture level.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the fruit pie filling not setting, let's break down the problem step by step.\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 3: Bake until filling reaches full gelation. This step is crucial for the thickening process, which is necessary for the pie filling to set.\n\n2. **Chemical or Physical Reason**: The chemical reason behind the filling not setting is likely due to insufficient gelation of the thickener, which is usually a starch (like cornstarch) or pectin, depending on the recipe. For starches, gelation occurs when the starch granules absorb water, swell, and then burst, releasing their amylose and amylopectin components. These components then form a network that traps liquid, creating a gel-like texture. If the filling is not baked long enough or at a sufficient temperature, this process may not complete, leading to a filling that doesn't set properly. For pectin, a key factor is the balance between pectin, sugar, and acid (usually from the fruit or added lemon juice), as well as the cooking time and temperature, which helps to break down the pectin molecules and then re-form them into a gel-like substance as they cool.\n\n3. **Scientifically Grounded Solution**: To ensure the pie filling sets, it's essential to understand the role of the thickener used. If using a starch-based thickener, ensure that the mixture is heated to a boil to fully gelatinize the starch. For pectin-based thickeners, make sure there is an adequate balance of pectin, sugar, and acid. Typically, a ratio of about 1 part pectin to 10 parts sugar by weight is recommended, and a small amount of lemon juice can help activate the pectin. Also, cooking the filling to the correct temperature (usually around 212\u00b0F to 220\u00b0F or 100\u00b0C to 104\u00b0C for pectin-based fillings) is crucial. After baking, let the pie cool slowly and fully to allow the filling to set completely.\n\n**CAUSE**: Insufficient gelation of the thickener due to inadequate baking time or temperature, or an imbalance in the pectin, sugar, and acid ratio if pectin is used.\n\n**SOLUTION**: Adjust the baking time and temperature, and ensure the correct ratio of pectin to sugar to acid if using pectin. For starch thickeners, ensure the filling reaches a boil.\n\n**EXPLANATION**: The science behind the solution involves understanding the gelation process of starches and the gel formation process of pectin. For both, heat plays a critical role: it breaks down the molecules (either starch granules or pectin chains), allowing them to re-form into a network that traps liquid, creating a gel-like texture as the mixture cools. Proper temperature and cooking time, along with the correct balance of ingredients, are essential for achieving the right consistency in the pie filling."
+    },
+    {
+      "test_case_id": 52,
+      "problem": "My pie crust looks dull and pale.",
+      "recipe": "Hand Pie Crust",
+      "category": "Substitution",
+      "difficulty": "Easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "No surface protein or sugar to promote browning.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of a dull and pale pie crust, let's break down the problem step by step:\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is related to the formation of the crust's color and texture, which is closely related to Step 4 (Roll and cut portions suitable for hand pies) and possibly an additional step not explicitly mentioned - the baking or cooking process. However, based on the given steps, we can infer that the issue might stem from inadequate handling or processing after Step 4, particularly during the baking process, which is not detailed in the provided steps but is crucial for crust development.\n\n2. **Chemical or Physical Reason**: The chemical reason behind a dull and pale pie crust is the lack of the Maillard reaction, a chemical reaction between amino acids and reducing sugars that gives browned food its distinctive flavor. This reaction is enhanced by heat, the presence of moisture (which then evaporates), and the concentration of reactants on the surface. In the context of baking, this reaction is responsible for the golden-brown color and the development of the crust's flavor.\n\n3. **Scientifically Grounded Solution**: To achieve a golden-brown crust, ensure that the pie is baked under the right conditions. This includes:\n   - **Proper Oven Temperature**: Baking the pie at the correct temperature (usually around 375\u00b0F to 425\u00b0F, depending on the recipe) to facilitate the Maillard reaction.\n   - **Adequate Baking Time**: Allowing the pie to bake for the right amount of time. This ensures that the crust has enough time to brown properly without overcooking the filling.\n   - **Brushing with Egg Wash or Water**: Before baking, brushing the crust with an egg wash (beaten egg mixed with a little water) or just water can help create a golden-brown finish by facilitating the Maillard reaction.\n   - **Sugar Content**: If the recipe allows, a small amount of sugar in the crust or an egg wash with a bit of sugar can enhance browning by providing more reactants for the Maillard reaction.\n\n**CAUSE**: Inadequate browning due to insufficient Maillard reaction, likely resulting from improper baking conditions or lack of surface treatment (like egg wash) to enhance browning.\n\n**SOLUTION**: Adjust baking conditions (temperature and time), and consider applying an egg wash or water before baking to enhance the Maillard reaction and achieve a golden-brown crust.\n\n**EXPLANATION**: The Maillard reaction, a non-enzymatic browning reaction between amino acids and reducing sugars, is crucial for developing the flavor, aroma, and color of baked goods, including pie crusts. By optimizing baking conditions and possibly applying a surface treatment, the concentration of reactants on the surface and the thermal energy provided can be maximized, leading to a more pronounced Maillard reaction and thus a more appealing, golden-brown crust."
+    },
+    {
+      "test_case_id": 53,
+      "problem": "Bottom crust is fully baked but tastes tough.",
+      "recipe": "Single-Crust Pie",
+      "category": "Baking",
+      "difficulty": "Medium",
+      "predicted_cause": "",
+      "ground_truth_cause": " Excessive gluten development from overworking the dough.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.75,
+        "overall": 0.15
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To tackle this problem, let's analyze it step by step:\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 3: Chill before filling or blind baking. However, the issue might not directly relate to chilling but could involve how the crust was handled or baked after this step. A more precise violation could be related to the baking process itself, which isn't explicitly listed as a step but is implied in the context of achieving a fully baked crust.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason for the toughness could be overworking of the dough during the rolling process (Step 1), incorrect baking temperature or time, or insufficient moisture evaporation during baking, which affects the Maillard reaction and the formation of a tender crust. However, given the information, the most likely reason is related to the baking process and the structure of the gluten in the dough.\n\n3. **Scientifically Grounded Solution**: To address the toughness of the bottom crust, the solution involves ensuring that the baking process promotes the right balance of moisture evaporation, gluten relaxation, and crust browning. \n\n**CAUSE**: Overbaking or incorrect baking conditions, possibly combined with inadequate dough handling, leading to a tough bottom crust.\n\n**SOLUTION**: Adjust the baking temperature and time, ensure the crust is not overworked during rolling, and consider using a baking stone or pre-baked crust weights to improve heat transfer and prevent the crust from becoming tough due to steam buildup.\n\n**EXPLANATION**: The science behind the toughness involves the gluten network in the dough and the effects of heat and moisture during baking. When dough is overworked, the gluten strands become more aligned and rigid, leading to a tougher crust. During baking, if the crust is exposed to high heat without adequate moisture evaporation (which helps in the Maillard reaction and browning), it can lead to a hard, tough texture. By adjusting the baking conditions and handling the dough gently, one can promote a better structure and texture in the crust. Additionally, using a baking stone can help absorb moisture and distribute heat evenly, contributing to a crisper, less tough crust."
+    },
+    {
+      "test_case_id": 54,
+      "problem": "My crimped edges lost their shape in the oven.",
+      "recipe": "Decorative Pie Crust",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Warm dough at oven entry.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of crimped edges losing their shape in the oven, let's analyze the situation step by step.\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 3: Chill decorations before baking to preserve shape. This step is crucial for maintaining the structure of the decorative elements, including crimped edges.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the loss of shape is related to the properties of the dough, specifically its elasticity and plasticity. When dough is not chilled properly before baking, the fat (usually butter or shortening) within it can start to melt prematurely as it enters the oven. This melting reduces the dough's structure, causing it to spread or lose its shape. Additionally, the gluten network in the dough, which provides elasticity and helps maintain shape, can relax too quickly when the dough is too warm, leading to a loss of the crimped edges' definition.\n\n3. **Scientifically Grounded Solution**: To prevent the crimped edges from losing their shape, it's essential to ensure that the dough is properly chilled before baking. This can be achieved by placing the decorated pie in the refrigerator for at least 30 minutes to an hour before baking. This chilling step helps to firm up the fat in the dough, making it less prone to melting and spreading in the initial stages of baking. Furthermore, chilling helps to tighten the gluten network, making the dough more resistant to deformation when exposed to heat.\n\n**CAUSE**: The crimped edges lost their shape because the dough was not adequately chilled before baking, leading to premature melting of the fat and relaxation of the gluten network.\n\n**SOLUTION**: Chill the decorated pie in the refrigerator for at least 30 minutes to an hour before baking to preserve the shape of the crimped edges.\n\n**EXPLANATION**: The science behind this solution involves understanding the role of temperature in the physical properties of dough components, such as fat and gluten. By controlling the temperature and ensuring the dough is properly chilled, you can effectively maintain the structural integrity and shape of decorative elements like crimped edges during the baking process."
+    },
+    {
+      "test_case_id": 55,
+      "problem": " My fruit boiled over and burned on the oven floor.",
+      "recipe": "Berry Pie",
+      "category": "Baking",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Overfilled pie combined with vigorous starch swelling.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the fruit boiling over and burning on the oven floor during the baking of a berry pie, let's break down the problem step by step.\n\n1. **Critical Control Point Violated**: The critical control point violated in this scenario is Step 3: \"Bake until juices bubble and crust is browned.\" This step implies that the baking process should be controlled to prevent the filling from boiling over excessively.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the fruit boiling over and burning is related to the thermal properties of the mixture and the baking conditions. When the mixture of fruit, sugar, and thickener is heated, the water content in the fruit turns into steam, and the sugars start to caramelize. If the heat is too high or the baking time is too long, the steam production can exceed the ability of the pie crust to contain it, leading to boil-over. Additionally, the sugar content can contribute to the browning and burning of the spilled filling on the oven floor due to the Maillard reaction, a chemical reaction between amino acids and reducing sugars that gives browned food its distinctive flavor.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: The fruit mixture boiled over and burned due to uncontrolled thermal conditions during baking, likely because the oven temperature was too high or the pie was not properly monitored.\n   - **SOLUTION**: To prevent this issue, ensure that the oven temperature is correctly set and monitored. Consider reducing the oven temperature slightly and covering the edges of the pie crust with foil to prevent over-browning. Additionally, placing the pie on a baking sheet lined with parchment paper can catch any spillage, making cleanup easier and preventing burning on the oven floor.\n   - **EXPLANATION**: The science behind this solution involves understanding the thermal dynamics and chemical reactions that occur during baking. By controlling the oven temperature and taking preventive measures like covering the crust and using a baking sheet, you can manage the steam production and sugar caramelization, thus preventing the boil-over and burning. This approach is grounded in the principles of heat transfer, the physical properties of water and sugar, and the chemistry of the Maillard reaction."
+    },
+    {
+      "test_case_id": 56,
+      "problem": "My pie filling is cloudy instead of glossy.",
+      "recipe": "Cherry Pie",
+      "category": "substitution",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": " Flour used as thickener instead of pure starch",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.0,
+        "overall": 0.0
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of a cloudy pie filling instead of a glossy one, let's analyze the problem step by step.\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 2, \"Allow mixture to macerate slightly before filling.\" However, the issue might not directly stem from this step but from how the mixture was handled or the composition of the filling, particularly the thickener used and its interaction with the other components during baking (Step 3).\n\n2. **Chemical or Physical Reason**: The chemical or physical reason for the cloudiness could be related to the starches in the thickener not being fully gelatinized or breaking down during baking, leading to a starchy, cloudy appearance. Another reason could be the formation of amylose-lipid complexes if the starches interact with lipids (fats) present in the filling, which can also contribute to cloudiness. Additionally, if the filling was overcooked or cooked too rapidly, it might cause the starches to retrograde (return to a more crystalline state), leading to an opaque appearance.\n\n3. **Scientifically Grounded Solution**: To achieve a glossy pie filling, it's essential to ensure that the starches are fully gelatinized. This can be done by cooking the filling slowly over low heat, stirring constantly, before filling the pie crust. Using a combination of starches, such as cornstarch and tapioca flour, can also help achieve clarity. Moreover, adding a small amount of fat (like butter) to the filling before cooking can help inhibit the formation of amylose-lipid complexes, thus reducing cloudiness. It's also crucial to avoid overcooking the filling, as this can lead to starch retrogradation and a loss of gloss.\n\n**CAUSE**: Insufficient gelatinization of starches or the breakdown of starches during baking, possibly exacerbated by interactions with lipids or overcooking.\n\n**SOLUTION**: Cook the filling slowly over low heat before baking, consider using a combination of starches, and add a small amount of fat to the filling to prevent amylose-lipid complex formation.\n\n**EXPLANATION**: The science behind achieving a glossy pie filling involves understanding starch gelatinization, the role of lipids in starch complexes, and the effects of heat on starch retrogradation. Proper cooking techniques and ingredient manipulation can help prevent cloudiness, resulting in a clear, glossy filling."
+    },
+    {
+      "test_case_id": 57,
+      "problem": "My pie leaks butter during baking.",
+      "recipe": "All-Butter Pie Crust",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "Insufficient chilling of the dough or improper handling of the dough during rolling, causing the butter to melt and leak out during baking.",
+      "ground_truth_cause": "Broken dough layers from over-mixing.",
+      "predicted_solution": "Chill the dough thoroughly before rolling, and handle the dough gently to prevent warming the butter.",
+      "scores": {
+        "cause_accuracy": 0.2,
+        "solution_appropriateness": 0.14285714285714285,
+        "scientific_accuracy": 0.5714285714285714,
+        "overall": 0.2514
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the pie leaking butter during baking, let's analyze the situation step by step.\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 3: Chill dough thoroughly before rolling. However, another potential issue could be in Step 1 or Step 2 \n2. **Chemical or Physical Reason**: The chemical or physical reason behind the pie leaking butter could be due to the butter melting and not being properly distributed within the dough, or the dough not being chilled enough, causing the butter to melt and leak out during baking.\n3. **Scientifically Grounded Solution**: To fix the issue, ensure that the dough is chilled thoroughly before rolling (at least 30 minutes to an hour in the refrigerator), and consider adjusting the temperature and handling of the dough during the rolling process to minimize warming of the butter.\n\nCAUSE: Insufficient chilling of the dough or improper handling of the dough during rolling, causing the butter to melt and leak out during baking.\nSOLUTION: Chill the dough thoroughly before rolling, and handle the dough gently to prevent warming the butter.\nEXPLANATION: When butter is worked into flour, it forms a flaky, layered structure that is essential for a good pie crust. If the butter melts, this structure is disrupted, leading to a tough, leaky crust. By keeping the butter cold and the dough chilled, the butter remains in a solid state, allowing it to create the desired flaky layers during baking. Additionally, cold water helps prevent the butter from melting too early, and chilling the dough ensures that the butter remains solid and evenly distributed, reducing the likelihood of leakage during baking."
+    },
+    {
+      "test_case_id": 58,
+      "problem": "The bottom crust is greasy instead of crisp.",
+      "recipe": "Custard Pie",
+      "category": "Baking",
+      "difficulty": "medium",
+      "predicted_cause": "",
+      "ground_truth_cause": "Underbaking and insufficient moisture evaporation.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 1.0,
+        "overall": 0.2
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of a greasy bottom crust in a custard pie, let's analyze the problem step by step.\n\n1. **Critical Control Point Violated**: The critical control point violated in this scenario is likely related to Step 2 of the recipe, where the custard is poured into an unbaked or parbaked crust. The issue of a greasy crust suggests that the crust was not properly prepared or baked before filling, leading to insufficient browning and crisping of the crust.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind a greasy crust instead of a crisp one is related to the lack of proper browning and crisping processes. In the context of bread and pastry, the formation of a crisp crust is largely due to the Maillard reaction and the evaporation of moisture, as mentioned in the relevant food science fact. If the crust is not baked sufficiently before adding the custard, or if it is not parbaked to the right extent, the moisture from the custard can prevent the crust from achieving the desired crispiness, leading to a greasy texture.\n\n3. **Scientifically Grounded Solution**: The solution to achieving a crisp bottom crust in a custard pie involves ensuring that the crust is properly baked before filling it with the custard. This can be achieved by parbaking the crust to a lighter golden brown before pouring in the custard. Parbaking, or pre-baking, the crust allows it to dry out slightly and begin the browning process, setting the stage for a crisper crust. Additionally, using a baking sheet or a piece of parchment paper to absorb any excess moisture and promoting air circulation around the pie can help in achieving a crisper crust.\n\n**CAUSE**: Insufficient parbaking or pre-baking of the crust, leading to inadequate moisture removal and browning.\n**SOLUTION**: Parbake the crust to a lighter golden brown before filling it with the custard, and consider using a baking sheet or parchment paper to manage moisture.\n**EXPLANATION**: The science behind achieving a crisp crust involves the Maillard reaction and the evaporation of moisture. By parbaking the crust, you initiate these processes, making the crust more receptive to achieving the desired crispiness after the pie is fully baked. This approach ensures that the crust has a chance to dry out slightly and brown, which is essential for a crispy texture, especially in the presence of a moist filling like custard."
+    },
+    {
+      "test_case_id": 59,
+      "problem": "My pie filling bubbles unevenly.",
+      "recipe": "Apple Pie",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": " Uneven oven heat or thickener clumps.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.75,
+        "overall": 0.15
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of uneven bubbling in the apple pie filling, let's analyze the situation step by step:\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 1: Slice and pre-mix apples with sugar and thickener. This step is crucial for ensuring uniform distribution of ingredients, including the thickener, which affects the viscosity and gelation of the filling during baking.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the uneven bubbling could be related to the non-uniform distribution of the thickener (such as cornstarch or flour) and possibly the sugar in the apple filling. When these components are not evenly mixed, some areas of the filling may gel more quickly or thoroughly than others. This inconsistency can lead to uneven bubbling as the filling heats up during baking. The principle is somewhat analogous to the formation of bubbles in champagne, where carbon dioxide escapes at nucleation sites. In the case of the pie filling, the uneven distribution of thickener can create varying levels of viscosity, leading to different rates of bubble formation and release.\n\n3. **Scientifically Grounded Solution**: \n   - **CAUSE**: Uneven distribution of thickener and possibly sugar in the apple filling.\n   - **SOLUTION**: Ensure thorough mixing of the sliced apples with sugar and thickener. This can be achieved by increasing the mixing time or using a more efficient mixing method to guarantee uniform distribution of all ingredients.\n   - **EXPLANATION**: The science behind this solution lies in the principles of rheology (the study of the flow of matter) and gelation. When the thickener is evenly distributed, it helps in achieving a uniform viscosity throughout the filling. As the filling is heated, the starches in the thickener gelatinize, creating a network that traps air bubbles formed by the escaping vapors (mainly water vapor and possibly some carbon dioxide from the apples' natural respiration). If the thickener is not evenly distributed, some areas may gel more quickly, trapping bubbles and causing uneven bubbling, while other areas may remain more fluid, allowing bubbles to escape more easily. By ensuring a uniform mix, the filling will gel more consistently, leading to a more even release of bubbles during baking."
+    },
+    {
+      "test_case_id": 60,
+      "problem": "My crust blistered and formed bubbles after baking.",
+      "recipe": "Blind-Baked Pie Crust",
+      "category": "Baking",
+      "difficulty": "easy",
+      "predicted_cause": "",
+      "ground_truth_cause": "Steam pockets from undocked dough.",
+      "predicted_solution": "",
+      "scores": {
+        "cause_accuracy": 0.0,
+        "solution_appropriateness": 0.0,
+        "scientific_accuracy": 0.5,
+        "overall": 0.1
+      },
+      "condition": "kg_augmented",
+      "raw_response": "To address the issue of the crust blistering and forming bubbles after baking, let's break down the problem step by step:\n\n1. **Critical Control Point Violation**: The critical control point that was likely violated is Step 1: Docking the crust thoroughly. Docking involves piercing the crust with a fork or a docker to create small holes. This step is crucial for preventing the formation of bubbles and blisters during baking.\n\n2. **Chemical or Physical Reason**: The chemical or physical reason behind the blistering and bubble formation is related to the buildup of steam within the crust. When the crust is baked, the moisture inside the dough turns into steam. If the crust is not docked properly, this steam can get trapped, leading to the formation of bubbles and blisters. This phenomenon is somewhat analogous to the formation of bubbles in champagne, where dissolved carbon dioxide escapes at nucleation sites. In the case of the pie crust, the steam acts similarly, but instead of escaping through nucleation sites, it gets trapped and forms bubbles.\n\n3. **Scientifically Grounded Solution**: To prevent the crust from blistering and forming bubbles, it's essential to ensure that the crust is docked thoroughly. This allows the steam to escape during baking, reducing the likelihood of bubble formation. Additionally, making sure the crust is chilled properly before baking (as mentioned in Step 2) can help reduce the amount of moisture in the dough, thereby minimizing the amount of steam produced during baking.\n\n**CAUSE**: Insufficient docking of the crust, leading to trapped steam and the formation of bubbles and blisters.\n\n**SOLUTION**: Ensure the crust is docked thoroughly before baking to allow steam to escape, and verify that the crust is properly chilled to reduce moisture content.\n\n**EXPLANATION**: The science behind this issue is related to the physical process of steam buildup and escape. By docking the crust, we create pathways for the steam to escape, preventing it from getting trapped and causing blisters. This principle is rooted in the understanding of how steam behaves in baked goods, similar to how dissolved gases behave in liquids, as seen in the formation of bubbles in champagne. Proper docking and chilling are critical to managing steam and achieving a well-baked, blister-free crust."
+    }
+  ]
+}
