@@ -38,13 +38,28 @@ def call_llama_fast(prompt: str) -> str:
 
 
 # -------------------- GROQ MODEL: GPT-OSS 20B --------------------
-
 def call_gpt_oss(prompt: str) -> str:
     response = groq_client.chat.completions.create(
         model="openai/gpt-oss-20b",
-        messages=[{"role": "user", "content": prompt}],
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You are a culinary expert and food scientist. "
+                    "Always respond using EXACTLY these three labeled sections:\n"
+                    "CAUSE: [what went wrong]\n"
+                    "SOLUTION: [how to fix it]\n"
+                    "EXPLANATION: [the science behind it]\n"
+                    "Never deviate from this format. Never add extra sections."
+                )
+            },
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
         temperature=0.7,
-        max_tokens=1024,
+        max_tokens=2048,
         top_p=0.9
     )
     return response.choices[0].message.content
@@ -57,7 +72,7 @@ def test_all_models():
     models = {
         "LLaMA 3.3 70B": call_llama_big,
         "LLaMA 3.1 8B": call_llama_fast,
-        "GPT OSS 20B": call_gpt_oss
+        "GPT-OSS 20B": call_gpt_oss
     }
 
     print("Testing all models...")

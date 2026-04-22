@@ -38,11 +38,9 @@ def build_cot_prompt(problem: str, recipe: str, steps: list) -> str:
         f"Problem: {problem}\n"
         f"Recipe: {recipe}\n\n"
         f"Recipe Steps:\n{s}\n\n"
-        "Think through this step by step:\n"
-        "1. Which step most likely caused this problem?\n"
-        "2. What is the scientific reason this step failed?\n"
-        "3. What is the best solution to fix this?\n"
-        "4. How can this be prevented in the future?\n\n"
+        "Think briefly:\n"
+        "1. What step failed and why scientifically?\n"
+        "2. What is the best fix?\n\n"
         "Format your final response exactly as:\n"
         "CAUSE: [what went wrong]\n"
         "SOLUTION: [how to fix it]\n"
@@ -65,17 +63,20 @@ def build_kg_augmented_prompt(problem: str, recipe: str, steps: list,
         f"You are a culinary expert with deep food science knowledge.\n"
         f"Problem: {problem}\n"
         f"Recipe: {recipe}\n\n"
+
+        "You MUST respond using EXACTLY this format:\n"
+        "CAUSE: [what went wrong]\n"
+        "SOLUTION: [how to fix it]\n"
+        "EXPLANATION: [the science behind it]\n\n"
+        "─────────────────────────────────────\n"
+
         f"Recipe Steps:\n{s}\n\n"
         f"Critical Control Points:\n{c}\n"
         f"{m}\n"
         f"{retrieved_facts}\n\n"
-        "Using the above context, think through this step by step:\n"
-        "1. Which critical control point was violated?\n"
-        "2. What is the chemical or physical reason?\n"
-        "3. What is the scientifically grounded solution?\n\n"
-        "CAUSE: [what went wrong]\n"
-        "SOLUTION: [how to fix it]\n"
-        "EXPLANATION: [the science behind it]"
+        "Using the above context diagnose the problem.\n"
+        "Remember to use EXACTLY the format shown above:\n"
+        "CAUSE: / SOLUTION: / EXPLANATION:"
     )
 
 
@@ -97,19 +98,21 @@ def build_full_system_prompt(problem: str, recipe: str, steps: list,
         f"You are a culinary expert and food scientist.\n"
         f"Problem: {problem}\n"
         f"Recipe: {recipe}\n\n"
+
+        "You MUST respond using EXACTLY this format:\n"
+        "CAUSE: [what went wrong - be specific about the science]\n"
+        "SOLUTION: [step by step fix with measurements where relevant]\n"
+        "EXPLANATION: [the food science behind the problem and solution]\n\n"
+        "─────────────────────────────────────\n"
+
         f"Recipe Steps:\n{s}\n\n"
         f"Critical Control Points:\n{c}\n"
         f"{m}\n"
         f"{retrieved_facts}\n"
         f"{subs}\n\n"
-        "Using ALL the above context, think through this carefully:\n"
-        "1. Map the symptom to the exact failed step\n"
-        "2. Retrieve the relevant food science principle\n"
-        "3. Reason from symptom to root cause to solution\n"
-        "4. Verify your solution does not cause a secondary problem\n\n"
-        "CAUSE: [what went wrong - be specific about the science]\n"
-        "SOLUTION: [step by step fix with measurements where relevant]\n"
-        "EXPLANATION: [the food science behind the problem and solution]"
+        "Using ALL the above context diagnose the problem.\n"
+        "Remember to use EXACTLY the format shown above:\n"
+        "CAUSE: / SOLUTION: / EXPLANATION:"
     )
 
 
@@ -169,7 +172,7 @@ def run_single_case(test_case, condition, model_fn,
     result   = evaluate_single(
         test_case,
         response,
-        science_keywords=science_keywords   
+        science_keywords=science_keywords
     )
     result["condition"]    = condition
     result["raw_response"] = response
@@ -208,10 +211,10 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
     models = {
         "LLaMA 3.3 70B": call_llama_big,
         "LLaMA 3.1 8B":  call_llama_fast,
-        "GPT OSS 20B": call_gpt_oss
+        "GPT-OSS 20B":   call_gpt_oss
     }
-    conditions = ["baseline", "cot_only", "kg_augmented", "full_system"] # to test all four conditions at once
-    #conditions = ["baseline"] # replace ["baseline"] with the other conditions of the four conditions before running each one separately
+    conditions = ["baseline", "cot_only", "kg_augmented", "full_system"] # to run all conditions at once
+    #conditions = ["full_system"] # to run one condition at a time
 
     # Run experiments
     for model_name, model_fn in models.items():
@@ -223,14 +226,28 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
             results = []
             for i, tc in enumerate(test_cases):
                 print(f"  {i+1}/{len(test_cases)}: {tc.get('Problem','')[:50]}...")
-                try:
-                    result = run_single_case(
-                        tc, condition, model_fn,
-                        fkg, skg, knowledge_base, recipes)
-                    results.append(result)
-                    print(f"  Score: {result['scores']['overall']:.3f}")
-                except Exception as e:
-                    print(f"  ERROR: {e}")
+
+                # ── Retry logic ───────────────────────────────
+                max_retries = 5
+                for attempt in range(max_retries):
+                    try:
+                        result = run_single_case(
+                            tc, condition, model_fn,
+                            fkg, skg, knowledge_base, recipes)
+                        results.append(result)
+                        print(f"  Score: {result['scores']['overall']:.3f}")
+                        break
+
+                    except Exception as e:
+                        if "429" in str(e):
+                            wait = (attempt + 1) * 20
+                            print(f"  Rate limit — waiting {wait}s (attempt {attempt+1}/{max_retries})...")
+                            time.sleep(wait)
+                        else:
+                            print(f"  ERROR: {e}")
+                            break
+                # ─────────────────────────────────────────────
+
                 time.sleep(delay)
 
             # Save and summarize results
