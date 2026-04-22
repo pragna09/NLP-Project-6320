@@ -1,0 +1,5 @@
+condition,cause_accuracy,solution_appropriateness,scientific_accuracy,overall
+baseline,0.1436,0.2522,0.2384,0.206
+cot_only,0.1268,0.2143,0.2344,0.1833
+full_system,0.2605,0.3297,0.3783,0.3117
+kg_augmented,0.1919,0.247,0.3335,0.2422

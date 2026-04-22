@@ -1,0 +1,10 @@
+python-dotenv
+networkx
+pandas
+numpy
+groq
+scipy
+matplotlib
+seaborn
+fastapi 
+uvicorn

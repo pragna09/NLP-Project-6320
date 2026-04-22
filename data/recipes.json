@@ -1613,7 +1613,7 @@
     },
     {
       "id": 26,
-      "name": "Sichuan Chili Oil",
+      "name": "Sichuan Chilli Oil",
       "category": "Chinese",
       "ingredients": [
         {
@@ -2150,7 +2150,7 @@
     },
     {
       "id": 35,
-      "name": "Fresh Berry Pie",
+      "name": "Berry Pie",
       "category": "baking",
       "ingredients": [
         {
@@ -2249,7 +2249,7 @@
     },
     {
       "id": 37,
-      "name": "Swiss Meringue Buttercream ",
+      "name": "Swiss Meringue Buttercream",
       "category": "Baking",
       "ingredients": [
         {
@@ -2660,7 +2660,7 @@
     },
     {
       "id": 44,
-      "name": "Classic Potato Latkes",
+      "name": "Potato Latkes",
       "category": "Substitution",
       "ingredients": [
         {
@@ -2773,7 +2773,7 @@
     },
     {
       "id": 46,
-      "name": "Manakish Bi Za'atar (Sumac-Free Substitution)",
+      "name": "Manakish Bi Za'atar",
       "category": "Substitution",
       "ingredients": [
         {
@@ -2840,7 +2840,7 @@
     },
     {
       "id": 47,
-      "name": "Blind-Baked Pie Crust (Shrinkage)",
+      "name": "Blind-Baked Pie Crust",
       "category": "baking",
       "ingredients": [
         {
