@@ -1,0 +1,721 @@
+condition,model,test_case_id,problem,recipe,category,difficulty,cause_accuracy,solution_appropriateness,scientific_accuracy,overall
+baseline,GPT-OSS 20B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.38461538461538464,0.42857142857142855,0.5454545454545454,0.4344
+baseline,GPT-OSS 20B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.3333333333333333,0.25,0.4444444444444444,0.3222
+baseline,GPT-OSS 20B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.1111111111111111,0.2,0.4444444444444444,0.2133
+baseline,GPT-OSS 20B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.2,0.3333333333333333,0.3,0.2733
+baseline,GPT-OSS 20B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.1,0.25,0.2727272727272727,0.1945
+baseline,GPT-OSS 20B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.2222222222222222,0.2727272727272727,0.2,0.238
+baseline,GPT-OSS 20B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.46153846153846156,0.3888888888888889,0.3,0.4002
+baseline,GPT-OSS 20B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.3076923076923077,0.6363636363636364,0.7272727272727273,0.5231
+baseline,GPT-OSS 20B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.125,0.1724137931034483,0.18181818181818182,0.1553
+baseline,GPT-OSS 20B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.125,0.7777777777777778,0.5,0.4611
+baseline,GPT-OSS 20B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.3076923076923077,0.07142857142857142,0.5833333333333334,0.2683
+baseline,GPT-OSS 20B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.23529411764705882,0.27586206896551724,0.1,0.2245
+baseline,GPT-OSS 20B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.0,0.2857142857142857,0.16666666666666666,0.1476
+baseline,GPT-OSS 20B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.3333333333333333,0.2222222222222222,0.5454545454545454,0.3313
+baseline,GPT-OSS 20B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.1,0.45454545454545453,0.4,0.3018
+baseline,GPT-OSS 20B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.1111111111111111,0.375,0.3333333333333333,0.2611
+baseline,GPT-OSS 20B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.3333333333333333,0.4166666666666667,0.2611
+baseline,GPT-OSS 20B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.0,0.21212121212121213,0.3,0.1448
+baseline,GPT-OSS 20B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.0,0.3333333333333333,0.2727272727272727,0.1879
+baseline,GPT-OSS 20B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.1111111111111111,0.375,0.5,0.2944
+baseline,GPT-OSS 20B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.5,0.38461538461538464,0.09090909090909091,0.372
+baseline,GPT-OSS 20B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.16666666666666666,0.2,0.2727272727272727,0.2012
+baseline,GPT-OSS 20B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.0,0.45454545454545453,0.5454545454545454,0.2909
+baseline,GPT-OSS 20B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.8,0.10526315789473684,0.14285714285714285,0.3907
+baseline,GPT-OSS 20B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.25,0.4375,0.0,0.275
+baseline,GPT-OSS 20B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.25,0.23076923076923078,0.1,0.2123
+baseline,GPT-OSS 20B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.23076923076923078,0.35294117647058826,0.4166666666666667,0.3168
+baseline,GPT-OSS 20B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.25,0.4666666666666667,0.2,0.3267
+baseline,GPT-OSS 20B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.0,0.14285714285714285,0.2,0.0971
+baseline,GPT-OSS 20B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.0,0.2857142857142857,0.0571
+baseline,GPT-OSS 20B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.3076923076923077,0.4375,0.5714285714285714,0.4124
+baseline,GPT-OSS 20B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.05555555555555555,0.4583333333333333,0.1,0.2256
+baseline,GPT-OSS 20B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.3333333333333333,0.6,0.0,0.3733
+baseline,GPT-OSS 20B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.25,0.5555555555555556,0.2727272727272727,0.3768
+baseline,GPT-OSS 20B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.3076923076923077,0.18181818181818182,0.0,0.1958
+baseline,GPT-OSS 20B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.375,0.2857142857142857,0.0,0.2643
+baseline,GPT-OSS 20B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.35714285714285715,0.42857142857142855,0.5,0.4143
+baseline,GPT-OSS 20B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.0,0.25,0.36363636363636365,0.1727
+baseline,GPT-OSS 20B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.09090909090909091,0.4,0.2727272727272727,0.2509
+baseline,GPT-OSS 20B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.18181818181818182,0.5,0.45454545454545453,0.3636
+baseline,GPT-OSS 20B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.0,0.1875,0.0,0.075
+baseline,GPT-OSS 20B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.3,0.2857142857142857,0.1771
+baseline,GPT-OSS 20B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.21428571428571427,0.3333333333333333,0.6363636363636364,0.3463
+baseline,GPT-OSS 20B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.0,0.18181818181818182,0.3333333333333333,0.1394
+baseline,GPT-OSS 20B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.36363636363636365,0.3,0.2055
+baseline,GPT-OSS 20B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.2727272727272727,0.3125,0.2727272727272727,0.2886
+baseline,GPT-OSS 20B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.2857142857142857,0.4444444444444444,0.25,0.3421
+baseline,GPT-OSS 20B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.16666666666666666,0.3333333333333333,0.25,0.25
+baseline,GPT-OSS 20B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.5555555555555556,0.5,0.3222
+baseline,GPT-OSS 20B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.3333333333333333,0.375,0.0,0.2833
+baseline,GPT-OSS 20B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.0,0.375,0.0,0.15
+baseline,GPT-OSS 20B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.0,0.16666666666666666,0.5,0.1667
+baseline,GPT-OSS 20B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.3333333333333333,0.0,0.25,0.1833
+baseline,GPT-OSS 20B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.2,0.5,0.0,0.28
+baseline,GPT-OSS 20B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.14285714285714285,0.6666666666666666,0.0,0.3238
+baseline,GPT-OSS 20B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.0,0.16666666666666666,0.0,0.0667
+baseline,GPT-OSS 20B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.2,0.2857142857142857,0.5714285714285714,0.3086
+baseline,GPT-OSS 20B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.0,0.2222222222222222,0.25,0.1389
+baseline,GPT-OSS 20B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.4,0.25,0.0,0.26
+baseline,GPT-OSS 20B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.2,0.0,0.25,0.13
+baseline,LLaMA 3.1 8B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.0,0.14285714285714285,0.45454545454545453,0.1481
+baseline,LLaMA 3.1 8B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.16666666666666666,0.0625,0.4444444444444444,0.1806
+baseline,LLaMA 3.1 8B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.0,0.0,0.2222222222222222,0.0444
+baseline,LLaMA 3.1 8B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.2,0.08333333333333333,0.3,0.1733
+baseline,LLaMA 3.1 8B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.1,0.25,0.18181818181818182,0.1764
+baseline,LLaMA 3.1 8B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.1111111111111111,0.36363636363636365,0.1,0.2099
+baseline,LLaMA 3.1 8B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.15384615384615385,0.1111111111111111,0.1,0.126
+baseline,LLaMA 3.1 8B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.0,0.09090909090909091,0.09090909090909091,0.0545
+baseline,LLaMA 3.1 8B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.041666666666666664,0.10344827586206896,0.09090909090909091,0.0762
+baseline,LLaMA 3.1 8B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.125,0.2222222222222222,0.2,0.1789
+baseline,LLaMA 3.1 8B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.07692307692307693,0.07142857142857142,0.4166666666666667,0.1427
+baseline,LLaMA 3.1 8B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.0,0.27586206896551724,0.0,0.1103
+baseline,LLaMA 3.1 8B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.0,0.42857142857142855,0.25,0.2214
+baseline,LLaMA 3.1 8B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.0,0.2222222222222222,0.5454545454545454,0.198
+baseline,LLaMA 3.1 8B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.0,0.0,0.2,0.04
+baseline,LLaMA 3.1 8B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.2222222222222222,0.0,0.5555555555555556,0.2
+baseline,LLaMA 3.1 8B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.0,0.0,0.08333333333333333,0.0167
+baseline,LLaMA 3.1 8B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.0,0.06060606060606061,0.2,0.0642
+baseline,LLaMA 3.1 8B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.0,0.4444444444444444,0.18181818181818182,0.2141
+baseline,LLaMA 3.1 8B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.0,0.125,0.3,0.11
+baseline,LLaMA 3.1 8B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.0625,0.3076923076923077,0.09090909090909091,0.1663
+baseline,LLaMA 3.1 8B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.16666666666666666,0.3,0.45454545454545453,0.2776
+baseline,LLaMA 3.1 8B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.1111111111111111,0.09090909090909091,0.6363636363636364,0.2081
+baseline,LLaMA 3.1 8B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.3,0.05263157894736842,0.14285714285714285,0.1696
+baseline,LLaMA 3.1 8B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.3125,0.0625,0.0,0.15
+baseline,LLaMA 3.1 8B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.0,0.15384615384615385,0.1,0.0815
+baseline,LLaMA 3.1 8B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.15384615384615385,0.17647058823529413,0.16666666666666666,0.1655
+baseline,LLaMA 3.1 8B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.08333333333333333,0.26666666666666666,0.2,0.18
+baseline,LLaMA 3.1 8B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.0,0.047619047619047616,0.2,0.059
+baseline,LLaMA 3.1 8B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.5714285714285714,0.14285714285714285,0.2571
+baseline,LLaMA 3.1 8B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.0,0.125,0.2857142857142857,0.1071
+baseline,LLaMA 3.1 8B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.0,0.20833333333333334,0.0,0.0833
+baseline,LLaMA 3.1 8B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.0,0.2,0.25,0.13
+baseline,LLaMA 3.1 8B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.5,0.2222222222222222,0.09090909090909091,0.3071
+baseline,LLaMA 3.1 8B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.07692307692307693,0.09090909090909091,0.0,0.0671
+baseline,LLaMA 3.1 8B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.125,0.14285714285714285,0.0,0.1071
+baseline,LLaMA 3.1 8B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.35714285714285715,0.2857142857142857,0.4,0.3371
+baseline,LLaMA 3.1 8B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.07142857142857142,0.0,0.2727272727272727,0.0831
+baseline,LLaMA 3.1 8B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.0,0.13333333333333333,0.18181818181818182,0.0897
+baseline,LLaMA 3.1 8B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.18181818181818182,0.1111111111111111,0.36363636363636365,0.1899
+baseline,LLaMA 3.1 8B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.75,0.375,0.0,0.45
+baseline,LLaMA 3.1 8B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.2,0.2857142857142857,0.1371
+baseline,LLaMA 3.1 8B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.07142857142857142,0.06666666666666667,0.45454545454545453,0.1461
+baseline,LLaMA 3.1 8B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.0,0.18181818181818182,0.3333333333333333,0.1394
+baseline,LLaMA 3.1 8B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.18181818181818182,0.2,0.1127
+baseline,LLaMA 3.1 8B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.0,0.4375,0.18181818181818182,0.2114
+baseline,LLaMA 3.1 8B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.14285714285714285,0.2222222222222222,0.25,0.196
+baseline,LLaMA 3.1 8B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.0,0.1111111111111111,0.25,0.0944
+baseline,LLaMA 3.1 8B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.6666666666666666,0.5,0.3667
+baseline,LLaMA 3.1 8B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.16666666666666666,0.5,0.0,0.2667
+baseline,LLaMA 3.1 8B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.25,0.0,0.0,0.1
+baseline,LLaMA 3.1 8B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.0,0.0,0.25,0.05
+baseline,LLaMA 3.1 8B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.16666666666666666,0.125,0.25,0.1667
+baseline,LLaMA 3.1 8B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.2,0.5,0.0,0.28
+baseline,LLaMA 3.1 8B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.0,0.0,0.0,0.0
+baseline,LLaMA 3.1 8B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.0,0.0,0.0,0.0
+baseline,LLaMA 3.1 8B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.0,0.5714285714285714,0.5714285714285714,0.3429
+baseline,LLaMA 3.1 8B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.0,0.0,0.25,0.05
+baseline,LLaMA 3.1 8B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.4,0.0,0.0,0.16
+baseline,LLaMA 3.1 8B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.0,0.0,0.25,0.05
+baseline,LLaMA 3.3 70B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.15384615384615385,0.35714285714285715,0.36363636363636365,0.2771
+baseline,LLaMA 3.3 70B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.16666666666666666,0.5,0.3333333333333333,0.3333
+baseline,LLaMA 3.3 70B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.1111111111111111,0.1,0.3333333333333333,0.1511
+baseline,LLaMA 3.3 70B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.1,0.25,0.3,0.2
+baseline,LLaMA 3.3 70B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.1,0.08333333333333333,0.2727272727272727,0.1279
+baseline,LLaMA 3.3 70B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.2222222222222222,0.2727272727272727,0.1,0.218
+baseline,LLaMA 3.3 70B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.15384615384615385,0.2777777777777778,0.1,0.1926
+baseline,LLaMA 3.3 70B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.23076923076923078,0.18181818181818182,0.36363636363636365,0.2378
+baseline,LLaMA 3.3 70B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.0,0.06896551724137931,0.2727272727272727,0.0821
+baseline,LLaMA 3.3 70B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.125,0.3333333333333333,0.1,0.2033
+baseline,LLaMA 3.3 70B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.23076923076923078,0.14285714285714285,0.3333333333333333,0.2161
+baseline,LLaMA 3.3 70B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.11764705882352941,0.2413793103448276,0.0,0.1436
+baseline,LLaMA 3.3 70B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.0,0.42857142857142855,0.16666666666666666,0.2048
+baseline,LLaMA 3.3 70B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.0,0.1111111111111111,0.45454545454545453,0.1354
+baseline,LLaMA 3.3 70B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.0,0.2727272727272727,0.2,0.1491
+baseline,LLaMA 3.3 70B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.0,0.0,0.3333333333333333,0.0667
+baseline,LLaMA 3.3 70B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.0,0.08333333333333333,0.0611
+baseline,LLaMA 3.3 70B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.13333333333333333,0.09090909090909091,0.2,0.1297
+baseline,LLaMA 3.3 70B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.0,0.4444444444444444,0.18181818181818182,0.2141
+baseline,LLaMA 3.3 70B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.0,0.0,0.2,0.04
+baseline,LLaMA 3.3 70B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.0625,0.38461538461538464,0.09090909090909091,0.197
+baseline,LLaMA 3.3 70B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.16666666666666666,0.3,0.18181818181818182,0.223
+baseline,LLaMA 3.3 70B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.1111111111111111,0.36363636363636365,0.18181818181818182,0.2263
+baseline,LLaMA 3.3 70B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.7,0.0,0.14285714285714285,0.3086
+baseline,LLaMA 3.3 70B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.25,0.25,0.0,0.2
+baseline,LLaMA 3.3 70B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.16666666666666666,0.3076923076923077,0.1,0.2097
+baseline,LLaMA 3.3 70B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.15384615384615385,0.4117647058823529,0.25,0.2762
+baseline,LLaMA 3.3 70B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.08333333333333333,0.4,0.2,0.2333
+baseline,LLaMA 3.3 70B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.1,0.19047619047619047,0.2,0.1562
+baseline,LLaMA 3.3 70B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.5,0.5714285714285714,0.42857142857142855,0.5143
+baseline,LLaMA 3.3 70B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.46153846153846156,0.0625,0.42857142857142855,0.2953
+baseline,LLaMA 3.3 70B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.05555555555555555,0.125,0.0,0.0722
+baseline,LLaMA 3.3 70B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.16666666666666666,0.4,0.25,0.2767
+baseline,LLaMA 3.3 70B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.375,0.3333333333333333,0.2727272727272727,0.3379
+baseline,LLaMA 3.3 70B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.07692307692307693,0.18181818181818182,0.0,0.1035
+baseline,LLaMA 3.3 70B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.0,0.21428571428571427,0.0,0.0857
+baseline,LLaMA 3.3 70B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.21428571428571427,0.14285714285714285,0.5,0.2429
+baseline,LLaMA 3.3 70B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.0,0.1875,0.2727272727272727,0.1295
+baseline,LLaMA 3.3 70B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.0,0.06666666666666667,0.18181818181818182,0.063
+baseline,LLaMA 3.3 70B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.18181818181818182,0.6111111111111112,0.45454545454545453,0.4081
+baseline,LLaMA 3.3 70B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.5,0.3125,0.0,0.325
+baseline,LLaMA 3.3 70B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.8,0.42857142857142855,0.4057
+baseline,LLaMA 3.3 70B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.35714285714285715,0.13333333333333333,0.45454545454545453,0.2871
+baseline,LLaMA 3.3 70B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.0,0.0,0.3333333333333333,0.0667
+baseline,LLaMA 3.3 70B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.2727272727272727,0.2,0.1491
+baseline,LLaMA 3.3 70B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.0,0.5,0.09090909090909091,0.2182
+baseline,LLaMA 3.3 70B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.2857142857142857,0.4444444444444444,0.25,0.3421
+baseline,LLaMA 3.3 70B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.0,0.0,0.25,0.05
+baseline,LLaMA 3.3 70B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.5555555555555556,0.5,0.3222
+baseline,LLaMA 3.3 70B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.16666666666666666,0.125,0.0,0.1167
+baseline,LLaMA 3.3 70B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.25,0.0,0.0,0.1
+baseline,LLaMA 3.3 70B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.0,0.8333333333333334,0.5,0.4333
+baseline,LLaMA 3.3 70B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.3333333333333333,0.125,0.25,0.2333
+baseline,LLaMA 3.3 70B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.2,0.3333333333333333,0.0,0.2133
+baseline,LLaMA 3.3 70B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.0,0.2222222222222222,0.0,0.0889
+baseline,LLaMA 3.3 70B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.14285714285714285,0.0,0.0,0.0571
+baseline,LLaMA 3.3 70B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.2,0.2857142857142857,0.42857142857142855,0.28
+baseline,LLaMA 3.3 70B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.25,0.0,0.25,0.15
+baseline,LLaMA 3.3 70B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.4,0.5,0.0,0.36
+baseline,LLaMA 3.3 70B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.0,0.0,0.25,0.05
+cot_only,GPT-OSS 20B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.3076923076923077,0.35714285714285715,0.5454545454545454,0.375
+cot_only,GPT-OSS 20B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.3333333333333333,0.125,0.2222222222222222,0.2278
+cot_only,GPT-OSS 20B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.0,0.3,0.5555555555555556,0.2311
+cot_only,GPT-OSS 20B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.3,0.16666666666666666,0.2,0.2267
+cot_only,GPT-OSS 20B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.0,0.25,0.18181818181818182,0.1364
+cot_only,GPT-OSS 20B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.2222222222222222,0.45454545454545453,0.1,0.2907
+cot_only,GPT-OSS 20B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.46153846153846156,0.3333333333333333,0.2,0.3579
+cot_only,GPT-OSS 20B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.3076923076923077,0.5454545454545454,0.36363636363636365,0.414
+cot_only,GPT-OSS 20B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.08333333333333333,0.2413793103448276,0.18181818181818182,0.1662
+cot_only,GPT-OSS 20B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.375,0.4444444444444444,0.6,0.4478
+cot_only,GPT-OSS 20B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.3076923076923077,0.14285714285714285,0.4166666666666667,0.2636
+cot_only,GPT-OSS 20B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.17647058823529413,0.27586206896551724,0.2,0.2209
+cot_only,GPT-OSS 20B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.0,0.14285714285714285,0.4166666666666667,0.1405
+cot_only,GPT-OSS 20B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.3333333333333333,0.4444444444444444,0.5454545454545454,0.4202
+cot_only,GPT-OSS 20B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.4,0.5454545454545454,0.3,0.4382
+cot_only,GPT-OSS 20B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.1111111111111111,0.0,0.2222222222222222,0.0889
+cot_only,GPT-OSS 20B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.3333333333333333,0.4166666666666667,0.2611
+cot_only,GPT-OSS 20B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.06666666666666667,0.18181818181818182,0.4,0.1794
+cot_only,GPT-OSS 20B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.0,0.0,0.2727272727272727,0.0545
+cot_only,GPT-OSS 20B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.0,0.25,0.4,0.18
+cot_only,GPT-OSS 20B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.125,0.46153846153846156,0.0,0.2346
+cot_only,GPT-OSS 20B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.16666666666666666,0.8,0.18181818181818182,0.423
+cot_only,GPT-OSS 20B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.1111111111111111,0.2727272727272727,0.6363636363636364,0.2808
+cot_only,GPT-OSS 20B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.5,0.10526315789473684,0.14285714285714285,0.2707
+cot_only,GPT-OSS 20B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.1875,0.25,0.0,0.175
+cot_only,GPT-OSS 20B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.08333333333333333,0.3076923076923077,0.1,0.1764
+cot_only,GPT-OSS 20B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.15384615384615385,0.29411764705882354,0.3333333333333333,0.2459
+cot_only,GPT-OSS 20B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.25,0.4,0.2,0.3
+cot_only,GPT-OSS 20B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.0,0.19047619047619047,0.3,0.1362
+cot_only,GPT-OSS 20B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.14285714285714285,0.2857142857142857,0.1143
+cot_only,GPT-OSS 20B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.3076923076923077,0.5,0.42857142857142855,0.4088
+cot_only,GPT-OSS 20B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.16666666666666666,0.4166666666666667,0.1,0.2533
+cot_only,GPT-OSS 20B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.3333333333333333,0.3333333333333333,0.25,0.3167
+cot_only,GPT-OSS 20B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.5,0.4444444444444444,0.36363636363636365,0.4505
+cot_only,GPT-OSS 20B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.3076923076923077,0.18181818181818182,0.0,0.1958
+cot_only,GPT-OSS 20B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.0,0.14285714285714285,0.0,0.0571
+cot_only,GPT-OSS 20B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.35714285714285715,0.2857142857142857,0.5,0.3571
+cot_only,GPT-OSS 20B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.21428571428571427,0.25,0.36363636363636365,0.2584
+cot_only,GPT-OSS 20B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.09090909090909091,0.4,0.2727272727272727,0.2509
+cot_only,GPT-OSS 20B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.09090909090909091,0.3888888888888889,0.36363636363636365,0.2646
+cot_only,GPT-OSS 20B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.0,0.0625,0.0,0.025
+cot_only,GPT-OSS 20B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.7,0.42857142857142855,0.3657
+cot_only,GPT-OSS 20B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.35714285714285715,0.26666666666666666,0.6363636363636364,0.3768
+cot_only,GPT-OSS 20B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.0,0.09090909090909091,0.3333333333333333,0.103
+cot_only,GPT-OSS 20B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.2727272727272727,0.2,0.1491
+cot_only,GPT-OSS 20B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.18181818181818182,0.3125,0.2727272727272727,0.2523
+cot_only,GPT-OSS 20B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.14285714285714285,0.5555555555555556,0.25,0.3294
+cot_only,GPT-OSS 20B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.3333333333333333,0.2222222222222222,0.25,0.2722
+cot_only,GPT-OSS 20B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.6666666666666666,0.5,0.3667
+cot_only,GPT-OSS 20B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.5,0.625,0.0,0.45
+cot_only,GPT-OSS 20B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.125,0.0,0.0,0.05
+cot_only,GPT-OSS 20B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.0,0.5,0.5,0.3
+cot_only,GPT-OSS 20B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.16666666666666666,0.125,0.25,0.1667
+cot_only,GPT-OSS 20B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.2,0.3333333333333333,0.0,0.2133
+cot_only,GPT-OSS 20B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.0,0.2222222222222222,0.0,0.0889
+cot_only,GPT-OSS 20B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.42857142857142855,0.3333333333333333,0.0,0.3048
+cot_only,GPT-OSS 20B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.2,0.14285714285714285,0.42857142857142855,0.2229
+cot_only,GPT-OSS 20B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.0,0.3333333333333333,0.25,0.1833
+cot_only,GPT-OSS 20B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.2,0.5,0.25,0.33
+cot_only,GPT-OSS 20B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.2,0.0,0.25,0.13
+cot_only,LLaMA 3.1 8B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.07692307692307693,0.07142857142857142,0.45454545454545453,0.1502
+cot_only,LLaMA 3.1 8B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.0,0.0625,0.4444444444444444,0.1139
+cot_only,LLaMA 3.1 8B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.0,0.2,0.5555555555555556,0.1911
+cot_only,LLaMA 3.1 8B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.1,0.16666666666666666,0.3,0.1667
+cot_only,LLaMA 3.1 8B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.0,0.16666666666666666,0.18181818181818182,0.103
+cot_only,LLaMA 3.1 8B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.0,0.0,0.2,0.04
+cot_only,LLaMA 3.1 8B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.07692307692307693,0.4444444444444444,0.0,0.2085
+cot_only,LLaMA 3.1 8B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.07692307692307693,0.36363636363636365,0.18181818181818182,0.2126
+cot_only,LLaMA 3.1 8B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.041666666666666664,0.034482758620689655,0.09090909090909091,0.0486
+cot_only,LLaMA 3.1 8B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.125,0.2222222222222222,0.1,0.1589
+cot_only,LLaMA 3.1 8B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.3076923076923077,0.14285714285714285,0.3333333333333333,0.2469
+cot_only,LLaMA 3.1 8B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.0,0.0,0.0,0.0
+cot_only,LLaMA 3.1 8B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.0,0.0,0.16666666666666666,0.0333
+cot_only,LLaMA 3.1 8B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.0,0.0,0.36363636363636365,0.0727
+cot_only,LLaMA 3.1 8B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.0,0.09090909090909091,0.2,0.0764
+cot_only,LLaMA 3.1 8B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.0,0.0,0.2222222222222222,0.0444
+cot_only,LLaMA 3.1 8B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.0,0.5,0.1444
+cot_only,LLaMA 3.1 8B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.06666666666666667,0.030303030303030304,0.2,0.0788
+cot_only,LLaMA 3.1 8B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.0,0.2222222222222222,0.18181818181818182,0.1253
+cot_only,LLaMA 3.1 8B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.0,0.125,0.3,0.11
+cot_only,LLaMA 3.1 8B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.0625,0.23076923076923078,0.09090909090909091,0.1355
+cot_only,LLaMA 3.1 8B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.16666666666666666,0.2,0.18181818181818182,0.183
+cot_only,LLaMA 3.1 8B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.0,0.18181818181818182,0.5454545454545454,0.1818
+cot_only,LLaMA 3.1 8B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.4,0.05263157894736842,0.14285714285714285,0.2096
+cot_only,LLaMA 3.1 8B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.3125,0.125,0.0,0.175
+cot_only,LLaMA 3.1 8B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.0,0.07692307692307693,0.1,0.0508
+cot_only,LLaMA 3.1 8B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.07692307692307693,0.23529411764705882,0.25,0.1749
+cot_only,LLaMA 3.1 8B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.08333333333333333,0.2,0.2,0.1533
+cot_only,LLaMA 3.1 8B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.0,0.0,0.1,0.02
+cot_only,LLaMA 3.1 8B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.42857142857142855,0.14285714285714285,0.2
+cot_only,LLaMA 3.1 8B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.15384615384615385,0.0625,0.2857142857142857,0.1437
+cot_only,LLaMA 3.1 8B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.0,0.0,0.1,0.02
+cot_only,LLaMA 3.1 8B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.3333333333333333,0.06666666666666667,0.25,0.21
+cot_only,LLaMA 3.1 8B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.375,0.2222222222222222,0.36363636363636365,0.3116
+cot_only,LLaMA 3.1 8B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.07692307692307693,0.18181818181818182,0.0,0.1035
+cot_only,LLaMA 3.1 8B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.0,0.14285714285714285,0.0,0.0571
+cot_only,LLaMA 3.1 8B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.2857142857142857,0.14285714285714285,0.4,0.2514
+cot_only,LLaMA 3.1 8B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.0,0.0,0.2727272727272727,0.0545
+cot_only,LLaMA 3.1 8B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.09090909090909091,0.0,0.0,0.0364
+cot_only,LLaMA 3.1 8B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.09090909090909091,0.5555555555555556,0.18181818181818182,0.2949
+cot_only,LLaMA 3.1 8B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.0,0.3125,0.0,0.125
+cot_only,LLaMA 3.1 8B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.3,0.2857142857142857,0.1771
+cot_only,LLaMA 3.1 8B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.14285714285714285,0.13333333333333333,0.5454545454545454,0.2196
+cot_only,LLaMA 3.1 8B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.0,0.09090909090909091,0.3333333333333333,0.103
+cot_only,LLaMA 3.1 8B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.09090909090909091,0.1,0.0564
+cot_only,LLaMA 3.1 8B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.0,0.25,0.09090909090909091,0.1182
+cot_only,LLaMA 3.1 8B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.14285714285714285,0.4444444444444444,0.25,0.2849
+cot_only,LLaMA 3.1 8B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.0,0.0,0.5,0.1
+cot_only,LLaMA 3.1 8B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.3333333333333333,0.5,0.2333
+cot_only,LLaMA 3.1 8B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.16666666666666666,0.25,0.0,0.1667
+cot_only,LLaMA 3.1 8B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.125,0.0,0.0,0.05
+cot_only,LLaMA 3.1 8B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.0,0.0,0.25,0.05
+cot_only,LLaMA 3.1 8B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.16666666666666666,0.125,0.25,0.1667
+cot_only,LLaMA 3.1 8B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.0,0.3333333333333333,0.0,0.1333
+cot_only,LLaMA 3.1 8B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.0,0.1111111111111111,0.0,0.0444
+cot_only,LLaMA 3.1 8B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.14285714285714285,0.0,0.0,0.0571
+cot_only,LLaMA 3.1 8B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.0,0.0,0.14285714285714285,0.0286
+cot_only,LLaMA 3.1 8B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.25,0.0,0.25,0.15
+cot_only,LLaMA 3.1 8B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.0,0.125,0.25,0.1
+cot_only,LLaMA 3.1 8B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.0,0.0,0.5,0.1
+cot_only,LLaMA 3.3 70B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.15384615384615385,0.07142857142857142,0.45454545454545453,0.181
+cot_only,LLaMA 3.3 70B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.08333333333333333,0.1875,0.4444444444444444,0.1972
+cot_only,LLaMA 3.3 70B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.1111111111111111,0.1,0.3333333333333333,0.1511
+cot_only,LLaMA 3.3 70B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.3,0.25,0.2,0.26
+cot_only,LLaMA 3.3 70B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.1,0.25,0.18181818181818182,0.1764
+cot_only,LLaMA 3.3 70B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.2222222222222222,0.18181818181818182,0.1,0.1816
+cot_only,LLaMA 3.3 70B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.07692307692307693,0.3333333333333333,0.1,0.1841
+cot_only,LLaMA 3.3 70B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.23076923076923078,0.2727272727272727,0.18181818181818182,0.2378
+cot_only,LLaMA 3.3 70B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.041666666666666664,0.10344827586206896,0.09090909090909091,0.0762
+cot_only,LLaMA 3.3 70B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.125,0.3333333333333333,0.2,0.2233
+cot_only,LLaMA 3.3 70B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.23076923076923078,0.0,0.3333333333333333,0.159
+cot_only,LLaMA 3.3 70B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.058823529411764705,0.06896551724137931,0.0,0.0511
+cot_only,LLaMA 3.3 70B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.0,0.0,0.08333333333333333,0.0167
+cot_only,LLaMA 3.3 70B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.0,0.1111111111111111,0.45454545454545453,0.1354
+cot_only,LLaMA 3.3 70B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.0,0.18181818181818182,0.3,0.1327
+cot_only,LLaMA 3.3 70B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.0,0.125,0.4444444444444444,0.1389
+cot_only,LLaMA 3.3 70B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.16666666666666666,0.5,0.2111
+cot_only,LLaMA 3.3 70B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.0,0.030303030303030304,0.3,0.0721
+cot_only,LLaMA 3.3 70B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.0,0.1111111111111111,0.09090909090909091,0.0626
+cot_only,LLaMA 3.3 70B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.0,0.0,0.1,0.02
+cot_only,LLaMA 3.3 70B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.125,0.15384615384615385,0.0,0.1115
+cot_only,LLaMA 3.3 70B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.16666666666666666,0.3,0.18181818181818182,0.223
+cot_only,LLaMA 3.3 70B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.1111111111111111,0.09090909090909091,0.2727272727272727,0.1354
+cot_only,LLaMA 3.3 70B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.8,0.05263157894736842,0.14285714285714285,0.3696
+cot_only,LLaMA 3.3 70B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.25,0.125,0.0,0.15
+cot_only,LLaMA 3.3 70B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.08333333333333333,0.3076923076923077,0.1,0.1764
+cot_only,LLaMA 3.3 70B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.07692307692307693,0.29411764705882354,0.3333333333333333,0.2151
+cot_only,LLaMA 3.3 70B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.08333333333333333,0.4666666666666667,0.1,0.24
+cot_only,LLaMA 3.3 70B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.0,0.14285714285714285,0.1,0.0771
+cot_only,LLaMA 3.3 70B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.5714285714285714,0.42857142857142855,0.3143
+cot_only,LLaMA 3.3 70B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.15384615384615385,0.0625,0.42857142857142855,0.1723
+cot_only,LLaMA 3.3 70B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.16666666666666666,0.25,0.1,0.1867
+cot_only,LLaMA 3.3 70B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.16666666666666666,0.26666666666666666,0.0,0.1733
+cot_only,LLaMA 3.3 70B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.25,0.2222222222222222,0.2727272727272727,0.2434
+cot_only,LLaMA 3.3 70B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.07692307692307693,0.09090909090909091,0.0,0.0671
+cot_only,LLaMA 3.3 70B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.0,0.14285714285714285,0.0,0.0571
+cot_only,LLaMA 3.3 70B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.35714285714285715,0.2857142857142857,0.5,0.3571
+cot_only,LLaMA 3.3 70B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.07142857142857142,0.0625,0.36363636363636365,0.1263
+cot_only,LLaMA 3.3 70B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.09090909090909091,0.3333333333333333,0.18181818181818182,0.2061
+cot_only,LLaMA 3.3 70B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.09090909090909091,0.05555555555555555,0.45454545454545453,0.1495
+cot_only,LLaMA 3.3 70B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.25,0.1875,0.0,0.175
+cot_only,LLaMA 3.3 70B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.5,0.3,0.14285714285714285,0.3486
+cot_only,LLaMA 3.3 70B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.2857142857142857,0.13333333333333333,0.45454545454545453,0.2585
+cot_only,LLaMA 3.3 70B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.0,0.0,0.3333333333333333,0.0667
+cot_only,LLaMA 3.3 70B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.18181818181818182,0.2,0.1127
+cot_only,LLaMA 3.3 70B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.09090909090909091,0.25,0.18181818181818182,0.1727
+cot_only,LLaMA 3.3 70B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.0,0.4444444444444444,0.25,0.2278
+cot_only,LLaMA 3.3 70B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.16666666666666666,0.2222222222222222,0.25,0.2056
+cot_only,LLaMA 3.3 70B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.6666666666666666,0.5,0.3667
+cot_only,LLaMA 3.3 70B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.16666666666666666,0.25,0.0,0.1667
+cot_only,LLaMA 3.3 70B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.0,0.125,0.0,0.05
+cot_only,LLaMA 3.3 70B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.0,0.5,0.5,0.3
+cot_only,LLaMA 3.3 70B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.0,0.0,0.25,0.05
+cot_only,LLaMA 3.3 70B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.0,0.3333333333333333,0.0,0.1333
+cot_only,LLaMA 3.3 70B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.0,0.4444444444444444,0.0,0.1778
+cot_only,LLaMA 3.3 70B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.2857142857142857,0.16666666666666666,0.0,0.181
+cot_only,LLaMA 3.3 70B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.2,0.14285714285714285,0.5714285714285714,0.2514
+cot_only,LLaMA 3.3 70B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.0,0.1111111111111111,0.25,0.0944
+cot_only,LLaMA 3.3 70B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.4,0.25,0.0,0.26
+cot_only,LLaMA 3.3 70B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.0,0.0,0.25,0.05
+full_system,GPT-OSS 20B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.23076923076923078,0.42857142857142855,0.6363636363636364,0.391
+full_system,GPT-OSS 20B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.6666666666666666,0.1875,0.7777777777777778,0.4972
+full_system,GPT-OSS 20B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.1111111111111111,0.3,0.7777777777777778,0.32
+full_system,GPT-OSS 20B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.2,0.25,0.2,0.22
+full_system,GPT-OSS 20B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.3,0.3333333333333333,0.45454545454545453,0.3442
+full_system,GPT-OSS 20B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.3333333333333333,0.5454545454545454,0.5,0.4515
+full_system,GPT-OSS 20B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.5384615384615384,0.5,0.2,0.4554
+full_system,GPT-OSS 20B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.46153846153846156,0.6363636363636364,0.6363636363636364,0.5664
+full_system,GPT-OSS 20B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.375,0.3793103448275862,0.45454545454545453,0.3926
+full_system,GPT-OSS 20B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.25,0.3333333333333333,0.7,0.3733
+full_system,GPT-OSS 20B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.46153846153846156,0.2857142857142857,0.5833333333333334,0.4156
+full_system,GPT-OSS 20B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.5882352941176471,0.3103448275862069,0.4,0.4394
+full_system,GPT-OSS 20B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.3333333333333333,0.2857142857142857,0.3333333333333333,0.3143
+full_system,GPT-OSS 20B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.4444444444444444,0.5555555555555556,0.6363636363636364,0.5273
+full_system,GPT-OSS 20B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.3,0.5454545454545454,0.4,0.4182
+full_system,GPT-OSS 20B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.5555555555555556,0.375,0.4444444444444444,0.4611
+full_system,GPT-OSS 20B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.5,0.5,0.3444
+full_system,GPT-OSS 20B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.4,0.45454545454545453,0.5,0.4418
+full_system,GPT-OSS 20B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.4444444444444444,0.3333333333333333,0.36363636363636365,0.3838
+full_system,GPT-OSS 20B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.3333333333333333,0.25,0.7,0.3733
+full_system,GPT-OSS 20B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.1875,0.46153846153846156,0.2727272727272727,0.3142
+full_system,GPT-OSS 20B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.3333333333333333,0.4,0.2727272727272727,0.3479
+full_system,GPT-OSS 20B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.2222222222222222,0.2727272727272727,0.7272727272727273,0.3434
+full_system,GPT-OSS 20B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.6,0.10526315789473684,0.14285714285714285,0.3107
+full_system,GPT-OSS 20B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.3125,0.4375,0.0,0.3
+full_system,GPT-OSS 20B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.25,0.3076923076923077,0.1,0.2431
+full_system,GPT-OSS 20B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.23076923076923078,0.4117647058823529,0.4166666666666667,0.3403
+full_system,GPT-OSS 20B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.3333333333333333,0.4,0.3,0.3533
+full_system,GPT-OSS 20B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.2,0.2857142857142857,0.3,0.2543
+full_system,GPT-OSS 20B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.42857142857142855,0.42857142857142855,0.2571
+full_system,GPT-OSS 20B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.0,0.0,0.0,0.0
+full_system,GPT-OSS 20B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.1111111111111111,0.5,0.0,0.2444
+full_system,GPT-OSS 20B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.3333333333333333,0.3333333333333333,0.0,0.2667
+full_system,GPT-OSS 20B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.5,0.4444444444444444,0.36363636363636365,0.4505
+full_system,GPT-OSS 20B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.23076923076923078,0.36363636363636365,0.0,0.2378
+full_system,GPT-OSS 20B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.375,0.35714285714285715,0.0,0.2929
+full_system,GPT-OSS 20B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.35714285714285715,0.42857142857142855,0.7,0.4543
+full_system,GPT-OSS 20B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.21428571428571427,0.0625,0.45454545454545453,0.2016
+full_system,GPT-OSS 20B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.2727272727272727,0.26666666666666666,0.18181818181818182,0.2521
+full_system,GPT-OSS 20B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.2727272727272727,0.4444444444444444,0.7272727272727273,0.4323
+full_system,GPT-OSS 20B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.25,0.1875,0.0,0.175
+full_system,GPT-OSS 20B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.6,0.42857142857142855,0.3257
+full_system,GPT-OSS 20B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.2857142857142857,0.26666666666666666,0.7272727272727273,0.3664
+full_system,GPT-OSS 20B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.23076923076923078,0.2727272727272727,0.4166666666666667,0.2847
+full_system,GPT-OSS 20B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.5,0.2727272727272727,0.2,0.3491
+full_system,GPT-OSS 20B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.7272727272727273,0.375,0.36363636363636365,0.5136
+full_system,GPT-OSS 20B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.2857142857142857,0.4444444444444444,0.25,0.3421
+full_system,GPT-OSS 20B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.3333333333333333,0.1111111111111111,0.75,0.3278
+full_system,GPT-OSS 20B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.125,0.6666666666666666,0.75,0.4667
+full_system,GPT-OSS 20B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.16666666666666666,0.5,0.0,0.2667
+full_system,GPT-OSS 20B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.125,0.375,0.0,0.2
+full_system,GPT-OSS 20B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.6666666666666666,0.8333333333333334,0.75,0.75
+full_system,GPT-OSS 20B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.3333333333333333,0.25,0.5,0.3333
+full_system,GPT-OSS 20B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.4,0.6666666666666666,0.0,0.4267
+full_system,GPT-OSS 20B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.2857142857142857,0.5555555555555556,0.0,0.3365
+full_system,GPT-OSS 20B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.2857142857142857,0.3333333333333333,0.0,0.2476
+full_system,GPT-OSS 20B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.4,0.5714285714285714,0.7142857142857143,0.5314
+full_system,GPT-OSS 20B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.0,0.2222222222222222,0.75,0.2389
+full_system,GPT-OSS 20B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.2,0.375,0.5,0.33
+full_system,GPT-OSS 20B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.2,0.14285714285714285,0.5,0.2371
+full_system,LLaMA 3.1 8B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.07692307692307693,0.35714285714285715,0.5454545454545454,0.2827
+full_system,LLaMA 3.1 8B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.08333333333333333,0.3125,0.5555555555555556,0.2694
+full_system,LLaMA 3.1 8B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.4444444444444444,0.2,0.5555555555555556,0.3689
+full_system,LLaMA 3.1 8B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.1,0.16666666666666666,0.2,0.1467
+full_system,LLaMA 3.1 8B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.5,0.3333333333333333,0.36363636363636365,0.4061
+full_system,LLaMA 3.1 8B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.0,0.09090909090909091,0.3,0.0964
+full_system,LLaMA 3.1 8B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.3076923076923077,0.5555555555555556,0.1,0.3653
+full_system,LLaMA 3.1 8B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.07692307692307693,0.18181818181818182,0.5454545454545454,0.2126
+full_system,LLaMA 3.1 8B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.0,0.034482758620689655,0.2727272727272727,0.0683
+full_system,LLaMA 3.1 8B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.125,0.3333333333333333,0.2,0.2233
+full_system,LLaMA 3.1 8B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.23076923076923078,0.21428571428571427,0.3333333333333333,0.2447
+full_system,LLaMA 3.1 8B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.11764705882352941,0.27586206896551724,0.3,0.2174
+full_system,LLaMA 3.1 8B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.5,0.0,0.4166666666666667,0.2833
+full_system,LLaMA 3.1 8B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.3333333333333333,0.2222222222222222,0.45454545454545453,0.3131
+full_system,LLaMA 3.1 8B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.0,0.18181818181818182,0.3,0.1327
+full_system,LLaMA 3.1 8B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.5555555555555556,0.0,0.2222222222222222,0.2667
+full_system,LLaMA 3.1 8B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.16666666666666666,0.25,0.1611
+full_system,LLaMA 3.1 8B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.13333333333333333,0.15151515151515152,0.5,0.2139
+full_system,LLaMA 3.1 8B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.7777777777777778,0.1111111111111111,0.45454545454545453,0.4465
+full_system,LLaMA 3.1 8B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.2222222222222222,0.125,0.4,0.2189
+full_system,LLaMA 3.1 8B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.125,0.23076923076923078,0.09090909090909091,0.1605
+full_system,LLaMA 3.1 8B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.3333333333333333,0.2,0.5454545454545454,0.3224
+full_system,LLaMA 3.1 8B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.0,0.18181818181818182,0.45454545454545453,0.1636
+full_system,LLaMA 3.1 8B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.7,0.10526315789473684,0.5714285714285714,0.4364
+full_system,LLaMA 3.1 8B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.3125,0.0,0.0,0.125
+full_system,LLaMA 3.1 8B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.08333333333333333,0.3076923076923077,0.2,0.1964
+full_system,LLaMA 3.1 8B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.15384615384615385,0.47058823529411764,0.5,0.3498
+full_system,LLaMA 3.1 8B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.4166666666666667,0.2,0.3,0.3067
+full_system,LLaMA 3.1 8B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.1,0.23809523809523808,0.1,0.1552
+full_system,LLaMA 3.1 8B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.7142857142857143,0.2857142857142857,0.3429
+full_system,LLaMA 3.1 8B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.3076923076923077,0.4375,0.5714285714285714,0.4124
+full_system,LLaMA 3.1 8B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.16666666666666666,0.3333333333333333,0.1,0.22
+full_system,LLaMA 3.1 8B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.16666666666666666,0.26666666666666666,0.25,0.2233
+full_system,LLaMA 3.1 8B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.625,0.2222222222222222,0.36363636363636365,0.4116
+full_system,LLaMA 3.1 8B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.07692307692307693,0.2727272727272727,0.0,0.1399
+full_system,LLaMA 3.1 8B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.125,0.2857142857142857,0.0,0.1643
+full_system,LLaMA 3.1 8B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.42857142857142855,0.6428571428571429,0.5,0.5286
+full_system,LLaMA 3.1 8B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.2857142857142857,0.1875,0.45454545454545453,0.2802
+full_system,LLaMA 3.1 8B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.09090909090909091,0.4,0.18181818181818182,0.2327
+full_system,LLaMA 3.1 8B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.36363636363636365,0.7777777777777778,0.5454545454545454,0.5657
+full_system,LLaMA 3.1 8B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.0,0.25,0.0,0.1
+full_system,LLaMA 3.1 8B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.9,0.7142857142857143,0.5029
+full_system,LLaMA 3.1 8B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.35714285714285715,0.06666666666666667,0.6363636363636364,0.2968
+full_system,LLaMA 3.1 8B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.38461538461538464,0.5454545454545454,0.3333333333333333,0.4387
+full_system,LLaMA 3.1 8B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.36363636363636365,0.2,0.1855
+full_system,LLaMA 3.1 8B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.0,0.375,0.36363636363636365,0.2227
+full_system,LLaMA 3.1 8B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.2857142857142857,0.3333333333333333,0.5,0.3476
+full_system,LLaMA 3.1 8B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.0,0.2222222222222222,0.75,0.2389
+full_system,LLaMA 3.1 8B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.6666666666666666,0.75,0.4167
+full_system,LLaMA 3.1 8B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.16666666666666666,0.625,0.0,0.3167
+full_system,LLaMA 3.1 8B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.25,0.25,0.0,0.2
+full_system,LLaMA 3.1 8B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.16666666666666666,0.8333333333333334,1.0,0.6
+full_system,LLaMA 3.1 8B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.3333333333333333,0.125,0.5,0.2833
+full_system,LLaMA 3.1 8B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.2,0.3333333333333333,0.0,0.2133
+full_system,LLaMA 3.1 8B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.0,0.2222222222222222,0.0,0.0889
+full_system,LLaMA 3.1 8B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.0,0.0,0.0,0.0
+full_system,LLaMA 3.1 8B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.2,0.2857142857142857,0.8571428571428571,0.3657
+full_system,LLaMA 3.1 8B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.5,0.4444444444444444,1.0,0.5778
+full_system,LLaMA 3.1 8B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.2,0.375,0.5,0.33
+full_system,LLaMA 3.1 8B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.0,0.14285714285714285,0.25,0.1071
+full_system,LLaMA 3.3 70B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.15384615384615385,0.35714285714285715,0.5454545454545454,0.3135
+full_system,LLaMA 3.3 70B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.25,0.125,0.6666666666666666,0.2833
+full_system,LLaMA 3.3 70B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.2222222222222222,0.2,0.5555555555555556,0.28
+full_system,LLaMA 3.3 70B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.2,0.16666666666666666,0.3,0.2067
+full_system,LLaMA 3.3 70B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.6,0.3333333333333333,0.45454545454545453,0.4642
+full_system,LLaMA 3.3 70B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.0,0.18181818181818182,0.4,0.1527
+full_system,LLaMA 3.3 70B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.38461538461538464,0.3888888888888889,0.1,0.3294
+full_system,LLaMA 3.3 70B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.15384615384615385,0.18181818181818182,0.6363636363636364,0.2615
+full_system,LLaMA 3.3 70B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.08333333333333333,0.06896551724137931,0.36363636363636365,0.1336
+full_system,LLaMA 3.3 70B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.5,0.5555555555555556,0.3,0.4822
+full_system,LLaMA 3.3 70B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.23076923076923078,0.21428571428571427,0.6666666666666666,0.3114
+full_system,LLaMA 3.3 70B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.058823529411764705,0.3103448275862069,0.1,0.1677
+full_system,LLaMA 3.3 70B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.3333333333333333,0.14285714285714285,0.3333333333333333,0.2571
+full_system,LLaMA 3.3 70B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.4444444444444444,0.3333333333333333,0.5454545454545454,0.4202
+full_system,LLaMA 3.3 70B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.3,0.36363636363636365,0.4,0.3455
+full_system,LLaMA 3.3 70B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.5555555555555556,0.125,0.4444444444444444,0.3611
+full_system,LLaMA 3.3 70B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.16666666666666666,0.5,0.2111
+full_system,LLaMA 3.3 70B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.26666666666666666,0.18181818181818182,0.6,0.2994
+full_system,LLaMA 3.3 70B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.5555555555555556,0.5555555555555556,0.5454545454545454,0.5535
+full_system,LLaMA 3.3 70B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.1111111111111111,0.0,0.6,0.1644
+full_system,LLaMA 3.3 70B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.125,0.5384615384615384,0.09090909090909091,0.2836
+full_system,LLaMA 3.3 70B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.16666666666666666,0.3,0.6363636363636364,0.3139
+full_system,LLaMA 3.3 70B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.1111111111111111,0.45454545454545453,0.36363636363636365,0.299
+full_system,LLaMA 3.3 70B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.7,0.21052631578947367,0.5714285714285714,0.4785
+full_system,LLaMA 3.3 70B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.25,0.4375,0.0,0.275
+full_system,LLaMA 3.3 70B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.3333333333333333,0.3076923076923077,0.1,0.2764
+full_system,LLaMA 3.3 70B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.15384615384615385,0.35294117647058826,0.4166666666666667,0.286
+full_system,LLaMA 3.3 70B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.3333333333333333,0.4,0.3,0.3533
+full_system,LLaMA 3.3 70B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.2,0.2857142857142857,0.2,0.2343
+full_system,LLaMA 3.3 70B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.5714285714285714,0.42857142857142855,0.3143
+full_system,LLaMA 3.3 70B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.3076923076923077,0.3125,0.5714285714285714,0.3624
+full_system,LLaMA 3.3 70B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.1111111111111111,0.4166666666666667,0.1,0.2311
+full_system,LLaMA 3.3 70B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.16666666666666666,0.5333333333333333,0.25,0.33
+full_system,LLaMA 3.3 70B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.625,0.3333333333333333,0.2727272727272727,0.4379
+full_system,LLaMA 3.3 70B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.07692307692307693,0.18181818181818182,0.0,0.1035
+full_system,LLaMA 3.3 70B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.125,0.14285714285714285,0.0,0.1071
+full_system,LLaMA 3.3 70B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.5,0.42857142857142855,0.5,0.4714
+full_system,LLaMA 3.3 70B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.21428571428571427,0.1875,0.18181818181818182,0.1971
+full_system,LLaMA 3.3 70B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.36363636363636365,0.3333333333333333,0.18181818181818182,0.3152
+full_system,LLaMA 3.3 70B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.36363636363636365,0.7222222222222222,0.45454545454545453,0.5253
+full_system,LLaMA 3.3 70B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.25,0.3125,0.0,0.225
+full_system,LLaMA 3.3 70B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.5,0.6,0.42857142857142855,0.5257
+full_system,LLaMA 3.3 70B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.35714285714285715,0.26666666666666666,0.6363636363636364,0.3768
+full_system,LLaMA 3.3 70B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.6153846153846154,0.36363636363636365,0.3333333333333333,0.4583
+full_system,LLaMA 3.3 70B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.36363636363636365,0.2,0.1855
+full_system,LLaMA 3.3 70B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.2727272727272727,0.5,0.36363636363636365,0.3818
+full_system,LLaMA 3.3 70B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.2857142857142857,0.5555555555555556,0.75,0.4865
+full_system,LLaMA 3.3 70B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.16666666666666666,0.1111111111111111,1.0,0.3111
+full_system,LLaMA 3.3 70B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.6666666666666666,0.75,0.4167
+full_system,LLaMA 3.3 70B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.16666666666666666,0.25,0.0,0.1667
+full_system,LLaMA 3.3 70B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.125,0.0,0.0,0.05
+full_system,LLaMA 3.3 70B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.3333333333333333,0.8333333333333334,1.0,0.6667
+full_system,LLaMA 3.3 70B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.5,0.125,0.5,0.35
+full_system,LLaMA 3.3 70B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.2,0.16666666666666666,0.0,0.1467
+full_system,LLaMA 3.3 70B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.14285714285714285,0.5555555555555556,0.0,0.2794
+full_system,LLaMA 3.3 70B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.0,0.16666666666666666,0.0,0.0667
+full_system,LLaMA 3.3 70B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.2,0.14285714285714285,1.0,0.3371
+full_system,LLaMA 3.3 70B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.25,0.2222222222222222,0.5,0.2889
+full_system,LLaMA 3.3 70B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.4,0.375,0.75,0.46
+full_system,LLaMA 3.3 70B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.2,0.0,0.375,0.155
+kg_augmented,GPT-OSS 20B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.38461538461538464,0.14285714285714285,0.45454545454545453,0.3019
+kg_augmented,GPT-OSS 20B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.4166666666666667,0.1875,0.5555555555555556,0.3528
+kg_augmented,GPT-OSS 20B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.0,0.3,0.6666666666666666,0.2533
+kg_augmented,GPT-OSS 20B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.2,0.25,0.2,0.22
+kg_augmented,GPT-OSS 20B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.4,0.6666666666666666,0.5454545454545454,0.5358
+kg_augmented,GPT-OSS 20B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.2222222222222222,0.6363636363636364,0.3,0.4034
+kg_augmented,GPT-OSS 20B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.46153846153846156,0.4444444444444444,0.2,0.4024
+kg_augmented,GPT-OSS 20B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.38461538461538464,0.5454545454545454,0.7272727272727273,0.5175
+kg_augmented,GPT-OSS 20B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.0,0.2413793103448276,0.2727272727272727,0.1511
+kg_augmented,GPT-OSS 20B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.125,0.3333333333333333,0.5,0.2833
+kg_augmented,GPT-OSS 20B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.23076923076923078,0.14285714285714285,0.5,0.2495
+kg_augmented,GPT-OSS 20B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.47058823529411764,0.27586206896551724,0.5,0.3986
+kg_augmented,GPT-OSS 20B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.3333333333333333,0.14285714285714285,0.5,0.2905
+kg_augmented,GPT-OSS 20B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.3333333333333333,0.2222222222222222,0.5454545454545454,0.3313
+kg_augmented,GPT-OSS 20B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.2,0.18181818181818182,0.3,0.2127
+kg_augmented,GPT-OSS 20B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.2222222222222222,0.25,0.5555555555555556,0.3
+kg_augmented,GPT-OSS 20B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.5,0.5833333333333334,0.3611
+kg_augmented,GPT-OSS 20B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.26666666666666666,0.2727272727272727,0.4,0.2958
+kg_augmented,GPT-OSS 20B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.5555555555555556,0.4444444444444444,0.36363636363636365,0.4727
+kg_augmented,GPT-OSS 20B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.2222222222222222,0.125,0.7,0.2789
+kg_augmented,GPT-OSS 20B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.1875,0.07692307692307693,0.36363636363636365,0.1785
+kg_augmented,GPT-OSS 20B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.3333333333333333,0.6,0.2727272727272727,0.4279
+kg_augmented,GPT-OSS 20B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.1111111111111111,0.5454545454545454,0.5454545454545454,0.3717
+kg_augmented,GPT-OSS 20B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.4,0.10526315789473684,0.2857142857142857,0.2592
+kg_augmented,GPT-OSS 20B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.25,0.4375,0.0,0.275
+kg_augmented,GPT-OSS 20B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.3333333333333333,0.23076923076923078,0.1,0.2456
+kg_augmented,GPT-OSS 20B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.15384615384615385,0.47058823529411764,0.25,0.2998
+kg_augmented,GPT-OSS 20B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.4166666666666667,0.4,0.3,0.3867
+kg_augmented,GPT-OSS 20B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.1,0.47619047619047616,0.3,0.2905
+kg_augmented,GPT-OSS 20B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.5714285714285714,0.2857142857142857,0.2857
+kg_augmented,GPT-OSS 20B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.3076923076923077,0.5,0.5714285714285714,0.4374
+kg_augmented,GPT-OSS 20B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.1111111111111111,0.3333333333333333,0.1,0.1978
+kg_augmented,GPT-OSS 20B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.3333333333333333,0.3333333333333333,0.25,0.3167
+kg_augmented,GPT-OSS 20B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.5,0.3333333333333333,0.2727272727272727,0.3879
+kg_augmented,GPT-OSS 20B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.07692307692307693,0.18181818181818182,0.0,0.1035
+kg_augmented,GPT-OSS 20B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.5,0.2857142857142857,0.0,0.3143
+kg_augmented,GPT-OSS 20B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.35714285714285715,0.5,0.6,0.4629
+kg_augmented,GPT-OSS 20B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.14285714285714285,0.3125,0.45454545454545453,0.2731
+kg_augmented,GPT-OSS 20B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.2727272727272727,0.4666666666666667,0.36363636363636365,0.3685
+kg_augmented,GPT-OSS 20B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.2727272727272727,0.5,0.45454545454545453,0.4
+kg_augmented,GPT-OSS 20B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.0,0.0625,0.0,0.025
+kg_augmented,GPT-OSS 20B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.2,0.42857142857142855,0.1657
+kg_augmented,GPT-OSS 20B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.21428571428571427,0.2,0.6363636363636364,0.293
+kg_augmented,GPT-OSS 20B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.0,0.36363636363636365,0.3333333333333333,0.2121
+kg_augmented,GPT-OSS 20B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.36363636363636365,0.2,0.1855
+kg_augmented,GPT-OSS 20B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.6363636363636364,0.375,0.36363636363636365,0.4773
+kg_augmented,GPT-OSS 20B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.2857142857142857,0.2222222222222222,0.25,0.2532
+kg_augmented,GPT-OSS 20B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.16666666666666666,0.2222222222222222,0.25,0.2056
+kg_augmented,GPT-OSS 20B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.125,0.7777777777777778,0.5,0.4611
+kg_augmented,GPT-OSS 20B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.5,0.25,0.0,0.3
+kg_augmented,GPT-OSS 20B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.125,0.125,0.0,0.1
+kg_augmented,GPT-OSS 20B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.0,0.6666666666666666,0.75,0.4167
+kg_augmented,GPT-OSS 20B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.16666666666666666,0.25,0.75,0.3167
+kg_augmented,GPT-OSS 20B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.4,0.3333333333333333,0.0,0.2933
+kg_augmented,GPT-OSS 20B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.14285714285714285,0.4444444444444444,0.0,0.2349
+kg_augmented,GPT-OSS 20B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.2857142857142857,0.16666666666666666,0.0,0.181
+kg_augmented,GPT-OSS 20B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.2,0.2857142857142857,0.5714285714285714,0.3086
+kg_augmented,GPT-OSS 20B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.25,0.3333333333333333,0.75,0.3833
+kg_augmented,GPT-OSS 20B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.2,0.375,0.5,0.33
+kg_augmented,GPT-OSS 20B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.2,0.0,0.375,0.155
+kg_augmented,LLaMA 3.1 8B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.0,0.0,0.5454545454545454,0.1091
+kg_augmented,LLaMA 3.1 8B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.08333333333333333,0.0625,0.5555555555555556,0.1694
+kg_augmented,LLaMA 3.1 8B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.3333333333333333,0.0,0.5555555555555556,0.2444
+kg_augmented,LLaMA 3.1 8B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.2,0.16666666666666666,0.3,0.2067
+kg_augmented,LLaMA 3.1 8B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.3,0.25,0.2727272727272727,0.2745
+kg_augmented,LLaMA 3.1 8B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.0,0.09090909090909091,0.0,0.0364
+kg_augmented,LLaMA 3.1 8B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.0,0.2777777777777778,0.1,0.1311
+kg_augmented,LLaMA 3.1 8B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.0,0.0,0.36363636363636365,0.0727
+kg_augmented,LLaMA 3.1 8B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.0,0.034482758620689655,0.0,0.0138
+kg_augmented,LLaMA 3.1 8B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.125,0.1111111111111111,0.2,0.1344
+kg_augmented,LLaMA 3.1 8B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.07692307692307693,0.0,0.25,0.0808
+kg_augmented,LLaMA 3.1 8B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.0,0.1724137931034483,0.2,0.109
+kg_augmented,LLaMA 3.1 8B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.0,0.0,0.3333333333333333,0.0667
+kg_augmented,LLaMA 3.1 8B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.0,0.1111111111111111,0.2727272727272727,0.099
+kg_augmented,LLaMA 3.1 8B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.1,0.09090909090909091,0.2,0.1164
+kg_augmented,LLaMA 3.1 8B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.1111111111111111,0.0,0.3333333333333333,0.1111
+kg_augmented,LLaMA 3.1 8B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.16666666666666666,0.08333333333333333,0.1278
+kg_augmented,LLaMA 3.1 8B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.13333333333333333,0.030303030303030304,0.3,0.1255
+kg_augmented,LLaMA 3.1 8B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.1111111111111111,0.2222222222222222,0.2727272727272727,0.1879
+kg_augmented,LLaMA 3.1 8B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.2222222222222222,0.0,0.4,0.1689
+kg_augmented,LLaMA 3.1 8B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.0625,0.3076923076923077,0.09090909090909091,0.1663
+kg_augmented,LLaMA 3.1 8B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.16666666666666666,0.3,0.45454545454545453,0.2776
+kg_augmented,LLaMA 3.1 8B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.0,0.18181818181818182,0.45454545454545453,0.1636
+kg_augmented,LLaMA 3.1 8B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.7,0.05263157894736842,0.2857142857142857,0.3582
+kg_augmented,LLaMA 3.1 8B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.3125,0.5,0.0,0.325
+kg_augmented,LLaMA 3.1 8B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.08333333333333333,0.15384615384615385,0.2,0.1349
+kg_augmented,LLaMA 3.1 8B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.15384615384615385,0.058823529411764705,0.3333333333333333,0.1517
+kg_augmented,LLaMA 3.1 8B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.25,0.2,0.3,0.24
+kg_augmented,LLaMA 3.1 8B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.0,0.047619047619047616,0.4,0.099
+kg_augmented,LLaMA 3.1 8B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.7142857142857143,0.14285714285714285,0.3143
+kg_augmented,LLaMA 3.1 8B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.0,0.1875,0.42857142857142855,0.1607
+kg_augmented,LLaMA 3.1 8B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.16666666666666666,0.20833333333333334,0.1,0.17
+kg_augmented,LLaMA 3.1 8B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.0,0.13333333333333333,0.25,0.1033
+kg_augmented,LLaMA 3.1 8B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.125,0.2222222222222222,0.2727272727272727,0.1934
+kg_augmented,LLaMA 3.1 8B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.0,0.18181818181818182,0.0,0.0727
+kg_augmented,LLaMA 3.1 8B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.0,0.0,0.0,0.0
+kg_augmented,LLaMA 3.1 8B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.5,0.5714285714285714,0.5,0.5286
+kg_augmented,LLaMA 3.1 8B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.2857142857142857,0.0,0.45454545454545453,0.2052
+kg_augmented,LLaMA 3.1 8B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.09090909090909091,0.4,0.18181818181818182,0.2327
+kg_augmented,LLaMA 3.1 8B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.36363636363636365,0.5,0.7272727272727273,0.4909
+kg_augmented,LLaMA 3.1 8B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.0,0.0625,0.0,0.025
+kg_augmented,LLaMA 3.1 8B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.1,0.5714285714285714,0.1543
+kg_augmented,LLaMA 3.1 8B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.0,0.0,0.9090909090909091,0.1818
+kg_augmented,LLaMA 3.1 8B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.6923076923076923,0.36363636363636365,0.3333333333333333,0.489
+kg_augmented,LLaMA 3.1 8B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.18181818181818182,0.2,0.1127
+kg_augmented,LLaMA 3.1 8B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.6363636363636364,0.25,0.2727272727272727,0.4091
+kg_augmented,LLaMA 3.1 8B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.0,0.4444444444444444,0.5,0.2778
+kg_augmented,LLaMA 3.1 8B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.0,0.0,0.5,0.1
+kg_augmented,LLaMA 3.1 8B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.4444444444444444,0.75,0.3278
+kg_augmented,LLaMA 3.1 8B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.16666666666666666,0.125,0.0,0.1167
+kg_augmented,LLaMA 3.1 8B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.0,0.125,0.0,0.05
+kg_augmented,LLaMA 3.1 8B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.0,0.16666666666666666,0.5,0.1667
+kg_augmented,LLaMA 3.1 8B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.0,0.0,0.5,0.1
+kg_augmented,LLaMA 3.1 8B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.0,0.16666666666666666,0.0,0.0667
+kg_augmented,LLaMA 3.1 8B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.0,0.2222222222222222,0.0,0.0889
+kg_augmented,LLaMA 3.1 8B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.14285714285714285,0.16666666666666666,0.0,0.1238
+kg_augmented,LLaMA 3.1 8B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.0,0.14285714285714285,0.7142857142857143,0.2
+kg_augmented,LLaMA 3.1 8B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.25,0.0,0.75,0.25
+kg_augmented,LLaMA 3.1 8B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.2,0.25,0.5,0.28
+kg_augmented,LLaMA 3.1 8B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.2,0.0,0.375,0.155
+kg_augmented,LLaMA 3.3 70B,1,My hollandaise sauce is thin and won't thicken up.,Hollandaise Sauce,sauce emulsions,medium,0.23076923076923078,0.2857142857142857,0.45454545454545453,0.2975
+kg_augmented,LLaMA 3.3 70B,2,My steak is gray and has no crust after searing.,Pan-Seared Ribeye Steak,protein cookery,easy,0.16666666666666666,0.125,0.4444444444444444,0.2056
+kg_augmented,LLaMA 3.3 70B,3,My chocolate ganache looks grainy and oily.,Chocolate Ganache,sauce emulsions,medium,0.3333333333333333,0.0,0.5555555555555556,0.2444
+kg_augmented,LLaMA 3.3 70B,4,My hard-boiled eggs are impossible to peel.,Hard-Boiled Eggs,protein cookery,easy,0.4,0.16666666666666666,0.2,0.2667
+kg_augmented,LLaMA 3.3 70B,5,My pesto turned brown almost immediately.,Blanched Basil Pesto,sauce emulsions,easy,0.5,0.4166666666666667,0.36363636363636365,0.4394
+kg_augmented,LLaMA 3.3 70B,6,My cookies spread into one giant flat sheet.,Chocolate Chip Cookies,baking,easy,0.0,0.09090909090909091,0.0,0.0364
+kg_augmented,LLaMA 3.3 70B,7,My scrambled eggs are weeping water and are rubbery.,Scrambled Eggs,protein cookery,easy,0.38461538461538464,0.4444444444444444,0.1,0.3516
+kg_augmented,LLaMA 3.3 70B,8,My mac and cheese sauce is grainy and the cheese is clumping.,Macaroni and Cheese,starch emulsions,easy,0.07692307692307693,0.0,0.5454545454545454,0.1399
+kg_augmented,LLaMA 3.3 70B,9,My burgers are falling apart on the grill.,Ultra-Smashed Burger,protein cookery,easy,0.041666666666666664,0.0,0.18181818181818182,0.053
+kg_augmented,LLaMA 3.3 70B,10,My garlic turned bitter and black in the oil.,Spaghetti Aglio e Olio,protein cookery,easy,0.375,0.4444444444444444,0.4,0.4078
+kg_augmented,LLaMA 3.3 70B,11,My mayonnaise won't emulsify; it's just oil and yellow liquid.,Immersion Blender Mayo,sauce emulsions,medium,0.23076923076923078,0.21428571428571427,0.4166666666666667,0.2614
+kg_augmented,LLaMA 3.3 70B,12,My chicken breast is dry and stringy.,Pan-Roasted Chicken Breast,protein cookery,medium,0.058823529411764705,0.10344827586206896,0.1,0.0849
+kg_augmented,LLaMA 3.3 70B,13,My stir-fry is soggy and boiling in its own juice.,Vegetable Stir-Fry,protein cookery,medium,0.0,0.0,0.3333333333333333,0.0667
+kg_augmented,LLaMA 3.3 70B,14,My whipped cream is turning into lumpy butter.,Whipped Cream,sauce emulsions,easy,0.4444444444444444,0.1111111111111111,0.5454545454545454,0.3313
+kg_augmented,LLaMA 3.3 70B,15,My mashed potatoes are sticky like glue.,Mashed Potatoes,baking,easy,0.1,0.18181818181818182,0.2,0.1527
+kg_augmented,LLaMA 3.3 70B,16,My chocolate chips seized into a dry clump in the microwave.,Microwave Chocolate Ganache,sauce emulsions,easy,0.1111111111111111,0.0,0.4444444444444444,0.1333
+kg_augmented,LLaMA 3.3 70B,17,My vinaigrette separates the second I stop shaking it.,Vinaigrette,sauce emulsions,easy,0.1111111111111111,0.3333333333333333,0.5,0.2778
+kg_augmented,LLaMA 3.3 70B,18,My rice is mushy and stuck together.,White Rice,starch cookery,easy,0.26666666666666666,0.06060606060606061,0.4,0.2109
+kg_augmented,LLaMA 3.3 70B,19,My muffins have huge holes (tunnels) inside.,Blueberry Muffins,baking,easy,0.5555555555555556,0.5555555555555556,0.36363636363636365,0.5172
+kg_augmented,LLaMA 3.3 70B,20,My caramel is grainy and full of sugar crystals.,Caramel Sauce,sauce emulsions,medium,0.1111111111111111,0.0,0.3,0.1044
+kg_augmented,LLaMA 3.3 70B,21,"Chicken breast is dry, tough, and lacks the signature juicy/springy texture.",Hainanese Chicken Rice,protein cookery,medium,0.125,0.23076923076923078,0.0,0.1423
+kg_augmented,LLaMA 3.3 70B,22,"Bottled black truffle is flavorless or ""rubbery"" when cooked on pizza.",Truffle & Mushroom Pizza,baking,easy,0.16666666666666666,0.3,0.36363636363636365,0.2594
+kg_augmented,LLaMA 3.3 70B,23,"Mushroom sauce is too thin/light and lacks a rich, glossy texture.",White wine & Mushroom Sauce,sauce emulsions,easy,0.0,0.2727272727272727,0.36363636363636365,0.1818
+kg_augmented,LLaMA 3.3 70B,24,Curry paste is overwhelmingly bitter and borderline inedible because the white lemon pith was processed into the paste instead of just the zest.,Thai Curry Paste,ingredient prep,medium,0.7,0.0,0.2857142857142857,0.3371
+kg_augmented,LLaMA 3.3 70B,25,"The green curry is dark, oily, and the delicate herbal notes are drowned out after using coconut paste as a 1:1 substitute for milk.",Thai Green Curry,thai,medium,0.3125,0.5,0.0,0.325
+kg_augmented,LLaMA 3.3 70B,26,"The Sichuan pepper provides no numbing sensation or flavor (tastes like ""dust"") even after being ground into a fine powder",Sichuan Chilli Oil,chinese,easy,0.3333333333333333,0.3076923076923077,0.1,0.2764
+kg_augmented,LLaMA 3.3 70B,27,"The soup remains thin and watery, or the starch forms ""dumplings"" (clumps) instead of thickening the broth evenly.",Egg Drop Soup,soup,easy,0.07692307692307693,0.23529411764705882,0.4166666666666667,0.2082
+kg_augmented,LLaMA 3.3 70B,28,"Monkfish cheeks are inedibly salty and slightly ""cured"" after being left in the fridge with too much salt for too long.",Pan-Seared Monkfish Cheeks,seafood,medium,0.3333333333333333,0.4,0.3,0.3533
+kg_augmented,LLaMA 3.3 70B,29,"The vegan ice cream has a grainy, ""oatmeal-like"" texture and a heavy, dense mouthfeel instead of being smooth and creamy.",Matcha Tofu Ice Cream,dessert,easy,0.3,0.14285714285714285,0.1,0.1971
+kg_augmented,LLaMA 3.3 70B,30,No instant yeast,Yeasted Banana Sandwich Bread,substitution,medium,0.0,0.5714285714285714,0.2857142857142857,0.2857
+kg_augmented,LLaMA 3.3 70B,31,"Sautéed mushrooms are rubbery, tough, and ""slimy"" instead of being tender and meaty.",Sautéed Cremini Mushrooms,ingredient prep,easy,0.07692307692307693,0.3125,0.5714285714285714,0.2701
+kg_augmented,LLaMA 3.3 70B,32,"The black sesame paste remains stuck in a crumbly, sandy texture and won't turn into a smooth, glossy liquid despite 60 minutes of processing.",Black Sesame Paste,ingredient prep,medium,0.1111111111111111,0.16666666666666666,0.1,0.1311
+kg_augmented,LLaMA 3.3 70B,33,My pie crust cracks and breaks apart while I am rolling it out.,Classic Pie Crust,baking,medium,0.16666666666666666,0.2,0.0,0.1467
+kg_augmented,LLaMA 3.3 70B,34,"The cakes fail to ""bloom"" (split open) and instead result in dense, domed tops similar to standard cupcakes due to using flour instead of arrowroot powder",Vietnamese Bánh Thuẫn,baking,hard,0.625,0.2222222222222222,0.2727272727272727,0.3934
+kg_augmented,LLaMA 3.3 70B,35,The bottom of my fruit pie is pale and soggy after baking.,Berry Pie,baking,easy,0.07692307692307693,0.18181818181818182,0.0,0.1035
+kg_augmented,LLaMA 3.3 70B,36,My cake sank in the center after taking it out of the oven.,Vanilla Layer Cake,baking,easy,0.0,0.07142857142857142,0.0,0.0286
+kg_augmented,LLaMA 3.3 70B,37,"The frosting is overly soft, soup-like, and fails to hold a peak after substituting 100% of the butter with cream cheese.",Swiss Meringue Buttercream,baking,medium,0.5,0.5714285714285714,0.5,0.5286
+kg_augmented,LLaMA 3.3 70B,38,The giant octopus legs turned out tough and rubbery despite being pre-tenderized before cooking.,Grilled Giant Octopus Legs,seafood,medium,0.07142857142857142,0.0,0.2727272727272727,0.0831
+kg_augmented,LLaMA 3.3 70B,39,"The cookie spread is extremely grainy and ""sandy"" despite high-speed blending to the point of the mixture steaming.",Biscoff Cookie Spread,dessert,medium,0.2727272727272727,0.4,0.18181818181818182,0.3055
+kg_augmented,LLaMA 3.3 70B,40,"Raw onions are overpowering, causing a harsh ""sulfur"" bite and a lingering aftertaste that lasts for hours.",Pico de Gallo,ingredient prep,easy,0.36363636363636365,0.6111111111111112,0.36363636363636365,0.4626
+kg_augmented,LLaMA 3.3 70B,41,"cannot find ""Lady Fingers"" in local UK/Ireland supermarkets for a Tiramisu recipe.",Tiramisu,substitution,easy,0.0,0.125,0.0,0.05
+kg_augmented,LLaMA 3.3 70B,42,No dry milk available,No-Knead Whole Wheat Bread,substitution,medium,0.0,0.4,0.5714285714285714,0.2743
+kg_augmented,LLaMA 3.3 70B,43,cannot find lactose-free heavy cream and wants to know if melting butter into lactose-free half-and-half will work for ice cream.,Lactose-free Ice cream,substitution,medium,0.14285714285714285,0.2,0.5454545454545454,0.2462
+kg_augmented,LLaMA 3.3 70B,44,needs a egg substitute for potato latkes that ensures they don't fall apart during frying.,Potato Latkes,substitution,easy,0.15384615384615385,0.36363636363636365,0.3333333333333333,0.2737
+kg_augmented,LLaMA 3.3 70B,45,No vegetable oil,Whole Grain Banana Bread,substitution,medium,0.0,0.36363636363636365,0.3,0.2055
+kg_augmented,LLaMA 3.3 70B,46,"making Manakish (Za'atar Flatbread) but has no pre-mixed Za'atar and is allergic to sumac, the primary acid component.",Manakish Bi Za'atar,substitution,medium,0.45454545454545453,0.25,0.45454545454545453,0.3727
+kg_augmented,LLaMA 3.3 70B,47,My pie crust shrinks down the sides while baking.,Blind-Baked Pie Crust,baking,easy,0.2857142857142857,0.3333333333333333,0.75,0.3976
+kg_augmented,LLaMA 3.3 70B,48,My blind-baked crust puffs up despite pie weights.,Blind-Baked Pie Crust,baking,medium,0.16666666666666666,0.1111111111111111,1.0,0.3111
+kg_augmented,LLaMA 3.3 70B,49,The edges of my pie crust brown too quickly.,Double-Crust Fruit Pie,baking,easy,0.0,0.5555555555555556,0.75,0.3722
+kg_augmented,LLaMA 3.3 70B,50,My lattice top collapsed into the filling during baking.,Lattice-Top Fruit Pie,baking,medium,0.16666666666666666,0.25,0.0,0.1667
+kg_augmented,LLaMA 3.3 70B,51,My fruit pie filling never sets even after cooling.,Apple Pie,starch cookery,medium,0.25,0.125,0.0,0.15
+kg_augmented,LLaMA 3.3 70B,52,My pie crust looks dull and pale.,Hand Pie Crust,substitution,easy,0.16666666666666666,0.8333333333333334,0.75,0.55
+kg_augmented,LLaMA 3.3 70B,53,Bottom crust is fully baked but tastes tough.,Single-Crust Pie,baking,medium,0.3333333333333333,0.0,0.25,0.1833
+kg_augmented,LLaMA 3.3 70B,54,My crimped edges lost their shape in the oven.,Decorative Pie Crust,baking,easy,0.2,0.3333333333333333,0.0,0.2133
+kg_augmented,LLaMA 3.3 70B,55, My fruit boiled over and burned on the oven floor.,Berry Pie,baking,medium,0.0,0.4444444444444444,0.0,0.1778
+kg_augmented,LLaMA 3.3 70B,56,My pie filling is cloudy instead of glossy.,Cherry Pie,substitution,medium,0.0,0.0,0.0,0.0
+kg_augmented,LLaMA 3.3 70B,57,My pie leaks butter during baking.,All-Butter Pie Crust,baking,easy,0.2,0.14285714285714285,0.7142857142857143,0.28
+kg_augmented,LLaMA 3.3 70B,58,The bottom crust is greasy instead of crisp.,Custard Pie,baking,medium,0.25,0.1111111111111111,1.0,0.3444
+kg_augmented,LLaMA 3.3 70B,59,My pie filling bubbles unevenly.,Apple Pie,baking,easy,0.4,0.375,0.5,0.41
+kg_augmented,LLaMA 3.3 70B,60,My crust blistered and formed bubbles after baking.,Blind-Baked Pie Crust,baking,easy,0.2,0.0,0.5,0.18

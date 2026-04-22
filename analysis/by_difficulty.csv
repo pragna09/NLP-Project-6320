@@ -1,0 +1,4 @@
+difficulty,cause_accuracy,solution_appropriateness,scientific_accuracy,overall
+easy,0.1696,0.2743,0.3154,0.2406
+hard,0.4375,0.3148,0.2879,0.3585
+medium,0.1843,0.2428,0.2737,0.2256
