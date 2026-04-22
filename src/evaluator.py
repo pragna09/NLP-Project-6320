@@ -41,19 +41,38 @@ def calculate_overall_score(cause: float, solution: float, science: float) -> fl
 def parse_llm_response(response: str) -> dict:
     parsed  = {"cause": "", "solution": "", "explanation": ""}
     current = None
+
     for line in response.strip().split("\n"):
         ll = line.lower().strip()
-        if ll.startswith("cause:"):
+
+        # ── Flexible cause matching ──────────────────────
+        if any(ll.startswith(x) for x in [
+            "cause:", "cause of", "the cause", "root cause",
+            "**cause:", "**cause"
+        ]):
             current = "cause"
-            parsed["cause"] = line.split(":", 1)[-1].strip()
-        elif ll.startswith("solution:"):
+            parsed["cause"] = line.split(":", 1)[-1].strip() if ":" in line else ""
+
+        # ── Flexible solution matching ───────────────────
+        elif any(ll.startswith(x) for x in [
+            "solution:", "how to fix", "to fix", "fix:",
+            "the solution", "**solution:", "**solution"
+        ]):
             current = "solution"
-            parsed["solution"] = line.split(":", 1)[-1].strip()
-        elif ll.startswith("explanation:"):
+            parsed["solution"] = line.split(":", 1)[-1].strip() if ":" in line else ""
+
+        # ── Flexible explanation matching ────────────────
+        elif any(ll.startswith(x) for x in [
+            "explanation:", "the science", "science:",
+            "why this", "the reason", "**explanation:", "**explanation"
+        ]):
             current = "explanation"
-            parsed["explanation"] = line.split(":", 1)[-1].strip()
+            parsed["explanation"] = line.split(":", 1)[-1].strip() if ":" in line else ""
+
+        # ── Continue current section ─────────────────────
         elif current and line.strip():
             parsed[current] += " " + line.strip()
+
     return parsed
 
 
@@ -69,8 +88,8 @@ def evaluate_single(test_case: dict, llm_response: str,
         "test_case_id":       test_case.get("id"),
         "problem":            test_case.get("Problem"),
         "recipe":             test_case.get("Recipe"),
-        "category":           test_case.get("Category"),
-        "difficulty":         test_case.get("Difficulty"),
+        "category":           test_case.get("Category", "").lower().strip(),
+        "difficulty":         test_case.get("Difficulty", "").lower().strip(),
         "predicted_cause":    parsed["cause"],
         "ground_truth_cause": test_case.get("Cause", ""),
         "predicted_solution": parsed["solution"],

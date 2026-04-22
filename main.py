@@ -54,7 +54,7 @@ def run_single_interactive():
         prompt   = build_full_system_prompt(
             problem, recipe, steps, critical, mapped, facts)
 
-        print("\nAnalyzing with both models...")
+        print("\nAnalyzing with models...")
 
         response_llama_big  = call_llama_big(prompt)
         response_llama_fast = call_llama_fast(prompt)
@@ -72,7 +72,7 @@ def run_single_interactive():
         print("=" * 50 + "\n")
 
         print("\n" + "=" * 50)
-        print("GPT OSS 20B DIAGNOSIS:")
+        print("GPT-OSS 20B DIAGNOSIS:")
         print("=" * 50)
         print(response_gpt_oss)
         print("=" * 50 + "\n")

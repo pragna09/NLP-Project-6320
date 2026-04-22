@@ -1,13 +1,13 @@
 condition,model,cause_accuracy,solution_appropriateness,scientific_accuracy,overall
-baseline,GPT OSS 20B,0.1974,0.2927,0.2839,0.2528
-baseline,LLaMA 3.1 8B,0.1295,0.174,0.2168,0.1648
-baseline,LLaMA 3.3 70B,0.139,0.2361,0.2338,0.1968
-cot_only,GPT OSS 20B,0.1304,0.245,0.2164,0.1935
-cot_only,LLaMA 3.1 8B,0.0579,0.1402,0.2162,0.1224
-cot_only,LLaMA 3.3 70B,0.1031,0.1849,0.2154,0.1583
-full_system,GPT OSS 20B,0.0,0.0,0.2867,0.0573
-full_system,LLaMA 3.1 8B,0.0014,0.0052,0.3734,0.0773
-full_system,LLaMA 3.3 70B,0.0489,0.053,0.4102,0.1228
-kg_augmented,GPT OSS 20B,0.0,0.0,0.3546,0.0709
-kg_augmented,LLaMA 3.1 8B,0.0115,0.007,0.372,0.0818
-kg_augmented,LLaMA 3.3 70B,0.0083,0.0052,0.3431,0.074
+baseline,GPT-OSS 20B,0.1856,0.3257,0.2829,0.2611
+baseline,LLaMA 3.1 8B,0.0975,0.1791,0.2154,0.1537
+baseline,LLaMA 3.3 70B,0.1478,0.2517,0.2169,0.2032
+cot_only,GPT-OSS 20B,0.1813,0.3061,0.2727,0.2495
+cot_only,LLaMA 3.1 8B,0.0771,0.1391,0.2139,0.1293
+cot_only,LLaMA 3.3 70B,0.1219,0.1978,0.2165,0.1711
+full_system,GPT-OSS 20B,0.3096,0.3754,0.3865,0.3513
+full_system,LLaMA 3.1 8B,0.21,0.2975,0.3607,0.2751
+full_system,LLaMA 3.3 70B,0.2618,0.3163,0.3877,0.3088
+kg_augmented,GPT-OSS 20B,0.2433,0.3331,0.3633,0.3032
+kg_augmented,LLaMA 3.1 8B,0.1243,0.1653,0.3082,0.1775
+kg_augmented,LLaMA 3.3 70B,0.208,0.2425,0.3291,0.246
