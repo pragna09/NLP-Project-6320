@@ -42,11 +42,11 @@ NLP-PROJECT-6320/
 
 ## Models
 
-| Model         | Provider | Size |
-|---            |---       |---   |
-| LLaMA 3.3 70B | Groq     | 70B  |
-| LLaMA 3.1 8B  | Groq     | 8B   |
-| GPT-OSS 20B   | Groq     | 20B  |
+| Model         | Provider |
+|---            |---       |
+| LLaMA 3.3 70B | Groq     |
+| LLaMA 3.1 8B  | Groq     |
+| GPT-OSS 20B   | Groq     |
 
 ---
 
