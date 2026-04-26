@@ -16,6 +16,7 @@ R.E.C.I.P.E. combines three knowledge components with large language models to p
 ---
 
 ## Overview of Project Structure
+```text
 NLP-PROJECT-6320/
 ├── data/
 │   ├── testcases.json          # 60 test cases
@@ -35,6 +36,7 @@ NLP-PROJECT-6320/
 ├── results/                    # experiment results
 ├── analysis/                   # analysis outputs
 └── main.py                     # entry point
+```
 
 ---
 
