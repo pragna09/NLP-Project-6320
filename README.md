@@ -15,7 +15,7 @@ R.E.C.I.P.E. combines three knowledge components with large language models to p
 
 ---
 
-## Overview of Project Structure
+## Project Structure
 ```text
 NLP-PROJECT-6320/
 ├── data/
