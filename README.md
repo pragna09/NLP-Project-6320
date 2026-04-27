@@ -42,11 +42,13 @@ NLP-PROJECT-6320/
 
 ## Models
 
-| Model         | Provider |
-|---            |---       |
-| LLaMA 3.3 70B | Groq     |
-| LLaMA 3.1 8B  | Groq     |
-| GPT-OSS 20B   | Groq     |
+All models are accessed via the Groq API (free tier).
+
+| Model         |
+|---            |
+| LLaMA 3.3 70B | 
+| LLaMA 3.1 8B  | 
+| GPT-OSS 20B   |
 
 ---
 
