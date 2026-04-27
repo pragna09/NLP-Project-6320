@@ -214,7 +214,6 @@ def run_all_experiments(max_cases: int = None, delay: float = 2.0):
         "GPT-OSS 20B":   call_gpt_oss
     }
     conditions = ["baseline", "cot_only", "kg_augmented", "full_system"] # to run all conditions at once
-    #conditions = ["full_system"] # to run one condition at a time
 
     # Run experiments
     for model_name, model_fn in models.items():
