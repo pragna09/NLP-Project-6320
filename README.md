@@ -110,16 +110,19 @@ GROQ_API_KEY=your_groq_key_here
 Some basic commands: 
 
 ```bash
-# Quick test — 2 cases
+# To check if connected to models
+python src/models.py
+
+# Quick test: runs 2 cases
 python main.py
 
-# Full run — 60 cases with 7 second delay
+# Full run with 60 cases with 7 second delay
 python main.py --mode full --delay 7
 
-# Interactive single mode
+# Interactive single mode: manual user prompt input 
 python main.py --mode single
 
-# Analyze results
+# Analyze results: runs evaluation and generates results and plots 
 python main.py --mode analyze
 ```
 
@@ -127,8 +130,11 @@ python main.py --mode analyze
 
 ## Running The Frontend
 
+Open two terminals and run the following:
+
 ### Terminal 1 — Backend
 ```bash
+cd NLP-Project-6320
 uvicorn backend.api:app --reload
 ```
 
@@ -138,7 +144,7 @@ cd frontend
 npm install
 npm run dev
 ```
-Open link in browser to view frontend.
+Open link in browser to view the frontend interface.
 
 ---
 
