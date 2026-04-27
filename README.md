@@ -138,7 +138,7 @@ cd frontend
 npm install
 npm run dev
 ```
-Open link in browser to view frontend
+Open link in browser to view frontend.
 
 ---
 
